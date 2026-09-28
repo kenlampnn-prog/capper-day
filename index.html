@@ -3,148 +3,94 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
-<meta name="theme-color" content="#0a0618"/>
-<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="theme-color" content="#0b1b33"/>
 <title>Capper Day</title>
 <link rel="manifest" href="./manifest.json"/>
 <link rel="icon" href="./icon.svg"/>
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Outfit:wght@400;600;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet"/>
 <style>
-:root{
-  --bg:#08051a; --ink:#f4f1ff; --mute:#a9a0c9;
-  --lime:#c8ff3d; --cyan:#3df0ff; --pink:#ff4d9d; --gold:#ffd166;
-}
 *{box-sizing:border-box;margin:0;padding:0}
-body{
-  font-family:Outfit,sans-serif;color:var(--ink);min-height:100dvh;
-  padding:calc(16px + env(safe-area-inset-top)) 14px calc(92px + env(safe-area-inset-bottom));
-  background:
-    radial-gradient(900px 420px at 110% -10%, rgba(255,77,157,.35), transparent 55%),
-    radial-gradient(700px 380px at -20% 10%, rgba(61,240,255,.22), transparent 50%),
-    radial-gradient(600px 300px at 50% 120%, rgba(200,255,61,.12), transparent 50%),
-    linear-gradient(180deg,#12082c 0%, #08051a 45%, #050310 100%);
-}
-header{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:16px}
-.logo{font-family:Syne,sans-serif;font-weight:800;font-size:28px;letter-spacing:-.04em;line-height:.9}
-.logo span{display:block;font-size:13px;color:var(--cyan);letter-spacing:.18em;text-transform:uppercase;margin-bottom:4px}
-.badge{
-  background:var(--lime);color:#111;font-weight:800;font-size:11px;border-radius:999px;
-  padding:8px 10px;box-shadow:0 0 24px rgba(200,255,61,.35);
-}
-.hero{
-  position:relative;overflow:hidden;border-radius:28px;padding:20px 18px 18px;
-  background:linear-gradient(135deg,rgba(255,255,255,.12),rgba(255,255,255,.04));
-  border:1px solid rgba(255,255,255,.16);margin-bottom:14px;
-  box-shadow:0 20px 50px rgba(0,0,0,.28);
-}
-.hero:after{
-  content:"";position:absolute;right:-40px;top:-40px;width:160px;height:160px;border-radius:50%;
-  background:radial-gradient(circle,rgba(200,255,61,.55),transparent 68%);
-}
-.kicker{font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--cyan)}
-h1{font-family:Syne,sans-serif;font-size:34px;line-height:.92;margin:8px 0 10px;max-width:12ch}
-.pills{display:flex;gap:8px;flex-wrap:wrap}
-.pill{background:rgba(0,0,0,.28);border:1px solid rgba(255,255,255,.12);border-radius:999px;padding:7px 10px;font-size:12px;font-weight:700}
-.match{
-  background:rgba(16,10,40,.72);backdrop-filter:blur(16px);
-  border:1px solid rgba(255,255,255,.12);border-radius:24px;padding:14px;margin-bottom:12px;
-}
-.match-top{display:flex;justify-content:space-between;gap:10px;align-items:flex-start}
-.match-top strong{font-family:Syne,sans-serif;font-size:18px;line-height:1.1}
-.time{color:var(--cyan);font-size:12px;font-weight:700;white-space:nowrap}
-.odds{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:12px 0}
-.odd{
-  text-align:center;border-radius:16px;padding:10px 6px;
-  background:linear-gradient(180deg,rgba(255,255,255,.08),rgba(255,255,255,.03));
-  border:1px solid rgba(255,255,255,.08);
-}
-.odd em{display:block;font-style:normal;color:var(--mute);font-size:10px;letter-spacing:.08em}
-.odd b{font-size:18px}
-p{color:#d9d2f5;font-size:14px;line-height:1.45}
-.slot{margin-top:10px;display:flex;align-items:center;gap:8px;flex-wrap:wrap;font-weight:700}
-.tag{border-radius:999px;padding:5px 9px;font-size:11px;font-weight:800;letter-spacing:.06em;text-transform:uppercase}
-.take{background:var(--lime);color:#111}
-.skip{background:var(--pink);color:#fff}
-.watch{background:var(--gold);color:#111}
-.row{display:flex;justify-content:space-between;gap:8px;padding:10px 0;border-bottom:1px solid rgba(255,255,255,.08);font-size:14px}
-.ok{color:var(--lime);font-weight:800}
-.card{background:rgba(16,10,40,.72);border:1px solid rgba(255,255,255,.12);border-radius:24px;padding:16px;margin-bottom:12px}
+body{font-family:Roboto,Arial,sans-serif;background:#071222;color:#fff;min-height:100dvh;padding:0 0 calc(8px + env(safe-area-inset-bottom))}
+.top{background:#0b1b33;border-bottom:3px solid #ff7a00;padding:12px 14px 10px;display:flex;justify-content:space-between;align-items:center}
+.brand{font-weight:900;letter-spacing:.04em;text-transform:uppercase}
+.brand b{color:#ff7a00}
+.top small{display:block;color:#9bb0c9;font-weight:500;letter-spacing:0;text-transform:none;font-size:11px;margin-top:2px}
+.age{background:#ff7a00;color:#111;font-weight:900;font-size:11px;border-radius:4px;padding:5px 7px}
+.tabs{display:flex;background:#0b1b33;border-bottom:1px solid #163154}
+.tabs button{flex:1;border:0;background:transparent;color:#9bb0c9;font:700 13px Roboto,sans-serif;padding:12px 6px;border-bottom:3px solid transparent}
+.tabs button.on{color:#fff;border-bottom-color:#ff7a00}
+.league{background:#10233f;color:#ff7a00;font-size:12px;font-weight:700;padding:8px 14px;letter-spacing:.04em;text-transform:uppercase}
+.event{background:#0d1e36;border-bottom:1px solid #163154;padding:12px 14px}
+.event-top{display:flex;justify-content:space-between;gap:8px;margin-bottom:8px}
+.teams{font-weight:700;font-size:15px;line-height:1.25}
+.meta{color:#9bb0c9;font-size:12px;white-space:nowrap}
+.coefs{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}
+.coef{background:#17345a;border-radius:4px;text-align:center;padding:8px 4px}
+.coef i{display:block;font-style:normal;color:#9bb0c9;font-size:10px;font-weight:700}
+.coef b{font-size:16px}
+.pick{margin-top:8px;font-size:13px;font-weight:700;padding:7px 8px;border-radius:4px}
+.yes{background:#1e4d2b;color:#7dff9a}
+.no{background:#4a1d27;color:#ff8a97}
+.maybe{background:#4a3b16;color:#ffd36a}
+.note{color:#9bb0c9;font-size:12px;margin-top:6px;line-height:1.35}
 .hidden{display:none}
-.fine{font-size:12px;color:var(--mute);margin-top:10px}
-nav{
-  position:fixed;left:12px;right:12px;bottom:calc(10px + env(safe-area-inset-bottom));
-  display:grid;grid-template-columns:repeat(4,1fr);gap:6px;
-  background:rgba(10,6,28,.86);backdrop-filter:blur(18px);
-  border:1px solid rgba(255,255,255,.14);border-radius:22px;padding:6px;
-}
-nav button{border:0;background:transparent;color:var(--mute);font:700 12px Outfit,sans-serif;padding:12px 4px;border-radius:16px}
-nav button.active{background:var(--lime);color:#111}
+.pad{padding:14px}
+h2{font-size:16px;margin-bottom:10px}
+.row{display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid #163154;font-size:13px}
+.ok{color:#7dff9a;font-weight:700}
+.foot{color:#9bb0c9;font-size:11px;margin-top:12px}
 </style>
 </head>
 <body>
-<header>
-  <div class="logo"><span>daily board</span>Capper<br>Day</div>
-  <div class="badge">LIVE 18+</div>
+<header class="top">
+  <div class="brand">Capper <b>Line</b><small>линия на 28.09 · 18+</small></div>
+  <div class="age">ФОНБЕТ КХЛ</div>
 </header>
-
+<div class="tabs">
+  <button class="on" data-tab="khl">КХЛ</button>
+  <button data-tab="foot">Футбол</button>
+  <button data-tab="closed">Результаты</button>
+  <button data-tab="more">Ещё</button>
+</div>
 <section id="khl">
-  <div class="hero">
-    <div class="kicker">КХЛ · 28 сентября</div>
-    <h1>Два слота. Остальное мимо.</h1>
-    <div class="pills"><span class="pill">ТМ Омск</span><span class="pill">Х2 Трактор</span><span class="pill">без 1.45</span></div>
-  </div>
-  <article class="match"><div class="match-top"><strong>Авангард — Металлург</strong><span class="time">16:30</span></div><div class="odds"><div class="odd"><em>П1</em><b>2.55</b></div><div class="odd"><em>X</em><b>4.15</b></div><div class="odd"><em>П2</em><b>2.35</b></div></div><p>Исход без края. Омский лёд душит тотал.</p><div class="slot"><span class="tag take">Беру</span>ТМ 5.0 / 5.5</div></article>
-  <article class="match"><div class="match-top"><strong>Динамо Мн — Лада</strong><span class="time">19:10</span></div><div class="odds"><div class="odd"><em>П1</em><b>1.45</b></div><div class="odd"><em>X</em><b>4.90</b></div><div class="odd"><em>П2</em><b>6.30</b></div></div><p>Минск сильнее, цена уже съедена.</p><div class="slot"><span class="tag skip">Не беру</span>П1 1.45</div></article>
-  <article class="match"><div class="match-top"><strong>Драконы — Сочи</strong><span class="time">19:30</span></div><div class="odds"><div class="odd"><em>П1</em><b>1.65</b></div><div class="odd"><em>X</em><b>4.30</b></div><div class="odd"><em>П2</em><b>4.70</b></div></div><p>Сочи слабые. Короткий фаворит — не слот.</p><div class="slot"><span class="tag skip">Не беру</span>П1 1.65</div></article>
-  <article class="match"><div class="match-top"><strong>Динамо М — Трактор</strong><span class="time">19:30</span></div><div class="odds"><div class="odd"><em>П1</em><b>2.00</b></div><div class="odd"><em>X</em><b>4.15</b></div><div class="odd"><em>П2</em><b>3.20</b></div></div><p>Москвичи нестабильны. П1 без края.</p><div class="slot"><span class="tag take">Беру</span>Х2</div></article>
-  <article class="match"><div class="match-top"><strong>Торпедо — Салават</strong><span class="time">19:30</span></div><div class="odds"><div class="odd"><em>П1</em><b>2.10</b></div><div class="odd"><em>X</em><b>4.20</b></div><div class="odd"><em>П2</em><b>2.95</b></div></div><p>Честная линия. Ниже 2.15 — пропуск.</p><div class="slot"><span class="tag watch">Условие</span>П1 от 2.15</div></article>
+  <div class="league">Фонбет Чемпионат КХЛ</div>
+  <div class="event"><div class="event-top"><div class="teams">Авангард<br>Металлург Мг</div><div class="meta">16:30</div></div><div class="coefs"><div class="coef"><i>1</i><b>2.55</b></div><div class="coef"><i>X</i><b>4.15</b></div><div class="coef"><i>2</i><b>2.35</b></div></div><div class="note">Исход без края. Омский лёд душит тотал.</div><div class="pick yes">Беру · ТМ 5.0 / 5.5</div></div>
+  <div class="event"><div class="event-top"><div class="teams">Динамо Минск<br>Лада</div><div class="meta">19:10</div></div><div class="coefs"><div class="coef"><i>1</i><b>1.45</b></div><div class="coef"><i>X</i><b>4.90</b></div><div class="coef"><i>2</i><b>6.30</b></div></div><div class="note">Фаворит верный, цена мёртвая.</div><div class="pick no">Не беру · П1 1.45</div></div>
+  <div class="event"><div class="event-top"><div class="teams">Шанхайские Драконы<br>ХК Сочи</div><div class="meta">19:30</div></div><div class="coefs"><div class="coef"><i>1</i><b>1.65</b></div><div class="coef"><i>X</i><b>4.30</b></div><div class="coef"><i>2</i><b>4.70</b></div></div><div class="note">Короткий фаворит без края.</div><div class="pick no">Не беру · П1 1.65</div></div>
+  <div class="event"><div class="event-top"><div class="teams">Динамо Москва<br>Трактор</div><div class="meta">19:30</div></div><div class="coefs"><div class="coef"><i>1</i><b>2.00</b></div><div class="coef"><i>X</i><b>4.15</b></div><div class="coef"><i>2</i><b>3.20</b></div></div><div class="note">Москвичи нестабильны. П1 без края.</div><div class="pick yes">Беру · Х2</div></div>
+  <div class="event"><div class="event-top"><div class="teams">Торпедо<br>Салават Юлаев</div><div class="meta">19:30</div></div><div class="coefs"><div class="coef"><i>1</i><b>2.10</b></div><div class="coef"><i>X</i><b>4.20</b></div><div class="coef"><i>2</i><b>2.95</b></div></div><div class="note">Честная линия. Ниже 2.15 — пропуск.</div><div class="pick maybe">Условие · П1 от 2.15</div></div>
 </section>
-
 <section id="foot" class="hidden">
-  <div class="hero">
-    <div class="kicker">Лига наций · вечер</div>
-    <h1>Три футбольных удара</h1>
-    <div class="pills"><span class="pill">X Грузия</span><span class="pill">ТМ Бельгия</span><span class="pill">ТМ Турция</span></div>
-  </div>
-  <article class="match"><div class="match-top"><strong>Грузия — Украина</strong><span class="time">19:00</span></div><div class="odds"><div class="odd"><em>П1</em><b>2.75</b></div><div class="odd"><em>X</em><b>3.20</b></div><div class="odd"><em>П2</em><b>2.80</b></div></div><p>Почти монета. Фаворита нет.</p><div class="slot"><span class="tag take">Беру</span>X / ТМ 2.5</div></article>
-  <article class="match"><div class="match-top"><strong>Бельгия — Франция</strong><span class="time">21:45</span></div><div class="odds"><div class="odd"><em>П1</em><b>3.90</b></div><div class="odd"><em>X</em><b>3.85</b></div><div class="odd"><em>П2</em><b>1.89</b></div></div><p>Франция короче, чем заслуживает.</p><div class="slot"><span class="tag take">Беру</span>ТМ 2.5</div></article>
-  <article class="match"><div class="match-top"><strong>Турция — Италия</strong><span class="time">21:45</span></div><div class="odds"><div class="odd"><em>П1</em><b>2.65</b></div><div class="odd"><em>X</em><b>3.72</b></div><div class="odd"><em>П2</em><b>2.59</b></div></div><p>Оба проиграли тур 1. Исход без края.</p><div class="slot"><span class="tag take">Беру</span>ТМ 2.5</div></article>
-  <article class="match"><div class="match-top"><strong>Швеция — Польша</strong><span class="time">21:45</span></div><div class="odds"><div class="odd"><em>П1</em><b>2.20</b></div><div class="odd"><em>X</em><b>3.65</b></div><div class="odd"><em>П2</em><b>3.20</b></div></div><p>Дом чуть лучше, цена не врёт.</p><div class="slot"><span class="tag skip">Не беру</span>пропуск</div></article>
+  <div class="league">Лига наций УЕФА</div>
+  <div class="event"><div class="event-top"><div class="teams">Грузия<br>Украина</div><div class="meta">19:00</div></div><div class="coefs"><div class="coef"><i>1</i><b>2.75</b></div><div class="coef"><i>X</i><b>3.20</b></div><div class="coef"><i>2</i><b>2.80</b></div></div><div class="pick yes">Беру · X / ТМ 2.5</div></div>
+  <div class="event"><div class="event-top"><div class="teams">Бельгия<br>Франция</div><div class="meta">21:45</div></div><div class="coefs"><div class="coef"><i>1</i><b>3.90</b></div><div class="coef"><i>X</i><b>3.85</b></div><div class="coef"><i>2</i><b>1.89</b></div></div><div class="pick yes">Беру · ТМ 2.5 · П2 1.89 мимо</div></div>
+  <div class="event"><div class="event-top"><div class="teams">Турция<br>Италия</div><div class="meta">21:45</div></div><div class="coefs"><div class="coef"><i>1</i><b>2.65</b></div><div class="coef"><i>X</i><b>3.72</b></div><div class="coef"><i>2</i><b>2.59</b></div></div><div class="pick yes">Беру · ТМ 2.5</div></div>
+  <div class="event"><div class="event-top"><div class="teams">Швеция<br>Польша</div><div class="meta">21:45</div></div><div class="coefs"><div class="coef"><i>1</i><b>2.20</b></div><div class="coef"><i>X</i><b>3.65</b></div><div class="coef"><i>2</i><b>3.20</b></div></div><div class="pick no">Не беру · цена честная</div></div>
 </section>
-
 <section id="closed" class="hidden">
-  <div class="card">
-    <div class="kicker">27 сентября</div>
-    <h1 style="font-size:28px;margin:8px 0 12px">КХЛ 3 из 3</h1>
+  <div class="league">Закрыто · 27.09</div>
+  <div class="pad">
+    <h2>Рабочие слоты 3/3</h2>
     <div class="row"><span>Адмирал — Нефтехимик 3:5</span><span class="ok">П2 / ТБ</span></div>
     <div class="row"><span>Сибирь — Локомотив 1:2</span><span class="ok">ТМ 5.5</span></div>
     <div class="row"><span>Барыс — СКА 3:5</span><span class="ok">ТБ 5.5</span></div>
-    <p class="fine">Не финансовый совет. Ставки 18+.</p>
+    <p class="foot">Не финансовый совет. 18+.</p>
   </div>
 </section>
-
 <section id="more" class="hidden">
-  <div class="card">
-    <div class="kicker">как пользоваться</div>
-    <h1 style="font-size:28px;margin:8px 0 12px">Ярлык на сайт</h1>
-    <p>Открывайте https://kenlampnn-prog.github.io/capper-day/ в Яндексе. Каждое утро в 08:30 страница обновляется сама.</p>
+  <div class="pad">
+    <h2>Обновление</h2>
+    <p class="note">Каждый день 08:30 МСК линия на сайте переписывается.</p>
+    <p class="foot">https://kenlampnn-prog.github.io/capper-day/</p>
   </div>
 </section>
-
-<nav>
-  <button class="active" data-tab="khl">КХЛ</button>
-  <button data-tab="foot">Футбол</button>
-  <button data-tab="closed">Вчера</button>
-  <button data-tab="more">Ещё</button>
-</nav>
 <script>
-const panels={khl:document.getElementById("khl"),foot:document.getElementById("foot"),closed:document.getElementById("closed"),more:document.getElementById("more")};
-document.querySelectorAll("nav button").forEach(btn=>{
+document.querySelectorAll(".tabs button").forEach(btn=>{
   btn.addEventListener("click",()=>{
-    document.querySelectorAll("nav button").forEach(b=>b.classList.remove("active"));
-    btn.classList.add("active");
-    Object.values(panels).forEach(p=>p.classList.add("hidden"));
-    panels[btn.dataset.tab].classList.remove("hidden");
+    document.querySelectorAll(".tabs button").forEach(b=>b.classList.remove("on"));
+    btn.classList.add("on");
+    ["khl","foot","closed","more"].forEach(id=>document.getElementById(id).classList.add("hidden"));
+    document.getElementById(btn.dataset.tab).classList.remove("hidden");
   });
 });
 </script>
