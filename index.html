@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#07110c" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <title>Capper Day</title>
+  <link rel="manifest" href="./manifest.json" />
+  <link rel="icon" href="./icon.svg" />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600;700&family=Manrope:wght@500;700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root { --bg:#07110c; --card:#102018; --ink:#e7f6ea; --mute:#8aa392; --go:#7dff9a; --stop:#ff6d7a; --wait:#ffc857; --line:rgba(125,255,154,.16); }
+    * { box-sizing:border-box; margin:0; padding:0; }
+    body { font-family:Manrope,sans-serif; background:var(--bg); color:var(--ink); min-height:100dvh; padding:calc(14px + env(safe-area-inset-top)) 14px calc(88px + env(safe-area-inset-bottom)); background-image:radial-gradient(700px 280px at 100% 0, rgba(125,255,154,.08), transparent 50%); }
+    header { display:flex; justify-content:space-between; align-items:flex-end; margin-bottom:14px; }
+    .brand { font-family:Oswald,sans-serif; text-transform:uppercase; letter-spacing:.08em; }
+    .brand b { color:var(--go); }
+    .brand small { display:block; color:var(--mute); font-family:Manrope,sans-serif; letter-spacing:0; text-transform:none; font-size:12px; }
+    .chip { border:1px solid var(--line); color:var(--go); border-radius:999px; padding:6px 9px; font-size:11px; font-weight:800; }
+    .hero,.card,.match { background:linear-gradient(180deg,var(--card),#0b1610); border:1px solid var(--line); border-radius:18px; padding:14px; margin-bottom:10px; }
+    h1,h2 { font-family:Oswald,sans-serif; text-transform:uppercase; }
+    h1 { font-size:26px; line-height:.95; margin:6px 0 8px; }
+    h2 { font-size:18px; margin-bottom:8px; }
+    p { color:#cfe0d3; font-size:14px; line-height:1.45; }
+    .kicker { color:#7ee0a3; font-size:11px; font-weight:800; letter-spacing:.12em; text-transform:uppercase; }
+    .odds { display:grid; grid-template-columns:repeat(3,1fr); gap:6px; margin:8px 0; }
+    .odd { background:#0a140f; border-radius:10px; padding:7px; text-align:center; }
+    .odd em { display:block; font-style:normal; color:var(--mute); font-size:10px; }
+    .tag { font-size:11px; font-weight:800; letter-spacing:.05em; text-transform:uppercase; padding:4px 8px; border-radius:999px; margin-right:6px; }
+    .take { background:rgba(125,255,154,.12); color:var(--go); }
+    .skip { background:rgba(255,109,122,.12); color:var(--stop); }
+    .watch { background:rgba(255,200,87,.12); color:var(--wait); }
+    .row { display:flex; justify-content:space-between; gap:8px; padding:8px 0; border-bottom:1px solid rgba(255,255,255,.05); font-size:13px; }
+    .ok { color:var(--go); font-weight:800; }
+    .hidden { display:none; }
+    .fine { font-size:11px; color:var(--mute); margin-top:8px; }
+    nav { position:fixed; left:0; right:0; bottom:0; display:grid; grid-template-columns:repeat(4,1fr); background:#0a1610; border-top:1px solid var(--line); padding:8px 8px calc(10px + env(safe-area-inset-bottom)); }
+    nav button { background:transparent; border:0; color:var(--mute); font:800 11px Manrope,sans-serif; padding:8px 4px; }
+    nav button.active { color:var(--go); }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">Capper <b>Day</b><small id="upd">28.09.2026 14:20 МСК</small></div>
+    <div class="chip">18+</div>
+  </header>
+  <section id="khl">
+    <div class="hero"><div class="kicker">КХЛ • понедельник</div><h1>Два рабочих слота</h1><p>Короткие фавориты 1.45–1.65 не берём.</p></div>
+    <article class="match"><div style="display:flex;justify-content:space-between"><strong>Авангард — Металлург</strong><span style="color:var(--mute);font-size:12px;font-weight:800">16:30</span></div><div class="odds"><div class="odd"><em>П1</em><b>2.55</b></div><div class="odd"><em>X</em><b>4.15</b></div><div class="odd"><em>П2</em><b>2.35</b></div></div><p>Исход без края. Омский лёд душит тотал.</p><div style="margin-top:8px"><span class="tag take">Беру</span>ТМ 5.0 / 5.5</div></article>
+    <article class="match"><div style="display:flex;justify-content:space-between"><strong>Динамо Мн — Лада</strong><span style="color:var(--mute);font-size:12px;font-weight:800">19:10</span></div><div class="odds"><div class="odd"><em>П1</em><b>1.45</b></div><div class="odd"><em>X</em><b>4.90</b></div><div class="odd"><em>П2</em><b>6.30</b></div></div><p>Минск сильнее, цена уже съедена.</p><div style="margin-top:8px"><span class="tag skip">Не беру</span>П1 1.45</div></article>
+    <article class="match"><div style="display:flex;justify-content:space-between"><strong>Драконы — Сочи</strong><span style="color:var(--mute);font-size:12px;font-weight:800">19:30</span></div><div class="odds"><div class="odd"><em>П1</em><b>1.65</b></div><div class="odd"><em>X</em><b>4.30</b></div><div class="odd"><em>П2</em><b>4.70</b></div></div><p>Сочи слабые. Короткий фаворит — не слот.</p><div style="margin-top:8px"><span class="tag skip">Не беру</span>П1 1.65</div></article>
+    <article class="match"><div style="display:flex;justify-content:space-between"><strong>Динамо М — Трактор</strong><span style="color:var(--mute);font-size:12px;font-weight:800">19:30</span></div><div class="odds"><div class="odd"><em>П1</em><b>2.00</b></div><div class="odd"><em>X</em><b>4.15</b></div><div class="odd"><em>П2</em><b>3.20</b></div></div><p>Москвичи нестабильны. П1 без края.</p><div style="margin-top:8px"><span class="tag take">Беру</span>Х2</div></article>
+    <article class="match"><div style="display:flex;justify-content:space-between"><strong>Торпедо — Салават</strong><span style="color:var(--mute);font-size:12px;font-weight:800">19:30</span></div><div class="odds"><div class="odd"><em>П1</em><b>2.10</b></div><div class="odd"><em>X</em><b>4.20</b></div><div class="odd"><em>П2</em><b>2.95</b></div></div><p>Честная линия. Ниже 2.15 — пропуск.</p><div style="margin-top:8px"><span class="tag watch">Условие</span>П1 от 2.15</div></article>
+  </section>
+  <section id="foot" class="hidden">
+    <div class="hero"><div class="kicker">Лига наций • вечер</div><h1>Три футбольных слота</h1><p>Не весь день — только где линия врёт.</p></div>
+    <article class="match"><div style="display:flex;justify-content:space-between"><strong>Грузия — Украина</strong><span style="color:var(--mute);font-size:12px;font-weight:800">19:00</span></div><div class="odds"><div class="odd"><em>П1</em><b>2.75</b></div><div class="odd"><em>X</em><b>3.20</b></div><div class="odd"><em>П2</em><b>2.80</b></div></div><p>Почти монета. Фаворита нет.</p><div style="margin-top:8px"><span class="tag take">Беру</span>X / ТМ 2.5</div></article>
+    <article class="match"><div style="display:flex;justify-content:space-between"><strong>Бельгия — Франция</strong><span style="color:var(--mute);font-size:12px;font-weight:800">21:45</span></div><div class="odds"><div class="odd"><em>П1</em><b>3.90</b></div><div class="odd"><em>X</em><b>3.85</b></div><div class="odd"><em>П2</em><b>1.89</b></div></div><p>Франция короче, чем заслуживает.</p><div style="margin-top:8px"><span class="tag take">Беру</span>ТМ 2.5. П2 1.89 не трогаем</div></article>
+    <article class="match"><div style="display:flex;justify-content:space-between"><strong>Турция — Италия</strong><span style="color:var(--mute);font-size:12px;font-weight:800">21:45</span></div><div class="odds"><div class="odd"><em>П1</em><b>2.65</b></div><div class="odd"><em>X</em><b>3.72</b></div><div class="odd"><em>П2</em><b>2.59</b></div></div><p>Оба проиграли тур 1. Исход без края.</p><div style="margin-top:8px"><span class="tag take">Беру</span>ТМ 2.5</div></article>
+    <article class="match"><div style="display:flex;justify-content:space-between"><strong>Швеция — Польша</strong><span style="color:var(--mute);font-size:12px;font-weight:800">21:45</span></div><div class="odds"><div class="odd"><em>П1</em><b>2.20</b></div><div class="odd"><em>X</em><b>3.65</b></div><div class="odd"><em>П2</em><b>3.20</b></div></div><p>Дом чуть лучше, цена не врёт.</p><div style="margin-top:8px"><span class="tag skip">Не беру</span>пропуск</div></article>
+  </section>
+  <section id="closed" class="hidden">
+    <div class="card">
+      <div class="kicker">27 сентября</div>
+      <h2>КХЛ 3/3</h2>
+      <div class="row"><span>Адмирал — Нефтехимик 3:5</span><span class="ok">П2 / ТБ 4.5</span></div>
+      <div class="row"><span>Сибирь — Локомотив 1:2</span><span class="ok">ТМ 5.5</span></div>
+      <div class="row"><span>Барыс — СКА 3:5</span><span class="ok">ТБ 5.5</span></div>
+      <p class="fine">Не финансовый совет. 18+.</p>
+    </div>
+  </section>
+  <section id="more" class="hidden">
+    <div class="card">
+      <div class="kicker">Как открыть</div>
+      <h2>Один файл</h2>
+      <p>Открывайте именно этот index.html в Chrome. Если крутится «обновление» — вы открыли старый файл без данных.</p>
+    </div>
+  </section>
+  <nav>
+    <button class="active" data-tab="khl">КХЛ</button>
+    <button data-tab="foot">Футбол</button>
+    <button data-tab="closed">Вчера</button>
+    <button data-tab="more">Ещё</button>
+  </nav>
+  <script>
+    const panels = {
+      khl: document.getElementById("khl"),
+      foot: document.getElementById("foot"),
+      closed: document.getElementById("closed"),
+      more: document.getElementById("more")
+    };
+    document.querySelectorAll("nav button").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        document.querySelectorAll("nav button").forEach((b) => b.classList.remove("active"));
+        btn.classList.add("active");
+        Object.values(panels).forEach((p) => p.classList.add("hidden"));
+        panels[btn.dataset.tab].classList.remove("hidden");
+      });
+    });
+  </script>
+</body>
+</html>

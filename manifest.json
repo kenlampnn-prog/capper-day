@@ -1,0 +1,8 @@
+{
+  "name": "Capper Day",
+  "short_name": "Capper Day",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#07110c",
+  "theme_color": "#07110c"
+}
