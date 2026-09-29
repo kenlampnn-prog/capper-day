@@ -16,7 +16,7 @@ body{font-family:Roboto,Arial,sans-serif;background:#071222;color:#fff;min-heigh
 .top small{display:block;color:#9bb0c9;font-weight:500;text-transform:none;font-size:11px;margin-top:2px}
 .bal{background:#ff7a00;color:#111;font-weight:900;font-size:12px;border-radius:4px;padding:6px 8px}
 .tabs{display:flex;background:#0b1b33;border-bottom:1px solid #163154}
-.tabs button{flex:1;border:0;background:transparent;color:#9bb0c9;font:700 12px Roboto,sans-serif;padding:12px 4px;border-bottom:3px solid transparent}
+.tabs button{flex:1;border:0;background:transparent;color:#9bb0c9;font:700 11px Roboto,sans-serif;padding:12px 2px;border-bottom:3px solid transparent}
 .tabs button.on{color:#fff;border-bottom-color:#ff7a00}
 .league{background:#10233f;color:#ff7a00;font-size:12px;font-weight:700;padding:8px 14px;text-transform:uppercase}
 .event{background:#0d1e36;border-bottom:1px solid #163154;padding:12px 14px}
@@ -49,7 +49,8 @@ body{font-family:Roboto,Arial,sans-serif;background:#071222;color:#fff;min-heigh
 <div class="tabs">
   <button class="on" data-tab="khl">КХЛ</button>
   <button data-tab="foot">Футбол</button>
-  <button data-tab="closed">Результаты</button>
+  <button data-tab="cyb">Кибер</button>
+  <button data-tab="closed">Итог</button>
   <button data-tab="bank">Банк</button>
 </div>
 
@@ -109,6 +110,54 @@ body{font-family:Roboto,Arial,sans-serif;background:#071222;color:#fff;min-heigh
   </div>
 </section>
 
+
+<section id="cyb" class="hidden">
+  <div class="league">Valorant Champions 2026 · Шанхай</div>
+  <div class="event">
+    <div class="event-top"><div class="teams">G2<br>Paper Rex</div><div class="meta">12:00 · Bo3</div></div>
+    <div class="coefs"><div class="coef"><i>G2</i><b>2.19</b></div><div class="coef"><i>карты</i><b>2.5</b></div><div class="coef"><i>PRX</i><b>1.69</b></div></div>
+    <div class="note">Группа C. PRX фаворит без жирного края. G2 на чемпионате часто тянут карты. П1 1.69 не берём.</div>
+    <div class="pick yes">Беру · G2 2.19 · 200 ₽</div>
+  </div>
+  <div class="event">
+    <div class="event-top"><div class="teams">NRG<br>Karmine Corp</div><div class="meta">15:00 · Bo3</div></div>
+    <div class="coefs"><div class="coef"><i>NRG</i><b>1.70</b></div><div class="coef"><i>карты</i><b>2.5</b></div><div class="coef"><i>KC</i><b>2.17</b></div></div>
+    <div class="note">Группа D. NRG короче силы. Серия живая, третья карта реальна.</div>
+    <div class="pick yes">Беру · ТБ 2.5 карты · 200 ₽</div>
+  </div>
+  <div class="league">Dota 2 · BLAST Slam VIII</div>
+  <div class="event">
+    <div class="event-top"><div class="teams">Team Spirit<br>Nemesis</div><div class="meta">13:00 · Bo3</div></div>
+    <div class="coefs"><div class="coef"><i>TS</i><b>1.09</b></div><div class="coef"><i>—</i><b>—</b></div><div class="coef"><i>Nem</i><b>6.65</b></div></div>
+    <div class="note">Мусорный фаворит. Не работаем.</div>
+    <div class="pick no">Не беру · Spirit 1.09</div>
+  </div>
+  <div class="event">
+    <div class="event-top"><div class="teams">1win<br>NAVI</div><div class="meta">16:00 · Bo3</div></div>
+    <div class="coefs"><div class="coef"><i>1W</i><b>2.10</b></div><div class="coef"><i>—</i><b>—</b></div><div class="coef"><i>NAVI</i><b>1.73</b></div></div>
+    <div class="note">Группа B. Линия почти монета. NAVI 1.73 без края.</div>
+    <div class="pick yes">Беру · 1win 2.10 · 200 ₽</div>
+  </div>
+  <div class="event">
+    <div class="event-top"><div class="teams">Liquid<br>Yakult Brothers</div><div class="meta">19:00 · Bo3</div></div>
+    <div class="coefs"><div class="coef"><i>TL</i><b>1.14</b></div><div class="coef"><i>—</i><b>—</b></div><div class="coef"><i>YB</i><b>5.39</b></div></div>
+    <div class="note">Короткий фаворит.</div>
+    <div class="pick no">Не беру</div>
+  </div>
+  <div class="league">CS2</div>
+  <div class="event">
+    <div class="event-top"><div class="teams">Nexus<br>Bushido Wildcats</div><div class="meta">15:00 · Bo3</div></div>
+    <div class="coefs"><div class="coef"><i>NXS</i><b>1.86</b></div><div class="coef"><i>—</i><b>—</b></div><div class="coef"><i>BW</i><b>1.93</b></div></div>
+    <div class="note">EPL / плей-офф. Монета, края нет.</div>
+    <div class="pick no">Не беру ординар</div>
+  </div>
+  <div class="event">
+    <div class="event-top"><div class="teams">Vitality Academy<br>Elite Klan</div><div class="meta">13:30 · Bo3</div></div>
+    <div class="coefs"><div class="coef"><i>VIT.A</i><b>1.30</b></div><div class="coef"><i>-1.5</i><b>1.99</b></div><div class="coef"><i>EK</i><b>3.18</b></div></div>
+    <div class="note">United21. П1 1.30 мёртвый. Фора -1.5 около двух — только если академия зайдёт в 2-0.</div>
+    <div class="pick no">Не беру 1.30</div>
+  </div>
+</section>
 <section id="closed" class="hidden">
   <div class="league">Закрыто</div>
   <div class="pad">
@@ -140,7 +189,7 @@ body{font-family:Roboto,Arial,sans-serif;background:#071222;color:#fff;min-heigh
     <div class="row"><span>Зашло</span><span class="ok">7</span></div>
     <div class="row"><span>Минус</span><span class="bad">4</span></div>
     <div class="row"><span>P/L</span><span class="ok">+1 004 ₽</span></div>
-    <p class="foot">Не финансовый совет. 18+. Сегодня в купоне 4 × 200 = 800 ₽.</p>
+    <p class="foot">Не финансовый совет. 18+. Сегодня в купоне 7 × 200 = 1 400 ₽ (хоккей, футбол, кибер).</p>
   </div>
 </section>
 <script>
@@ -148,7 +197,7 @@ document.querySelectorAll(".tabs button").forEach(btn=>{
   btn.addEventListener("click",()=>{
     document.querySelectorAll(".tabs button").forEach(b=>b.classList.remove("on"));
     btn.classList.add("on");
-    ["khl","foot","closed","bank"].forEach(id=>document.getElementById(id).classList.add("hidden"));
+    ["khl","foot","cyb","closed","bank"].forEach(id=>document.getElementById(id).classList.add("hidden"));
     document.getElementById(btn.dataset.tab).classList.remove("hidden");
   });
 });
