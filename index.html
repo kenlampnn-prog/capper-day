@@ -15,7 +15,7 @@ body{font-family:Roboto,Arial,sans-serif;background:#071222;color:#fff;min-heigh
 .top small{display:block;color:#9bb0c9;font-weight:500;text-transform:none;font-size:11px;margin-top:2px}
 .bal{background:#ff7a00;color:#111;font-weight:900;font-size:12px;border-radius:4px;padding:6px 8px}
 .tabs{display:flex;background:#0b1b33;border-bottom:1px solid #163154}
-.tabs button{flex:1;border:0;background:transparent;color:#9bb0c9;font:700 11px Roboto,sans-serif;padding:11px 2px;border-bottom:3px solid transparent}
+.tabs button{flex:1;border:0;background:transparent;color:#9bb0c9;font:700 10px Roboto,sans-serif;padding:11px 1px;border-bottom:3px solid transparent}
 .tabs button.on{color:#fff;border-bottom-color:#ff7a00}
 .league{background:#10233f;color:#ff7a00;font-size:12px;font-weight:700;padding:8px 14px;text-transform:uppercase}
 .event{background:#0d1e36;border-bottom:8px solid #071222;padding:12px 14px}
@@ -49,6 +49,7 @@ body{font-family:Roboto,Arial,sans-serif;background:#071222;color:#fff;min-heigh
   <button data-tab="nhl">НХЛ</button>
   <button data-tab="foot">Футбол</button>
   <button data-tab="cyb">Кибер</button>
+  <button data-tab="itog">Итоги</button>
   <button data-tab="bank">Банк</button>
 </div>
 
@@ -189,6 +190,38 @@ body{font-family:Roboto,Arial,sans-serif;background:#071222;color:#fff;min-heigh
   </div>
 </section>
 
+
+<section id="itog" class="hidden">
+  <div class="league">Итоги 29.09 · закрыто</div>
+  <div class="event">
+    <div class="event-top"><div class="teams">Амур — Нефтехимик</div><div class="meta">1:0</div></div>
+    <div class="note">Ставка Х2. Зашёл Амур. <span class="n">МИМО −200</span></div>
+  </div>
+  <div class="event">
+    <div class="event-top"><div class="teams">ЦСКА — СКА</div><div class="meta">6:5</div></div>
+    <div class="note">Ставка ТБ 4.5 @ 1.85. <span class="y">ЗАШЛА +170</span></div>
+  </div>
+  <div class="event">
+    <div class="event-top"><div class="teams">Шотландия — Швейцария</div><div class="meta">0:3</div></div>
+    <div class="note">Ставка ТМ 2.5 @ 1.85. <span class="n">МИМО −200</span></div>
+  </div>
+  <div class="event">
+    <div class="event-top"><div class="teams">Словения — Сев. Македония</div><div class="meta">2:0</div></div>
+    <div class="note">Ставка ТМ 2.5 @ 1.85. <span class="y">ЗАШЛА +170</span></div>
+  </div>
+  <div class="event">
+    <div class="event-top"><div class="teams">G2 — Paper Rex</div><div class="meta">1:2</div></div>
+    <div class="note">Ставка G2 @ 2.19. <span class="n">МИМО −200</span></div>
+  </div>
+  <div class="event">
+    <div class="event-top"><div class="teams">NRG — Karmine Corp</div><div class="meta">2:1 карты</div></div>
+    <div class="note">Ставка ТБ 2.5 карты @ 1.85. <span class="y">ЗАШЛА +170</span></div>
+  </div>
+  <div class="league">Итоги 30.09 · в игре</div>
+  <div class="event">
+    <div class="note">Авто–Лада ТБ 5.5 @ 1.95 · Спартак–Трактор ТМ 5.5 @ 1.85 · PIT ML @ 2.20 · NYI–TOR ТМ 6.0 @ 1.91. Счёт появится после финальных свистков, банк пересчитается утром.</div>
+  </div>
+</section>
 <section id="bank" class="hidden">
   <div class="league">Банк · фикс 200 ₽</div>
   <div class="pad">
@@ -207,7 +240,7 @@ document.querySelectorAll(".tabs button").forEach(btn=>{
   btn.addEventListener("click",()=>{
     document.querySelectorAll(".tabs button").forEach(b=>b.classList.remove("on"));
     btn.classList.add("on");
-    ["khl","nhl","foot","cyb","bank"].forEach(id=>document.getElementById(id).classList.add("hidden"));
+    ["khl","nhl","foot","cyb","itog","bank"].forEach(id=>document.getElementById(id).classList.add("hidden"));
     document.getElementById(btn.dataset.tab).classList.remove("hidden");
   });
 });
