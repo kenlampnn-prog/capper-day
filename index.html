@@ -5,7 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
 <meta name="theme-color" content="#0b1b33"/>
 <title>Capper Day</title>
-<link rel="manifest" href="./manifest.json"/>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet"/>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
@@ -16,13 +15,13 @@ body{font-family:Roboto,Arial,sans-serif;background:#071222;color:#fff;min-heigh
 .top small{display:block;color:#9bb0c9;font-weight:500;text-transform:none;font-size:11px;margin-top:2px}
 .bal{background:#ff7a00;color:#111;font-weight:900;font-size:12px;border-radius:4px;padding:6px 8px}
 .tabs{display:flex;background:#0b1b33;border-bottom:1px solid #163154}
-.tabs button{flex:1;border:0;background:transparent;color:#9bb0c9;font:700 11px Roboto,sans-serif;padding:12px 2px;border-bottom:3px solid transparent}
+.tabs button{flex:1;border:0;background:transparent;color:#9bb0c9;font:700 11px Roboto,sans-serif;padding:11px 2px;border-bottom:3px solid transparent}
 .tabs button.on{color:#fff;border-bottom-color:#ff7a00}
 .league{background:#10233f;color:#ff7a00;font-size:12px;font-weight:700;padding:8px 14px;text-transform:uppercase}
 .event{background:#0d1e36;border-bottom:1px solid #163154;padding:12px 14px}
 .event-top{display:flex;justify-content:space-between;gap:8px;margin-bottom:8px}
 .teams{font-weight:700;font-size:15px;line-height:1.25}
-.meta{color:#9bb0c9;font-size:12px}
+.meta{color:#9bb0c9;font-size:12px;text-align:right}
 .coefs{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}
 .coef{background:#17345a;border-radius:4px;text-align:center;padding:8px 4px}
 .coef i{display:block;font-style:normal;color:#9bb0c9;font-size:10px;font-weight:700}
@@ -30,8 +29,7 @@ body{font-family:Roboto,Arial,sans-serif;background:#071222;color:#fff;min-heigh
 .pick{margin-top:8px;font-size:13px;font-weight:700;padding:7px 8px;border-radius:4px}
 .yes{background:#1e4d2b;color:#7dff9a}
 .no{background:#4a1d27;color:#ff8a97}
-.maybe{background:#4a3b16;color:#ffd36a}
-.note{color:#9bb0c9;font-size:12px;margin-top:6px;line-height:1.35}
+.note{color:#9bb0c9;font-size:12px;margin-top:6px;line-height:1.4}
 .hidden{display:none}
 .pad{padding:14px}
 .row{display:flex;justify-content:space-between;gap:8px;padding:8px 0;border-bottom:1px solid #163154;font-size:13px}
@@ -39,157 +37,125 @@ body{font-family:Roboto,Arial,sans-serif;background:#071222;color:#fff;min-heigh
 .bad{color:#ff8a97;font-weight:700}
 .big{font-size:28px;font-weight:900;margin:6px 0 12px}
 .foot{color:#9bb0c9;font-size:11px;margin-top:12px}
+.entry{color:#ffd36a;font-weight:900}
 </style>
 </head>
 <body>
 <header class="top">
-  <div class="brand">Capper <b>Line</b><small>29.09 · обновление 08:00 МСК</small></div>
-  <div class="bal">11 004 ₽</div>
+  <div class="brand">Capper <b>Line</b><small>30.09 · вход с кэфом · 08:00 МСК</small></div>
+  <div class="bal">10 914 ₽</div>
 </header>
 <div class="tabs">
   <button class="on" data-tab="khl">КХЛ</button>
+  <button data-tab="nhl">НХЛ</button>
   <button data-tab="foot">Футбол</button>
   <button data-tab="cyb">Кибер</button>
-  <button data-tab="closed">Итог</button>
   <button data-tab="bank">Банк</button>
 </div>
 
 <section id="khl">
-  <div class="league">Фонбет КХЛ · 29.09</div>
+  <div class="league">КХЛ · только value · 30.09</div>
   <div class="event">
-    <div class="event-top"><div class="teams">Амур<br>Нефтехимик</div><div class="meta">12:00</div></div>
-    <div class="coefs"><div class="coef"><i>1</i><b>2.30</b></div><div class="coef"><i>X</i><b>4.20</b></div><div class="coef"><i>2</i><b>2.65</b></div></div>
-    <div class="note">Нижнекамск лидер Востока, но это третий выезд за неделю после Владивостока. Хабаровск дома снял Локо 3:1. П1 2.30 без края.</div>
-    <div class="pick yes">Беру · Х2 · 200 ₽</div>
+    <div class="event-top"><div class="teams">Автомобилист<br>Лада</div><div class="meta">17:00</div></div>
+    <div class="coefs"><div class="coef"><i>1</i><b>1.55</b></div><div class="coef"><i>X</i><b>4.70</b></div><div class="coef"><i>2</i><b>5.20</b></div></div>
+    <div class="note">Лада слабая, но 1.55 — мёртвый фаворит. Вход ниже 1.70 не берём.</div>
+    <div class="pick no">Не беру · вход 1.55 слишком короткий</div>
   </div>
   <div class="event">
-    <div class="event-top"><div class="teams">ЦСКА<br>СКА</div><div class="meta">19:30</div></div>
-    <div class="coefs"><div class="coef"><i>1</i><b>1.90</b></div><div class="coef"><i>X</i><b>4.30</b></div><div class="coef"><i>2</i><b>3.40</b></div></div>
-    <div class="note">Первое армейское дерби сезона. СКА в форме после 5:3 в Астане. П1 1.90 — цена убита.</div>
-    <div class="pick yes">Беру · ТБ 4.5 · 200 ₽</div>
+    <div class="event-top"><div class="teams">Ак Барс<br>Барыс</div><div class="meta">19:00</div></div>
+    <div class="coefs"><div class="coef"><i>1</i><b>1.80</b></div><div class="coef"><i>X</i><b>4.20</b></div><div class="coef"><i>2</i><b>3.90</b></div></div>
+    <div class="note">Казань дома должна контролировать. 1.80 почти честный. Барыс высокособытийный — не ломаем через исход.</div>
+    <div class="pick no">Не беру П1 1.80</div>
+  </div>
+  <div class="event">
+    <div class="event-top"><div class="teams">Локомотив<br>Сибирь</div><div class="meta">19:30</div></div>
+    <div class="coefs"><div class="coef"><i>1</i><b>1.53</b></div><div class="coef"><i>X</i><b>4.60</b></div><div class="coef"><i>2</i><b>5.50</b></div></div>
+    <div class="note">Повтор 27.09 (2:1). Короткий фаворит после уже сыгранного сценария.</div>
+    <div class="pick no">Не беру · 1.53</div>
+  </div>
+  <div class="event">
+    <div class="event-top"><div class="teams">Сочи<br>Салават</div><div class="meta">19:30</div></div>
+    <div class="coefs"><div class="coef"><i>1</i><b>4.40</b></div><div class="coef"><i>X</i><b>4.40</b></div><div class="coef"><i>2</i><b>1.67</b></div></div>
+    <div class="note">Уфа сильнее. 1.67 не работаем.</div>
+    <div class="pick no">Не беру</div>
+  </div>
+  <div class="event">
+    <div class="event-top"><div class="teams">Драконы<br>Металлург</div><div class="meta">19:30</div></div>
+    <div class="coefs"><div class="coef"><i>1</i><b>4.30</b></div><div class="coef"><i>X</i><b>4.40</b></div><div class="coef"><i>2</i><b>1.67</b></div></div>
+    <div class="note">Магнитка в форме (1:5 в Омске). П2 1.67 без края.</div>
+    <div class="pick no">Не беру</div>
+  </div>
+  <div class="event">
+    <div class="event-top"><div class="teams">Спартак<br>Трактор</div><div class="meta">19:30</div></div>
+    <div class="coefs"><div class="coef"><i>1</i><b>1.80</b></div><div class="coef"><i>X</i><b>4.30</b></div><div class="coef"><i>2</i><b>3.85</b></div></div>
+    <div class="note">Трактор вчера снял Динамо в ОТ. Спартак дома не даёт 1.80. Рабочий рынок — низ: оба не забивают пачками.</div>
+    <div class="pick yes">Беру · ТМ 5.5 · <span class="entry">вход 1.85</span> · 200 ₽</div>
+  </div>
+</section>
+
+<section id="nhl" class="hidden">
+  <div class="league">НХЛ regular · ночь 30.09 / 01.10 МСК</div>
+  <div class="event">
+    <div class="event-top"><div class="teams">Pittsburgh<br>Philadelphia</div><div class="meta">02:30 МСК</div></div>
+    <div class="coefs"><div class="coef"><i>PIT</i><b>2.20</b></div><div class="coef"><i>тотал</i><b>6.0</b></div><div class="coef"><i>PHI</i><b>1.71</b></div></div>
+    <div class="note">Старт сезона. Филадельфия дома чуть лучше, 1.71 короткий. Питтсбург по 2.20 — единственный вход в матче.</div>
+    <div class="pick yes">Беру · Pittsburgh ML · <span class="entry">вход 2.20</span> · 200 ₽</div>
+  </div>
+  <div class="event">
+    <div class="event-top"><div class="teams">NY Islanders<br>Toronto</div><div class="meta">02:30 МСК</div></div>
+    <div class="coefs"><div class="coef"><i>NYI</i><b>2.00</b></div><div class="coef"><i>тотал</i><b>6.0</b></div><div class="coef"><i>TOR</i><b>1.83</b></div></div>
+    <div class="note">Почти монета. Торонто 1.83 не фаворит уровня цены. Низ 6.0 около 1.91 — рабочий, если не брать оба исхода.</div>
+    <div class="pick yes">Беру · ТМ 6.0 · <span class="entry">вход 1.91</span> · 200 ₽</div>
+  </div>
+  <div class="event">
+    <div class="event-top"><div class="teams">Los Angeles<br>Colorado</div><div class="meta">05:00 МСК</div></div>
+    <div class="coefs"><div class="coef"><i>LA</i><b>2.60</b></div><div class="coef"><i>тотал</i><b>6.5</b></div><div class="coef"><i>COL</i><b>1.85</b></div></div>
+    <div class="note">Колорадо сильнее, 1.85 без края. Кингз 2.60 — лотерея на выезде.</div>
+    <div class="pick no">Не беру · COL 1.85 короткий</div>
   </div>
 </section>
 
 <section id="foot" class="hidden">
-  <div class="league">Лига наций · 29.09</div>
+  <div class="league">Футбол · 30.09</div>
   <div class="event">
-    <div class="event-top"><div class="teams">Испания<br>Хорватия</div><div class="meta">21:45 · A</div></div>
-    <div class="coefs"><div class="coef"><i>1</i><b>1.20</b></div><div class="coef"><i>X</i><b>7.50</b></div><div class="coef"><i>2</i><b>13.0</b></div></div>
-    <div class="note">Испания только что сняла Англию 3:2. 1.20 не работаем.</div>
-    <div class="pick no">Не беру</div>
-  </div>
-  <div class="event">
-    <div class="event-top"><div class="teams">Чехия<br>Англия</div><div class="meta">21:45 · A</div></div>
-    <div class="coefs"><div class="coef"><i>1</i><b>8.80</b></div><div class="coef"><i>X</i><b>5.15</b></div><div class="coef"><i>2</i><b>1.36</b></div></div>
-    <div class="note">Англия после 2:3 Испании. Короткий фаворит.</div>
-    <div class="pick no">Не беру П2 1.36</div>
-  </div>
-  <div class="event">
-    <div class="event-top"><div class="teams">Шотландия<br>Швейцария</div><div class="meta">21:45 · B</div></div>
-    <div class="coefs"><div class="coef"><i>1</i><b>4.20</b></div><div class="coef"><i>X</i><b>3.50</b></div><div class="coef"><i>2</i><b>1.89</b></div></div>
-    <div class="note">Швейцария 3:0 Македонию. П2 1.89 тонкий. Низ вероятнее верха.</div>
-    <div class="pick yes">Беру · ТМ 2.5 · 200 ₽</div>
-  </div>
-  <div class="event">
-    <div class="event-top"><div class="teams">Словения<br>Сев. Македония</div><div class="meta">21:45 · B</div></div>
-    <div class="coefs"><div class="coef"><i>1</i><b>1.70</b></div><div class="coef"><i>X</i><b>3.60</b></div><div class="coef"><i>2</i><b>5.20</b></div></div>
-    <div class="note">Словения 0:0 с Шотландией, Македония 0:3 швейцарцам. П1 короткий.</div>
-    <div class="pick yes">Беру · ТМ 2.5 · 200 ₽</div>
-  </div>
-  <div class="event">
-    <div class="event-top"><div class="teams">Финляндия<br>Беларусь</div><div class="meta">19:00 · C</div></div>
-    <div class="coefs"><div class="coef"><i>1</i><b>1.86</b></div><div class="coef"><i>X</i><b>3.40</b></div><div class="coef"><i>2</i><b>4.20</b></div></div>
-    <div class="note">Финляндия дома после 7:0 Сан-Марино. Беларусь проиграла Албании. П1 1.86 без края.</div>
-    <div class="pick no">Не беру</div>
-  </div>
-  <div class="event">
-    <div class="event-top"><div class="teams">Сан-Марино<br>Албания</div><div class="meta">21:45 · C</div></div>
-    <div class="coefs"><div class="coef"><i>1</i><b>17.0</b></div><div class="coef"><i>X</i><b>7.50</b></div><div class="coef"><i>2</i><b>1.12</b></div></div>
-    <div class="note">Мусорный кэф.</div>
-    <div class="pick no">Не беру</div>
+    <div class="event-top"><div class="teams">Лига наций</div><div class="meta">окно закрыто</div></div>
+    <div class="note">Сборные вчера закончили тур. Клубных топ-матчей с живым краем на утро нет. Не раздуваем купон.</div>
+    <div class="pick no">Пауза · 0 ставок</div>
   </div>
 </section>
-
 
 <section id="cyb" class="hidden">
-  <div class="league">Valorant Champions 2026 · Шанхай</div>
+  <div class="league">Valorant Champions · 30.09</div>
   <div class="event">
-    <div class="event-top"><div class="teams">G2<br>Paper Rex</div><div class="meta">12:00 · Bo3</div></div>
-    <div class="coefs"><div class="coef"><i>G2</i><b>2.19</b></div><div class="coef"><i>карты</i><b>2.5</b></div><div class="coef"><i>PRX</i><b>1.69</b></div></div>
-    <div class="note">Группа C. PRX фаворит без жирного края. G2 на чемпионате часто тянут карты. П1 1.69 не берём.</div>
-    <div class="pick yes">Беру · G2 2.19 · 200 ₽</div>
+    <div class="event-top"><div class="teams">Vitality<br>LOUD</div><div class="meta">12:00 · Bo3</div></div>
+    <div class="note">Группа B. Без входа, пока линия короче 1.75 на фаворита. Вчерашние 2.19 на G2 не зашли — не мстим.</div>
+    <div class="pick no">Жду кэф ≥ 1.90 на аута / карты 2.5 ≥ 1.85</div>
   </div>
   <div class="event">
-    <div class="event-top"><div class="teams">NRG<br>Karmine Corp</div><div class="meta">15:00 · Bo3</div></div>
-    <div class="coefs"><div class="coef"><i>NRG</i><b>1.70</b></div><div class="coef"><i>карты</i><b>2.5</b></div><div class="coef"><i>KC</i><b>2.17</b></div></div>
-    <div class="note">Группа D. NRG короче силы. Серия живая, третья карта реальна.</div>
-    <div class="pick yes">Беру · ТБ 2.5 карты · 200 ₽</div>
+    <div class="event-top"><div class="teams">100 Thieves<br>FUT</div><div class="meta">15:00 · Bo3</div></div>
+    <div class="note">Группа A. Тот же фильтр: короткий фаворит — пропуск.</div>
+    <div class="pick no">Не беру вслепую</div>
   </div>
-  <div class="league">Dota 2 · BLAST Slam VIII</div>
+  <div class="league">Dota BLAST / CS2</div>
   <div class="event">
-    <div class="event-top"><div class="teams">Team Spirit<br>Nemesis</div><div class="meta">13:00 · Bo3</div></div>
-    <div class="coefs"><div class="coef"><i>TS</i><b>1.09</b></div><div class="coef"><i>—</i><b>—</b></div><div class="coef"><i>Nem</i><b>6.65</b></div></div>
-    <div class="note">Мусорный фаворит. Не работаем.</div>
-    <div class="pick no">Не беру · Spirit 1.09</div>
-  </div>
-  <div class="event">
-    <div class="event-top"><div class="teams">1win<br>NAVI</div><div class="meta">16:00 · Bo3</div></div>
-    <div class="coefs"><div class="coef"><i>1W</i><b>2.10</b></div><div class="coef"><i>—</i><b>—</b></div><div class="coef"><i>NAVI</i><b>1.73</b></div></div>
-    <div class="note">Группа B. Линия почти монета. NAVI 1.73 без края.</div>
-    <div class="pick yes">Беру · 1win 2.10 · 200 ₽</div>
-  </div>
-  <div class="event">
-    <div class="event-top"><div class="teams">Liquid<br>Yakult Brothers</div><div class="meta">19:00 · Bo3</div></div>
-    <div class="coefs"><div class="coef"><i>TL</i><b>1.14</b></div><div class="coef"><i>—</i><b>—</b></div><div class="coef"><i>YB</i><b>5.39</b></div></div>
-    <div class="note">Короткий фаворит.</div>
-    <div class="pick no">Не беру</div>
-  </div>
-  <div class="league">CS2</div>
-  <div class="event">
-    <div class="event-top"><div class="teams">Nexus<br>Bushido Wildcats</div><div class="meta">15:00 · Bo3</div></div>
-    <div class="coefs"><div class="coef"><i>NXS</i><b>1.86</b></div><div class="coef"><i>—</i><b>—</b></div><div class="coef"><i>BW</i><b>1.93</b></div></div>
-    <div class="note">EPL / плей-офф. Монета, края нет.</div>
-    <div class="pick no">Не беру ординар</div>
-  </div>
-  <div class="event">
-    <div class="event-top"><div class="teams">Vitality Academy<br>Elite Klan</div><div class="meta">13:30 · Bo3</div></div>
-    <div class="coefs"><div class="coef"><i>VIT.A</i><b>1.30</b></div><div class="coef"><i>-1.5</i><b>1.99</b></div><div class="coef"><i>EK</i><b>3.18</b></div></div>
-    <div class="note">United21. П1 1.30 мёртвый. Фора -1.5 около двух — только если академия зайдёт в 2-0.</div>
-    <div class="pick no">Не беру 1.30</div>
-  </div>
-</section>
-<section id="closed" class="hidden">
-  <div class="league">Закрыто</div>
-  <div class="pad">
-    <div class="row"><span>27.09 Адмирал — Нефтехимик 3:5</span><span class="ok">П2 +320</span></div>
-    <div class="row"><span>27.09 Сибирь — Локо 1:2</span><span class="ok">ТМ 5.5 +170</span></div>
-    <div class="row"><span>27.09 Барыс — СКА 3:5</span><span class="ok">ТБ 5.5 +170</span></div>
-    <div class="row"><span>28.09 Авангард — Металлург 1:5</span><span class="bad">ТМ 5.5 −200</span></div>
-    <div class="row"><span>28.09 Динамо М — Трактор 1:2 ОТ</span><span class="ok">Х2 +164</span></div>
-    <div class="row"><span>28.09 Торпедо — Салават 0:3</span><span class="ok">не брали П1</span></div>
-    <div class="row"><span>28.09 Грузия — Украина 0:0</span><span class="ok">X +440</span></div>
-    <div class="row"><span>28.09 Бельгия — Франция 0:1</span><span class="ok">ТМ 2.5 +170</span></div>
-    <div class="row"><span>28.09 Турция — Италия 1:4</span><span class="bad">ТМ 2.5 −200</span></div>
-    <div class="row"><span>28.09 Румыния — Босния 2:4</span><span class="bad">X −200</span></div>
-    <div class="row"><span>28.09 Сев. Ирландия — Венгрия 0:0</span><span class="ok">ТМ 2.5 +170</span></div>
-    <div class="row"><span>28.09 Армения — Черногория 2:3</span><span class="bad">ТМ 2.5 −200</span></div>
+    <div class="note">Spirit 1.09 и Liquid 1.14 вчерашний урок: такие кэфы больше не входят в рабочий лист.</div>
+    <div class="pick no">Только вход от 1.80</div>
   </div>
 </section>
 
 <section id="bank" class="hidden">
-  <div class="league">Счёт</div>
+  <div class="league">Банк · фикс 200 ₽</div>
   <div class="pad">
-    <div class="note">Стартовый банк</div>
-    <div>10 000 ₽</div>
-    <div class="note" style="margin-top:10px">Ставка</div>
-    <div>200 ₽ фикс</div>
-    <div class="note" style="margin-top:10px">Сейчас</div>
-    <div class="big">11 004 ₽</div>
-    <div class="row"><span>Ставок</span><span>11</span></div>
-    <div class="row"><span>Зашло</span><span class="ok">7</span></div>
-    <div class="row"><span>Минус</span><span class="bad">4</span></div>
-    <div class="row"><span>P/L</span><span class="ok">+1 004 ₽</span></div>
-    <p class="foot">Не финансовый совет. 18+. Сегодня в купоне 7 × 200 = 1 400 ₽ (хоккей, футбол, кибер).</p>
+    <div class="note">Старт</div><div>10 000 ₽</div>
+    <div class="note" style="margin-top:8px">Сейчас</div>
+    <div class="big">10 914 ₽</div>
+    <div class="row"><span>29.09 Амур Х2 Нефтехимик</span><span class="bad">1:0 · −200</span></div>
+    <div class="row"><span>29.09 ЦСКА–СКА ТБ 4.5 @1.85</span><span class="ok">6:5 · +170</span></div>
+    <div class="row"><span>29.09 Шотландия ТМ 2.5 @1.85</span><span class="bad">0:3 · −200</span></div>
+    <div class="row"><span>29.09 Словения ТМ 2.5 @1.85</span><span class="ok">2:0 · +170</span></div>
+    <div class="row"><span>29.09 G2 @2.19 vs PRX</span><span class="bad">1:2 · −200</span></div>
+    <div class="row"><span>29.09 NRG–KC ТБ 2.5к @1.85</span><span class="ok">1:2 · +170</span></div>
+    <p class="foot">Вчера 3/6. Ошибка системы: слишком много низов и аутов без фильтра кэфа. Сегодня только 3 слота, вход указан. 18+.</p>
   </div>
 </section>
 <script>
@@ -197,7 +163,7 @@ document.querySelectorAll(".tabs button").forEach(btn=>{
   btn.addEventListener("click",()=>{
     document.querySelectorAll(".tabs button").forEach(b=>b.classList.remove("on"));
     btn.classList.add("on");
-    ["khl","foot","cyb","closed","bank"].forEach(id=>document.getElementById(id).classList.add("hidden"));
+    ["khl","nhl","foot","cyb","bank"].forEach(id=>document.getElementById(id).classList.add("hidden"));
     document.getElementById(btn.dataset.tab).classList.remove("hidden");
   });
 });
