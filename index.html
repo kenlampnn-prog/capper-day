@@ -14,8 +14,8 @@ body{font-family:Roboto,Arial,sans-serif;background:#071222;color:#fff;min-heigh
 .brand b{color:#ff7a00}
 .top small{display:block;color:#9bb0c9;font-weight:500;text-transform:none;font-size:11px;margin-top:2px}
 .bal{background:#ff7a00;color:#111;font-weight:900;font-size:12px;border-radius:4px;padding:6px 8px}
-.tabs{display:flex;background:#0b1b33;border-bottom:1px solid #163154}
-.tabs button{flex:1;border:0;background:transparent;color:#9bb0c9;font:700 10px Roboto,sans-serif;padding:11px 1px;border-bottom:3px solid transparent}
+.tabs{display:flex;background:#0b1b33;border-bottom:1px solid #163154;overflow-x:auto}
+.tabs button{flex:1;border:0;background:transparent;color:#9bb0c9;font:700 10px Roboto,sans-serif;padding:11px 1px;border-bottom:3px solid transparent;white-space:nowrap}
 .tabs button.on{color:#fff;border-bottom-color:#ff7a00}
 .league{background:#10233f;color:#ff7a00;font-size:12px;font-weight:700;padding:8px 14px;text-transform:uppercase}
 .event{background:#0d1e36;border-bottom:8px solid #071222;padding:12px 14px}
@@ -41,8 +41,8 @@ body{font-family:Roboto,Arial,sans-serif;background:#071222;color:#fff;min-heigh
 </head>
 <body>
 <header class="top">
-  <div class="brand">Capper <b>Line</b><small>30.09 · полный пакет · вход жёлтым</small></div>
-  <div class="bal">10 914 ₽</div>
+  <div class="brand">Capper <b>Line</b><small>01.10 · домашний класс берём · выезд 1.67 нет</small></div>
+  <div class="bal">10 936 ₽</div>
 </header>
 <div class="tabs">
   <button class="on" data-tab="khl">КХЛ</button>
@@ -54,185 +54,110 @@ body{font-family:Roboto,Arial,sans-serif;background:#071222;color:#fff;min-heigh
 </div>
 
 <section id="khl">
-  <div class="league">КХЛ · пакет П / фора / тотал</div>
-
+  <div class="league">КХЛ · 01.10 · пакет П / фора / тотал</div>
   <div class="event">
-    <div class="event-top"><div class="teams">Автомобилист — Лада</div><div class="meta">17:00</div></div>
+    <div class="event-top"><div class="teams">Северсталь — Адмирал</div><div class="meta">19:30</div></div>
     <table class="pkg">
       <tr><th>Рынок</th><th>Линия</th><th>Вердикт</th></tr>
-      <tr><td class="m">Победа</td><td>П1 1.55</td><td class="n">не беру</td></tr>
-      <tr><td class="m">Фора</td><td>Ф1(−1.5) 1.90</td><td class="n">рядом, не слот</td></tr>
-      <tr><td class="m">Тотал</td><td>ТБ 5.5 <span class="entry">1.95</span> / ТМ 1.85</td><td class="y">беру ТБ 5.5</td></tr>
+      <tr><td class="m">Победа</td><td>П1 <span class="entry">1.94</span> / П2 3.35</td><td class="y">беру П1</td></tr>
+      <tr><td class="m">Фора</td><td>Ф1(−1) 2.25</td><td class="n">не дублируем</td></tr>
+      <tr><td class="m">Тотал</td><td>5.5 ~1.90</td><td class="n">не беру</td></tr>
     </table>
-    <div class="note">Лада пропускает. Сценарий 4:1 / 5:1 чаще, чем 2:0. П1 мёртвый, фора почти честная, край на верхе.</div>
+    <div class="note">Домашний класс против слабого Адмирала. Вчера такие П1 1.53–1.80 дома зашли. Тотал не подменяет исход.</div>
   </div>
-
   <div class="event">
-    <div class="event-top"><div class="teams">Ак Барс — Барыс</div><div class="meta">19:00</div></div>
+    <div class="event-top"><div class="teams">Динамо Минск — ЦСКА</div><div class="meta">19:30</div></div>
     <table class="pkg">
       <tr><th>Рынок</th><th>Линия</th><th>Вердикт</th></tr>
-      <tr><td class="m">Победа</td><td>П1 1.80 / П2 3.90</td><td class="n">не беру</td></tr>
-      <tr><td class="m">Фора</td><td>Ф1(−1.5) ~2.15</td><td class="n">не беру</td></tr>
-      <tr><td class="m">Тотал</td><td>ТБ 5.5 ~1.90 / ТМ ~1.90</td><td class="n">честный, пауза</td></tr>
+      <tr><td class="m">Победа</td><td>П2 <span class="entry">2.15</span> / П1 2.70</td><td class="y">беру П2</td></tr>
+      <tr><td class="m">Фора</td><td>ЦСКА −0.25 ~1.92</td><td class="n">не дублируем</td></tr>
+      <tr><td class="m">Тотал</td><td>4.75 ~2.00</td><td class="n">честный</td></tr>
     </table>
-    <div class="note">Казань дома, Барыс высокособытийный. Три рынка без перекоса цены.</div>
+    <div class="note">ЦСКА после 6:5 со СКА. Это не короткий выездной 1.67, а 2.15. Цена рабочая.</div>
   </div>
-
   <div class="event">
-    <div class="event-top"><div class="teams">Локомотив — Сибирь</div><div class="meta">19:30</div></div>
+    <div class="event-top"><div class="teams">Динамо Москва — Торпедо</div><div class="meta">19:30</div></div>
     <table class="pkg">
       <tr><th>Рынок</th><th>Линия</th><th>Вердикт</th></tr>
-      <tr><td class="m">Победа</td><td>П1 1.53</td><td class="n">не беру</td></tr>
-      <tr><td class="m">Фора</td><td>Ф1(−1.5) ~1.90</td><td class="n">не беру</td></tr>
-      <tr><td class="m">Тотал</td><td>ТМ 5.5 ~1.65</td><td class="n">идея, вход короткий</td></tr>
+      <tr><td class="m">Победа</td><td>П1 <span class="entry">2.23</span> / П2 2.75</td><td class="y">беру П1</td></tr>
+      <tr><td class="m">Фора</td><td>0 ~2.08</td><td class="n">не дублируем</td></tr>
+      <tr><td class="m">Тотал</td><td>5.0 ~1.97</td><td class="n">честный</td></tr>
     </table>
-    <div class="note">Повтор 27.09 — 2:1. Низ логичен, цена на ТМ убита.</div>
-  </div>
-
-  <div class="event">
-    <div class="event-top"><div class="teams">Сочи — Салават</div><div class="meta">19:30</div></div>
-    <table class="pkg">
-      <tr><th>Рынок</th><th>Линия</th><th>Вердикт</th></tr>
-      <tr><td class="m">Победа</td><td>П2 1.67</td><td class="n">не беру</td></tr>
-      <tr><td class="m">Фора</td><td>Ф2(−1.5) ~2.05</td><td class="n">не беру</td></tr>
-      <tr><td class="m">Тотал</td><td>ТМ 5.5 жду ≥1.85</td><td class="n">жду вход</td></tr>
-    </table>
-    <div class="note">Уфа сильнее, Сочи сухой. 3:0 / 3:1. Пока ТМ не дают 1.85 — пусто.</div>
-  </div>
-
-  <div class="event">
-    <div class="event-top"><div class="teams">Драконы — Металлург</div><div class="meta">19:30</div></div>
-    <table class="pkg">
-      <tr><th>Рынок</th><th>Линия</th><th>Вердикт</th></tr>
-      <tr><td class="m">Победа</td><td>П2 1.67</td><td class="n">не беру</td></tr>
-      <tr><td class="m">Фора</td><td>Ф2(−1.5) ~2.05</td><td class="n">не беру</td></tr>
-      <tr><td class="m">Тотал</td><td>ТБ 5.5 жду ≥1.90</td><td class="n">жду вход</td></tr>
-    </table>
-    <div class="note">Магнитка забивает. Верх ближе исхода. Без 1.90 не заходим.</div>
-  </div>
-
-  <div class="event">
-    <div class="event-top"><div class="teams">Спартак — Трактор</div><div class="meta">19:30</div></div>
-    <table class="pkg">
-      <tr><th>Рынок</th><th>Линия</th><th>Вердикт</th></tr>
-      <tr><td class="m">Победа</td><td>П1 1.80 / П2 3.85</td><td class="n">не беру</td></tr>
-      <tr><td class="m">Фора</td><td>Ф1(−1.5) ~2.10</td><td class="n">не беру</td></tr>
-      <tr><td class="m">Тотал</td><td>ТМ 5.5 <span class="entry">1.85</span></td><td class="y">беру ТМ 5.5</td></tr>
-    </table>
-    <div class="note">Трактор вчера 1:2 ОТ с Динамо. Низ — единственный рынок с входом.</div>
+    <div class="note">Торпедо 0:3 Салавату. Динамо дома, линия не короткая. Берём исход, не тотал.</div>
   </div>
 </section>
 
 <section id="nhl" class="hidden">
-  <div class="league">НХЛ · ночь 30.09 / 01.10 МСК</div>
-
+  <div class="league">НХЛ · ночь 01.10 / 02.10 МСК</div>
   <div class="event">
-    <div class="event-top"><div class="teams">Pittsburgh — Philadelphia</div><div class="meta">02:30</div></div>
+    <div class="event-top"><div class="teams">Tampa Bay — Rangers</div><div class="meta">02:00</div></div>
     <table class="pkg">
       <tr><th>Рынок</th><th>Линия</th><th>Вердикт</th></tr>
-      <tr><td class="m">Победа</td><td>PIT <span class="entry">2.20</span> / PHI 1.71</td><td class="y">беру PIT ML</td></tr>
-      <tr><td class="m">Фора</td><td>PIT +1.5 ~1.47</td><td class="n">короткая</td></tr>
-      <tr><td class="m">Тотал</td><td>6.0 обе стороны ~1.91</td><td class="n">честный</td></tr>
+      <tr><td class="m">Победа</td><td>NYR <span class="entry">2.20</span> / TBL 1.71</td><td class="y">беру NYR</td></tr>
+      <tr><td class="m">Фора</td><td>NYR +1.5 ~1.45</td><td class="n">короткая</td></tr>
+      <tr><td class="m">Тотал</td><td>6.0 ~1.91</td><td class="n">не вместо исхода</td></tr>
     </table>
-    <div class="note">Домашний фаворит 1.71 без края. Аут 2.20 — рабочий вход. Фора +1.5 слишком короткая.</div>
+    <div class="note">Вчера PIT 2.20 зашёл 7:0. Тампа 1.71 без края. Берём хозяев по цене.</div>
   </div>
-
   <div class="event">
-    <div class="event-top"><div class="teams">NY Islanders — Toronto</div><div class="meta">02:30</div></div>
+    <div class="event-top"><div class="teams">Flyers — Devils</div><div class="meta">02:00</div></div>
     <table class="pkg">
       <tr><th>Рынок</th><th>Линия</th><th>Вердикт</th></tr>
-      <tr><td class="m">Победа</td><td>NYI 2.00 / TOR 1.83</td><td class="n">монета</td></tr>
-      <tr><td class="m">Фора</td><td>NYI +1.5 ~1.42</td><td class="n">короткая</td></tr>
-      <tr><td class="m">Тотал</td><td>ТМ 6.0 <span class="entry">1.91</span></td><td class="y">беру ТМ 6.0</td></tr>
+      <tr><td class="m">Победа</td><td>PHI 2.35 / NJ 1.62</td><td class="n">не беру 1.62</td></tr>
+      <tr><td class="m">Фора</td><td>PHI +1.5</td><td class="n">короткая</td></tr>
+      <tr><td class="m">Тотал</td><td>5.5</td><td class="n">не слот</td></tr>
     </table>
-    <div class="note">Исход без края. Низ 6.0 — единственный вход.</div>
   </div>
-
   <div class="event">
-    <div class="event-top"><div class="teams">Los Angeles — Colorado</div><div class="meta">05:00</div></div>
+    <div class="event-top"><div class="teams">Sabres — Blue Jackets</div><div class="meta">02:00</div></div>
     <table class="pkg">
       <tr><th>Рынок</th><th>Линия</th><th>Вердикт</th></tr>
-      <tr><td class="m">Победа</td><td>COL 1.85 / LA 2.60</td><td class="n">не беру</td></tr>
-      <tr><td class="m">Фора</td><td>COL −1.5 ~2.35</td><td class="n">не беру</td></tr>
-      <tr><td class="m">Тотал</td><td>ТБ 6.5 ~2.10 / ТМ ~1.77</td><td class="n">идея ТБ, не слот</td></tr>
+      <tr><td class="m">Победа</td><td>~1.91 / 1.91</td><td class="n">монета</td></tr>
+      <tr><td class="m">Фора</td><td>+1.5 короткая</td><td class="n">нет</td></tr>
+      <tr><td class="m">Тотал</td><td>6.0 ~1.91</td><td class="n">честный</td></tr>
     </table>
-    <div class="note">Колорадо сильнее, цена уже в линии. ТМ короткий.</div>
+  </div>
+  <div class="event">
+    <div class="event-top"><div class="teams">Oilers — Canucks / Utah</div><div class="meta">ночь</div></div>
+    <div class="note">Эдмонтон ~1.50, Юта ~1.48 — короткие. Не берём.</div>
   </div>
 </section>
 
 <section id="foot" class="hidden">
-  <div class="league">Футбол · 30.09</div>
+  <div class="league">Футбол · 01.10</div>
   <div class="event">
-    <div class="event-top"><div class="teams">Клубный топ / Лига наций</div><div class="meta">пусто</div></div>
-    <div class="note">Окно сборных закрыто вчера. Рабочего европейского топа на утро нет. Пакет появится, когда будет линия.</div>
+    <div class="note">Клубный четверг без края на утро. Купон не раздуваем. 0 ставок.</div>
   </div>
 </section>
 
 <section id="cyb" class="hidden">
-  <div class="league">Valorant Champions · 30.09</div>
+  <div class="league">Кибер · 01.10</div>
   <div class="event">
-    <div class="event-top"><div class="teams">Vitality — LOUD</div><div class="meta">12:00 Bo3</div></div>
-    <table class="pkg">
-      <tr><th>Рынок</th><th>Линия</th><th>Вердикт</th></tr>
-      <tr><td class="m">Победа</td><td>ждём ≥1.90 на аута</td><td class="n">пока нет</td></tr>
-      <tr><td class="m">Фора</td><td>карты ±1.5</td><td class="n">ждём</td></tr>
-      <tr><td class="m">Тотал</td><td>ТБ 2.5 карты ≥1.85</td><td class="n">ждём вход</td></tr>
-    </table>
-  </div>
-  <div class="event">
-    <div class="event-top"><div class="teams">100 Thieves — FUT</div><div class="meta">15:00 Bo3</div></div>
-    <table class="pkg">
-      <tr><th>Рынок</th><th>Линия</th><th>Вердикт</th></tr>
-      <tr><td class="m">Победа</td><td>ждём ≥1.90 на аута</td><td class="n">пока нет</td></tr>
-      <tr><td class="m">Фора</td><td>карты ±1.5</td><td class="n">ждём</td></tr>
-      <tr><td class="m">Тотал</td><td>ТБ 2.5 карты ≥1.85</td><td class="n">ждём вход</td></tr>
-    </table>
+    <div class="note">Короткие фавориты Champions и BLAST не берём. Слот только от 1.90 на аута или 1.85 на ТБ 2.5 карты. Пока пусто.</div>
   </div>
 </section>
-
 
 <section id="itog" class="hidden">
-  <div class="league">Итоги 29.09 · закрыто</div>
-  <div class="event">
-    <div class="event-top"><div class="teams">Амур — Нефтехимик</div><div class="meta">1:0</div></div>
-    <div class="note">Ставка Х2. Зашёл Амур. <span class="n">МИМО −200</span></div>
-  </div>
-  <div class="event">
-    <div class="event-top"><div class="teams">ЦСКА — СКА</div><div class="meta">6:5</div></div>
-    <div class="note">Ставка ТБ 4.5 @ 1.85. <span class="y">ЗАШЛА +170</span></div>
-  </div>
-  <div class="event">
-    <div class="event-top"><div class="teams">Шотландия — Швейцария</div><div class="meta">0:3</div></div>
-    <div class="note">Ставка ТМ 2.5 @ 1.85. <span class="n">МИМО −200</span></div>
-  </div>
-  <div class="event">
-    <div class="event-top"><div class="teams">Словения — Сев. Македония</div><div class="meta">2:0</div></div>
-    <div class="note">Ставка ТМ 2.5 @ 1.85. <span class="y">ЗАШЛА +170</span></div>
-  </div>
-  <div class="event">
-    <div class="event-top"><div class="teams">G2 — Paper Rex</div><div class="meta">1:2</div></div>
-    <div class="note">Ставка G2 @ 2.19. <span class="n">МИМО −200</span></div>
-  </div>
-  <div class="event">
-    <div class="event-top"><div class="teams">NRG — Karmine Corp</div><div class="meta">2:1 карты</div></div>
-    <div class="note">Ставка ТБ 2.5 карты @ 1.85. <span class="y">ЗАШЛА +170</span></div>
-  </div>
-  <div class="league">Итоги 30.09 · в игре</div>
-  <div class="event">
-    <div class="note">Авто–Лада ТБ 5.5 @ 1.95 · Спартак–Трактор ТМ 5.5 @ 1.85 · PIT ML @ 2.20 · NYI–TOR ТМ 6.0 @ 1.91. Счёт появится после финальных свистков, банк пересчитается утром.</div>
-  </div>
+  <div class="league">Итоги 30.09</div>
+  <div class="event"><div class="event-top"><div class="teams">Авто — Лада 3:1</div><div class="meta">ТБ 5.5</div></div><div class="note">4 шайбы. <span class="n">МИМО −200</span>. П1 1.55, который не брали, зашёл.</div></div>
+  <div class="event"><div class="event-top"><div class="teams">Спартак — Трактор 2:4</div><div class="meta">ТМ 5.5</div></div><div class="note">6 шайб. <span class="n">МИМО −200</span></div></div>
+  <div class="event"><div class="event-top"><div class="teams">PIT — PHI 7:0</div><div class="meta">PIT 2.20</div></div><div class="note"><span class="y">ЗАШЛА +240</span></div></div>
+  <div class="event"><div class="event-top"><div class="teams">NYI — TOR 1:2</div><div class="meta">ТМ 6.0</div></div><div class="note"><span class="y">ЗАШЛА +182</span></div></div>
+  <div class="event"><div class="note">Не брали и зашло: Авто 3:1, Ак Барс 4:1, Локо 3:1. Не брали и не зашло: Салават (6:3 Сочи), Металлург (4:1 Драконы). Выездной фаворит 1.67 — ловушка. Домашний класс — рабочий рынок.</div></div>
 </section>
+
 <section id="bank" class="hidden">
   <div class="league">Банк · фикс 200 ₽</div>
   <div class="pad">
     <div class="note">Сейчас</div>
-    <div class="big">10 914 ₽</div>
-    <div class="row"><span>Купон 30.09 · 4 слота</span><span class="entry">800 ₽</span></div>
-    <div class="row"><span>Авто–Лада ТБ 5.5</span><span>вход 1.95</span></div>
-    <div class="row"><span>Спартак–Трактор ТМ 5.5</span><span>вход 1.85</span></div>
-    <div class="row"><span>PIT ML</span><span>вход 2.20</span></div>
-    <div class="row"><span>NYI–TOR ТМ 6.0</span><span>вход 1.91</span></div>
-    <p class="foot">Пакет на каждый матч. В купон только одна строка с входом. 18+.</p>
+    <div class="big">10 936 ₽</div>
+    <div class="row"><span>30.09 четыре слота</span><span class="ok">+22 ₽</span></div>
+    <div class="row"><span>Купон 01.10 · 4 × 200</span><span class="entry">800 ₽</span></div>
+    <div class="row"><span>Северсталь П1</span><span>1.94</span></div>
+    <div class="row"><span>ЦСКА П2</span><span>2.15</span></div>
+    <div class="row"><span>Динамо М П1</span><span>2.23</span></div>
+    <div class="row"><span>Rangers ML</span><span>2.20</span></div>
+    <p class="foot">Старт 10 000. 18+.</p>
   </div>
 </section>
 <script>
