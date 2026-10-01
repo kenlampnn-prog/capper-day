@@ -22,6 +22,8 @@ body{font-family:Manrope,sans-serif;background:var(--bg);color:var(--text);min-h
 .brand small{display:block;font-family:Manrope,sans-serif;font-size:12px;letter-spacing:0;color:#d5e4f2;font-weight:600}
 .bal,.theme{background:rgba(0,0,0,.45);border:1px solid rgba(255,255,255,.16);backdrop-filter:blur(6px);padding:8px 10px;border-radius:12px;font-weight:800;color:#fff}
 .theme{margin-right:8px;cursor:pointer;font:800 12px Manrope,sans-serif}
+.themebar{display:flex;justify-content:space-between;align-items:center;margin:0 12px 4px;padding:10px 12px;background:#ff3b30;color:#fff;border-radius:14px;font-weight:800}
+.themebar .theme{background:#fff;color:#102033;border:0;border-radius:999px;padding:8px 14px;font:800 13px Manrope,sans-serif}
 .tabs,.sub{display:flex;gap:6px;padding:8px 12px;overflow-x:auto}
 .tabs button,.sub button{border:0;background:var(--chip);color:var(--muted);font:700 12px Manrope,sans-serif;padding:10px 12px;border-radius:999px;white-space:nowrap}
 .tabs button.on,.sub button.on{background:#ff3b30;color:#fff}
@@ -52,7 +54,8 @@ body{font-family:Manrope,sans-serif;background:var(--bg);color:var(--text);min-h
 </style>
 </head>
 <body>
-<div class="hero"><div class="hero-in"><div class="brand">KHL <b>BET</b><small>1 октября · визуал арены · фикс 200 ₽</small></div><div><button class="theme" id="theme" type="button">Светлая</button><span class="bal">10 936 ₽</span></div></div></div>
+<div class="hero"><div class="hero-in"><div class="brand">KHL <b>BET</b><small>1 октября · визуал арены · фикс 200 ₽</small></div><div class="bal">10 936 ₽</div></div></div>
+<div class="themebar"><span>Тема</span><button class="theme" id="theme" type="button">Светлая</button></div>
 <nav class="tabs">
   <button class="on" data-tab="hock">Хоккей</button>
   <button data-tab="foot">Футбол</button>
