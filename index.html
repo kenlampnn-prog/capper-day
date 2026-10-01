@@ -22,8 +22,9 @@ body{font-family:Manrope,sans-serif;background:var(--bg);color:var(--text);min-h
 .brand small{display:block;font-family:Manrope,sans-serif;font-size:12px;letter-spacing:0;color:#d5e4f2;font-weight:600}
 .bal,.theme{background:rgba(0,0,0,.45);border:1px solid rgba(255,255,255,.16);backdrop-filter:blur(6px);padding:8px 10px;border-radius:12px;font-weight:800;color:#fff}
 .theme{margin-right:8px;cursor:pointer;font:800 12px Manrope,sans-serif}
-.themebar{display:flex;justify-content:space-between;align-items:center;margin:0 12px 4px;padding:10px 12px;background:#ff3b30;color:#fff;border-radius:14px;font-weight:800}
-.themebar .theme{background:#fff;color:#102033;border:0;border-radius:999px;padding:8px 14px;font:800 13px Manrope,sans-serif}
+.tools{display:flex;align-items:center;gap:8px}
+.lamp{width:36px;height:36px;border-radius:50%;border:1px solid rgba(255,255,255,.25);background:rgba(0,0,0,.4);color:#ffe08a;font-size:18px;line-height:34px}
+body.light .lamp{background:#fff;border-color:#d5e0ea;color:#b45309}
 .tabs,.sub{display:flex;gap:6px;padding:8px 12px;overflow-x:auto}
 .tabs button,.sub button{border:0;background:var(--chip);color:var(--muted);font:700 12px Manrope,sans-serif;padding:10px 12px;border-radius:999px;white-space:nowrap}
 .tabs button.on,.sub button.on{background:#ff3b30;color:#fff}
@@ -54,8 +55,7 @@ body{font-family:Manrope,sans-serif;background:var(--bg);color:var(--text);min-h
 </style>
 </head>
 <body>
-<div class="hero"><div class="hero-in"><div class="brand">KHL <b>BET</b><small>1 октября · визуал арены · фикс 200 ₽</small></div><div class="bal">10 936 ₽</div></div></div>
-<div class="themebar"><span>Тема</span><button class="theme" id="theme" type="button">Светлая</button></div>
+<div class="hero"><div class="hero-in"><div class="brand">KHL <b>BET</b><small>1 октября · визуал арены · фикс 200 ₽</small></div><div class="tools"><button class="lamp" id="theme" type="button" aria-label="Тема">💡</button><span class="bal">10 936 ₽</span></div></div></div>
 <nav class="tabs">
   <button class="on" data-tab="hock">Хоккей</button>
   <button data-tab="foot">Футбол</button>
@@ -295,7 +295,7 @@ body{font-family:Manrope,sans-serif;background:var(--bg);color:var(--text);min-h
 </section>
 <script>
 const themeBtn=document.getElementById("theme");
-function applyTheme(mode){document.body.classList.toggle("light",mode==="light");themeBtn.textContent=mode==="light"?"Тёмная":"Светлая";localStorage.setItem("khlbet-theme",mode)}
+function applyTheme(mode){document.body.classList.toggle("light",mode==="light");themeBtn.textContent=mode==="light"?"🌙":"💡";localStorage.setItem("khlbet-theme",mode)}
 applyTheme(localStorage.getItem("khlbet-theme")||"dark");
 themeBtn.onclick=()=>applyTheme(document.body.classList.contains("light")?"dark":"light");
 document.querySelectorAll(".tabs button").forEach(btn=>btn.onclick=()=>{document.querySelectorAll(".tabs button").forEach(b=>b.classList.remove("on"));btn.classList.add("on");["hock","foot","itog","bank"].forEach(id=>document.getElementById(id).classList.add("hidden"));document.getElementById(btn.dataset.tab).classList.remove("hidden")});
