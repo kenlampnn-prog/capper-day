@@ -48,7 +48,6 @@ body{font-family:Roboto,Arial,sans-serif;background:#071222;color:#fff;min-heigh
   <button class="on" data-tab="khl">КХЛ</button>
   <button data-tab="nhl">НХЛ</button>
   <button data-tab="foot">Футбол</button>
-  <button data-tab="cyb">Кибер</button>
   <button data-tab="itog">Итоги</button>
   <button data-tab="bank">Банк</button>
 </div>
@@ -130,13 +129,6 @@ body{font-family:Roboto,Arial,sans-serif;background:#071222;color:#fff;min-heigh
   </div>
 </section>
 
-<section id="cyb" class="hidden">
-  <div class="league">Кибер · 01.10</div>
-  <div class="event">
-    <div class="note">Короткие фавориты Champions и BLAST не берём. Слот только от 1.90 на аута или 1.85 на ТБ 2.5 карты. Пока пусто.</div>
-  </div>
-</section>
-
 <section id="itog" class="hidden">
   <div class="league">Итоги 30.09</div>
   <div class="event"><div class="event-top"><div class="teams">Авто — Лада 3:1</div><div class="meta">ТБ 5.5</div></div><div class="note">4 шайбы. <span class="n">МИМО −200</span>. П1 1.55, который не брали, зашёл.</div></div>
@@ -165,7 +157,7 @@ document.querySelectorAll(".tabs button").forEach(btn=>{
   btn.addEventListener("click",()=>{
     document.querySelectorAll(".tabs button").forEach(b=>b.classList.remove("on"));
     btn.classList.add("on");
-    ["khl","nhl","foot","cyb","itog","bank"].forEach(id=>document.getElementById(id).classList.add("hidden"));
+    ["khl","nhl","foot","itog","bank"].forEach(id=>document.getElementById(id).classList.add("hidden"));
     document.getElementById(btn.dataset.tab).classList.remove("hidden");
   });
 });
