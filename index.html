@@ -11,21 +11,24 @@
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet"/>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
-body{font-family:Manrope,sans-serif;background:#071018;color:#eef6ff;min-height:100dvh}
-.hero{position:relative;height:168px;background:#071018 url(arena.jpg) center/cover no-repeat}
-.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(7,16,24,.2),#071018 92%)}
+:root{--bg:#071018;--card1:#122433;--card2:#0c1822;--line:#1d3446;--text:#eef6ff;--muted:#8ea4b8;--soft:#c5d4e2;--chip:#10202c;--ice:#0a141c}
+body.light{--bg:#f4f7fb;--card1:#fff;--card2:#f7fafc;--line:#d5e0ea;--text:#102033;--muted:#5d7286;--soft:#3d5164;--chip:#e8eef5;--ice:#f3f6fa}
+body{font-family:Manrope,sans-serif;background:var(--bg);color:var(--text);min-height:100dvh}
+.hero{position:relative;height:168px;background:var(--bg) url(arena.jpg) center/cover no-repeat}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(7,16,24,.15),var(--bg) 92%)}
 .hero-in{position:relative;z-index:1;padding:16px 14px 0;display:flex;justify-content:space-between;align-items:flex-end}
 .brand{font-family:Oswald,sans-serif;font-size:28px;letter-spacing:.04em}
 .brand b{color:#ff3b30}
-.brand small{display:block;font-family:Manrope,sans-serif;font-size:12px;letter-spacing:0;color:#b7c7d8;font-weight:600}
-.bal{background:rgba(0,0,0,.45);border:1px solid rgba(255,255,255,.16);backdrop-filter:blur(6px);padding:8px 10px;border-radius:12px;font-weight:800}
+.brand small{display:block;font-family:Manrope,sans-serif;font-size:12px;letter-spacing:0;color:#d5e4f2;font-weight:600}
+.bal,.theme{background:rgba(0,0,0,.45);border:1px solid rgba(255,255,255,.16);backdrop-filter:blur(6px);padding:8px 10px;border-radius:12px;font-weight:800;color:#fff}
+.theme{margin-right:8px;cursor:pointer;font:800 12px Manrope,sans-serif}
 .tabs,.sub{display:flex;gap:6px;padding:8px 12px;overflow-x:auto}
-.tabs button,.sub button{border:0;background:#10202c;color:#9db0c3;font:700 12px Manrope,sans-serif;padding:10px 12px;border-radius:999px;white-space:nowrap}
+.tabs button,.sub button{border:0;background:var(--chip);color:var(--muted);font:700 12px Manrope,sans-serif;padding:10px 12px;border-radius:999px;white-space:nowrap}
 .tabs button.on,.sub button.on{background:#ff3b30;color:#fff}
-.league{padding:8px 14px 4px;color:#8ea4b8;font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
-.card{margin:10px 12px;background:linear-gradient(180deg,#122433,#0c1822);border:1px solid #1d3446;border-radius:18px;padding:12px;box-shadow:0 10px 24px rgba(0,0,0,.25)}
+.league{padding:8px 14px 4px;color:var(--muted);font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+.card{margin:10px 12px;background:linear-gradient(180deg,var(--card1),var(--card2));border:1px solid var(--line);border-radius:18px;padding:12px;box-shadow:0 10px 24px rgba(0,0,0,.12)}
 .toprow{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}
-.time{color:#8ea4b8;font-size:12px;font-weight:700}
+.time{color:var(--muted);font-size:12px;font-weight:700}
 .badge{font-size:11px;font-weight:800;border-radius:999px;padding:4px 8px}
 .take{background:#123524;color:#3dd68c}
 .skip{background:#2a1a1c;color:#ff8d86}
@@ -33,23 +36,23 @@ body{font-family:Manrope,sans-serif;background:#071018;color:#eef6ff;min-height:
 .teams{display:flex;align-items:center;gap:8px}
 .av{width:36px;height:36px;border-radius:50%;display:grid;place-items:center;font-family:Oswald,sans-serif;font-size:13px;color:#fff;flex:none}
 .nm{font-weight:800;font-size:15px}
-.vs{color:#8ea4b8;font-size:12px;margin:0 2px}
+.vs{color:var(--muted);font-size:12px;margin:0 2px}
 .markets{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:12px}
-.m{background:#0a141c;border-radius:12px;padding:8px}
-.m .k{color:#8ea4b8;font-size:11px;font-weight:700}
+.m{background:var(--ice);border-radius:12px;padding:8px}
+.m .k{color:var(--muted);font-size:11px;font-weight:700}
 .m .v{font-family:Oswald,sans-serif;font-size:20px;margin-top:2px}
 .m.on{outline:1px solid #3dd68c}
 .m.on .v{color:#3dd68c}
-.note{color:#c5d4e2;font-size:12px;line-height:1.4;margin-top:10px}
+.note{color:var(--soft);font-size:12px;line-height:1.4;margin-top:10px}
 .pad{padding:8px 14px 20px}
 .big{font-family:Oswald,sans-serif;font-size:42px}
-.row{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid #1d3446}
+.row{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--line)}
 .hidden{display:none}
-.foot{color:#8ea4b8;font-size:11px;margin-top:10px}
+.foot{color:var(--muted);font-size:11px;margin-top:10px}
 </style>
 </head>
 <body>
-<div class="hero"><div class="hero-in"><div class="brand">KHL <b>BET</b><small>1 октября · визуал арены · фикс 200 ₽</small></div><div class="bal">10 936 ₽</div></div></div>
+<div class="hero"><div class="hero-in"><div class="brand">KHL <b>BET</b><small>1 октября · визуал арены · фикс 200 ₽</small></div><div><button class="theme" id="theme" type="button">Светлая</button><span class="bal">10 936 ₽</span></div></div></div>
 <nav class="tabs">
   <button class="on" data-tab="hock">Хоккей</button>
   <button data-tab="foot">Футбол</button>
@@ -288,6 +291,10 @@ body{font-family:Manrope,sans-serif;background:#071018;color:#eef6ff;min-height:
   </div>
 </section>
 <script>
+const themeBtn=document.getElementById("theme");
+function applyTheme(mode){document.body.classList.toggle("light",mode==="light");themeBtn.textContent=mode==="light"?"Тёмная":"Светлая";localStorage.setItem("khlbet-theme",mode)}
+applyTheme(localStorage.getItem("khlbet-theme")||"dark");
+themeBtn.onclick=()=>applyTheme(document.body.classList.contains("light")?"dark":"light");
 document.querySelectorAll(".tabs button").forEach(btn=>btn.onclick=()=>{document.querySelectorAll(".tabs button").forEach(b=>b.classList.remove("on"));btn.classList.add("on");["hock","foot","itog","bank"].forEach(id=>document.getElementById(id).classList.add("hidden"));document.getElementById(btn.dataset.tab).classList.remove("hidden")});
 document.querySelectorAll(".sub button").forEach(btn=>btn.onclick=()=>{document.querySelectorAll(".sub button").forEach(b=>b.classList.remove("on"));btn.classList.add("on");["khl","nhl","del"].forEach(id=>document.getElementById(id).classList.add("hidden"));document.getElementById(btn.dataset.lg).classList.remove("hidden")});
 </script>
