@@ -59,6 +59,7 @@ body.light .lamp{background:#fff;border-color:#d5e0ea;color:#b45309}
 <nav class="tabs">
   <button class="on" data-tab="hock">Хоккей</button>
   <button data-tab="foot">Футбол</button>
+  <button data-tab="ex">Экспресс</button>
   <button data-tab="itog">Итоги</button>
   <button data-tab="bank">Банк</button>
 </nav>
@@ -278,6 +279,28 @@ body.light .lamp{background:#fff;border-color:#d5e0ea;color:#b45309}
     <div class="note">Элитсерия — 9–12 октября. OBOS — 2–5 октября. 2-й и 3-й дивизионы — 2–4 октября. Клубный плей-офф U19 — 8 октября: Бранн U19 — Фредрикстад U19, Русенборг U19 — Лиллестрём U19. На каждый матч: победа, общий тотал, тотал 1-го и 2-го тайма.</div>
   </article>
 </section>
+<section id="ex" class="hidden">
+  <div class="league">Экспресс · кэф от 3.00 · фикс 200 ₽</div>
+  <article class="card">
+    <div class="toprow"><span class="time">Экспресс 1 · хоккей</span><span class="badge take">4.50</span></div>
+    <div class="markets">
+      <div class="m on"><div class="k">Лада +1.5</div><div class="v">2.00</div></div>
+      <div class="m on"><div class="k">Rangers</div><div class="v">2.25</div></div>
+    </div>
+    <div class="note">2.00 × 2.25 = 4.50. Разные лиги, не один матч. Ставка 200 ₽, выплата 900 ₽.</div>
+  </article>
+  <article class="card">
+    <div class="toprow"><span class="time">Экспресс 2 · хоккей + футбол</span><span class="badge take">4.36</span></div>
+    <div class="markets">
+      <div class="m on"><div class="k">Салават ТБ 5.25</div><div class="v">2.03</div></div>
+      <div class="m on"><div class="k">Норвегия U19 ТБ 3.5</div><div class="v">2.15</div></div>
+    </div>
+    <div class="note">2.03 × 2.15 = 4.36. Уэльс U19 — Норвегия U19, 2 октября 13:00. Ставка 200 ₽, выплата 872 ₽.</div>
+  </article>
+  <article class="card">
+    <div class="note">Короткие 1.40–1.70 в экспресс не кладу: они режут кэф и уже не проходили одиночками. Каждый день два таких купона, итог от 3.00.</div>
+  </article>
+</section>
 <section id="itog" class="hidden">
   <article class="card"><div class="note">30.09 Авто — Лада 3:1, ТБ 5.5 мимо. Спартак — Трактор 2:4, ТМ 5.5 мимо. PIT 7:0 зашла +240. NYI — TOR 1:2, ТМ зашла +182. Баланс 10 936 ₽.</div></article>
 </section>
@@ -298,7 +321,7 @@ const themeBtn=document.getElementById("theme");
 function applyTheme(mode){document.body.classList.toggle("light",mode==="light");themeBtn.textContent=mode==="light"?"🌙":"💡";localStorage.setItem("khlbet-theme",mode)}
 applyTheme(localStorage.getItem("khlbet-theme")||"dark");
 themeBtn.onclick=()=>applyTheme(document.body.classList.contains("light")?"dark":"light");
-document.querySelectorAll(".tabs button").forEach(btn=>btn.onclick=()=>{document.querySelectorAll(".tabs button").forEach(b=>b.classList.remove("on"));btn.classList.add("on");["hock","foot","itog","bank"].forEach(id=>document.getElementById(id).classList.add("hidden"));document.getElementById(btn.dataset.tab).classList.remove("hidden")});
+document.querySelectorAll(".tabs button").forEach(btn=>btn.onclick=()=>{document.querySelectorAll(".tabs button").forEach(b=>b.classList.remove("on"));btn.classList.add("on");["hock","foot","ex","itog","bank"].forEach(id=>document.getElementById(id).classList.add("hidden"));document.getElementById(btn.dataset.tab).classList.remove("hidden")});
 document.querySelectorAll(".sub button").forEach(btn=>btn.onclick=()=>{document.querySelectorAll(".sub button").forEach(b=>b.classList.remove("on"));btn.classList.add("on");["khl","nhl","del"].forEach(id=>document.getElementById(id).classList.add("hidden"));document.getElementById(btn.dataset.lg).classList.remove("hidden")});
 </script>
 </body></html>
