@@ -20,14 +20,13 @@ body{font-family:Manrope,sans-serif;background:var(--bg);color:var(--text);min-h
 .brand{font-family:Oswald,sans-serif;font-size:28px;letter-spacing:.04em}
 .brand b{color:#ff3b30}
 .brand small{display:block;font-family:Manrope,sans-serif;font-size:12px;letter-spacing:0;color:#d5e4f2;font-weight:600}
-.bal,.theme{background:rgba(0,0,0,.45);border:1px solid rgba(255,255,255,.16);backdrop-filter:blur(6px);padding:8px 10px;border-radius:12px;font-weight:800;color:#fff}
-.theme{margin-right:8px;cursor:pointer;font:800 12px Manrope,sans-serif}
+.bal{background:rgba(0,0,0,.45);border:1px solid rgba(255,255,255,.16);backdrop-filter:blur(6px);padding:8px 10px;border-radius:12px;font-weight:800;color:#fff}
 .tools{display:flex;align-items:center;gap:8px}
-.lamp{width:36px;height:36px;border-radius:50%;border:1px solid rgba(255,255,255,.25);background:rgba(0,0,0,.4);color:#ffe08a;font-size:18px;line-height:34px}
+.lamp{width:36px;height:36px;border-radius:50%;border:1px solid rgba(255,255,255,.25);background:rgba(0,0,0,.4);color:#ffe08a;font-size:18px;line-height:34px;cursor:pointer}
 body.light .lamp{background:#fff;border-color:#d5e0ea;color:#b45309}
 .tabs,.sub{display:flex;gap:6px;padding:8px 12px;overflow-x:auto}
 .tabs button,.sub button{border:0;background:var(--chip);color:var(--muted);font:700 12px Manrope,sans-serif;padding:10px 12px;border-radius:999px;white-space:nowrap}
-.tabs button.on,.sub button.on{background:#ff3b30;color:#fff}
+.tabs button.on,.sub button.on{background:#1f6f4a;color:#fff}
 .league{padding:8px 14px 4px;color:var(--muted);font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
 .card{margin:10px 12px;background:linear-gradient(180deg,var(--card1),var(--card2));border:1px solid var(--line);border-radius:18px;padding:12px;box-shadow:0 10px 24px rgba(0,0,0,.12)}
 .toprow{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}
@@ -36,6 +35,8 @@ body.light .lamp{background:#fff;border-color:#d5e0ea;color:#b45309}
 .take{background:#123524;color:#3dd68c}
 .skip{background:#2a1a1c;color:#ff8d86}
 .live{background:#3a2208;color:#ffb020}
+.win{background:#123524;color:#3dd68c}
+.loss{background:#2a1a1c;color:#ff8d86}
 .teams{display:flex;align-items:center;gap:8px}
 .av{width:36px;height:36px;border-radius:50%;display:grid;place-items:center;font-family:Oswald,sans-serif;font-size:13px;color:#fff;flex:none}
 .nm{font-weight:800;font-size:15px}
@@ -55,7 +56,7 @@ body.light .lamp{background:#fff;border-color:#d5e0ea;color:#b45309}
 </style>
 </head>
 <body>
-<div class="hero"><div class="hero-in"><div class="brand">KHL <b>BET</b><small>1 октября · визуал арены · фикс 200 ₽</small></div><div class="tools"><button class="lamp" id="theme" type="button" aria-label="Тема">💡</button><span class="bal">10 936 ₽</span></div></div></div>
+<div class="hero"><div class="hero-in"><div class="brand">KHL <b>BET</b><small>2 октября · фикс 200 ₽ · пересчёт по факту</small></div><div class="tools"><button class="lamp" id="theme" type="button" aria-label="Тема">💡</button><span class="bal">11 206 ₽</span></div></div></div>
 <nav class="tabs">
   <button class="on" data-tab="hock">Хоккей</button>
   <button data-tab="foot">Футбол</button>
@@ -66,49 +67,29 @@ body.light .lamp{background:#fff;border-color:#d5e0ea;color:#b45309}
 <section id="hock">
 <nav class="sub"><button class="on" data-lg="khl">КХЛ</button><button data-lg="nhl">НХЛ</button><button data-lg="del">DEL</button></nav>
 <div id="khl">
-  <div class="league">Сегодня · live</div>
+  <div class="league">1 октября · закрыто</div>
   <article class="card">
-    <div class="toprow"><span class="time">19:30 · было 0:2</span><span class="badge live">LIVE</span></div>
-    <div class="teams"><div class="av" style="background:#1d4ed8">ДМ</div><div class="nm">Динамо Минск</div><span class="vs">0:2</span><div class="nm">ЦСКА</div><div class="av" style="background:#b91c1c">ЦС</div></div>
-    <div class="markets">
-      <div class="m on"><div class="k">Исход ЦСКА</div><div class="v">2.15</div></div>
-      <div class="m"><div class="k">Фора −1.5</div><div class="v">3.00</div></div>
-      <div class="m"><div class="k">Тотал 4.5</div><div class="v">1.62</div></div>
-      <div class="m"><div class="k">ИТБ ЦСКА 2.5</div><div class="v">~1.85</div></div>
-    </div>
-    <div class="note">Уже в игре. Новую ставку не ставим.</div>
+    <div class="toprow"><span class="time">19:30 · финал</span><span class="badge win">ЦСКА 4:1</span></div>
+    <div class="teams"><div class="av" style="background:#1d4ed8">ДМ</div><div class="nm">Динамо Минск</div><span class="vs">1:4</span><div class="nm">ЦСКА</div><div class="av" style="background:#b91c1c">ЦС</div></div>
+    <div class="note">Матч уже шёл, новую ставку не ставили. В банк не входит.</div>
   </article>
   <article class="card">
-    <div class="toprow"><span class="time">19:30 · 1:2</span><span class="badge skip">не брали</span></div>
-    <div class="teams"><div class="av" style="background:#1d4ed8">ДМ</div><div class="nm">Динамо М</div><span class="vs">1:2</span><div class="nm">Торпедо</div><div class="av" style="background:#0f766e">ТО</div></div>
-    <div class="markets">
-      <div class="m"><div class="k">П1 / П2</div><div class="v">2.20 / 2.70</div></div>
-      <div class="m"><div class="k">ТБ 4.5</div><div class="v">1.65</div></div>
-      <div class="m"><div class="k">ИТБ Динамо 2.5</div><div class="v">~1.90</div></div>
-      <div class="m"><div class="k">ИТБ Торпедо 2.5</div><div class="v">~1.95</div></div>
-    </div>
+    <div class="toprow"><span class="time">19:30 · буллиты</span><span class="badge loss">−200</span></div>
+    <div class="teams"><div class="av" style="background:#b45309">СЕ</div><div class="nm">Северсталь</div><span class="vs">3:4 Б</span><div class="nm">Адмирал</div><div class="av" style="background:#0369a1">АД</div></div>
+    <div class="markets"><div class="m"><div class="k">П1 в купоне</div><div class="v">1.94</div></div><div class="m"><div class="k">Итог</div><div class="v">мимо</div></div></div>
+    <div class="note">Победа в основное время не зашла: 3:4 по буллитам.</div>
   </article>
-  <article class="card">
-    <div class="toprow"><span class="time">19:30 · 2:1 2-й</span><span class="badge live">LIVE</span></div>
-    <div class="teams"><div class="av" style="background:#b45309">СЕ</div><div class="nm">Северсталь</div><span class="vs">2:1</span><div class="nm">Адмирал</div><div class="av" style="background:#0369a1">АД</div></div>
-    <div class="markets">
-      <div class="m on"><div class="k">П1, уже в купоне</div><div class="v">1.94</div></div>
-      <div class="m"><div class="k">Фора −1.5</div><div class="v">2.75</div></div>
-      <div class="m"><div class="k">ИТБ Северсталь 2.5</div><div class="v">1.80</div></div>
-      <div class="m"><div class="k">ИТБ Адмирал 2.5</div><div class="v">2.40</div></div>
-    </div>
-  </article>
-  <div class="league">2 октября · берём то, что раньше резал</div>
+  <div class="league">2 октября · открытый купон</div>
   <article class="card">
     <div class="toprow"><span class="time">16:30</span><span class="badge take">В КУПОНЕ</span></div>
     <div class="teams"><div class="av" style="background:#b91c1c">АВ</div><div class="nm">Авангард</div><span class="vs">—</span><div class="nm">Лада</div><div class="av" style="background:#1e3a8a">ЛА</div></div>
     <div class="markets">
-      <div class="m"><div class="k">П1, короткий</div><div class="v">1.40</div></div>
+      <div class="m"><div class="k">П1, короткий</div><div class="v">1.47</div></div>
       <div class="m on"><div class="k">Лада +1.5</div><div class="v">2.00</div></div>
-      <div class="m"><div class="k">ТБ 5.5</div><div class="v">1.92</div></div>
+      <div class="m"><div class="k">ТБ 5.5</div><div class="v">1.97</div></div>
       <div class="m"><div class="k">ИТБ Авангард 3.5</div><div class="v">~1.85</div></div>
     </div>
-    <div class="note">Победа 1.40 снова не берём. Фора гостей +1.5 — тот рынок, который резал.</div>
+    <div class="note">Домашняя 1.47 не берём: рядом фора гостей 2.00 и тотал 1.97.</div>
   </article>
   <article class="card">
     <div class="toprow"><span class="time">17:00</span><span class="badge take">В КУПОНЕ</span></div>
@@ -119,15 +100,15 @@ body.light .lamp{background:#fff;border-color:#d5e0ea;color:#b45309}
       <div class="m on"><div class="k">ТБ 5.25</div><div class="v">2.03</div></div>
       <div class="m"><div class="k">ИТБ Сибирь 2.5</div><div class="v">~2.10</div></div>
     </div>
-    <div class="note">Домашняя победа 1.77 — тот тип, который не доезжал. Берём тотал.</div>
+    <div class="note">Домашняя 1.77 в коридоре 1.40–1.77, рядом тотал от 1.85. Берём тотал.</div>
   </article>
   <article class="card">
     <div class="toprow"><span class="time">17:00</span><span class="badge take">В КУПОНЕ</span></div>
     <div class="teams"><div class="av" style="background:#c2410c">АВ</div><div class="nm">Автомобилист</div><span class="vs">—</span><div class="nm">Амур</div><div class="av" style="background:#854d0e">АМ</div></div>
     <div class="markets">
-      <div class="m"><div class="k">П1, не беру</div><div class="v">1.76</div></div>
-      <div class="m"><div class="k">Фора −1</div><div class="v">1.97</div></div>
-      <div class="m on"><div class="k">ТБ 5.25</div><div class="v">2.03</div></div>
+      <div class="m"><div class="k">П1, не беру</div><div class="v">1.75</div></div>
+      <div class="m"><div class="k">Фора −1</div><div class="v">1.96</div></div>
+      <div class="m on"><div class="k">ТБ 5.25</div><div class="v">1.99</div></div>
       <div class="m"><div class="k">ИТБ Амур 1.5</div><div class="v">~1.75</div></div>
     </div>
   </article>
@@ -135,193 +116,267 @@ body.light .lamp{background:#fff;border-color:#d5e0ea;color:#b45309}
     <div class="toprow"><span class="time">19:00</span><span class="badge take">В КУПОНЕ</span></div>
     <div class="teams"><div class="av" style="background:#166534">АК</div><div class="nm">Ак Барс</div><span class="vs">—</span><div class="nm">Трактор</div><div class="av" style="background:#b45309">ТР</div></div>
     <div class="markets">
-      <div class="m"><div class="k">П1</div><div class="v">2.05</div></div>
+      <div class="m"><div class="k">П1</div><div class="v">2.00</div></div>
       <div class="m on"><div class="k">Трактор +0</div><div class="v">2.33</div></div>
-      <div class="m"><div class="k">Тотал 5.0</div><div class="v">2.02</div></div>
+      <div class="m"><div class="k">Тотал 5.0</div><div class="v">2.00</div></div>
       <div class="m"><div class="k">ИТБ Трактор 2.5</div><div class="v">~1.95</div></div>
     </div>
-    <div class="note">Равные. Раньше ставил пас. Берём фору гостей 0 за 2.33.</div>
+    <div class="note">Равные. Фора гостей 0 за 2.33.</div>
   </article>
   <article class="card">
-    <div class="toprow"><span class="time">19:00</span><span class="badge skip">не дублируем</span></div>
+    <div class="toprow"><span class="time">19:00</span><span class="badge skip">пас</span></div>
     <div class="teams"><div class="av" style="background:#0f766e">НЕ</div><div class="nm">Нефтехимик</div><span class="vs">—</span><div class="nm">Барыс</div><div class="av" style="background:#1d4ed8">БА</div></div>
     <div class="markets">
       <div class="m"><div class="k">П1</div><div class="v">2.05</div></div>
-      <div class="m"><div class="k">ТБ 5.25</div><div class="v">1.99</div></div>
-      <div class="m"><div class="k">ИТБ хозяев 3.5</div><div class="v">~2.05</div></div>
+      <div class="m"><div class="k">ТБ 5.0</div><div class="v">1.96</div></div>
+      <div class="m"><div class="k">Фора 0</div><div class="v">2.29</div></div>
       <div class="m"><div class="k">ИТБ Барыс 2.5</div><div class="v">~2.15</div></div>
     </div>
+    <div class="note">Не дублируем тотал: уже два ТБ в купоне.</div>
   </article>
   <article class="card">
     <div class="toprow"><span class="time">19:30</span><span class="badge take">В КУПОНЕ</span></div>
     <div class="teams"><div class="av" style="background:#b91c1c">СП</div><div class="nm">Спартак</div><span class="vs">—</span><div class="nm">Металлург</div><div class="av" style="background:#9f1239">МГ</div></div>
     <div class="markets">
-      <div class="m"><div class="k">П1 / П2</div><div class="v">2.45 / 2.40</div></div>
-      <div class="m on"><div class="k">ТБ 5.5</div><div class="v">1.97</div></div>
+      <div class="m"><div class="k">П1 / П2</div><div class="v">2.52 / 2.39</div></div>
+      <div class="m on"><div class="k">ТБ 5.5</div><div class="v">2.00</div></div>
       <div class="m"><div class="k">ИТБ Спартак 2.5</div><div class="v">~1.85</div></div>
       <div class="m"><div class="k">ИТБ Металлург 2.5</div><div class="v">~1.85</div></div>
     </div>
   </article>
 </div>
 <div id="nhl" class="hidden">
-  <div class="league">Сегодня · старт 02:00 МСК</div>
+  <div class="league">Ночь 2 октября · закрыто</div>
   <article class="card">
-    <div class="toprow"><span class="time">02:00</span><span class="badge take">В КУПОНЕ</span></div>
-    <div class="teams"><div class="av" style="background:#ea580c">TB</div><div class="nm">Lightning</div><span class="vs">—</span><div class="nm">Rangers</div><div class="av" style="background:#1d4ed8">NY</div></div>
-    <div class="markets">
-      <div class="m"><div class="k">Lightning</div><div class="v">1.69</div></div>
-      <div class="m on"><div class="k">Rangers</div><div class="v">2.25</div></div>
-      <div class="m"><div class="k">ТБ 5.5</div><div class="v">1.80</div></div>
-      <div class="m"><div class="k">ИТБ Rangers 2.5</div><div class="v">~1.90</div></div>
-    </div>
+    <div class="toprow"><span class="time">02:00 · финал</span><span class="badge win">+250</span></div>
+    <div class="teams"><div class="av" style="background:#ea580c">TB</div><div class="nm">Lightning</div><span class="vs">1:5</span><div class="nm">Rangers</div><div class="av" style="background:#1d4ed8">NY</div></div>
+    <div class="note">Рейнджерс 2.25 зашли. Шайбу забил и Шестёркин. 200 × 2.25 = 450, профит +250.</div>
   </article>
   <article class="card">
-    <div class="toprow"><span class="time">05:00</span><span class="badge take">В КУПОНЕ</span></div>
-    <div class="teams"><div class="av" style="background:#ea580c">ED</div><div class="nm">Oilers</div><span class="vs">—</span><div class="nm">Canucks</div><div class="av" style="background:#0f766e">VA</div></div>
+    <div class="toprow"><span class="time">05:00 · финал</span><span class="badge win">+220</span></div>
+    <div class="teams"><div class="av" style="background:#ea580c">ED</div><div class="nm">Oilers</div><span class="vs">9:6</span><div class="nm">Canucks</div><div class="av" style="background:#0f766e">VA</div></div>
+    <div class="note">Победа 1.48 не бралась. Фора −1.5 за 2.10 зашла: разница 3. Профит +220.</div>
+  </article>
+  <div class="league">Ночь на 3 октября · МСК</div>
+  <article class="card">
+    <div class="toprow"><span class="time">01:30</span><span class="badge take">В КУПОНЕ</span></div>
+    <div class="teams"><div class="av" style="background:#1d4ed8">NY</div><div class="nm">Rangers</div><span class="vs">—</span><div class="nm">Detroit</div><div class="av" style="background:#b91c1c">ДЕ</div></div>
     <div class="markets">
-      <div class="m"><div class="k">П1, короткий</div><div class="v">1.48</div></div>
-      <div class="m on"><div class="k">Oilers −1.5</div><div class="v">2.10</div></div>
-      <div class="m"><div class="k">ТБ 6.5</div><div class="v">1.87</div></div>
-      <div class="m"><div class="k">ИТБ Canucks 2.5</div><div class="v">~1.85</div></div>
+      <div class="m"><div class="k">П1, ориентир</div><div class="v">~1.85</div></div>
+      <div class="m on"><div class="k">ТБ 5.5</div><div class="v">1.90</div></div>
+      <div class="m"><div class="k">Detroit +1.5</div><div class="v">~1.80</div></div>
+      <div class="m"><div class="k">ИТБ Rangers 2.5</div><div class="v">~1.90</div></div>
     </div>
-    <div class="note">29.09 эти же команды сыграли 5:6 ОТ. Победа 1.48 не беру, фору −1.5 раньше резал.</div>
+    <div class="note">Вчера Рейнджерс забили 5. Тотал, не короткая победа.</div>
   </article>
   <article class="card">
     <div class="toprow"><span class="time">02:00</span><span class="badge skip">пас</span></div>
-    <div class="teams"><div class="av" style="background:#ea580c">PH</div><div class="nm">Flyers</div><span class="vs">—</span><div class="nm">Devils</div><div class="av" style="background:#b91c1c">NJ</div></div>
+    <div class="teams"><div class="av" style="background:#b91c1c">WA</div><div class="nm">Capitals</div><span class="vs">—</span><div class="nm">Hurricanes</div><div class="av" style="background:#b45309">CA</div></div>
+    <div class="markets"><div class="m"><div class="k">П2</div><div class="v">~1.70</div></div><div class="m"><div class="k">ТБ 6.0</div><div class="v">~1.90</div></div></div>
+    <div class="note">Короткий фаворит ниже 1.70 в купон не кладём.</div>
+  </article>
+  <article class="card">
+    <div class="toprow"><span class="time">03:00</span><span class="badge take">В КУПОНЕ</span></div>
+    <div class="teams"><div class="av" style="background:#eab308">BO</div><div class="nm">Bruins</div><span class="vs">—</span><div class="nm">Jets</div><div class="av" style="background:#0369a1">WP</div></div>
     <div class="markets">
-      <div class="m"><div class="k">Devils</div><div class="v">1.61</div></div>
-      <div class="m"><div class="k">Flyers +1.5</div><div class="v">1.57</div></div>
-      <div class="m"><div class="k">ТМ 5.5</div><div class="v">2.00</div></div>
-      <div class="m"><div class="k">ИТБ Devils 3.5</div><div class="v">~1.95</div></div>
+      <div class="m"><div class="k">П2</div><div class="v">~1.75</div></div>
+      <div class="m on"><div class="k">Jets −1.5</div><div class="v">2.20</div></div>
+      <div class="m"><div class="k">ТБ 5.5</div><div class="v">1.87</div></div>
+      <div class="m"><div class="k">ИТБ Jets 3.5</div><div class="v">~1.95</div></div>
     </div>
+  </article>
+  <article class="card">
+    <div class="toprow"><span class="time">04:00</span><span class="badge skip">не дублируем</span></div>
+    <div class="teams"><div class="av" style="background:#1d4ed8">ST</div><div class="nm">Blues</div><span class="vs">—</span><div class="nm">Stars</div><div class="av" style="background:#15803d">DA</div></div>
+    <div class="markets"><div class="m"><div class="k">П2</div><div class="v">~1.72</div></div><div class="m"><div class="k">ТБ 5.5</div><div class="v">1.85</div></div></div>
+  </article>
+  <article class="card">
+    <div class="toprow"><span class="time">05:00</span><span class="badge skip">пас</span></div>
+    <div class="teams"><div class="av" style="background:#c2410c">AN</div><div class="nm">Ducks</div><span class="vs">—</span><div class="nm">Vegas</div><div class="av" style="background:#854d0e">VG</div></div>
+    <div class="markets"><div class="m"><div class="k">П2</div><div class="v">~1.55</div></div><div class="m"><div class="k">Vegas −1.5</div><div class="v">~2.15</div></div></div>
+    <div class="note">Домашняя короткая. Фора есть, но слот НХЛ уже занят Виннипегом.</div>
   </article>
 </div>
 <div id="del" class="hidden">
-  <div class="league">Сегодня 20:30</div>
+  <div class="league">1 октября · закрыто</div>
   <article class="card">
-    <div class="toprow"><span class="time">Адлер — Изерлон</span><span class="badge skip">1.42 короткий</span></div>
-    <div class="markets">
-      <div class="m"><div class="k">П1</div><div class="v">1.42</div></div>
-      <div class="m"><div class="k">Фора −1.5</div><div class="v">~1.90</div></div>
-      <div class="m"><div class="k">ИТБ Адлер 3.5</div><div class="v">~1.75</div></div>
-      <div class="m"><div class="k">ИТБ Изерлон 1.5</div><div class="v">~1.80</div></div>
-    </div>
+    <div class="toprow"><span class="time">20:30</span><span class="badge skip">не в купоне</span></div>
+    <div class="teams"><div class="av" style="background:#1d4ed8">АД</div><div class="nm">Адлер</div><span class="vs">6:1</span><div class="nm">Изерлон</div><div class="av" style="background:#854d0e">ИЗ</div></div>
+    <div class="note">П1 1.42 не брали. Итог 6:1.</div>
   </article>
-  <div class="league">2 октября</div>
+  <div class="league">2 октября · 20:30 МСК</div>
   <article class="card">
-    <div class="toprow"><span class="time">Нюрнберг — Швеннинген</span><span class="badge take">В КУПОНЕ</span></div>
+    <div class="toprow"><span class="time">20:30</span><span class="badge take">В КУПОНЕ</span></div>
+    <div class="teams"><div class="av" style="background:#1d4ed8">НЮ</div><div class="nm">Нюрнберг</div><span class="vs">—</span><div class="nm">Швеннинген</div><div class="av" style="background:#0f766e">ШВ</div></div>
     <div class="markets">
-      <div class="m"><div class="k">П1 ~</div><div class="v">1.55</div></div>
-      <div class="m on"><div class="k">ИТБ хозяев 3.5</div><div class="v">~1.80</div></div>
-      <div class="m"><div class="k">ТБ 5.5</div><div class="v">~1.85</div></div>
+      <div class="m"><div class="k">П1, короткий</div><div class="v">~1.55</div></div>
+      <div class="m on"><div class="k">ТБ 5.5</div><div class="v">1.85</div></div>
+      <div class="m"><div class="k">ИТБ хозяев 3.5</div><div class="v">~1.80</div></div>
       <div class="m"><div class="k">ИТБ гостей 1.5</div><div class="v">~1.65</div></div>
     </div>
+    <div class="note">Нюрнберг 4 победы из 5, 19:10 по шайбам. Победа короткая, берём тотал.</div>
+  </article>
+  <article class="card">
+    <div class="toprow"><span class="time">20:30</span><span class="badge skip">пас</span></div>
+    <div class="teams"><div class="av" style="background:#b91c1c">КЁ</div><div class="nm">Кёльн</div><span class="vs">—</span><div class="nm">Мюнхен</div><div class="av" style="background:#1e3a8a">МЮ</div></div>
+    <div class="markets"><div class="m"><div class="k">П1 / П2</div><div class="v">~2.20 / 2.40</div></div><div class="m"><div class="k">ТБ 5.5</div><div class="v">~1.90</div></div></div>
+  </article>
+  <article class="card">
+    <div class="toprow"><span class="time">20:30</span><span class="badge skip">линия дня</span></div>
+    <div class="teams"><div class="av" style="background:#166534">ЛО</div><div class="nm">Лёвен</div><span class="vs">—</span><div class="nm">Айсберен</div><div class="av" style="background:#0f172a">БЕ</div></div>
+    <div class="markets"><div class="m"><div class="k">П2</div><div class="v">~1.80</div></div><div class="m"><div class="k">ТБ 5.5</div><div class="v">~1.85</div></div></div>
+    <div class="note">Также 20:30: Аугсбург — Вольфсбург, Крефельд — Ингольштадт, Штраубинг — Бремерхафен. В купон не дублируем.</div>
   </article>
 </div>
 </section>
 <section id="foot" class="hidden">
-  <div class="league">Норвегия · U19 · сегодня</div>
+<nav class="sub"><button class="on" data-fl="elite">Элитсерия</button><button data-fl="obos">OBOS</button><button data-fl="d2">2-й</button><button data-fl="d3">3-й</button><button data-fl="cup">Кубок</button><button data-fl="u19">U19</button></nav>
+<div id="elite">
+  <div class="league">Элитсерия · пауза сборных</div>
+  <article class="card"><div class="note">Ближайший тур 9–12 октября: Бранн — Викинг (9 окт, 19:00), Будё/Глимт — Кристиансунн (10 окт, 16:00), Русенборг — Саннефьорд (10 окт, 18:00). На каждый матч: победа, общий тотал, тотал 1-го и 2-го тайма. Сегодня игр нет.</div></article>
+</div>
+<div id="obos" class="hidden">
+  <div class="league">OBOS-лига</div>
+  <article class="card"><div class="note">Окно 2–5 октября. На 2 октября клубных матчей в линии нет: пауза. Следующие игры смотреть 3–5 октября, рынки те же: исход, тотал матча, тотал таймов.</div></article>
+</div>
+<div id="d2" class="hidden">
+  <div class="league">2-й дивизион</div>
+  <article class="card"><div class="note">Окно 2–4 октября. На утро 2 октября подтверждённых матчей с линией нет. Если линия появится днём — победа только от 1.78, иначе тотал или тайм от 1.85.</div></article>
+</div>
+<div id="d3" class="hidden">
+  <div class="league">3-й дивизион</div>
+  <article class="card"><div class="note">Окно 2–4 октября. Утром линии нет. Короткие домашние 1.40–1.77 не берём, если рядом тотал или ИТБ от 1.85.</div></article>
+</div>
+<div id="cup">
+  <div class="league">NM-кубок · 2 октября 12:00</div>
   <article class="card">
-    <div class="toprow"><span class="time">18:15 · молодёжная лига</span><span class="badge skip">1.53 короткий</span></div>
-    <div class="teams"><div class="av" style="background:#1d4ed8">НО</div><div class="nm">Норстранн U19</div><span class="vs">—</span><div class="nm">Фолло U19</div><div class="av" style="background:#b91c1c">ФО</div></div>
-    <div class="markets">
-      <div class="m"><div class="k">П1</div><div class="v">4.05</div></div>
-      <div class="m"><div class="k">X</div><div class="v">4.85</div></div>
-      <div class="m"><div class="k">П2</div><div class="v">1.53</div></div>
-      <div class="m"><div class="k">ТБ 1.5 1-й тайм</div><div class="v">~1.59</div></div>
-    </div>
-    <div class="note">Норстранн дома проиграл 10 из 11 и пропускает в 1-м тайме 22 из 23. Исход и тайм короткие, не беру.</div>
-  </article>
-  <div class="league">Норвегия · NM-кубок · сегодня 12:00</div>
-  <article class="card">
-    <div class="toprow"><span class="time">Мадла — Викинг</span><span class="badge take">В КУПОНЕ</span></div>
+    <div class="toprow"><span class="time">12:00</span><span class="badge take">В КУПОНЕ</span></div>
+    <div class="teams"><div class="av" style="background:#854d0e">МА</div><div class="nm">Мадла</div><span class="vs">—</span><div class="nm">Викинг</div><div class="av" style="background:#1d4ed8">ВИ</div></div>
     <div class="markets">
       <div class="m"><div class="k">П2</div><div class="v">~1.12</div></div>
       <div class="m"><div class="k">ТБ 3.5</div><div class="v">~1.55</div></div>
-      <div class="m on"><div class="k">ТБ 1.5 1-й тайм</div><div class="v">~1.85</div></div>
+      <div class="m on"><div class="k">ТБ 1.5 1-й тайм</div><div class="v">1.85</div></div>
       <div class="m"><div class="k">ТБ 1.5 2-й тайм</div><div class="v">~1.70</div></div>
     </div>
+    <div class="note">Победа 1.12 не берём. Край на первом тайме.</div>
   </article>
   <article class="card">
-    <div class="toprow"><span class="time">Берум — Лиллестрём</span><span class="badge take">В КУПОНЕ</span></div>
+    <div class="toprow"><span class="time">12:00</span><span class="badge take">В КУПОНЕ</span></div>
+    <div class="teams"><div class="av" style="background:#15803d">БЕ</div><div class="nm">Берум</div><span class="vs">—</span><div class="nm">Лиллестрём</div><div class="av" style="background:#eab308">ЛИ</div></div>
     <div class="markets">
-      <div class="m"><div class="k">П1 / X / П2</div><div class="v">13.70 / 8.53 / 1.12</div></div>
+      <div class="m"><div class="k">П1 / X / П2</div><div class="v">13.7 / 8.5 / 1.12</div></div>
       <div class="m"><div class="k">ТБ 3.5</div><div class="v">~1.50</div></div>
-      <div class="m on"><div class="k">ТБ 1.5 1-й тайм</div><div class="v">~1.85</div></div>
+      <div class="m on"><div class="k">ТБ 1.5 1-й тайм</div><div class="v">1.85</div></div>
       <div class="m"><div class="k">ТБ 1.5 2-й тайм</div><div class="v">~1.70</div></div>
     </div>
   </article>
   <article class="card">
-    <div class="toprow"><span class="time">Рана — Будё/Глимт</span><span class="badge take">В КУПОНЕ</span></div>
+    <div class="toprow"><span class="time">12:00</span><span class="badge take">В КУПОНЕ</span></div>
+    <div class="teams"><div class="av" style="background:#0f766e">РА</div><div class="nm">Рана</div><span class="vs">—</span><div class="nm">Будё/Глимт</div><div class="av" style="background:#eab308">ГЛ</div></div>
     <div class="markets">
       <div class="m"><div class="k">П2</div><div class="v">~1.08</div></div>
       <div class="m"><div class="k">ТБ 3.5</div><div class="v">~1.45</div></div>
-      <div class="m on"><div class="k">ТБ 1.5 1-й тайм</div><div class="v">~1.80</div></div>
+      <div class="m on"><div class="k">ТБ 1.5 1-й тайм</div><div class="v">1.80</div></div>
       <div class="m"><div class="k">ТБ 1.5 2-й тайм</div><div class="v">~1.65</div></div>
     </div>
-    <div class="note">Низ против Элиты. Победа 1.10 не берём, край на первом тайме.</div>
+    <div class="note">Низ против элиты. Победа 1.08 не берём.</div>
   </article>
-  <div class="league">Норвегия · сборная U19 · 2 октября 13:00</div>
+</div>
+<div id="u19" class="hidden">
+  <div class="league">U19 · 2 октября</div>
   <article class="card">
-    <div class="toprow"><span class="time">Уэльс U19 — Норвегия U19</span><span class="badge take">В КУПОНЕ</span></div>
-    <div class="teams"><div class="av" style="background:#b91c1c">УЭ</div><div class="nm">Уэльс U19</div><span class="vs">—</span><div class="nm">Норвегия U19</div><div class="av" style="background:#1d4ed8">НО</div></div>
+    <div class="toprow"><span class="time">13:00 · сборные</span><span class="badge take">В КУПОНЕ</span></div>
+    <div class="teams"><div class="av" style="background:#b91c1c">УЭ</div><div class="nm">Уэльс U19</div><span class="vs">—</span><div class="nm">Норвегия U19</div><div class="av" style="background:#b91c1c">НО</div></div>
     <div class="markets">
-      <div class="m"><div class="k">П1</div><div class="v">4.32</div></div>
-      <div class="m"><div class="k">X</div><div class="v">4.56</div></div>
-      <div class="m"><div class="k">П2</div><div class="v">1.67</div></div>
+      <div class="m"><div class="k">П1 / X / П2</div><div class="v">4.32 / 4.56 / 1.67</div></div>
       <div class="m on"><div class="k">ТБ 3.5</div><div class="v">2.15</div></div>
+      <div class="m"><div class="k">ТБ 1.5 1-й тайм</div><div class="v">~1.85</div></div>
+      <div class="m"><div class="k">П2 короткий</div><div class="v">1.67</div></div>
     </div>
-    <div class="note">П2 1.67 короткий. Берём ТБ 3.5 и ТБ 1.5 первый тайм ~1.85. Норвегия била Уэльс 3:1 и 5:0.</div>
+    <div class="note">П2 1.67 ниже 1.70, в экспресс и одиночку не кладём. Берём ТБ 3.5.</div>
   </article>
-  <div class="league">Остальные чемпионаты</div>
   <article class="card">
-    <div class="note">Элитсерия — 9–12 октября. OBOS — 2–5 октября. 2-й и 3-й дивизионы — 2–4 октября. Клубный плей-офф U19 — 8 октября: Бранн U19 — Фредрикстад U19, Русенборг U19 — Лиллестрём U19. На каждый матч: победа, общий тотал, тотал 1-го и 2-го тайма.</div>
+    <div class="toprow"><span class="time">18:15 · молодёжка</span><span class="badge skip">короткий</span></div>
+    <div class="teams"><div class="av" style="background:#1e3a8a">НС</div><div class="nm">Норстранн U19</div><span class="vs">—</span><div class="nm">Фолло U19</div><div class="av" style="background:#15803d">ФО</div></div>
+    <div class="markets">
+      <div class="m"><div class="k">П1 / X / П2</div><div class="v">4.05 / 4.85 / 1.53</div></div>
+      <div class="m"><div class="k">ТБ 1.5 1-й тайм</div><div class="v">~1.59</div></div>
+    </div>
+    <div class="note">Норстранн дома проиграл 10 из 11. Исход 1.53 и тайм 1.59 короткие, пас.</div>
   </article>
+  <article class="card"><div class="note">Клубный плей-офф U19 — 8 октября: Бранн U19 — Фредрикстад U19, Русенборг U19 — Лиллестрём U19.</div></article>
+</div>
 </section>
 <section id="ex" class="hidden">
-  <div class="league">Экспресс · кэф от 3.00 · фикс 200 ₽</div>
+  <div class="league">2 октября · два экспресса · кэф от 3.00 · фикс 200</div>
   <article class="card">
-    <div class="toprow"><span class="time">Экспресс 1 · хоккей</span><span class="badge take">4.50</span></div>
+    <div class="toprow"><span class="time">Экспресс 1 · хоккей</span><span class="badge take">4.66</span></div>
     <div class="markets">
-      <div class="m on"><div class="k">Лада +1.5</div><div class="v">2.00</div></div>
-      <div class="m on"><div class="k">Rangers</div><div class="v">2.25</div></div>
+      <div class="m on"><div class="k">Лада +1.5 · 16:30</div><div class="v">2.00</div></div>
+      <div class="m on"><div class="k">Трактор +0 · 19:00</div><div class="v">2.33</div></div>
     </div>
-    <div class="note">2.00 × 2.25 = 4.50. Разные лиги, не один матч. Ставка 200 ₽, выплата 900 ₽.</div>
+    <div class="note">2.00 × 2.33 = 4.66. Разные матчи. Ставка 200 ₽, выплата 932 ₽.</div>
   </article>
   <article class="card">
     <div class="toprow"><span class="time">Экспресс 2 · хоккей + футбол</span><span class="badge take">4.36</span></div>
     <div class="markets">
-      <div class="m on"><div class="k">Салават ТБ 5.25</div><div class="v">2.03</div></div>
-      <div class="m on"><div class="k">Норвегия U19 ТБ 3.5</div><div class="v">2.15</div></div>
+      <div class="m on"><div class="k">Салават ТБ 5.25 · 17:00</div><div class="v">2.03</div></div>
+      <div class="m on"><div class="k">Норвегия U19 ТБ 3.5 · 13:00</div><div class="v">2.15</div></div>
     </div>
-    <div class="note">2.03 × 2.15 = 4.36. Уэльс U19 — Норвегия U19, 2 октября 13:00. Ставка 200 ₽, выплата 872 ₽.</div>
+    <div class="note">2.03 × 2.15 = 4.36. Уэльс U19 — Норвегия U19. Ставка 200 ₽, выплата 872 ₽.</div>
   </article>
-  <article class="card">
-    <div class="note">Короткие 1.40–1.70 в экспресс не кладу: они режут кэф и уже не проходили одиночками. Каждый день два таких купона, итог от 3.00.</div>
-  </article>
+  <article class="card"><div class="note">Короткие ниже 1.70 в экспресс не ставим. Два исхода одного матча не кладём. Домашнюю 1.40–1.77 не берём, если рядом тотал, фора или ИТБ от 1.85.</div></article>
 </section>
 <section id="itog" class="hidden">
-  <article class="card"><div class="note">30.09 Авто — Лада 3:1, ТБ 5.5 мимо. Спартак — Трактор 2:4, ТМ 5.5 мимо. PIT 7:0 зашла +240. NYI — TOR 1:2, ТМ зашла +182. Баланс 10 936 ₽.</div></article>
+  <div class="pad">
+    <div class="row"><span>30.09 Авто — Лада 3:1, ТБ 5.5</span><span>мимо</span></div>
+    <div class="row"><span>30.09 Спартак — Трактор 2:4, ТМ 5.5</span><span>мимо</span></div>
+    <div class="row"><span>30.09 PIT 7:0</span><span>+240</span></div>
+    <div class="row"><span>30.09 NYI — TOR 1:2, ТМ</span><span>+182</span></div>
+    <div class="row"><span>Баланс после 30.09</span><span>10 936 ₽</span></div>
+    <div class="row"><span>01.10 Северсталь П1 1.94, 3:4 Б</span><span>−200</span></div>
+    <div class="row"><span>02.10 Rangers 5:1, кэф 2.25</span><span>+250</span></div>
+    <div class="row"><span>02.10 Oilers −1.5, 9:6</span><span>+220</span></div>
+    <div class="row"><span>Динамо Мн — ЦСКА 1:4</span><span>не в банке</span></div>
+    <div class="row"><span>Адлер — Изерлон 6:1</span><span>не в банке</span></div>
+    <p class="foot">Открытый день: 5 одиночек КХЛ + 2 НХЛ + DEL + 3 кубка + U19. Экспрессы отдельно, фикс 200 на купон.</p>
+  </div>
 </section>
 <section id="bank" class="hidden">
-  <div class="pad"><div class="big">10 936 ₽</div>
+  <div class="pad">
+    <div class="big">11 206 ₽</div>
+    <p class="foot">Старт 10 000. После 30.09 было 10 936. Ночь: −200 +250 +220 = +270.</p>
     <div class="row"><span>Лада +1.5</span><span>2.00</span></div>
     <div class="row"><span>Салават ТБ 5.25</span><span>2.03</span></div>
-    <div class="row"><span>Авто ТБ 5.25</span><span>2.03</span></div>
+    <div class="row"><span>Авто ТБ 5.25</span><span>1.99</span></div>
     <div class="row"><span>Трактор +0</span><span>2.33</span></div>
-    <div class="row"><span>Спартак ТБ 5.5</span><span>1.97</span></div>
-    <div class="row"><span>Rangers</span><span>2.25</span></div>
-    <div class="row"><span>Oilers −1.5</span><span>2.10</span></div>
-    <p class="foot">Победы 1.40–1.77 сняты с купона. Фикс 200. 18+.</p>
+    <div class="row"><span>Спартак ТБ 5.5</span><span>2.00</span></div>
+    <div class="row"><span>Нюрнберг ТБ 5.5</span><span>1.85</span></div>
+    <div class="row"><span>Rangers ТБ 5.5</span><span>1.90</span></div>
+    <div class="row"><span>Jets −1.5</span><span>2.20</span></div>
+    <div class="row"><span>Экспресс 1</span><span>4.66 · 200 ₽</span></div>
+    <div class="row"><span>Экспресс 2</span><span>4.36 · 200 ₽</span></div>
+    <p class="foot">Фикс 200 на одиночку и на каждый экспресс. 18+.</p>
   </div>
 </section>
 <script>
-const themeBtn=document.getElementById("theme");
-function applyTheme(mode){document.body.classList.toggle("light",mode==="light");themeBtn.textContent=mode==="light"?"🌙":"💡";localStorage.setItem("khlbet-theme",mode)}
-applyTheme(localStorage.getItem("khlbet-theme")||"dark");
-themeBtn.onclick=()=>applyTheme(document.body.classList.contains("light")?"dark":"light");
-document.querySelectorAll(".tabs button").forEach(btn=>btn.onclick=()=>{document.querySelectorAll(".tabs button").forEach(b=>b.classList.remove("on"));btn.classList.add("on");["hock","foot","ex","itog","bank"].forEach(id=>document.getElementById(id).classList.add("hidden"));document.getElementById(btn.dataset.tab).classList.remove("hidden")});
-document.querySelectorAll(".sub button").forEach(btn=>btn.onclick=()=>{document.querySelectorAll(".sub button").forEach(b=>b.classList.remove("on"));btn.classList.add("on");["khl","nhl","del"].forEach(id=>document.getElementById(id).classList.add("hidden"));document.getElementById(btn.dataset.lg).classList.remove("hidden")});
+const theme=document.getElementById('theme');
+theme.onclick=()=>document.body.classList.toggle('light');
+document.querySelectorAll('.tabs button').forEach(b=>b.onclick=()=>{
+  document.querySelectorAll('.tabs button').forEach(x=>x.classList.remove('on'));
+  b.classList.add('on');
+  ['hock','foot','ex','itog','bank'].forEach(id=>document.getElementById(id).classList.toggle('hidden',id!==b.dataset.tab));
+});
+document.querySelectorAll('[data-lg]').forEach(b=>b.onclick=()=>{
+  document.querySelectorAll('[data-lg]').forEach(x=>x.classList.remove('on'));
+  b.classList.add('on');
+  ['khl','nhl','del'].forEach(id=>document.getElementById(id).classList.toggle('hidden',id!==b.dataset.lg));
+});
+document.querySelectorAll('[data-fl]').forEach(b=>b.onclick=()=>{
+  document.querySelectorAll('[data-fl]').forEach(x=>x.classList.remove('on'));
+  b.classList.add('on');
+  ['elite','obos','d2','d3','cup','u19'].forEach(id=>document.getElementById(id).classList.toggle('hidden',id!==b.dataset.fl));
+});
 </script>
-</body></html>
+</body>
+</html>
