@@ -60,8 +60,7 @@ body.light .lamp{background:#fff;border-color:#d5e0ea;color:#b45309}
 <div class="hero"><div class="hero-in"><div class="brand">KHL <b>BET</b><small>6 октября · фикс 200 ₽ · купон 2+1</small></div><div class="tools"><button class="lamp" id="theme" type="button" aria-label="Тема">💡</button><span class="bal">9 908 ₽</span></div></div></div>
 <nav class="tabs">
   <button class="on" data-tab="hock">Хоккей</button>
-  <button data-tab="foot">Футбол</button>
-  <button data-tab="ex">Экспресс</button>
+    <button data-tab="ex">Экспресс</button>
   <button data-tab="itog">Итоги</button>
   <button data-tab="bank">Банк</button>
 </nav>
@@ -316,7 +315,7 @@ theme.onclick=()=>document.body.classList.toggle('light');
 document.querySelectorAll('.tabs button').forEach(b=>b.onclick=()=>{
   document.querySelectorAll('.tabs button').forEach(x=>x.classList.remove('on'));
   b.classList.add('on');
-  ['hock','foot','ex','itog','bank'].forEach(id=>document.getElementById(id).classList.toggle('hidden',id!==b.dataset.tab));
+  ['hock','ex','itog','bank'].forEach(id=>document.getElementById(id).classList.toggle('hidden',id!==b.dataset.tab));
 });
 document.querySelectorAll('[data-lg]').forEach(b=>b.onclick=()=>{
   document.querySelectorAll('[data-lg]').forEach(x=>x.classList.remove('on'));
