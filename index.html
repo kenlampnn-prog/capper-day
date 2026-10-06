@@ -4,7 +4,7 @@
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
 <meta name="theme-color" content="#061018"/>
-<meta name="capper-build" content="2026-10-06-0805"/>
+<meta name="capper-build" content="2026-10-06-1105"/>
 <title>KHL Bet</title>
 <link rel="manifest" href="manifest.json"/>
 <link rel="icon" href="icon-192.png"/>
@@ -51,13 +51,13 @@ body.light .lamp{background:#fff;border-color:#d5e0ea;color:#b45309}
 .note{color:var(--soft);font-size:12px;line-height:1.4;margin-top:10px}
 .pad{padding:8px 14px 20px}
 .big{font-family:Oswald,sans-serif;font-size:42px}
-.row{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--line)}
+.row{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--line);gap:10px}
 .hidden{display:none}
 .foot{color:var(--muted);font-size:11px;margin-top:10px}
 </style>
 </head>
 <body>
-<div class="hero"><div class="hero-in"><div class="brand">KHL <b>BET</b><small>6 октября · фикс 200 ₽ · купон 2+1</small></div><div class="tools"><button class="lamp" id="theme" type="button" aria-label="Тема">💡</button><span class="bal">10 886 ₽</span></div></div></div>
+<div class="hero"><div class="hero-in"><div class="brand">KHL <b>BET</b><small>6 октября · фикс 200 ₽ · купон 2+2</small></div><div class="tools"><button class="lamp" id="theme" type="button" aria-label="Тема">💡</button><span class="bal">10 886 ₽</span></div></div></div>
 <nav class="tabs">
   <button class="on" data-tab="hock">Хоккей</button>
   <button data-tab="foot">Футбол</button>
@@ -68,129 +68,224 @@ body.light .lamp{background:#fff;border-color:#d5e0ea;color:#b45309}
 <section id="hock">
 <nav class="sub"><button class="on" data-lg="khl">КХЛ</button><button data-lg="nhl">НХЛ</button><button data-lg="del">DEL</button></nav>
 <div id="khl">
-  <div class="league">05.10 закрыто</div>
-  <article class="card"><div class="note">Лада — Шанхай 0:5, победа Шанхая в основное время 2.00 зашла +200. Минск — Торпедо 1:2 Б, победа в основное время не зашла −200. Экспресс мимо −200. Банк 9 708 ₽.</div></article>
-  <div class="league">6 октября</div>
+  <div class="league">5 октября · закрыто, снято с линии</div>
+  <article class="card"><div class="note">ЦСКА — Салават 3:1, П1 1.90 зашла +180. Ак Барс — Локомотив 0:2, П2 2.25 зашла +250. Экспресс Драконы 0:5 и Оттава 4:1 зашёл +548. Минск — Торпедо 1:2 Б в купоне не был: основное время 1:1, 1X2 не зашёл бы. Банк после расчёта 10 886 ₽.</div></article>
+  <div class="league">6 октября · линия</div>
   <article class="card">
-    <div class="toprow"><span class="time">17:00</span><span class="badge take">В КУПОНЕ</span></div>
-    <div class="teams"><div class="av" style="background:#c2410c">АВ</div><div class="nm">Автомобилист</div><span class="vs">—</span><div class="nm">Авангард</div><div class="av" style="background:#b91c1c">АГ</div></div>
+    <div class="toprow"><span class="time">17:00 МСК</span><span class="badge take">В КУПОНЕ</span></div>
+    <div class="teams"><div class="av" style="background:#c2410c">ТР</div><div class="nm">Трактор</div><span class="vs">—</span><div class="nm">Амур</div><div class="av" style="background:#e85d04">АМ</div></div>
+    <div class="markets">
+      <div class="m on"><div class="k">П1 основное время</div><div class="v">1.78</div></div>
+      <div class="m"><div class="k">П2 основное время</div><div class="v">3.50</div></div>
+      <div class="m"><div class="k">Фора −0.75</div><div class="v">1.90</div></div>
+      <div class="m"><div class="k">Тотал 5.0</div><div class="v">не берём</div></div>
+    </div>
+    <div class="note">Трактор дома, три победы кряду. П1 1.78 выше запретной полки 1.40–1.77. Фору Амура не берём. Тотал не ставим.</div>
+  </article>
+  <article class="card">
+    <div class="toprow"><span class="time">17:00 МСК</span><span class="badge skip">в экспресс</span></div>
+    <div class="teams"><div class="av" style="background:#e30613">АВ</div><div class="nm">Автомобилист</div><span class="vs">—</span><div class="nm">Авангард</div><div class="av" style="background:#c8102e">АГ</div></div>
     <div class="markets">
       <div class="m"><div class="k">П1 основное время</div><div class="v">2.45</div></div>
       <div class="m on"><div class="k">П2 основное время</div><div class="v">2.30</div></div>
-      <div class="m"><div class="k">С ОТ и буллитами</div><div class="v">не беру</div></div>
-      <div class="m"><div class="k">Тотал</div><div class="v">пас</div></div>
+      <div class="m"><div class="k">Фора −0.25</div><div class="v">2.04</div></div>
+      <div class="m"><div class="k">Тотал 5.0</div><div class="v">не берём</div></div>
     </div>
-    <div class="note">Авангард, победа в основное время, 2.30. Не с овертаймом.</div>
+    <div class="note">Авангард, победа в основное время 2.30, только в экспресс. Одиночку не дублируем. Фору Автомобилиста не берём. Тотал не по умолчанию.</div>
   </article>
-  <article class="card"><div class="note">Пас: Трактор 1.78 и СКА 1.72, короткие домашние. Второй экспресс не собираю: нет второй ноги от 1.80.</div></article>
-
-<div class="league">Правило исхода</div><article class="card"><div class="note">П1 и П2 только в основное время. Победа в овертайме или по буллитам — ничья в 1X2, ставка не зашла. Тотал не по умолчанию. Фору аутсайдера не берём.</div></article>
-<div class="league">6 октября · открытая линия</div>
-<article class="card">
-  <div class="toprow"><span class="time">17:00</span><span class="badge take">В КУПОНЕ</span></div>
-  <div class="teams"><span class="av" style="background:#111">ТР</span><span class="nm">Трактор</span><span class="vs">—</span><span class="nm">Амур</span><span class="av" style="background:#e85d04">АМ</span></div>
-  <div class="markets"><div class="m on"><div class="k">П1 основное время</div><div class="v">1.78</div></div><div class="m"><div class="k">П2 основное время</div><div class="v">3.60</div></div><div class="m"><div class="k">Фора −0.75</div><div class="v">1.90</div></div><div class="m"><div class="k">Тотал 5.0</div><div class="v">не берём</div></div></div>
-  <div class="note">Трактор дома, три победы кряду, П1 1.78 не короче 1.70. Фору Амура не берём: гостевой аутсайдер. Тотал не ставим.</div>
-</article>
-<article class="card">
-  <div class="toprow"><span class="time">17:00</span><span class="badge skip">в экспресс</span></div>
-  <div class="teams"><span class="av" style="background:#e30613">АВ</span><span class="nm">Автомобилист</span><span class="vs">—</span><span class="nm">Авангард</span><span class="av" style="background:#c8102e">АН</span></div>
-  <div class="markets"><div class="m"><div class="k">П1 основное время</div><div class="v">2.45</div></div><div class="m on"><div class="k">П2 основное время</div><div class="v">2.30</div></div><div class="m"><div class="k">Фора −0.25</div><div class="v">2.04</div></div><div class="m"><div class="k">Тотал 5.0</div><div class="v">не берём</div></div></div>
-  <div class="note">Авангард П2 2.30 только в экспресс. Одиночку не дублируем. Фору Автомобилиста не берём. Тотал не по умолчанию.</div>
-</article>
-<article class="card">
-  <div class="toprow"><span class="time">19:30</span><span class="badge take">В КУПОНЕ</span></div>
-  <div class="teams"><span class="av" style="background:#c8102e">СК</span><span class="nm">СКА</span><span class="vs">—</span><span class="nm">Северсталь</span><span class="av" style="background:#1a1a1a">СЕ</span></div>
-  <div class="markets"><div class="m on"><div class="k">П1 основное время</div><div class="v">1.72</div></div><div class="m"><div class="k">П2 основное время</div><div class="v">3.60</div></div><div class="m"><div class="k">Фора −1</div><div class="v">2.00</div></div><div class="m"><div class="k">Тотал 5.0</div><div class="v">не берём</div></div></div>
-  <div class="note">СКА дома, П1 1.72 выше порога 1.70. Фору Северстали не берём. Тотал не ставим.</div>
-</article>
+  <article class="card">
+    <div class="toprow"><span class="time">19:30 МСК</span><span class="badge take">В КУПОНЕ</span></div>
+    <div class="teams"><div class="av" style="background:#c8102e">СК</div><div class="nm">СКА</div><span class="vs">—</span><div class="nm">Северсталь</div><div class="av" style="background:#1a1a1a">СЕ</div></div>
+    <div class="markets">
+      <div class="m"><div class="k">П1 основное время</div><div class="v">1.72</div></div>
+      <div class="m"><div class="k">П2 основное время</div><div class="v">3.70</div></div>
+      <div class="m on"><div class="k">СКА −1</div><div class="v">2.00</div></div>
+      <div class="m"><div class="k">Тотал 5.0</div><div class="v">не берём</div></div>
+    </div>
+    <div class="note">Домашнюю 1.72 не берём: рядом фора −1 по 2.00. Фору Северстали не берём. Тотал не ставим. Победа только в основное время, ОТ и буллиты — мимо.</div>
+  </article>
+  <div class="league">Правило исхода</div>
+  <article class="card"><div class="note">П1 и П2 только в основное время. Овертайм или буллиты — ничья в 1X2, ставка не зашла. Тотал не по умолчанию. Фору аутсайдера не берём. Короче 1.70 в экспресс не кладём.</div></article>
 </div>
 <div id="nhl" class="hidden">
-<div class="league">6–7 октября · ночь МСК</div>
-<article class="card">
-  <div class="toprow"><span class="time">02:00</span><span class="badge skip">в экспресс</span></div>
-  <div class="teams"><span class="av" style="background:#cc0000">CAR</span><span class="nm">Hurricanes</span><span class="vs">—</span><span class="nm">Canadiens</span><span class="av" style="background:#a6192e">MTL</span></div>
-  <div class="markets"><div class="m on"><div class="k">П2 основное время</div><div class="v">1.83</div></div><div class="m"><div class="k">П1 основное время</div><div class="v">2.00</div></div><div class="m"><div class="k">Каролина −1.5</div><div class="v">3.00</div></div><div class="m"><div class="k">Тотал 6.5</div><div class="v">не берём</div></div></div>
-  <div class="note">Каролина 1.83 только в экспресс. Фору Монреаля не берём. Тотал не ставим.</div>
-</article>
-<article class="card">
-  <div class="toprow"><span class="time">02:00</span><span class="badge skip">пас</span></div>
-  <div class="teams"><span class="av" style="background:#ffb81c">NSH</span><span class="nm">Predators</span><span class="vs">—</span><span class="nm">Maple Leafs</span><span class="av" style="background:#00205b">TOR</span></div>
-  <div class="markets"><div class="m"><div class="k">П2 основное время</div><div class="v">2.30</div></div><div class="m"><div class="k">П1 основное время</div><div class="v">1.65</div></div><div class="m"><div class="k">Торонто −1.5</div><div class="v">2.60</div></div><div class="m"><div class="k">Тотал 5.5</div><div class="v">не берём</div></div></div>
-  <div class="note">Победа Торонто 1.65 короче 1.70. Фору Нэшвилла не берём. Тотал не ставим.</div>
-</article>
-<article class="card">
-  <div class="toprow"><span class="time">02:00</span><span class="badge skip">пас</span></div>
-  <div class="teams"><span class="av" style="background:#c8102e">OTT</span><span class="nm">Senators</span><span class="vs">—</span><span class="nm">Red Wings</span><span class="av" style="background:#ce1126">DET</span></div>
-  <div class="markets"><div class="m"><div class="k">П2 основное время</div><div class="v">1.91</div></div><div class="m"><div class="k">П1 основное время</div><div class="v">1.91</div></div><div class="m"><div class="k">Фора −1.5</div><div class="v">3.15</div></div><div class="m"><div class="k">Тотал 5.5</div><div class="v">не берём</div></div></div>
-  <div class="note">Оба кэфа от 1.70, но лимит одиночек уже на КХЛ. В экспресс не кладём: ноги уже выбраны. Тотал не ставим.</div>
-</article>
-<article class="card">
-  <div class="toprow"><span class="time">02:00</span><span class="badge skip">пас</span></div>
-  <div class="teams"><span class="av" style="background:#6cace4">UTA</span><span class="nm">Mammoth</span><span class="vs">—</span><span class="nm">Devils</span><span class="av" style="background:#ce1126">NJ</span></div>
-  <div class="markets"><div class="m"><div class="k">П2 основное время</div><div class="v">2.14</div></div><div class="m"><div class="k">П1 основное время</div><div class="v">1.74</div></div><div class="m"><div class="k">Нью-Джерси −1.5</div><div class="v">2.95</div></div><div class="m"><div class="k">Тотал 5.5</div><div class="v">не берём</div></div></div>
-  <div class="note">Нью-Джерси 1.74 годится по кэфу, купон по одиночкам полный. Фору Юты не берём. Тотал не ставим.</div>
-</article>
-<article class="card">
-  <div class="toprow"><span class="time">02:00</span><span class="badge skip">пас</span></div>
-  <div class="teams"><span class="av" style="background:#154734">MIN</span><span class="nm">Wild</span><span class="vs">—</span><span class="nm">Sabres</span><span class="av" style="background:#002654">BUF</span></div>
-  <div class="markets"><div class="m"><div class="k">П2 основное время</div><div class="v">1.89</div></div><div class="m"><div class="k">П1 основное время</div><div class="v">1.93</div></div><div class="m"><div class="k">Фора −1.5</div><div class="v">3.15</div></div><div class="m"><div class="k">Тотал 6.5</div><div class="v">не берём</div></div></div>
-  <div class="note">Купон полный. Тотал не берём.</div>
-</article>
-<article class="card">
-  <div class="toprow"><span class="time">02:30</span><span class="badge skip">пас</span></div>
-  <div class="teams"><span class="av" style="background:#00539b">NYI</span><span class="nm">Islanders</span><span class="vs">—</span><span class="nm">Rangers</span><span class="av" style="background:#0038a8">NYR</span></div>
-  <div class="markets"><div class="m"><div class="k">П2 основное время</div><div class="v">2.30</div></div><div class="m"><div class="k">П1 основное время</div><div class="v">1.65</div></div><div class="m"><div class="k">Рейнджерс −1.5</div><div class="v">2.70</div></div><div class="m"><div class="k">Тотал 5.5</div><div class="v">не берём</div></div></div>
-  <div class="note">Победа Рейнджерс 1.65 короче 1.70. Фору Айлендерс не берём. Тотал не ставим.</div>
-</article>
-<article class="card">
-  <div class="toprow"><span class="time">03:00</span><span class="badge skip">пас</span></div>
-  <div class="teams"><span class="av" style="background:#002f87">STL</span><span class="nm">Blues</span><span class="vs">—</span><span class="nm">Blackhawks</span><span class="av" style="background:#cf0a2c">CHI</span></div>
-  <div class="markets"><div class="m"><div class="k">П2 основное время</div><div class="v">1.74</div></div><div class="m"><div class="k">П1 основное время</div><div class="v">2.15</div></div><div class="m"><div class="k">Сент-Луис −1.5</div><div class="v">2.90</div></div><div class="m"><div class="k">Тотал 5.5</div><div class="v">не берём</div></div></div>
-  <div class="note">Сент-Луис 1.74 годится, но купон полный. Фору Чикаго не берём. Тотал не ставим.</div>
-</article>
-<article class="card">
-  <div class="toprow"><span class="time">04:40</span><span class="badge skip">пас</span></div>
-  <div class="teams"><span class="av" style="background:#b4975a">VGK</span><span class="nm">Golden Knights</span><span class="vs">—</span><span class="nm">Kraken</span><span class="av" style="background:#001628">SEA</span></div>
-  <div class="markets"><div class="m"><div class="k">П2 основное время</div><div class="v">1.61</div></div><div class="m"><div class="k">П1 основное время</div><div class="v">2.35</div></div><div class="m"><div class="k">Вегас −1.5</div><div class="v">2.50</div></div><div class="m"><div class="k">Тотал 6.0</div><div class="v">не берём</div></div></div>
-  <div class="note">Победа Вегаса 1.61 короче 1.70. Фору Сиэтла не берём. Тотал не ставим.</div>
-</article>
+  <div class="league">ночь 6–7 октября · МСК</div>
+  <article class="card">
+    <div class="toprow"><span class="time">02:00</span><span class="badge skip">в экспресс</span></div>
+    <div class="teams"><div class="av" style="background:#cc0000">CAR</div><div class="nm">Hurricanes</div><span class="vs">—</span><div class="nm">Canadiens</div><div class="av" style="background:#a6192e">MTL</div></div>
+    <div class="markets">
+      <div class="m on"><div class="k">П1 основное время</div><div class="v">1.83</div></div>
+      <div class="m"><div class="k">П2 основное время</div><div class="v">2.00</div></div>
+      <div class="m"><div class="k">Каролина −1.5</div><div class="v">3.05</div></div>
+      <div class="m"><div class="k">Тотал 6.5</div><div class="v">не берём</div></div>
+    </div>
+    <div class="note">Каролина в гостях, −120. Только в экспресс с Авангардом. Фору Монреаля не берём. Тотал не ставим.</div>
+  </article>
+  <article class="card">
+    <div class="toprow"><span class="time">02:00</span><span class="badge skip">пас</span></div>
+    <div class="teams"><div class="av" style="background:#ffb81c">NSH</div><div class="nm">Predators</div><span class="vs">—</span><div class="nm">Maple Leafs</div><div class="av" style="background:#00205b">TOR</div></div>
+    <div class="markets">
+      <div class="m"><div class="k">П1 основное время</div><div class="v">2.30</div></div>
+      <div class="m"><div class="k">П2 основное время</div><div class="v">1.65</div></div>
+      <div class="m"><div class="k">Торонто −1.5</div><div class="v">2.60</div></div>
+      <div class="m"><div class="k">Тотал 5.5</div><div class="v">не берём</div></div>
+    </div>
+    <div class="note">Победа Торонто 1.65 короче 1.70, в экспресс не кладём. Фору Нэшвилла не берём.</div>
+  </article>
+  <article class="card">
+    <div class="toprow"><span class="time">02:00</span><span class="badge skip">пас</span></div>
+    <div class="teams"><div class="av" style="background:#c8102e">OTT</div><div class="nm">Senators</div><span class="vs">—</span><div class="nm">Red Wings</div><div class="av" style="background:#ce1126">DET</div></div>
+    <div class="markets">
+      <div class="m"><div class="k">П1 основное время</div><div class="v">1.91</div></div>
+      <div class="m"><div class="k">П2 основное время</div><div class="v">1.91</div></div>
+      <div class="m"><div class="k">Фора −1.5</div><div class="v">3.15</div></div>
+      <div class="m"><div class="k">Тотал 5.5</div><div class="v">не берём</div></div>
+    </div>
+    <div class="note">Монета 1.91/1.91. В экспресс не кладём: ноги уже выбраны. Тотал не ставим.</div>
+  </article>
+  <article class="card">
+    <div class="toprow"><span class="time">02:00</span><span class="badge skip">в экспресс</span></div>
+    <div class="teams"><div class="av" style="background:#6cace4">UTA</div><div class="nm">Mammoth</div><span class="vs">—</span><div class="nm">Devils</div><div class="av" style="background:#ce1126">NJ</div></div>
+    <div class="markets">
+      <div class="m"><div class="k">П1 основное время</div><div class="v">2.14</div></div>
+      <div class="m on"><div class="k">П2 основное время</div><div class="v">1.74</div></div>
+      <div class="m"><div class="k">Нью-Джерси −1.5</div><div class="v">2.95</div></div>
+      <div class="m"><div class="k">Тотал 5.5</div><div class="v">не берём</div></div>
+    </div>
+    <div class="note">Нью-Джерси 1.74 во втором экспрессе. Фору Юты не берём. Тотал не ставим.</div>
+  </article>
+  <article class="card">
+    <div class="toprow"><span class="time">02:00</span><span class="badge skip">пас</span></div>
+    <div class="teams"><div class="av" style="background:#154734">MIN</div><div class="nm">Wild</div><span class="vs">—</span><div class="nm">Sabres</div><div class="av" style="background:#002654">BUF</div></div>
+    <div class="markets">
+      <div class="m"><div class="k">П1 основное время</div><div class="v">1.89</div></div>
+      <div class="m"><div class="k">П2 основное время</div><div class="v">1.93</div></div>
+      <div class="m"><div class="k">Фора −1.5</div><div class="v">3.20</div></div>
+      <div class="m"><div class="k">Тотал 6.5</div><div class="v">не берём</div></div>
+    </div>
+    <div class="note">Равные кэфы, купон по ногам полный. Тотал не берём.</div>
+  </article>
+  <article class="card">
+    <div class="toprow"><span class="time">02:30</span><span class="badge skip">пас</span></div>
+    <div class="teams"><div class="av" style="background:#00539b">NYI</div><div class="nm">Islanders</div><span class="vs">—</span><div class="nm">Rangers</div><div class="av" style="background:#0038a8">NYR</div></div>
+    <div class="markets">
+      <div class="m"><div class="k">П1 основное время</div><div class="v">2.30</div></div>
+      <div class="m"><div class="k">П2 основное время</div><div class="v">1.65</div></div>
+      <div class="m"><div class="k">Рейнджерс −1.5</div><div class="v">2.70</div></div>
+      <div class="m"><div class="k">Тотал 5.5</div><div class="v">не берём</div></div>
+    </div>
+    <div class="note">Победа Рейнджерс 1.65 короче 1.70. Фору Айлендерс не берём.</div>
+  </article>
+  <article class="card">
+    <div class="toprow"><span class="time">03:00</span><span class="badge skip">пас</span></div>
+    <div class="teams"><div class="av" style="background:#002f87">STL</div><div class="nm">Blues</div><span class="vs">—</span><div class="nm">Blackhawks</div><div class="av" style="background:#cf0a2c">CHI</div></div>
+    <div class="markets">
+      <div class="m"><div class="k">П1 основное время</div><div class="v">1.74</div></div>
+      <div class="m"><div class="k">П2 основное время</div><div class="v">2.10</div></div>
+      <div class="m"><div class="k">Сент-Луис −1.5</div><div class="v">2.90</div></div>
+      <div class="m"><div class="k">Тотал 5.5</div><div class="v">не берём</div></div>
+    </div>
+    <div class="note">Сент-Луис 1.74 годится по кэфу, но ноги экспрессов уже собраны. Фору Чикаго не берём.</div>
+  </article>
+  <article class="card">
+    <div class="toprow"><span class="time">04:40</span><span class="badge skip">пас</span></div>
+    <div class="teams"><div class="av" style="background:#b4975a">VGK</div><div class="nm">Golden Knights</div><span class="vs">—</span><div class="nm">Kraken</div><div class="av" style="background:#001628">SEA</div></div>
+    <div class="markets">
+      <div class="m"><div class="k">П1 основное время</div><div class="v">1.60</div></div>
+      <div class="m"><div class="k">П2 основное время</div><div class="v">2.42</div></div>
+      <div class="m"><div class="k">Вегас −1.5</div><div class="v">2.50</div></div>
+      <div class="m"><div class="k">Тотал 6.0</div><div class="v">не берём</div></div>
+    </div>
+    <div class="note">Победа Вегаса 1.60 короче 1.70. Фору Сиэтла не берём.</div>
+  </article>
+  <article class="card">
+    <div class="toprow"><span class="time">05:00</span><span class="badge skip">в экспресс</span></div>
+    <div class="teams"><div class="av" style="background:#c8102e">FLA</div><div class="nm">Panthers</div><span class="vs">—</span><div class="nm">Kings</div><div class="av" style="background:#a2aaad">LA</div></div>
+    <div class="markets">
+      <div class="m on"><div class="k">П1 основное время</div><div class="v">1.83</div></div>
+      <div class="m"><div class="k">П2 основное время</div><div class="v">2.10</div></div>
+      <div class="m"><div class="k">Флорида −1.5</div><div class="v">2.85</div></div>
+      <div class="m"><div class="k">Тотал 5.5</div><div class="v">не берём</div></div>
+    </div>
+    <div class="note">Флорида в гостях, −120, вторая нога экспресса с Нью-Джерси. Фору Лос-Анджелеса не берём.</div>
+  </article>
 </div>
 <div id="del" class="hidden">
-<div class="league">6 октября · матчей нет</div>
-<article class="card">
-  <div class="toprow"><span class="time">сегодня</span><span class="badge skip">пас</span></div>
-  <div class="teams"><span class="nm">DEL не играет</span></div>
-  <div class="note">Тур 4 октября закрыт и в купон не входил. Следующие матчи 8–9 октября. В линию не ставим.</div>
-</article>
+  <div class="league">6 октября · матчей нет</div>
+  <article class="card">
+    <div class="toprow"><span class="time">сегодня</span><span class="badge skip">пас</span></div>
+    <div class="teams"><span class="nm">DEL не играет</span></div>
+    <div class="note">Тур 4 октября закрыт и в купон не входил. Следующие матчи 8–9 октября, в том числе Айсберен — Вольфсбург 9 октября. В линию не ставим.</div>
+  </article>
 </div>
 </section>
 <section id="foot" class="hidden">
-<nav class="sub"><button class="on" data-fl="obos">OBOS</button><button data-fl="elite">Элита</button><button data-fl="u19">U19</button><button data-fl="cup">Кубок</button></nav>
-<div id="obos">
-<article class="card">
-  <div class="toprow"><span class="time">6 октября</span><span class="badge skip">пас</span></div>
-  <div class="teams"><span class="nm">В купон не кладём</span></div>
-  <div class="note">Лимит 2 одиночки и 1 экспресс уже на КХЛ и НХЛ. Тотал и фору аутсайдера не берём.</div>
-</article>
+<nav class="sub"><button class="on" data-fl="elite">Элита</button><button data-fl="obos">OBOS</button><button data-fl="d2">2-й</button><button data-fl="d3">3-й</button><button data-fl="cup">Кубок</button><button data-fl="u19">U19</button></nav>
+<div id="elite">
+  <div class="league">Элитсерия · 6 октября</div>
+  <article class="card"><div class="note">Матчей нет. Тур 23 с 9 октября: Бранн — Викинг. Победа, тотал матча, тотал 1-го и 2-го тайма выведем, когда откроется линия. В купон не ставим.</div></article>
 </div>
-<div id="elite" class="hidden">
-<article class="card"><div class="note">Элитсерия с 9–12 октября. Сегодня матчей нет, в линию не ставим.</div></article>
+<div id="obos" class="hidden">
+  <div class="league">OBOS · 6 октября</div>
+  <article class="card">
+    <div class="toprow"><span class="time">5 октября закрыто</span><span class="badge skip">не в купоне</span></div>
+    <div class="teams"><span class="nm">Мосс 0:2 Конгсвингер</span></div>
+    <div class="markets">
+      <div class="m"><div class="k">Победа</div><div class="v">снято</div></div>
+      <div class="m"><div class="k">Тотал матча</div><div class="v">снято</div></div>
+      <div class="m"><div class="k">Тотал 1-й тайм</div><div class="v">снято</div></div>
+      <div class="m"><div class="k">Тотал 2-й тайм</div><div class="v">снято</div></div>
+    </div>
+    <div class="note">В купон не входил. Следующий тур 11 октября. Сегодня пас.</div>
+  </article>
 </div>
-<div id="u19" class="hidden">
-<article class="card">
-  <div class="toprow"><span class="time">2 октября</span><span class="badge loss">закрыто</span></div>
-  <div class="teams"><span class="nm">Уэльс U19 — Норвегия U19 0:2</span></div>
-  <div class="note">ТБ 3.5 мимо, из линии снято. Клубный плей-офф U19 8 октября: Бранн — Фредрикстад, Русенборг — Лиллестрём.</div>
-</article>
+<div id="d2" class="hidden">
+  <div class="league">2-й дивизион · 6 октября</div>
+  <article class="card"><div class="note">Матчей нет. Ближайшие 10 октября. Победа, общий тотал, тотал 1-го и 2-го тайма — когда откроется линия. В купон не ставим.</div></article>
+</div>
+<div id="d3" class="hidden">
+  <div class="league">3-й дивизион · 6 октября</div>
+  <article class="card"><div class="note">На 6 октября тура нет. 5 октября сыграны Лин 2 — Роде 0:0, Фана — Осане 2 5:2, Одд 2 — Викинг 2 3:1, в купон не входили. Пас.</div></article>
 </div>
 <div id="cup" class="hidden">
-<article class="card"><div class="note">NM-кубок 2 октября закрыт. Сегодня новых матчей нет.</div></article>
+  <div class="league">NM-кубок · 6 октября</div>
+  <article class="card">
+    <div class="toprow"><span class="time">11:00 слот</span><span class="badge skip">пас</span></div>
+    <div class="teams"><div class="av" style="background:#1d4ed8">РА</div><div class="nm">Рауфосс</div><span class="vs">—</span><div class="nm">Старт</div><div class="av" style="background:#b45309">СТ</div></div>
+    <div class="markets">
+      <div class="m"><div class="k">Победа</div><div class="v">не подтв.</div></div>
+      <div class="m"><div class="k">Тотал матча</div><div class="v">не подтв.</div></div>
+      <div class="m"><div class="k">Тотал 1-й тайм</div><div class="v">не подтв.</div></div>
+      <div class="m"><div class="k">Тотал 2-й тайм</div><div class="v">не подтв.</div></div>
+    </div>
+    <div class="note">Единственный слот дня по открытым источникам. Линия победы и таймовых тоталов не подтверждена, в купон не берём. Основной 1/16 уже сыгран 30.09–01.10 и в купон не входил.</div>
+  </article>
+</div>
+<div id="u19" class="hidden">
+  <div class="league">U19 · 6 октября</div>
+  <article class="card">
+    <div class="toprow"><span class="time">2 октября закрыто</span><span class="badge loss">не в купоне</span></div>
+    <div class="teams"><span class="nm">Уэльс U19 — Норвегия U19 0:2</span></div>
+    <div class="markets">
+      <div class="m"><div class="k">Победа</div><div class="v">снято</div></div>
+      <div class="m"><div class="k">Тотал матча</div><div class="v">ТБ 3.5 мимо</div></div>
+      <div class="m"><div class="k">Тотал 1-й тайм</div><div class="v">снято</div></div>
+      <div class="m"><div class="k">Тотал 2-й тайм</div><div class="v">снято</div></div>
+    </div>
+    <div class="note">В купон не входило. Клубный плей-офф 8 октября: Бранн — Фредрикстад, Русенборг — Лиллестрём.</div>
+  </article>
 </div>
 </section>
 <section id="ex" class="hidden">
-  <div class="league">Экспресс · 6 октября</div>
-  <article class="card"><div class="note">Нет. Вторая нога короче 1.80. Экспресс от 3.00 из слабой ноги не собираю.</div></article>
+  <div class="league">Экспресс 1 · 4.21</div>
+  <article class="card">
+    <div class="toprow"><span class="time">200 ₽</span><span class="badge take">В КУПОНЕ</span></div>
+    <div class="note">Авангард П2 основное время 2.30 × Каролина П1 основное время 1.83. Итог 4.21. Разные матчи, ног короче 1.70 нет. Выплата при заходе 842 ₽, прибыль +642.</div>
+  </article>
+  <div class="league">Экспресс 2 · 3.18</div>
+  <article class="card">
+    <div class="toprow"><span class="time">200 ₽</span><span class="badge take">В КУПОНЕ</span></div>
+    <div class="note">Нью-Джерси П2 основное время 1.74 × Флорида П1 основное время 1.83. Итог 3.18. Разные матчи, короче 1.70 нет. Выплата при заходе 636 ₽, прибыль +436.</div>
+  </article>
 </section>
 <section id="itog" class="hidden">
   <div class="pad">
@@ -198,26 +293,27 @@ body.light .lamp{background:#fff;border-color:#d5e0ea;color:#b45309}
     <div class="row"><span>ЦСКА — Салават 3:1, П1 1.90</span><span class="badge win">+180</span></div>
     <div class="row"><span>Ак Барс — Локомотив 0:2, П2 2.25</span><span class="badge win">+250</span></div>
     <div class="row"><span>Экспресс: Драконы 0:5 + Оттава 4:1</span><span class="badge win">+548</span></div>
-    <p class="foot">Металлург 2:5 и Минск — Торпедо 1:1 (2:1 Б) в купоне не были. Буллиты в 1X2 не считаем. Из линии убрано.</p>
+    <p class="foot">Металлург 2:5 и Минск — Торпедо 1:1 (2:1 Б) в купоне не были. Буллиты в 1X2 не считаем.</p>
     <div class="league">4 октября · снято с линии</div>
     <div class="row"><span>Нефтехимик — Сибирь 3:2, П1 2.05</span><span class="badge win">+210</span></div>
     <div class="row"><span>Спартак — Барыс 3:4 Б, П1 1.78</span><span class="badge loss">−200</span></div>
     <div class="row"><span>Экспресс: Детройт 2:3 + Рейнджерс 4:2</span><span class="badge loss">−200</span></div>
-    <div class="league">3 октября · пересчёт, ОТ и буллиты = ничья в 1X2</div>
+    <div class="league">3 октября · ОТ и буллиты = ничья в 1X2</div>
     <div class="row"><span>ЦСКА — Динамо М 4:3 Б, П1 1.88</span><span class="badge loss">−200</span></div>
     <div class="row"><span>Минск — Локомотив 3:4, П2 2.05</span><span class="badge loss">−200</span></div>
     <div class="row"><span>Экспресс: Северсталь 2:1 + Питтсбург 6:5 ОТ</span><span class="badge loss">−200</span></div>
-    <p class="foot">База после 03.10: 10 098 ₽. После 04.10: 9 708 ₽. После 05.10: 10 886 ₽.</p>
+    <p class="foot">База после 30.09: 10 936 ₽. После ночи 2.10: 11 206 ₽. После 03.10: 10 098 ₽. После 04.10: 9 708 ₽. После 05.10: 10 886 ₽.</p>
   </div>
 </section>
 <section id="bank" class="hidden">
   <div class="pad">
     <div class="big">10 886 ₽</div>
-    <p class="foot">Утро 5 октября: 9 708 ₽. Купон 5 октября закрыт в основное время: +180 +250 +548. Открыто сегодня 600 ₽, в банк не вычтено до расчёта.</p>
+    <p class="foot">Утро 6 октября, купон 5 октября уже закрыт: +180 +250 +548. Открыто сегодня 800 ₽, в банк не вычтено до расчёта.</p>
     <div class="row"><span>Трактор П1 1.78</span><span>200 ₽</span></div>
-    <div class="row"><span>СКА П1 1.72</span><span>200 ₽</span></div>
+    <div class="row"><span>СКА −1 2.00</span><span>200 ₽</span></div>
     <div class="row"><span>Экспресс 4.21</span><span>200 ₽</span></div>
-    <p class="foot">Фикс 200. Не больше 2 одиночек и 1 экспресса. Короче 1.70 нет. 18+.</p>
+    <div class="row"><span>Экспресс 3.18</span><span>200 ₽</span></div>
+    <p class="foot">Фикс 200 на одиночку и на каждый экспресс. Старт банка 10 000 ₽. 18+.</p>
   </div>
 </section>
 <script>
@@ -236,7 +332,7 @@ document.querySelectorAll('[data-lg]').forEach(b=>b.onclick=()=>{
 document.querySelectorAll('[data-fl]').forEach(b=>b.onclick=()=>{
   document.querySelectorAll('[data-fl]').forEach(x=>x.classList.remove('on'));
   b.classList.add('on');
-  ['elite','obos','cup','u19'].forEach(id=>{const n=document.getElementById(id); if(n) n.classList.toggle('hidden',id!==b.dataset.fl);});
+  ['elite','obos','d2','d3','cup','u19'].forEach(id=>{const n=document.getElementById(id); if(n) n.classList.toggle('hidden',id!==b.dataset.fl);});
 });
 </script>
 </body>
