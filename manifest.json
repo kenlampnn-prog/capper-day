@@ -1,6 +1,6 @@
 {
-  "name": "KHL Bet",
-  "short_name": "KHL Bet",
+  "name": "Capper Day — купон КХЛ/НХЛ",
+  "short_name": "Capper Day",
   "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#07111f",
