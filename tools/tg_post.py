@@ -1,9 +1,12 @@
 #!/usr/bin/env python3
-"""Capper Day: render a 1080x1350 coupon card and post it to Telegram.
+"""Capper Day: render a 1080x1350 bet-slip card («КУПОН CAPPER DAY», own design) and post it to Telegram.
 
 Usage:
   python3 tools/tg_post.py post.json [--out card.png] [--dry-run] [--chat @capperday]
 
+JSON: date, bank, stake, site, hook, sport (hockey|football), footer,
+  singles[{league, match, time, pick, label, odds, bk}], express{total, label, legs[{match, time, pick, label, odds, bk}]}.
+  bk = the bookmaker/line source whose odds were actually used (never invent one).
 The bot token is read from the TG_BOT_TOKEN environment variable only and is never printed.
 Output: "ok <message_id>" (or "dry-run <png path>").
 """
@@ -110,89 +113,131 @@ def badge(img, x_right, y, s, f, col):
     d.text((box[0] + 20, y + 7), s, font=f, fill=col)
     return w_
 
+SIG = {"hockey": "Шайба в деле, банк в плюсе! 🔞", "football": "Мяч в деле, банк в плюсе! 🔞"}
+
+def rub(n):
+    return f"{int(round(n)):,}".replace(",", " ") + " ₽"
+
+def perforation(img, y, M):
+    """Ticket tear line: dashed line with half-circle notches (own design, no BK UI)."""
+    d = ImageDraw.Draw(img)
+    for x in range(M + 40, W - M - 40, 26):
+        d.line([(x, y), (x + 13, y)], fill=(255, 255, 255, 70), width=3)
+    for cx in (M, W - M):
+        d.ellipse([cx - 22, y - 22, cx + 22, y + 22], fill=BG1)
+
+def slip_row(img, d, y, M, c, stake, accent, f):
+    """One bet as a slip row. Returns new y."""
+    x0, x1 = M + 26, W - M - 26
+    h_ = 196
+    lay = Image.new("RGBA", img.size, (0, 0, 0, 0))
+    ImageDraw.Draw(lay).rounded_rectangle([x0, y, x1, y + h_], 20, fill=(255, 255, 255, 14), outline=accent + (120,), width=2)
+    img.alpha_composite(lay)
+    d.rounded_rectangle([x0, y + 18, x0 + 8, y + h_ - 18], 4, fill=accent)
+    d.text((x0 + 30, y + 16), f"{c['league']} · {c['time']} МСК", font=f["lbl"], fill=MUTED)
+    ow = tw(d, c["odds"], f["odds"])
+    d.text((x1 - 26 - ow, y + 14), c["odds"], font=f["odds"], fill=accent)
+    bk = f"кэф {c['bk']}"
+    d.text((x1 - 26 - tw(d, bk, f["lbl"]), y + 98), bk, font=f["lbl"], fill=MUTED)
+    d.text((x0 + 30, y + 46), fit(d, c["match"], f["t"], x1 - x0 - ow - 100), font=f["t"], fill=TEXT)
+    pk = c["pick"]
+    d.text((x0 + 30, y + 96), pk, font=f["s"], fill=accent)
+    lx = x0 + 30 + tw(d, pk, f["s"]) + 16
+    lb = c["label"]; lw = tw(d, lb, f["lbl"]) + 24
+    d.rounded_rectangle([lx, y + 96, lx + lw, y + 128], 16, outline=accent, width=2)
+    d.text((lx + 12, y + 100), lb, font=f["lbl"], fill=accent)
+    if stake:
+        d.line([(x0 + 30, y + 150), (x1 - 26, y + 150)], fill=(255, 255, 255, 30), width=1)
+        d.text((x0 + 30, y + 158), f"Ставка {rub(stake)}", font=f["lbl"], fill=SOFT)
+        s = f"Возможный выигрыш {rub(stake * float(c['odds']))}"
+        d.text((x1 - 26 - tw(d, s, f["lbl"]), y + 158), s, font=f["lbl"], fill=TEXT)
+    return y + h_ + 16
+
 def render(data, out):
+    global H
+    ex0 = data.get("express")
+    H = 274 + len(data["singles"]) * 212 + ((54 + 30 + 92 * len(ex0["legs"]) + 56 + 16) if ex0 else 0) + 300
+    H = max(H, 1080)
     img = background(); d = ImageDraw.Draw(img)
-    M = 60
-    fH = font("head", 88, 700); fDate = font("body", 30, 700); fBank = font("head", 46, 700)
-    fT = font("body", 32, 800); fS = font("body", 25, 600); fBadge = font("head", 34, 700); fLbl = font("body", 22, 700)
-    grad_text(img, (M, 46), "CAPPER DAY", fH)
-    d.text((M + 2, 160), f"{data['date']} · фикс {data['stake']} ₽ · 18+", font=fDate, fill=SOFT)
-    bank = f"{data['bank']} ₽"
-    bw = tw(d, bank, fBank) + 44
-    glass(img, [W - M - bw, 62, W - M, 140], 22, glow_col=CYAN)
-    d.text((W - M - bw + 22, 70), bank, font=fBank, fill=TEXT)
-    d.text((W - M - bw + 6, 146), "банк", font=fLbl, fill=MUTED)
-    y = 214
-    # yesterday
-    res = data.get("yesterday", [])
-    if res:
-        h_ = 54 + 40 * len(res)
-        glass(img, [M, y, W - M, y + h_], 24)
-        d.text((M + 28, y + 14), "ВЧЕРА", font=fLbl, fill=CYAN)
-        for i, r in enumerate(res):
-            yy = y + 48 + i * 40
-            col = GREEN if str(r["result"]).startswith("+") else PINK
-            d.text((M + 28, yy), fit(d, r["text"], fS, W - 2 * M - 220), font=fS, fill=SOFT)
-            s = str(r["result"]); d.text((W - M - 28 - tw(d, s, fT), yy - 4), s, font=fT, fill=col)
-        y += h_ + 26
-    d.text((M + 4, y), "КУПОН ДНЯ", font=fLbl, fill=CYAN); y += 38
+    M = 44
+    f = {"h": font("head", 76, 700), "date": font("body", 28, 700), "t": font("body", 32, 800), "s": font("body", 27, 800),
+         "lbl": font("body", 22, 700), "odds": font("head", 64, 700), "bank": font("head", 58, 700), "sig": font("body", 28, 800), "s2": font("head", 44, 700)}
+    stake = int(data["stake"])
+    # ticket body
+    glass(img, [M, 36, W - M, H - 36], 34, glow_col=CYAN)
+    grad_text(img, (M + 40, 62), "КУПОН CAPPER DAY", f["h"])
+    n_bets = len(data["singles"]) + (1 if data.get("express") else 0)
+    d.text((M + 42, 162), f"{data['date']} · {n_bets} ставки · фикс {rub(stake)}", font=f["date"], fill=SOFT)
+    perforation(img, 214, M)
+    y = 240
+    d.text((M + 30, y), "ОДИНАРЫ", font=f["lbl"], fill=GREEN); y += 34
     for c in data["singles"]:
-        h_ = 150
-        glass(img, [M, y, W - M, y + h_], 26, glow_col=GREEN)
-        d.text((M + 28, y + 18), f"{c['league']} · {c['time']} МСК", font=fLbl, fill=MUTED)
-        bwid = badge(img, W - M - 26, y + 18, c["odds"], fBadge, GREEN)
-        d.text((M + 28, y + 50), fit(d, c["match"], fT, W - 2 * M - bwid - 80), font=fT, fill=TEXT)
-        d.text((M + 28, y + 98), fit(d, f"{c['pick']} · {c['label']}", fS, W - 2 * M - 60), font=fS, fill=GREEN)
-        y += h_ + 20
+        y = slip_row(img, d, y, M, c, stake, GREEN, f)
     ex = data.get("express")
     if ex:
-        h_ = 74 + 46 * len(ex["legs"])
-        glass(img, [M, y, W - M, y + h_], 26, glow_col=MAG)
-        d.text((M + 28, y + 18), "ЭКСПРЕСС", font=fLbl, fill=MAG)
-        badge(img, W - M - 26, y + 14, ex["total"], fBadge, MAG)
+        y += 4
+        d.text((M + 30, y), "ЭКСПРЕСС", font=f["lbl"], fill=MAG)
+        s = f"итог {ex['total']}"; d.text((W - M - 52 - tw(d, s, f["s"]), y - 6), s, font=f["s"], fill=MAG)
+        y += 34
+        x0, x1 = M + 26, W - M - 26
+        h_ = 30 + 92 * len(ex["legs"]) + 56
+        lay = Image.new("RGBA", img.size, (0, 0, 0, 0))
+        ImageDraw.Draw(lay).rounded_rectangle([x0, y, x1, y + h_], 20, fill=(255, 255, 255, 14), outline=MAG + (120,), width=2)
+        img.alpha_composite(lay)
+        d.rounded_rectangle([x0, y + 18, x0 + 8, y + h_ - 18], 4, fill=MAG)
         for i, l in enumerate(ex["legs"]):
-            yy = y + 66 + i * 46
-            d.text((M + 28, yy), fit(d, f"{l['pick']} ({l['match']}, {l['time']})", fS, W - 2 * M - 220), font=fS, fill=TEXT)
-            s = f"{l['odds']} · {l['label_short']}"
-            d.text((W - M - 28 - tw(d, s, fS), yy), s, font=fS, fill=SOFT)
-        y += h_ + 20
-    per = data.get("periods", [])
-    if per:
-        fP = font("body", 22, 600)
-        lines = [fit(d, "• " + p, fP, W - 2 * M - 56) for p in per]
-        h_ = 54 + 34 * len(lines)
-        if y + h_ < H - 110:
-            glass(img, [M, y, W - M, y + h_], 24)
-            d.text((M + 28, y + 14), "ПО ПЕРИОДАМ · ИНФО, НЕ В КУПОНЕ", font=fLbl, fill=CYAN)
-            for i, s in enumerate(lines):
-                d.text((M + 28, y + 50 + i * 34), s, font=fP, fill=SOFT)
-    fF = font("body", 24, 700)
-    foot = data.get("site", "").replace("https://", "")
-    d.line([(M, H - 92), (W - M, H - 92)], fill=(255, 255, 255, 40), width=2)
-    d.text((M, H - 70), foot, font=fF, fill=CYAN)
-    s = "18+ · ставки связаны с риском"; d.text((W - M - tw(d, s, fF), H - 70), s, font=fF, fill=MUTED)
+            yy = y + 22 + i * 92
+            d.text((x0 + 30, yy), fit(d, f"{l['match']} · {l['time']}", f["lbl"], 560), font=f["lbl"], fill=MUTED)
+            d.text((x0 + 30, yy + 30), f"{l['pick']} · {l['label']}", font=f["s"], fill=TEXT)
+            o = l["odds"]; d.text((x1 - 26 - tw(d, o, f["s2"]), yy - 4), o, font=f["s2"], fill=MAG)
+            b = f"кэф {l['bk']}"; d.text((x1 - 26 - tw(d, b, f["lbl"]), yy + 50), b, font=f["lbl"], fill=MUTED)
+        yy = y + h_ - 48
+        d.line([(x0 + 30, yy - 6), (x1 - 26, yy - 6)], fill=(255, 255, 255, 30), width=1)
+        d.text((x0 + 30, yy + 4), f"Ставка {rub(stake)}", font=f["lbl"], fill=SOFT)
+        s = f"Возможный выигрыш {rub(stake * float(ex['total']))}"
+        d.text((x1 - 26 - tw(d, s, f["lbl"]), yy + 4), s, font=f["lbl"], fill=TEXT)
+        y += h_ + 16
+    # bottom: totals + bank
+    pot = sum(stake * float(c["odds"]) for c in data["singles"]) + (stake * float(ex["total"]) if ex else 0)
+    yb = H - 280
+    perforation(img, yb, M)
+    d.text((M + 40, yb + 26), f"В игре {rub(stake * n_bets)} · если зайдёт всё: {rub(pot)}", font=f["lbl"], fill=SOFT)
+    d.text((M + 40, yb + 64), "БАНК", font=f["lbl"], fill=CYAN)
+    grad_text(img, (M + 40, yb + 88), f"{data['bank']} ₽", f["bank"], c1=CYAN, c2=GREEN)
+    sig = SIG.get(data.get("sport", "hockey")).replace(" 🔞", "")
+    bw = badge(img, W - M - 40, yb + 112, "18+", f["lbl"], PINK)
+    d.text((W - M - 56 - bw - tw(d, sig, f["sig"]), yb + 114), sig, font=f["sig"], fill=TEXT)
+    foot = data.get("site", "").replace("https://", "").rstrip("/")
+    d.text((M + 40, H - 96), foot, font=f["lbl"], fill=MUTED)
+    s = "открытые ставки вычитаются из банка только после расчёта"
+    d.text((M + 40, H - 68), s, font=f["lbl"], fill=MUTED)
     img.convert("RGB").save(out, "PNG")
     return out
 
+def q(match):
+    """«Team» — «Team» (also for '@')."""
+    for sep in (" — ", " @ "):
+        if sep in match:
+            return sep.join(f"«{t.strip()}»" for t in match.split(sep))
+    return f"«{match}»"
+
 def caption(data):
     e = html.escape
-    L = [f"🏒 <b>CAPPER DAY · {e(data['date'])}</b>", ""]
-    if data.get("yesterday"):
-        L.append("📊 <b>Вчера</b>")
-        for r in data["yesterday"]:
-            L.append(f"{'✅' if str(r['result']).startswith('+') else '❌'} {e(r['text'])} <b>{e(str(r['result']))}</b>")
-        L.append("")
-    L.append(f"🎯 <b>Купон</b> · фикс {e(str(data['stake']))} ₽")
+    stake = int(data["stake"])
+    L = [f"🎟 <b>{e(data['hook'])}</b>", ""]
     for c in data["singles"]:
-        L.append(f"▫️ {e(c['match'])}, {e(c['time'])} — {e(c['pick'])} <b>{e(c['odds'])}</b> ({e(c['label'])})")
+        L.append(f"▫️ {e(q(c['match']))}, {e(c['time'])} — {e(c['pick'])} <b>{e(c['odds'])}</b> ({e(c['label'])}), кэф {e(c['bk'])}")
     ex = data.get("express")
     if ex:
-        legs = " × ".join(f"{e(l['pick'])} {e(l['odds'])}" for l in ex["legs"])
-        L.append(f"🔗 Экспресс <b>{e(ex['total'])}</b>: {legs} ({e(ex.get('label', 'с ОТ и буллитами'))})")
-    L += ["", f"💰 Банк: <b>{e(str(data['bank']))} ₽</b>", f"🌐 {e(data.get('site', ''))}", "", "🔞 18+. Ставки связаны с риском."]
+        legs = " × ".join(f"{e(q(l['pick']))} {e(l['odds'])} ({e(l['bk'])})" for l in ex["legs"])
+        L.append(f"🔗 Экспресс <b>{e(ex['total'])}</b>: {legs}, {e(ex.get('label', 'с ОТ'))}")
+    L += ["", f"💰 По {rub(stake)} на каждую · банк <b>{e(str(data['bank']))} ₽</b>"]
+    if data.get("footer"):
+        L.append(e(data["footer"]))
+    L += ["", SIG.get(data.get("sport", "hockey"))]
     cap = "\n".join(L)
     if len(cap) > 1024:
-        cap = cap[:1000].rsplit("\n", 1)[0] + "\n🔞 18+. Ставки связаны с риском."
+        raise SystemExit(f"error caption {len(cap)} > 1024")
     return cap
 
 def send(token, chat, png, cap):

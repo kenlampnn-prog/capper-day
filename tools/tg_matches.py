@@ -1,49 +1,53 @@
 #!/usr/bin/env python3
-"""Capper Day: compact per-match breakdowns for Telegram (HTML), one message per match.
+"""Capper Day: per-match posts for Telegram (HTML), one message per coupon match, «голос» Capper Day.
 
 Usage:
   python3 tools/tg_matches.py matches.json [--dry-run] [--chat @capperday] [--state state.json]
           [--md reports/YYYY-MM-DD.md] [--pause 1.0]
-  python3 tools/tg_matches.py --delete 7-23 [--chat @capperday]      # deleteMessage for those ids
+  python3 tools/tg_matches.py --delete 7-23,40 [--chat @capperday]     # deleteMessage for those ids
 
-Compact template (max 500 chars, dry-run fails if exceeded):
-  {emoji} <b>{league} · {title}</b> · {time}
-  📋 {line}
-  📈 Линия: {move}            (default "данных нет")
-  🔑 {facts joined by " · "}
-  🎯 Прогноз: {pick}[ ✅ {coupon}]
-  ⏱ Периоды: {periods joined by " · "}
-Item: {id, emoji, league, title, time, line, move, facts[], pick, coupon, periods[]} or {id, text} (one-line note).
+Template (hard limit 700 chars; dry-run and live both fail if exceeded):
+  {emoji} <b>{league} · «Home» — «Away»</b> · {time}
+  {hook}                                  (1 строка, от первого лица, «мы» с читателями)
+  «Home»: {home_fact}. «Away»: {away_fact}.
+  Что вижу? <b>{pick}</b>, кэф {bk}!
+  Во-первых, {why1} Во-вторых, {why2}
+  ⏱ {periods joined by " · "}
+  ✅ {coupon}                             (e.g. "В купоне · 1000 ₽" / "В экспрессе 3.37")
+  {signature}                             (hockey: «Шайба в деле, банк в плюсе! 🔞», football: «Мяч в деле, …»)
+Item: {id, emoji, league, home, away, time, hook, home_fact, away_fact, pick, bk, why1, why2, periods[], coupon, sport}
+      or {id, text} for a raw short note.
 Token: env TG_BOT_TOKEN only, never printed. Ids already in the state file are skipped.
 Output: dry-run -> "<id> <chars>"; live -> "ok <id> <message_id>" / "skip <id> <message_id>".
 """
 import argparse, html, json, os, sys, time, urllib.error, urllib.parse, urllib.request
 
 e = html.escape
-MAX = 500
+MAX = 700
+SIG = {"hockey": "Шайба в деле, банк в плюсе! 🔞", "football": "Мяч в деле, банк в плюсе! 🔞"}
 
 def render(m):
     if "text" in m:
         return m["text"]
-    L = [f"{m.get('emoji', '🏒')} <b>{e(m['league'])} · {e(m['title'])}</b> · {e(m['time'])}"]
-    if m.get("line"):
-        L.append(f"📋 {e(m['line'])}")
-    L.append(f"📈 Линия: {e(m.get('move') or 'данных нет')}")
-    if m.get("facts"):
-        L.append("🔑 " + " · ".join(e(x) for x in m["facts"]))
-    if m.get("pick"):
-        L.append(f"🎯 Прогноз: {e(m['pick'])}" + (f" ✅ {e(m['coupon'])}" if m.get("coupon") else ""))
+    h, a = e(m["home"]), e(m["away"])
+    L = [f"{m.get('emoji', '🏒')} <b>{e(m['league'])} · «{h}» — «{a}»</b> · {e(m['time'])}",
+         e(m["hook"]),
+         f"«{h}»: {e(m['home_fact'])} «{a}»: {e(m['away_fact'])}",
+         f"Что вижу? <b>{e(m['pick'])}</b>, кэф {e(m['bk'])}!",
+         f"Во-первых, {e(m['why1'])} Во-вторых, {e(m['why2'])}"]
     if m.get("periods"):
-        L.append("⏱ Периоды: " + " · ".join(e(x) for x in m["periods"]))
+        L.append("⏱ " + " · ".join(e(x) for x in m["periods"]))
+    if m.get("coupon"):
+        L.append(f"✅ {e(m['coupon'])}")
+    L.append(SIG[m.get("sport", "hockey")])
     return "\n".join(L)
 
 def api(token, method, params):
     data = urllib.parse.urlencode(params).encode()
     try:
-        r = json.load(urllib.request.urlopen(f"https://api.telegram.org/bot{token}/{method}", data, timeout=60))
+        return json.load(urllib.request.urlopen(f"https://api.telegram.org/bot{token}/{method}", data, timeout=60))
     except urllib.error.HTTPError as ex:
-        r = json.load(ex)
-    return r
+        return json.load(ex)
 
 def get_token():
     t = os.environ.get("TG_BOT_TOKEN")
@@ -75,11 +79,10 @@ def main():
     if a.dry_run:
         for i, t in texts:
             print(i, len(t))
-        if too_long:
-            print("FAIL over", MAX, too_long); sys.exit(2)
-        return
     if too_long:
         print("FAIL over", MAX, too_long); sys.exit(2)
+    if a.dry_run:
+        return
     token = get_token()
     state = json.load(open(a.state, encoding="utf-8")) if a.state and os.path.exists(a.state) else {}
     new = []
@@ -98,7 +101,7 @@ def main():
         time.sleep(a.pause)
     if a.md and new:
         with open(a.md, "a", encoding="utf-8") as f:
-            f.write(f"\n## Telegram {a.chat}: компактные разборы\n" + "".join(f"- {i}: message_id {m}\n" for i, m in new))
+            f.write(f"\n## Telegram {a.chat}: разборы матчей купона\n" + "".join(f"- {i}: message_id {m}\n" for i, m in new))
 
 if __name__ == "__main__":
     main()
