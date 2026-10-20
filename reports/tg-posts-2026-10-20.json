@@ -1,19 +1,70 @@
 {
- "khl-lok-nef": 7,
- "khl-din-sib": 8,
- "khl-ska-avt": 9,
- "del-koe-sch": 10,
- "del-ing-wob": 11,
- "nor-note": 12,
- "nhl-sjs-mtl": 13,
- "nhl-col-njd": 14,
- "nhl-ana-nyi": 15,
- "nhl-lak-wsh": 16,
- "nhl-tor-cbj": 17,
- "nhl-wpg-stl": 18,
- "nhl-bos-dal": 19,
- "nhl-min-edm": 20,
- "nhl-det-sea": 21,
- "nhl-car-van": 22,
- "nhl-tbl-vgk": 23
+ "khl-lok-nef": {
+  "message_id": 7,
+  "deleted": true
+ },
+ "khl-din-sib": {
+  "message_id": 8,
+  "deleted": true
+ },
+ "khl-ska-avt": {
+  "message_id": 9,
+  "deleted": true
+ },
+ "del-koe-sch": {
+  "message_id": 10,
+  "deleted": true
+ },
+ "del-ing-wob": {
+  "message_id": 11,
+  "deleted": true
+ },
+ "nor-note": {
+  "message_id": 12,
+  "deleted": true
+ },
+ "nhl-sjs-mtl": {
+  "message_id": 13,
+  "deleted": true
+ },
+ "nhl-col-njd": {
+  "message_id": 14,
+  "deleted": true
+ },
+ "nhl-ana-nyi": {
+  "message_id": 15,
+  "deleted": true
+ },
+ "nhl-lak-wsh": {
+  "message_id": 16,
+  "deleted": true
+ },
+ "nhl-tor-cbj": {
+  "message_id": 17,
+  "deleted": true
+ },
+ "nhl-wpg-stl": {
+  "message_id": 18,
+  "deleted": true
+ },
+ "nhl-bos-dal": {
+  "message_id": 19,
+  "deleted": true
+ },
+ "nhl-min-edm": {
+  "message_id": 20,
+  "deleted": true
+ },
+ "nhl-det-sea": {
+  "message_id": 21,
+  "deleted": true
+ },
+ "nhl-car-van": {
+  "message_id": 22,
+  "deleted": true
+ },
+ "nhl-tbl-vgk": {
+  "message_id": 23,
+  "deleted": true
+ }
 }
