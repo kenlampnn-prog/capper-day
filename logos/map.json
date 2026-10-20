@@ -1,0 +1,745 @@
+{
+ "_about": "Team name as written on the site -> logo file. Daily routine: look up every team here; if missing, download from the official league site, add the file and a key.",
+ "sources": {
+  "khl": "img.khl.ru (official khl.ru club logos, season 2026/27)",
+  "nhl": "assets.nhle.com/logos/nhl/svg/<ABBR>_light.svg",
+  "del": "penny-del.org/fileadmin/images/teams",
+  "nor": "eliteserien.no / obos-ligaen.no /img/logo/<code>/logo.png"
+ },
+ "teams": {
+  "Локомотив": "logos/khl/lokomotiv.png",
+  "Локомотив Ярославль": "logos/khl/lokomotiv.png",
+  "Lokomotiv": "logos/khl/lokomotiv.png",
+  "ЦСКА": "logos/khl/cska.png",
+  "CSKA": "logos/khl/cska.png",
+  "Спартак": "logos/khl/spartak.png",
+  "Спартак М": "logos/khl/spartak.png",
+  "Spartak": "logos/khl/spartak.png",
+  "СКА": "logos/khl/ska.png",
+  "SKA": "logos/khl/ska.png",
+  "СКА Санкт-Петербург": "logos/khl/ska.png",
+  "Трактор": "logos/khl/traktor.png",
+  "Traktor": "logos/khl/traktor.png",
+  "Торпедо": "logos/khl/torpedo.png",
+  "Торпедо НН": "logos/khl/torpedo.png",
+  "Torpedo": "logos/khl/torpedo.png",
+  "Сибирь": "logos/khl/sibir.png",
+  "Sibir": "logos/khl/sibir.png",
+  "Авангард": "logos/khl/avangard.png",
+  "Avangard": "logos/khl/avangard.png",
+  "Металлург Мг": "logos/khl/metallurg.png",
+  "Металлург": "logos/khl/metallurg.png",
+  "Металлург Магнитогорск": "logos/khl/metallurg.png",
+  "Metallurg": "logos/khl/metallurg.png",
+  "Салават Юлаев": "logos/khl/salavat.png",
+  "Салават": "logos/khl/salavat.png",
+  "Salavat Yulaev": "logos/khl/salavat.png",
+  "Ак Барс": "logos/khl/akbars.png",
+  "Ak Bars": "logos/khl/akbars.png",
+  "Амур": "logos/khl/amur.png",
+  "Amur": "logos/khl/amur.png",
+  "Северсталь": "logos/khl/severstal.png",
+  "Severstal": "logos/khl/severstal.png",
+  "Нефтяник": "logos/khl/neftyanik.png",
+  "Нефтяник Альметьевск": "logos/khl/neftyanik.png",
+  "Neftyanik": "logos/khl/neftyanik.png",
+  "Лада": "logos/khl/lada.png",
+  "Lada": "logos/khl/lada.png",
+  "Нефтехимик": "logos/khl/neftekhimik.png",
+  "Neftekhimik": "logos/khl/neftekhimik.png",
+  "Автомобилист": "logos/khl/avtomobilist.png",
+  "Avtomobilist": "logos/khl/avtomobilist.png",
+  "Барыс": "logos/khl/barys.png",
+  "Barys": "logos/khl/barys.png",
+  "Динамо Мн": "logos/khl/dinamo-mn.png",
+  "Динамо Минск": "logos/khl/dinamo-mn.png",
+  "Dinamo Minsk": "logos/khl/dinamo-mn.png",
+  "Челны": "logos/khl/chelny.png",
+  "Челны Набережные": "logos/khl/chelny.png",
+  "Chelny": "logos/khl/chelny.png",
+  "Адмирал": "logos/khl/admiral.png",
+  "Admiral": "logos/khl/admiral.png",
+  "Сочи": "logos/khl/sochi.png",
+  "ХК Сочи": "logos/khl/sochi.png",
+  "Sochi": "logos/khl/sochi.png",
+  "Шанхай": "logos/khl/shanghai.png",
+  "Шанхайские Драконы": "logos/khl/shanghai.png",
+  "Шанхай Дрэгонс": "logos/khl/shanghai.png",
+  "Shanghai Dragons": "logos/khl/shanghai.png",
+  "Куньлунь": "logos/khl/shanghai.png",
+  "Динамо М": "logos/khl/dinamo-m.png",
+  "Динамо Москва": "logos/khl/dinamo-m.png",
+  "Динамо": "logos/khl/dinamo-m.png",
+  "Dynamo Moscow": "logos/khl/dinamo-m.png",
+  "Анахайм": "logos/nhl/ana.png",
+  "Anaheim Ducks": "logos/nhl/ana.png",
+  "Анахайм Дакс": "logos/nhl/ana.png",
+  "ANA": "logos/nhl/ana.png",
+  "Бостон": "logos/nhl/bos.png",
+  "Boston Bruins": "logos/nhl/bos.png",
+  "Бостон Брюинз": "logos/nhl/bos.png",
+  "BOS": "logos/nhl/bos.png",
+  "Баффало": "logos/nhl/buf.png",
+  "Buffalo Sabres": "logos/nhl/buf.png",
+  "Баффало Сейбрз": "logos/nhl/buf.png",
+  "BUF": "logos/nhl/buf.png",
+  "Калгари": "logos/nhl/cgy.png",
+  "Calgary Flames": "logos/nhl/cgy.png",
+  "Калгари Флэймз": "logos/nhl/cgy.png",
+  "CGY": "logos/nhl/cgy.png",
+  "Каролина": "logos/nhl/car.png",
+  "Carolina Hurricanes": "logos/nhl/car.png",
+  "Каролина Харрикейнз": "logos/nhl/car.png",
+  "CAR": "logos/nhl/car.png",
+  "Чикаго": "logos/nhl/chi.png",
+  "Chicago Blackhawks": "logos/nhl/chi.png",
+  "Чикаго Блэкхокс": "logos/nhl/chi.png",
+  "CHI": "logos/nhl/chi.png",
+  "Колорадо": "logos/nhl/col.png",
+  "Colorado Avalanche": "logos/nhl/col.png",
+  "Колорадо Эвеланш": "logos/nhl/col.png",
+  "COL": "logos/nhl/col.png",
+  "Коламбус": "logos/nhl/cbj.png",
+  "Columbus Blue Jackets": "logos/nhl/cbj.png",
+  "Коламбус Блю Джекетс": "logos/nhl/cbj.png",
+  "CBJ": "logos/nhl/cbj.png",
+  "Даллас": "logos/nhl/dal.png",
+  "Dallas Stars": "logos/nhl/dal.png",
+  "Даллас Старз": "logos/nhl/dal.png",
+  "DAL": "logos/nhl/dal.png",
+  "Детройт": "logos/nhl/det.png",
+  "Detroit Red Wings": "logos/nhl/det.png",
+  "Детройт Ред Уингз": "logos/nhl/det.png",
+  "DET": "logos/nhl/det.png",
+  "Эдмонтон": "logos/nhl/edm.png",
+  "Edmonton Oilers": "logos/nhl/edm.png",
+  "Эдмонтон Ойлерз": "logos/nhl/edm.png",
+  "EDM": "logos/nhl/edm.png",
+  "Флорида": "logos/nhl/fla.png",
+  "Florida Panthers": "logos/nhl/fla.png",
+  "Флорида Пантерз": "logos/nhl/fla.png",
+  "FLA": "logos/nhl/fla.png",
+  "Лос-Анджелес": "logos/nhl/lak.png",
+  "Los Angeles Kings": "logos/nhl/lak.png",
+  "Лос-Анджелес Кингз": "logos/nhl/lak.png",
+  "Лос Анджелес": "logos/nhl/lak.png",
+  "LAK": "logos/nhl/lak.png",
+  "Миннесота": "logos/nhl/min.png",
+  "Minnesota Wild": "logos/nhl/min.png",
+  "Миннесота Уайлд": "logos/nhl/min.png",
+  "MIN": "logos/nhl/min.png",
+  "Монреаль": "logos/nhl/mtl.png",
+  "Montreal Canadiens": "logos/nhl/mtl.png",
+  "Монреаль Канадиенс": "logos/nhl/mtl.png",
+  "MTL": "logos/nhl/mtl.png",
+  "Нэшвилл": "logos/nhl/nsh.png",
+  "Nashville Predators": "logos/nhl/nsh.png",
+  "Нэшвилл Предаторз": "logos/nhl/nsh.png",
+  "Нешвилл": "logos/nhl/nsh.png",
+  "NSH": "logos/nhl/nsh.png",
+  "Нью-Джерси": "logos/nhl/njd.png",
+  "New Jersey Devils": "logos/nhl/njd.png",
+  "Нью-Джерси Девилз": "logos/nhl/njd.png",
+  "NJD": "logos/nhl/njd.png",
+  "Айлендерс": "logos/nhl/nyi.png",
+  "New York Islanders": "logos/nhl/nyi.png",
+  "Нью-Йорк Айлендерс": "logos/nhl/nyi.png",
+  "NYI": "logos/nhl/nyi.png",
+  "Рейнджерс": "logos/nhl/nyr.png",
+  "New York Rangers": "logos/nhl/nyr.png",
+  "Нью-Йорк Рейнджерс": "logos/nhl/nyr.png",
+  "NYR": "logos/nhl/nyr.png",
+  "Оттава": "logos/nhl/ott.png",
+  "Ottawa Senators": "logos/nhl/ott.png",
+  "Оттава Сенаторз": "logos/nhl/ott.png",
+  "OTT": "logos/nhl/ott.png",
+  "Филадельфия": "logos/nhl/phi.png",
+  "Philadelphia Flyers": "logos/nhl/phi.png",
+  "Филадельфия Флайерз": "logos/nhl/phi.png",
+  "PHI": "logos/nhl/phi.png",
+  "Питтсбург": "logos/nhl/pit.png",
+  "Pittsburgh Penguins": "logos/nhl/pit.png",
+  "Питтсбург Пингвинз": "logos/nhl/pit.png",
+  "PIT": "logos/nhl/pit.png",
+  "Сан-Хосе": "logos/nhl/sjs.png",
+  "San Jose Sharks": "logos/nhl/sjs.png",
+  "Сан-Хосе Шаркс": "logos/nhl/sjs.png",
+  "SJS": "logos/nhl/sjs.png",
+  "Сиэтл": "logos/nhl/sea.png",
+  "Seattle Kraken": "logos/nhl/sea.png",
+  "Сиэтл Кракен": "logos/nhl/sea.png",
+  "SEA": "logos/nhl/sea.png",
+  "Сент-Луис": "logos/nhl/stl.png",
+  "St. Louis Blues": "logos/nhl/stl.png",
+  "Сент-Луис Блюз": "logos/nhl/stl.png",
+  "STL": "logos/nhl/stl.png",
+  "Тампа-Бэй": "logos/nhl/tbl.png",
+  "Tampa Bay Lightning": "logos/nhl/tbl.png",
+  "Тампа": "logos/nhl/tbl.png",
+  "Тампа-Бэй Лайтнинг": "logos/nhl/tbl.png",
+  "TBL": "logos/nhl/tbl.png",
+  "Торонто": "logos/nhl/tor.png",
+  "Toronto Maple Leafs": "logos/nhl/tor.png",
+  "Торонто Мейпл Лифс": "logos/nhl/tor.png",
+  "TOR": "logos/nhl/tor.png",
+  "Юта": "logos/nhl/uta.png",
+  "Utah Mammoth": "logos/nhl/uta.png",
+  "Юта Мамонт": "logos/nhl/uta.png",
+  "Utah": "logos/nhl/uta.png",
+  "UTA": "logos/nhl/uta.png",
+  "Ванкувер": "logos/nhl/van.png",
+  "Vancouver Canucks": "logos/nhl/van.png",
+  "Ванкувер Кэнакс": "logos/nhl/van.png",
+  "VAN": "logos/nhl/van.png",
+  "Вегас": "logos/nhl/vgk.png",
+  "Vegas Golden Knights": "logos/nhl/vgk.png",
+  "Вегас Голден Найтс": "logos/nhl/vgk.png",
+  "VGK": "logos/nhl/vgk.png",
+  "Вашингтон": "logos/nhl/wsh.png",
+  "Washington Capitals": "logos/nhl/wsh.png",
+  "Вашингтон Кэпиталз": "logos/nhl/wsh.png",
+  "WSH": "logos/nhl/wsh.png",
+  "Виннипег": "logos/nhl/wpg.png",
+  "Winnipeg Jets": "logos/nhl/wpg.png",
+  "Виннипег Джетс": "logos/nhl/wpg.png",
+  "WPG": "logos/nhl/wpg.png",
+  "Мангейм": "logos/del/mannheim.png",
+  "Adler Mannheim": "logos/del/mannheim.png",
+  "Адлер Мангейм": "logos/del/mannheim.png",
+  "Айсберен": "logos/del/berlin.png",
+  "Eisbären Berlin": "logos/del/berlin.png",
+  "Айсберен Берлин": "logos/del/berlin.png",
+  "Берлин": "logos/del/berlin.png",
+  "Штраубинг": "logos/del/straubing.png",
+  "Straubing Tigers": "logos/del/straubing.png",
+  "Штраубинг Тайгерс": "logos/del/straubing.png",
+  "Изерлон": "logos/del/iserlohn.png",
+  "Iserlohn Roosters": "logos/del/iserlohn.png",
+  "Изерлон Рустерс": "logos/del/iserlohn.png",
+  "Вольфсбург": "logos/del/wolfsburg.png",
+  "Grizzlys Wolfsburg": "logos/del/wolfsburg.png",
+  "Гриззлис Вольфсбург": "logos/del/wolfsburg.png",
+  "Бремерхафен": "logos/del/bremerhaven.png",
+  "Pinguins Bremerhaven": "logos/del/bremerhaven.png",
+  "Пингвинс Бремерхафен": "logos/del/bremerhaven.png",
+  "Кёльнер Хайе": "logos/del/koeln.png",
+  "Kölner Haie": "logos/del/koeln.png",
+  "Кёльн": "logos/del/koeln.png",
+  "Кельн": "logos/del/koeln.png",
+  "Кельнер Хайе": "logos/del/koeln.png",
+  "Ред Булл Мюнхен": "logos/del/muenchen.png",
+  "EHC Red Bull München": "logos/del/muenchen.png",
+  "Мюнхен": "logos/del/muenchen.png",
+  "Red Bull München": "logos/del/muenchen.png",
+  "Аугсбург": "logos/del/augsburg.png",
+  "Augsburger Panther": "logos/del/augsburg.png",
+  "Аугсбургер Пантер": "logos/del/augsburg.png",
+  "Нюрнберг": "logos/del/nuernberg.png",
+  "Nürnberg Ice Tigers": "logos/del/nuernberg.png",
+  "Нюрнберг Айс Тайгерс": "logos/del/nuernberg.png",
+  "Швеннинген": "logos/del/schwenningen.png",
+  "Schwenninger Wild Wings": "logos/del/schwenningen.png",
+  "Швеннингер Уайлд Уингз": "logos/del/schwenningen.png",
+  "Франкфурт": "logos/del/frankfurt.png",
+  "Löwen Frankfurt": "logos/del/frankfurt.png",
+  "Лёвен Франкфурт": "logos/del/frankfurt.png",
+  "Ингольштадт": "logos/del/ingolstadt.png",
+  "ERC Ingolstadt": "logos/del/ingolstadt.png",
+  "Крефельд": "logos/del/krefeld.png",
+  "Krefeld Pinguine": "logos/del/krefeld.png",
+  "Крефельд Пингвине": "logos/del/krefeld.png",
+  "Олесунн": "logos/nor/aal.png",
+  "Aalesund": "logos/nor/aal.png",
+  "Ålesund": "logos/nor/aal.png",
+  "Будё/Глимт": "logos/nor/bod.png",
+  "Bodø/Glimt": "logos/nor/bod.png",
+  "Будё-Глимт": "logos/nor/bod.png",
+  "Будё": "logos/nor/bod.png",
+  "Бранн": "logos/nor/bra.png",
+  "Brann": "logos/nor/bra.png",
+  "Фредрикстад": "logos/nor/ffk.png",
+  "Fredrikstad": "logos/nor/ffk.png",
+  "ХамКам": "logos/nor/ham.png",
+  "HamKam": "logos/nor/ham.png",
+  "Хамкам": "logos/nor/ham.png",
+  "КФУМ": "logos/nor/kfu.png",
+  "KFUM": "logos/nor/kfu.png",
+  "КФУМ Осло": "logos/nor/kfu.png",
+  "Кристиансунн": "logos/nor/kri.png",
+  "Kristiansund": "logos/nor/kri.png",
+  "Лиллестрём": "logos/nor/lsk.png",
+  "Lillestrøm": "logos/nor/lsk.png",
+  "Лиллестрем": "logos/nor/lsk.png",
+  "Молде": "logos/nor/mol.png",
+  "Molde": "logos/nor/mol.png",
+  "Русенборг": "logos/nor/rbk.png",
+  "Rosenborg": "logos/nor/rbk.png",
+  "Розенборг": "logos/nor/rbk.png",
+  "Сарпсборг": "logos/nor/s08.png",
+  "Sarpsborg 08": "logos/nor/s08.png",
+  "Сарпсборг 08": "logos/nor/s08.png",
+  "Сандефьорд": "logos/nor/san.png",
+  "Sandefjord": "logos/nor/san.png",
+  "Sandefjord Fotball": "logos/nor/san.png",
+  "Старт": "logos/nor/sta.png",
+  "Start": "logos/nor/sta.png",
+  "Тромсё": "logos/nor/til.png",
+  "Tromsø": "logos/nor/til.png",
+  "Тромсе": "logos/nor/til.png",
+  "Волеренга": "logos/nor/vif.png",
+  "Vålerenga": "logos/nor/vif.png",
+  "Валеренга": "logos/nor/vif.png",
+  "Викинг": "logos/nor/vik.png",
+  "Viking": "logos/nor/vik.png",
+  "Осане": "logos/nor/aas.png",
+  "Åsane": "logos/nor/aas.png",
+  "Брюне": "logos/nor/bry.png",
+  "Bryne": "logos/nor/bry.png",
+  "Эгерсунн": "logos/nor/eik.png",
+  "Egersund": "logos/nor/eik.png",
+  "Эгерсунд": "logos/nor/eik.png",
+  "Хёугесунн": "logos/nor/fkh.png",
+  "Haugesund": "logos/nor/fkh.png",
+  "Хаугесунн": "logos/nor/fkh.png",
+  "Хаугесунд": "logos/nor/fkh.png",
+  "Хёдд": "logos/nor/hod.png",
+  "Hødd": "logos/nor/hod.png",
+  "Ходд": "logos/nor/hod.png",
+  "Конгсвингер": "logos/nor/kil.png",
+  "Kongsvinger": "logos/nor/kil.png",
+  "Лин": "logos/nor/lyn.png",
+  "Lyn": "logos/nor/lyn.png",
+  "Мосс": "logos/nor/mos.png",
+  "Moss": "logos/nor/mos.png",
+  "Одд": "logos/nor/odd.png",
+  "Odd": "logos/nor/odd.png",
+  "Ранхейм": "logos/nor/ran.png",
+  "Ranheim": "logos/nor/ran.png",
+  "Ranheim TF": "logos/nor/ran.png",
+  "Рауфосс": "logos/nor/rau.png",
+  "Raufoss": "logos/nor/rau.png",
+  "Стрёмсгодсет": "logos/nor/sif.png",
+  "Strømsgodset": "logos/nor/sif.png",
+  "Стремсгодсет": "logos/nor/sif.png",
+  "Согндал": "logos/nor/sog.png",
+  "Sogndal": "logos/nor/sog.png",
+  "Стабек": "logos/nor/stb.png",
+  "Stabæk": "logos/nor/stb.png",
+  "Стрёммен": "logos/nor/str.png",
+  "Strømmen": "logos/nor/str.png",
+  "Стреммен": "logos/nor/str.png",
+  "Саннес Ульф": "logos/nor/ulf.png",
+  "Sandnes Ulf": "logos/nor/ulf.png",
+  "Саннес": "logos/nor/ulf.png"
+ },
+ "files": {
+  "logos/khl/lokomotiv.png": {
+   "league": "khl",
+   "name": "Локомотив"
+  },
+  "logos/khl/cska.png": {
+   "league": "khl",
+   "name": "ЦСКА"
+  },
+  "logos/khl/spartak.png": {
+   "league": "khl",
+   "name": "Спартак"
+  },
+  "logos/khl/ska.png": {
+   "league": "khl",
+   "name": "СКА"
+  },
+  "logos/khl/traktor.png": {
+   "league": "khl",
+   "name": "Трактор"
+  },
+  "logos/khl/torpedo.png": {
+   "league": "khl",
+   "name": "Торпедо"
+  },
+  "logos/khl/sibir.png": {
+   "league": "khl",
+   "name": "Сибирь"
+  },
+  "logos/khl/avangard.png": {
+   "league": "khl",
+   "name": "Авангард"
+  },
+  "logos/khl/metallurg.png": {
+   "league": "khl",
+   "name": "Металлург Мг"
+  },
+  "logos/khl/salavat.png": {
+   "league": "khl",
+   "name": "Салават Юлаев"
+  },
+  "logos/khl/akbars.png": {
+   "league": "khl",
+   "name": "Ак Барс"
+  },
+  "logos/khl/amur.png": {
+   "league": "khl",
+   "name": "Амур"
+  },
+  "logos/khl/severstal.png": {
+   "league": "khl",
+   "name": "Северсталь"
+  },
+  "logos/khl/neftyanik.png": {
+   "league": "khl",
+   "name": "Нефтяник"
+  },
+  "logos/khl/lada.png": {
+   "league": "khl",
+   "name": "Лада"
+  },
+  "logos/khl/neftekhimik.png": {
+   "league": "khl",
+   "name": "Нефтехимик"
+  },
+  "logos/khl/avtomobilist.png": {
+   "league": "khl",
+   "name": "Автомобилист"
+  },
+  "logos/khl/barys.png": {
+   "league": "khl",
+   "name": "Барыс"
+  },
+  "logos/khl/dinamo-mn.png": {
+   "league": "khl",
+   "name": "Динамо Мн"
+  },
+  "logos/khl/chelny.png": {
+   "league": "khl",
+   "name": "Челны"
+  },
+  "logos/khl/admiral.png": {
+   "league": "khl",
+   "name": "Адмирал"
+  },
+  "logos/khl/sochi.png": {
+   "league": "khl",
+   "name": "Сочи"
+  },
+  "logos/khl/shanghai.png": {
+   "league": "khl",
+   "name": "Шанхай"
+  },
+  "logos/khl/dinamo-m.png": {
+   "league": "khl",
+   "name": "Динамо М"
+  },
+  "logos/nhl/ana.png": {
+   "league": "nhl",
+   "name": "Анахайм"
+  },
+  "logos/nhl/bos.png": {
+   "league": "nhl",
+   "name": "Бостон"
+  },
+  "logos/nhl/buf.png": {
+   "league": "nhl",
+   "name": "Баффало"
+  },
+  "logos/nhl/cgy.png": {
+   "league": "nhl",
+   "name": "Калгари"
+  },
+  "logos/nhl/car.png": {
+   "league": "nhl",
+   "name": "Каролина"
+  },
+  "logos/nhl/chi.png": {
+   "league": "nhl",
+   "name": "Чикаго"
+  },
+  "logos/nhl/col.png": {
+   "league": "nhl",
+   "name": "Колорадо"
+  },
+  "logos/nhl/cbj.png": {
+   "league": "nhl",
+   "name": "Коламбус"
+  },
+  "logos/nhl/dal.png": {
+   "league": "nhl",
+   "name": "Даллас"
+  },
+  "logos/nhl/det.png": {
+   "league": "nhl",
+   "name": "Детройт"
+  },
+  "logos/nhl/edm.png": {
+   "league": "nhl",
+   "name": "Эдмонтон"
+  },
+  "logos/nhl/fla.png": {
+   "league": "nhl",
+   "name": "Флорида"
+  },
+  "logos/nhl/lak.png": {
+   "league": "nhl",
+   "name": "Лос-Анджелес"
+  },
+  "logos/nhl/min.png": {
+   "league": "nhl",
+   "name": "Миннесота"
+  },
+  "logos/nhl/mtl.png": {
+   "league": "nhl",
+   "name": "Монреаль"
+  },
+  "logos/nhl/nsh.png": {
+   "league": "nhl",
+   "name": "Нэшвилл"
+  },
+  "logos/nhl/njd.png": {
+   "league": "nhl",
+   "name": "Нью-Джерси"
+  },
+  "logos/nhl/nyi.png": {
+   "league": "nhl",
+   "name": "Айлендерс"
+  },
+  "logos/nhl/nyr.png": {
+   "league": "nhl",
+   "name": "Рейнджерс"
+  },
+  "logos/nhl/ott.png": {
+   "league": "nhl",
+   "name": "Оттава"
+  },
+  "logos/nhl/phi.png": {
+   "league": "nhl",
+   "name": "Филадельфия"
+  },
+  "logos/nhl/pit.png": {
+   "league": "nhl",
+   "name": "Питтсбург"
+  },
+  "logos/nhl/sjs.png": {
+   "league": "nhl",
+   "name": "Сан-Хосе"
+  },
+  "logos/nhl/sea.png": {
+   "league": "nhl",
+   "name": "Сиэтл"
+  },
+  "logos/nhl/stl.png": {
+   "league": "nhl",
+   "name": "Сент-Луис"
+  },
+  "logos/nhl/tbl.png": {
+   "league": "nhl",
+   "name": "Тампа-Бэй"
+  },
+  "logos/nhl/tor.png": {
+   "league": "nhl",
+   "name": "Торонто"
+  },
+  "logos/nhl/uta.png": {
+   "league": "nhl",
+   "name": "Юта"
+  },
+  "logos/nhl/van.png": {
+   "league": "nhl",
+   "name": "Ванкувер"
+  },
+  "logos/nhl/vgk.png": {
+   "league": "nhl",
+   "name": "Вегас"
+  },
+  "logos/nhl/wsh.png": {
+   "league": "nhl",
+   "name": "Вашингтон"
+  },
+  "logos/nhl/wpg.png": {
+   "league": "nhl",
+   "name": "Виннипег"
+  },
+  "logos/del/mannheim.png": {
+   "league": "del",
+   "name": "Мангейм"
+  },
+  "logos/del/berlin.png": {
+   "league": "del",
+   "name": "Айсберен"
+  },
+  "logos/del/straubing.png": {
+   "league": "del",
+   "name": "Штраубинг"
+  },
+  "logos/del/iserlohn.png": {
+   "league": "del",
+   "name": "Изерлон"
+  },
+  "logos/del/wolfsburg.png": {
+   "league": "del",
+   "name": "Вольфсбург"
+  },
+  "logos/del/bremerhaven.png": {
+   "league": "del",
+   "name": "Бремерхафен"
+  },
+  "logos/del/koeln.png": {
+   "league": "del",
+   "name": "Кёльнер Хайе"
+  },
+  "logos/del/muenchen.png": {
+   "league": "del",
+   "name": "Ред Булл Мюнхен"
+  },
+  "logos/del/augsburg.png": {
+   "league": "del",
+   "name": "Аугсбург"
+  },
+  "logos/del/nuernberg.png": {
+   "league": "del",
+   "name": "Нюрнберг"
+  },
+  "logos/del/schwenningen.png": {
+   "league": "del",
+   "name": "Швеннинген"
+  },
+  "logos/del/frankfurt.png": {
+   "league": "del",
+   "name": "Франкфурт"
+  },
+  "logos/del/ingolstadt.png": {
+   "league": "del",
+   "name": "Ингольштадт"
+  },
+  "logos/del/krefeld.png": {
+   "league": "del",
+   "name": "Крефельд"
+  },
+  "logos/nor/aal.png": {
+   "league": "nor",
+   "name": "Олесунн"
+  },
+  "logos/nor/bod.png": {
+   "league": "nor",
+   "name": "Будё/Глимт"
+  },
+  "logos/nor/bra.png": {
+   "league": "nor",
+   "name": "Бранн"
+  },
+  "logos/nor/ffk.png": {
+   "league": "nor",
+   "name": "Фредрикстад"
+  },
+  "logos/nor/ham.png": {
+   "league": "nor",
+   "name": "ХамКам"
+  },
+  "logos/nor/kfu.png": {
+   "league": "nor",
+   "name": "КФУМ"
+  },
+  "logos/nor/kri.png": {
+   "league": "nor",
+   "name": "Кристиансунн"
+  },
+  "logos/nor/lsk.png": {
+   "league": "nor",
+   "name": "Лиллестрём"
+  },
+  "logos/nor/mol.png": {
+   "league": "nor",
+   "name": "Молде"
+  },
+  "logos/nor/rbk.png": {
+   "league": "nor",
+   "name": "Русенборг"
+  },
+  "logos/nor/s08.png": {
+   "league": "nor",
+   "name": "Сарпсборг"
+  },
+  "logos/nor/san.png": {
+   "league": "nor",
+   "name": "Сандефьорд"
+  },
+  "logos/nor/sta.png": {
+   "league": "nor",
+   "name": "Старт"
+  },
+  "logos/nor/til.png": {
+   "league": "nor",
+   "name": "Тромсё"
+  },
+  "logos/nor/vif.png": {
+   "league": "nor",
+   "name": "Волеренга"
+  },
+  "logos/nor/vik.png": {
+   "league": "nor",
+   "name": "Викинг"
+  },
+  "logos/nor/aas.png": {
+   "league": "nor",
+   "name": "Осане"
+  },
+  "logos/nor/bry.png": {
+   "league": "nor",
+   "name": "Брюне"
+  },
+  "logos/nor/eik.png": {
+   "league": "nor",
+   "name": "Эгерсунн"
+  },
+  "logos/nor/fkh.png": {
+   "league": "nor",
+   "name": "Хёугесунн"
+  },
+  "logos/nor/hod.png": {
+   "league": "nor",
+   "name": "Хёдд"
+  },
+  "logos/nor/kil.png": {
+   "league": "nor",
+   "name": "Конгсвингер"
+  },
+  "logos/nor/lyn.png": {
+   "league": "nor",
+   "name": "Лин"
+  },
+  "logos/nor/mos.png": {
+   "league": "nor",
+   "name": "Мосс"
+  },
+  "logos/nor/odd.png": {
+   "league": "nor",
+   "name": "Одд"
+  },
+  "logos/nor/ran.png": {
+   "league": "nor",
+   "name": "Ранхейм"
+  },
+  "logos/nor/rau.png": {
+   "league": "nor",
+   "name": "Рауфосс"
+  },
+  "logos/nor/sif.png": {
+   "league": "nor",
+   "name": "Стрёмсгодсет"
+  },
+  "logos/nor/sog.png": {
+   "league": "nor",
+   "name": "Согндал"
+  },
+  "logos/nor/stb.png": {
+   "league": "nor",
+   "name": "Стабек"
+  },
+  "logos/nor/str.png": {
+   "league": "nor",
+   "name": "Стрёммен"
+  },
+  "logos/nor/ulf.png": {
+   "league": "nor",
+   "name": "Саннес Ульф"
+  }
+ }
+}

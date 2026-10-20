@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Capper Day: render a 1080x1350 bet-slip card («КУПОН CAPPER DAY», own soft cartoon design: cream/sky clay card, mascot, no neon/glow) and post it to Telegram.
+"""Capper Day: render a 1080x1350 bet-slip card («КУПОН CAPPER DAY», own soft cartoon design: cream/sky clay card, mascot, team logos from logos/map.json in white badges, no neon/glow) and post it to Telegram.
 
 Usage:
   python3 tools/tg_post.py post.json [--out card.png] [--dry-run] [--chat @capperday]
@@ -24,6 +24,32 @@ ICE = (241, 247, 253)
 
 FONT_DIRS = ["/usr/share/fonts/truetype/sand-box/google", "/usr/share/fonts/truetype", "/usr/share/fonts"]
 MASCOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "mascot.png")
+ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
+
+def _norm(x):
+    return " ".join(x.replace("ё", "е").replace("Ё", "Е").split()).lower()
+
+try:
+    _LOGOS = json.load(open(os.path.join(ROOT, "logos", "map.json"), encoding="utf-8"))["teams"]
+except Exception:
+    _LOGOS = {}
+_NLOGOS = {_norm(k): v for k, v in _LOGOS.items()}
+
+def teams_of(match):
+    """'НХЛ · Миннесота @ Эдмонтон' / 'Локомотив — Нефтехимик' -> [team1, team2]."""
+    m = match.split(" · ")[-1]
+    for sep in (" — ", " @ ", " - "):
+        if sep in m:
+            return [t.strip() for t in m.split(sep)][:2]
+    return [m.strip()]
+
+def logo_path(team):
+    rel = _LOGOS.get(team) or _NLOGOS.get(_norm(team))
+    if not rel:
+        print(f"warn: no logo for {team!r} in logos/map.json", file=sys.stderr)
+        return None
+    p = os.path.join(ROOT, rel)
+    return p if os.path.exists(p) else None
 
 def _find(name):
     for d in FONT_DIRS:
@@ -113,6 +139,25 @@ def pill(img, x, y, s, f, bg, fg, pad=18):
 def grad_text(img, xy, s, f, c1=NAVY, c2=None):
     ImageDraw.Draw(img).text(xy, s, font=f, fill=c1)
 
+def logo_badge(img, x, y, size, team):
+    """White rounded badge with a soft shadow and the team logo (letters if no logo)."""
+    r = int(size * 0.3)
+    sh = Image.new("RGBA", img.size, (0, 0, 0, 0))
+    ImageDraw.Draw(sh).rounded_rectangle([x, y + 5, x + size, y + size + 5], r, fill=(52, 84, 122, 50))
+    img.alpha_composite(sh.filter(ImageFilter.GaussianBlur(6)))
+    d = ImageDraw.Draw(img)
+    d.rounded_rectangle([x, y, x + size, y + size], r, fill=(255, 255, 255))
+    p = logo_path(team)
+    if p:
+        lg = Image.open(p).convert("RGBA")
+        inner = int(size * 0.76)
+        lg.thumbnail((inner, inner), Image.LANCZOS)
+        img.alpha_composite(lg, (x + (size - lg.width) // 2, y + (size - lg.height) // 2))
+    else:
+        f = font("body", int(size * 0.32), 900)
+        t = team[:3].upper()
+        d.text((x + (size - tw(d, t, f)) / 2, y + size * 0.3), t, font=f, fill=NAVY)
+
 def badge(img, x_right, y, s, f, col):
     d = ImageDraw.Draw(img)
     w_ = tw(d, s, f) + 40
@@ -140,6 +185,12 @@ def slip_row(img, d, y, M, c, stake, accent, f, tint=(234, 245, 255)):
     h_ = 196
     d.rounded_rectangle([x0, y + 4, x1, y + h_ + 4], 28, fill=tuple(max(0, v - 14) for v in tint))
     d.rounded_rectangle([x0, y, x1, y + h_], 28, fill=tint)
+    xs = x0
+    tm = teams_of(c["match"])
+    for i, t in enumerate(tm[:2]):
+        logo_badge(img, x0 + 22, y + 18 + i * 62, 54, t)
+    d = ImageDraw.Draw(img)
+    x0 += 72
     d.text((x0 + 28, y + 16), f"{c['league']} · {c['time']} МСК", font=f["lbl"], fill=MUTED)
     ow = tw(d, c["odds"], f["odds"])
     d.text((x1 - 26 - ow, y + 8), c["odds"], font=f["odds"], fill=accent)
@@ -151,8 +202,8 @@ def slip_row(img, d, y, M, c, stake, accent, f, tint=(234, 245, 255)):
     lx = x0 + 28 + tw(d, pk, f["s"]) + 16
     pill(img, lx, y + 96, c["label"], f["lbl"], (255, 255, 255), accent, pad=12)
     if stake:
-        d.line([(x0 + 28, y + 148), (x1 - 26, y + 148)], fill=(205, 216, 230), width=2)
-        d.text((x0 + 28, y + 158), f"Ставка {rub(stake)}", font=f["lbl"], fill=SOFT)
+        d.line([(xs + 28, y + 148), (x1 - 26, y + 148)], fill=(205, 216, 230), width=2)
+        d.text((xs + 28, y + 158), f"Ставка {rub(stake)}", font=f["lbl"], fill=SOFT)
         s = f"Возможный выигрыш {rub(stake * float(c['odds']))}"
         d.text((x1 - 26 - tw(d, s, f["lbl"]), y + 158), s, font=f["lbl"], fill=TEXT)
     return y + h_ + 16
@@ -198,8 +249,11 @@ def render(data, out):
         d.rounded_rectangle([x0, y, x1, y + h_], 28, fill=tint)
         for i, l in enumerate(ex["legs"]):
             yy = y + 22 + i * 92
-            d.text((x0 + 28, yy), fit(d, f"{l['match']} · {l['time']}", f["lbl"], 560), font=f["lbl"], fill=MUTED)
-            d.text((x0 + 28, yy + 30), f"{l['pick']} · {l['label']}", font=f["s"], fill=TEXT)
+            for j, t in enumerate(teams_of(l["match"])[:2]):
+                logo_badge(img, x0 + 22 + j * 50, yy + 4, 46, t)
+            d = ImageDraw.Draw(img)
+            d.text((x0 + 128, yy), fit(d, f"{l['match']} · {l['time']}", f["lbl"], 470), font=f["lbl"], fill=MUTED)
+            d.text((x0 + 128, yy + 30), f"{l['pick']} · {l['label']}", font=f["s"], fill=TEXT)
             o = l["odds"]; d.text((x1 - 26 - tw(d, o, f["s2"]), yy - 6), o, font=f["s2"], fill=ORANGE)
             b = f"кэф {l['bk']}"; d.text((x1 - 26 - tw(d, b, f["lbl"]), yy + 50), b, font=f["lbl"], fill=MUTED)
         yy = y + h_ - 48
