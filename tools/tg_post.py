@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Capper Day: render a 1080x1350 bet-slip card («КУПОН CAPPER DAY», own design) and post it to Telegram.
+"""Capper Day: render a 1080x1350 bet-slip card («КУПОН CAPPER DAY», own soft cartoon design: cream/sky clay card, mascot, no neon/glow) and post it to Telegram.
 
 Usage:
   python3 tools/tg_post.py post.json [--out card.png] [--dry-run] [--chat @capperday]
@@ -14,11 +14,16 @@ import argparse, html, json, os, sys, urllib.request, uuid
 from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
 W, H = 1080, 1350
-BG1, BG2 = (5, 7, 15), (11, 15, 36)
-CYAN, MAG, GREEN, PINK = (0, 240, 255), (177, 75, 255), (61, 255, 168), (255, 77, 125)
-TEXT, MUTED, SOFT = (241, 245, 255), (143, 155, 191), (201, 210, 240)
+# Soft cartoon palette (no neon, no glow): sky blue, warm orange, cream, ice white, soft red.
+BG_TOP, BG_BOT = (191, 229, 255), (255, 241, 220)
+CARD, CARD2 = (255, 253, 248), (255, 246, 234)
+SKY, ORANGE, GREEN, RED = (60, 155, 230), (255, 139, 61), (42, 168, 102), (226, 86, 75)
+NAVY = (36, 64, 106)
+TEXT, MUTED, SOFT = (38, 53, 77), (111, 125, 146), (70, 85, 109)
+ICE = (241, 247, 253)
 
 FONT_DIRS = ["/usr/share/fonts/truetype/sand-box/google", "/usr/share/fonts/truetype", "/usr/share/fonts"]
+MASCOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "mascot.png")
 
 def _find(name):
     for d in FONT_DIRS:
@@ -28,8 +33,8 @@ def _find(name):
     return None
 
 def font(kind, size, weight=None):
-    cands = {"head": ["Oswald-VariableFont_wght.ttf", "DejaVuSans-Bold.ttf"],
-             "body": ["Manrope-VariableFont_wght.ttf", "DejaVuSans.ttf"]}[kind]
+    cands = {"head": ["Nunito-VariableFont_wght.ttf", "DejaVuSans-Bold.ttf"],
+             "body": ["Nunito-VariableFont_wght.ttf", "DejaVuSans.ttf"]}[kind]
     for c in cands:
         p = _find(c)
         if p:
@@ -67,88 +72,87 @@ def wrap(d, s, f, maxw, maxlines=2):
     return lines
 
 def background():
-    img = Image.new("RGB", (W, H), BG1)
+    """Sky-to-cream gradient with a few soft clouds (no glow)."""
+    img = Image.new("RGB", (W, H), BG_BOT)
     px = ImageDraw.Draw(img)
     for y in range(H):
-        t = y / H
-        px.line([(0, y), (W, y)], fill=tuple(int(BG2[i] * (1 - t) + BG1[i] * t) for i in range(3)))
-    glow = Image.new("RGB", (W, H), (0, 0, 0))
-    g = ImageDraw.Draw(glow)
-    g.ellipse([-300, -350, 600, 450], fill=(90, 30, 140))
-    g.ellipse([600, -200, 1400, 500], fill=(0, 90, 110))
-    g.ellipse([300, 1050, 1300, 1700], fill=(50, 20, 100))
-    glow = glow.filter(ImageFilter.GaussianBlur(160))
-    return Image.blend(img, Image.composite(glow, img, Image.new("L", (W, H), 255)), 0.55).convert("RGBA")
+        t = min(1, y / (H * 0.7))
+        px.line([(0, y), (W, y)], fill=tuple(int(BG_TOP[i] * (1 - t) + BG_BOT[i] * t) for i in range(3)))
+    img = img.convert("RGBA")
+    cl = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    c = ImageDraw.Draw(cl)
+    for x, y, r in ((120, 30, 70), (210, 10, 90), (300, 40, 60), (820, H - 120, 80), (930, H - 150, 100), (1030, H - 110, 70)):
+        c.ellipse([x - r, y - r * 0.6, x + r, y + r * 0.6], fill=(255, 255, 255, 170))
+    img.alpha_composite(cl.filter(ImageFilter.GaussianBlur(6)))
+    return img
 
-def glass(img, box, r=28, glow_col=None):
+def soft_shadow(img, box, r, off=14, blur=22, alpha=46):
+    sh = Image.new("RGBA", img.size, (0, 0, 0, 0))
     x0, y0, x1, y1 = box
-    if glow_col:
-        gl = Image.new("RGBA", img.size, (0, 0, 0, 0))
-        ImageDraw.Draw(gl).rounded_rectangle([x0 - 4, y0 - 4, x1 + 4, y1 + 4], r + 4, outline=glow_col + (200,), width=6)
-        img.alpha_composite(gl.filter(ImageFilter.GaussianBlur(10)))
-    layer = Image.new("RGBA", img.size, (0, 0, 0, 0))
-    ImageDraw.Draw(layer).rounded_rectangle(box, r, fill=(255, 255, 255, 20), outline=(255, 255, 255, 46), width=2)
-    img.alpha_composite(layer)
+    ImageDraw.Draw(sh).rounded_rectangle([x0, y0 + off, x1, y1 + off], r, fill=(52, 84, 122, alpha))
+    img.alpha_composite(sh.filter(ImageFilter.GaussianBlur(blur)))
 
-def grad_text(img, xy, s, f, c1=CYAN, c2=MAG):
+def clay(img, box, r=40, fill=CARD, shadow=True):
+    """Soft clay card: solid warm fill, gentle drop shadow, light top edge, subtle bottom inset."""
+    if shadow:
+        soft_shadow(img, box, r)
+    x0, y0, x1, y1 = box
     d = ImageDraw.Draw(img)
-    w_ = int(tw(d, s, f)) + 4; h_ = f.size + 20
-    mask = Image.new("L", (w_, h_), 0)
-    ImageDraw.Draw(mask).text((0, 0), s, font=f, fill=255)
-    grad = Image.new("RGBA", (w_, h_))
-    gd = ImageDraw.Draw(grad)
-    for x in range(w_):
-        t = x / max(w_ - 1, 1)
-        gd.line([(x, 0), (x, h_)], fill=tuple(int(c1[i] * (1 - t) + c2[i] * t) for i in range(3)) + (255,))
-    img.paste(grad, xy, mask)
+    d.rounded_rectangle(box, r, fill=fill)
+    d.rounded_rectangle([x0, y1 - 18, x1, y1], min(r, 18), fill=tuple(max(0, v - 10) for v in fill))
+    d.rounded_rectangle([x0, y0, x1, y1 - 6], r, fill=fill)
+
+def pill(img, x, y, s, f, bg, fg, pad=18):
+    d = ImageDraw.Draw(img)
+    w_ = tw(d, s, f) + pad * 2; h_ = f.size + 18
+    d.rounded_rectangle([x, y + 3, x + w_, y + h_ + 3], h_ // 2, fill=tuple(max(0, v - 30) for v in bg))
+    d.rounded_rectangle([x, y, x + w_, y + h_], h_ // 2, fill=bg)
+    d.text((x + pad, y + 6), s, font=f, fill=fg)
+    return w_
+
+def grad_text(img, xy, s, f, c1=NAVY, c2=None):
+    ImageDraw.Draw(img).text(xy, s, font=f, fill=c1)
 
 def badge(img, x_right, y, s, f, col):
     d = ImageDraw.Draw(img)
-    w_ = tw(d, s, f) + 40; h_ = f.size + 22
-    box = [x_right - w_, y, x_right, y + h_]
-    gl = Image.new("RGBA", img.size, (0, 0, 0, 0))
-    ImageDraw.Draw(gl).rounded_rectangle(box, h_ // 2, fill=col + (90,))
-    img.alpha_composite(gl.filter(ImageFilter.GaussianBlur(12)))
-    d.rounded_rectangle(box, h_ // 2, fill=(10, 20, 30), outline=col, width=3)
-    d.text((box[0] + 20, y + 7), s, font=f, fill=col)
-    return w_
+    w_ = tw(d, s, f) + 40
+    return pill(img, x_right - w_, y, s, f, col, (255, 255, 255), pad=20)
 
 SIG = {"hockey": "Шайба в деле, банк в плюсе! 🔞", "football": "Мяч в деле, банк в плюсе! 🔞"}
 
 def rub(n):
     return f"{int(round(n)):,}".replace(",", " ") + " ₽"
 
-def perforation(img, y, M):
-    """Ticket tear line: dashed line with half-circle notches (own design, no BK UI)."""
+def perforation(img, y, M, notch=None):
+    """Ticket tear line: dashed line with round notches (own design, no BK UI)."""
     d = ImageDraw.Draw(img)
     for x in range(M + 40, W - M - 40, 26):
-        d.line([(x, y), (x + 13, y)], fill=(255, 255, 255, 70), width=3)
+        d.rounded_rectangle([x, y - 2, x + 13, y + 2], 2, fill=(205, 216, 230))
     for cx in (M, W - M):
-        d.ellipse([cx - 22, y - 22, cx + 22, y + 22], fill=BG1)
+        col = notch or img.getpixel((cx if cx < W // 2 else W - 2, y))[:3]
+        if cx < W // 2:
+            col = img.getpixel((2, y))[:3]
+        d.ellipse([cx - 22, y - 22, cx + 22, y + 22], fill=col)
 
-def slip_row(img, d, y, M, c, stake, accent, f):
+def slip_row(img, d, y, M, c, stake, accent, f, tint=(234, 245, 255)):
     """One bet as a slip row. Returns new y."""
     x0, x1 = M + 26, W - M - 26
     h_ = 196
-    lay = Image.new("RGBA", img.size, (0, 0, 0, 0))
-    ImageDraw.Draw(lay).rounded_rectangle([x0, y, x1, y + h_], 20, fill=(255, 255, 255, 14), outline=accent + (120,), width=2)
-    img.alpha_composite(lay)
-    d.rounded_rectangle([x0, y + 18, x0 + 8, y + h_ - 18], 4, fill=accent)
-    d.text((x0 + 30, y + 16), f"{c['league']} · {c['time']} МСК", font=f["lbl"], fill=MUTED)
+    d.rounded_rectangle([x0, y + 4, x1, y + h_ + 4], 28, fill=tuple(max(0, v - 14) for v in tint))
+    d.rounded_rectangle([x0, y, x1, y + h_], 28, fill=tint)
+    d.text((x0 + 28, y + 16), f"{c['league']} · {c['time']} МСК", font=f["lbl"], fill=MUTED)
     ow = tw(d, c["odds"], f["odds"])
-    d.text((x1 - 26 - ow, y + 14), c["odds"], font=f["odds"], fill=accent)
+    d.text((x1 - 26 - ow, y + 8), c["odds"], font=f["odds"], fill=accent)
     bk = f"кэф {c['bk']}"
     d.text((x1 - 26 - tw(d, bk, f["lbl"]), y + 98), bk, font=f["lbl"], fill=MUTED)
-    d.text((x0 + 30, y + 46), fit(d, c["match"], f["t"], x1 - x0 - ow - 100), font=f["t"], fill=TEXT)
+    d.text((x0 + 28, y + 46), fit(d, c["match"], f["t"], x1 - x0 - ow - 100), font=f["t"], fill=TEXT)
     pk = c["pick"]
-    d.text((x0 + 30, y + 96), pk, font=f["s"], fill=accent)
-    lx = x0 + 30 + tw(d, pk, f["s"]) + 16
-    lb = c["label"]; lw = tw(d, lb, f["lbl"]) + 24
-    d.rounded_rectangle([lx, y + 96, lx + lw, y + 128], 16, outline=accent, width=2)
-    d.text((lx + 12, y + 100), lb, font=f["lbl"], fill=accent)
+    d.text((x0 + 28, y + 96), pk, font=f["s"], fill=accent)
+    lx = x0 + 28 + tw(d, pk, f["s"]) + 16
+    pill(img, lx, y + 96, c["label"], f["lbl"], (255, 255, 255), accent, pad=12)
     if stake:
-        d.line([(x0 + 30, y + 150), (x1 - 26, y + 150)], fill=(255, 255, 255, 30), width=1)
-        d.text((x0 + 30, y + 158), f"Ставка {rub(stake)}", font=f["lbl"], fill=SOFT)
+        d.line([(x0 + 28, y + 148), (x1 - 26, y + 148)], fill=(205, 216, 230), width=2)
+        d.text((x0 + 28, y + 158), f"Ставка {rub(stake)}", font=f["lbl"], fill=SOFT)
         s = f"Возможный выигрыш {rub(stake * float(c['odds']))}"
         d.text((x1 - 26 - tw(d, s, f["lbl"]), y + 158), s, font=f["lbl"], fill=TEXT)
     return y + h_ + 16
@@ -160,40 +164,47 @@ def render(data, out):
     H = max(H, 1080)
     img = background(); d = ImageDraw.Draw(img)
     M = 44
-    f = {"h": font("head", 76, 700), "date": font("body", 28, 700), "t": font("body", 32, 800), "s": font("body", 27, 800),
-         "lbl": font("body", 22, 700), "odds": font("head", 64, 700), "bank": font("head", 58, 700), "sig": font("body", 28, 800), "s2": font("head", 44, 700)}
+    f = {"h": font("head", 70, 1000), "date": font("body", 28, 800), "t": font("body", 32, 900), "s": font("body", 27, 900),
+         "lbl": font("body", 22, 800), "odds": font("head", 62, 1000), "bank": font("head", 58, 1000), "sig": font("body", 27, 900), "s2": font("head", 44, 1000)}
     stake = int(data["stake"])
-    # ticket body
-    glass(img, [M, 36, W - M, H - 36], 34, glow_col=CYAN)
-    grad_text(img, (M + 40, 62), "КУПОН CAPPER DAY", f["h"])
+    # ticket body (clay card)
+    clay(img, [M, 36, W - M, H - 36], 44)
+    d = ImageDraw.Draw(img)
+    d.text((M + 40, 60), "КУПОН ", font=f["h"], fill=NAVY)
+    d.text((M + 40 + tw(d, "КУПОН ", f["h"]), 60), "CAPPER DAY", font=f["h"], fill=ORANGE)
     n_bets = len(data["singles"]) + (1 if data.get("express") else 0)
-    d.text((M + 42, 162), f"{data['date']} · {n_bets} ставки · фикс {rub(stake)}", font=f["date"], fill=SOFT)
+    d.text((M + 42, 154), f"{data['date']} · {n_bets} ставки · фикс {rub(stake)}", font=f["date"], fill=SOFT)
+    if os.path.exists(MASCOT):
+        try:
+            m = Image.open(MASCOT).convert("RGBA").resize((170, 170), Image.LANCZOS)
+            img.alpha_composite(m, (W - M - 182, 34))
+        except Exception:
+            pass
     perforation(img, 214, M)
-    y = 240
-    d.text((M + 30, y), "ОДИНАРЫ", font=f["lbl"], fill=GREEN); y += 34
+    y = 236
+    pill(img, M + 26, y - 4, "ОДИНАРЫ", f["lbl"], SKY, (255, 255, 255), pad=14); y += 44
     for c in data["singles"]:
-        y = slip_row(img, d, y, M, c, stake, GREEN, f)
+        y = slip_row(img, d, y, M, c, stake, SKY, f)
     ex = data.get("express")
     if ex:
         y += 4
-        d.text((M + 30, y), "ЭКСПРЕСС", font=f["lbl"], fill=MAG)
-        s = f"итог {ex['total']}"; d.text((W - M - 52 - tw(d, s, f["s"]), y - 6), s, font=f["s"], fill=MAG)
-        y += 34
+        pill(img, M + 26, y - 4, "ЭКСПРЕСС", f["lbl"], ORANGE, (255, 255, 255), pad=14)
+        s = f"итог {ex['total']}"; d.text((W - M - 52 - tw(d, s, f["s"]), y - 2), s, font=f["s"], fill=ORANGE)
+        y += 44
         x0, x1 = M + 26, W - M - 26
         h_ = 30 + 92 * len(ex["legs"]) + 56
-        lay = Image.new("RGBA", img.size, (0, 0, 0, 0))
-        ImageDraw.Draw(lay).rounded_rectangle([x0, y, x1, y + h_], 20, fill=(255, 255, 255, 14), outline=MAG + (120,), width=2)
-        img.alpha_composite(lay)
-        d.rounded_rectangle([x0, y + 18, x0 + 8, y + h_ - 18], 4, fill=MAG)
+        tint = (255, 240, 224)
+        d.rounded_rectangle([x0, y + 4, x1, y + h_ + 4], 28, fill=(241, 224, 206))
+        d.rounded_rectangle([x0, y, x1, y + h_], 28, fill=tint)
         for i, l in enumerate(ex["legs"]):
             yy = y + 22 + i * 92
-            d.text((x0 + 30, yy), fit(d, f"{l['match']} · {l['time']}", f["lbl"], 560), font=f["lbl"], fill=MUTED)
-            d.text((x0 + 30, yy + 30), f"{l['pick']} · {l['label']}", font=f["s"], fill=TEXT)
-            o = l["odds"]; d.text((x1 - 26 - tw(d, o, f["s2"]), yy - 4), o, font=f["s2"], fill=MAG)
+            d.text((x0 + 28, yy), fit(d, f"{l['match']} · {l['time']}", f["lbl"], 560), font=f["lbl"], fill=MUTED)
+            d.text((x0 + 28, yy + 30), f"{l['pick']} · {l['label']}", font=f["s"], fill=TEXT)
+            o = l["odds"]; d.text((x1 - 26 - tw(d, o, f["s2"]), yy - 6), o, font=f["s2"], fill=ORANGE)
             b = f"кэф {l['bk']}"; d.text((x1 - 26 - tw(d, b, f["lbl"]), yy + 50), b, font=f["lbl"], fill=MUTED)
         yy = y + h_ - 48
-        d.line([(x0 + 30, yy - 6), (x1 - 26, yy - 6)], fill=(255, 255, 255, 30), width=1)
-        d.text((x0 + 30, yy + 4), f"Ставка {rub(stake)}", font=f["lbl"], fill=SOFT)
+        d.line([(x0 + 28, yy - 6), (x1 - 26, yy - 6)], fill=(226, 205, 184), width=2)
+        d.text((x0 + 28, yy + 4), f"Ставка {rub(stake)}", font=f["lbl"], fill=SOFT)
         s = f"Возможный выигрыш {rub(stake * float(ex['total']))}"
         d.text((x1 - 26 - tw(d, s, f["lbl"]), yy + 4), s, font=f["lbl"], fill=TEXT)
         y += h_ + 16
@@ -202,16 +213,16 @@ def render(data, out):
     yb = H - 280
     perforation(img, yb, M)
     d.text((M + 40, yb + 26), f"В игре {rub(stake * n_bets)} · если зайдёт всё: {rub(pot)}", font=f["lbl"], fill=SOFT)
-    d.text((M + 40, yb + 64), "БАНК", font=f["lbl"], fill=CYAN)
-    grad_text(img, (M + 40, yb + 88), f"{data['bank']} ₽", f["bank"], c1=CYAN, c2=GREEN)
+    d.text((M + 40, yb + 64), "БАНК", font=f["lbl"], fill=MUTED)
+    d.text((M + 40, yb + 84), f"{data['bank']} ₽", font=f["bank"], fill=GREEN)
     sig = SIG.get(data.get("sport", "hockey")).replace(" 🔞", "")
-    bw = badge(img, W - M - 40, yb + 112, "18+", f["lbl"], PINK)
-    d.text((W - M - 56 - bw - tw(d, sig, f["sig"]), yb + 114), sig, font=f["sig"], fill=TEXT)
+    bw = badge(img, W - M - 40, yb + 108, "18+", f["lbl"], RED)
+    d.text((W - M - 56 - bw - tw(d, sig, f["sig"]), yb + 112), sig, font=f["sig"], fill=NAVY)
     foot = data.get("site", "").replace("https://", "").rstrip("/")
-    d.text((M + 40, H - 96), foot, font=f["lbl"], fill=MUTED)
+    d.text((M + 40, H - 100), foot, font=f["lbl"], fill=SKY)
     s = "открытые ставки вычитаются из банка только после расчёта"
-    d.text((M + 40, H - 68), s, font=f["lbl"], fill=MUTED)
-    img.convert("RGB").save(out, "PNG")
+    d.text((M + 40, H - 70), s, font=f["lbl"], fill=MUTED)
+    img.convert("RGB").save(out, "PNG", optimize=True)
     return out
 
 def q(match):
