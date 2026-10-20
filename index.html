@@ -64,10 +64,18 @@ body.light .card{box-shadow:0 10px 28px rgba(60,70,140,.12)}
 section .pad{margin:12px 14px;border:1px solid var(--line);border-radius:22px;background:linear-gradient(160deg,var(--card1),var(--card2));backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px)}
 .card .pad{margin:0;border:0;background:none;padding:0}
 @media(max-width:600px){.markets{grid-template-columns:1fr 1fr}.brand{font-size:26px}.hero{height:170px}.big{font-size:42px}}
+.tgbtn{display:inline-flex;align-items:center;gap:6px;height:40px;padding:0 14px;border-radius:999px;border:1px solid rgba(0,240,255,.45);background:rgba(10,14,35,.45);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);color:#fff;font:800 12px Manrope,sans-serif;text-decoration:none;white-space:nowrap;box-shadow:var(--glow);transition:transform .2s}
+.tgbtn:hover{transform:scale(1.05);border-color:var(--neon)}
+body.light .tgbtn{background:rgba(255,255,255,.7);color:var(--text)}
+.tgcta{display:flex;align-items:center;justify-content:space-between;gap:14px;margin:18px 14px 26px;padding:16px;border:1px solid rgba(0,240,255,.35);border-radius:22px;background:linear-gradient(135deg,rgba(177,75,255,.18),rgba(0,240,255,.10));backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);box-shadow:0 12px 32px rgba(0,0,0,.28),var(--glow)}
+.tgcta b{display:block;font-family:Oswald,sans-serif;font-size:20px;letter-spacing:.03em}
+.tgcta span{display:block;color:var(--soft);font-size:12.5px;margin-top:3px;line-height:1.45}
+.tgcta a{flex:none;padding:12px 18px;border-radius:999px;background:linear-gradient(90deg,var(--neon2),var(--neon));color:#fff;font:800 13px Manrope,sans-serif;text-decoration:none;white-space:nowrap;box-shadow:0 0 18px rgba(0,240,255,.35)}
+@media(max-width:600px){.tgbtn .tgl{display:none}.tgbtn{padding:0 12px}.tgcta{flex-direction:column;align-items:stretch;text-align:left}.tgcta a{text-align:center}}
 </style>
 </head>
 <body>
-<div class="hero"><div class="hero-in"><div class="brand">KHL <b>BET</b><small>20 октября · фикс 1000 ₽ · купон 2+1</small></div><div class="tools"><button class="lamp" id="theme" type="button" aria-label="Тема">💡</button><span class="bal">10 298 ₽</span></div></div></div>
+<div class="hero"><div class="hero-in"><div class="brand">KHL <b>BET</b><small>20 октября · фикс 1000 ₽ · купон 2+1</small></div><div class="tools"><button class="lamp" id="theme" type="button" aria-label="Тема">💡</button><a class="tgbtn" href="https://t.me/capperday" target="_blank" rel="noopener" aria-label="Наш Telegram">✈️<span class="tgl"> Наш Telegram</span></a><span class="bal">10 298 ₽</span></div></div></div>
 <nav class="tabs">
   <button class="on" data-tab="hock">Хоккей</button>
   <button data-tab="foot">Футбол</button>
@@ -346,6 +354,7 @@ section .pad{margin:12px 14px;border:1px solid var(--line);border-radius:22px;ba
     <p class="foot">Фикс 1000. Не больше 2 одиночек и 1 экспресс от 3.00. Короче 1.70 нет. Норвегия от 1.80. 18+.</p>
   </div>
 </section>
+<aside class="tgcta" id="tgcta"><div><b>Capper Day в Telegram</b><span>Утренний купон, разборы и честные итоги — каждый день в 08:00 МСК. 18+.</span></div><a href="https://t.me/capperday" target="_blank" rel="noopener">✈️ Открыть @capperday</a></aside>
 <script>
 const theme=document.getElementById('theme');
 theme.onclick=()=>document.body.classList.toggle('light');
