@@ -7,6 +7,10 @@
   python3 tools/ledger.py settle 2026-10-21 --set S1 win 3:1 --set E1-L2 loss 2:4
   python3 tools/ledger.py build                                 # stats.html + hashes.txt
   python3 tools/ledger.py verify                                # проверить sha256 всех купонов
+  python3 tools/ledger.py restake 2026-10-21 --stake 500        # смена ставки ДО матчей (история отпечатков)
+
+Рынки (колонка market): исход / тотал / фора / инд. тотал; экспресс — «экспресс».
+Результаты: win / loss / open / push (возврат, ровно в линию) / void (отмена матча).
 
 Файлы: data/bets.csv (журнал), data/coupons/YYYY-MM-DD.json (канонический купон),
 data/coupons/hashes.txt («дата sha256 первый_коммит»), data/site_bank.json (банк, который
@@ -25,10 +29,35 @@ REPO_URL = "https://github.com/kenlampnn-prog/capper-day"
 BASE_BANK = 9708          # банк утром 12.10.2026 (база пользователя)
 BASE_DATE = "2026-10-12"
 
-FIELDS = ["bet_id", "date", "published_at_utc", "first_commit", "league", "match", "pick", "rule",
+FIELDS = ["bet_id", "date", "published_at_utc", "first_commit", "league", "match", "pick", "market", "rule",
           "odds", "odds_source", "stake", "kind", "express_id", "result", "score", "profit", "note"]
 RULE_REG, RULE_OT = "осн. время", "с ОТ и буллитами"
-RESULTS = {"win", "loss", "open", "void"}
+# push = возврат по целой линии тотала/форы (ровно в линию), void = отмена/перенос матча.
+# В обоих случаях одиночка = 0 ₽, нога экспресса выпадает (кэф экспресса пересчитывается).
+RESULTS = {"win", "loss", "open", "void", "push"}
+NEUTRAL = ("void", "push")
+MARKETS = ("исход", "тотал", "фора", "инд. тотал")
+LEAGUES = ("КХЛ", "МХЛ", "НХЛ", "DEL", "Норвегия", "Футбол")
+DEFAULT_STAKE = 500       # фикс с купона 21.10.2026 (12.10 — 200; 13–15 — 1000; 16–18 — 200; 19–20 — 1000)
+MIN_ODDS = 1.80           # с 21.10.2026 — для каждого события, включая ноги экспресса
+
+
+def classify_market(pick, market=""):
+    """исход / тотал / фора / инд. тотал — по явному полю market или по тексту ставки."""
+    if market:
+        m = market.strip().lower()
+        for k in MARKETS:
+            if m == k or m.replace(".", "") == k.replace(".", ""):
+                return k
+        if m.startswith("инд") or m in ("ит", "итб", "итм", "team total"): return "инд. тотал"
+        if m.startswith("тот") or m == "total": return "тотал"
+        if m.startswith("фор") or m in ("handicap", "spread"): return "фора"
+        return "исход"
+    p = (pick or "").strip()
+    if re.search(r"\bИТ[БМ]\d?|инд\.?\s*тотал|индивидуальн", p, re.I): return "инд. тотал"
+    if re.search(r"^\s*Ф\s*[12]?\s*\(|\bФ[12]\b|фор[аы]|[+−-]\d+(\.\d)?\s*(шайб|гол)", p, re.I): return "фора"
+    if re.search(r"\bТ[БМ]\b|\bТ[БМ]\s*\d|тотал", p, re.I): return "тотал"
+    return "исход"
 
 
 # ---------------------------------------------------------------- io helpers
@@ -36,7 +65,13 @@ def read_rows():
     if not os.path.exists(CSV_PATH):
         return []
     with open(CSV_PATH, encoding="utf-8", newline="") as f:
-        return list(csv.DictReader(f))
+        rows = list(csv.DictReader(f))
+    for r in rows:
+        if r["kind"] == "express":
+            r["market"] = "экспресс"
+        else:
+            r["market"] = classify_market(r.get("pick", ""), r.get("market") or "")
+    return rows
 
 
 def write_rows(rows):
@@ -57,6 +92,13 @@ def sha256_file(path):
         return hashlib.sha256(f.read()).hexdigest()
 
 
+def read_hash_history():
+    """Строки «#~ ...» в hashes.txt — история старых отпечатков (не удаляются)."""
+    if not os.path.exists(HASHES):
+        return []
+    return [l.rstrip("\n") for l in open(HASHES, encoding="utf-8") if l.startswith("#~")]
+
+
 def read_hashes():
     out = {}
     if os.path.exists(HASHES):
@@ -67,11 +109,16 @@ def read_hashes():
     return out
 
 
-def write_hashes(h):
+def write_hashes(h, history_add=None):
+    hist = read_hash_history() + list(history_add or [])
     with open(HASHES, "w", encoding="utf-8") as f:
         f.write("# date sha256(data/coupons/<date>.json) first_commit — sha256sum data/coupons/<date>.json\n")
         for d in sorted(h):
             f.write(f"{d} {h[d][0]} {h[d][1]}\n")
+        if hist:
+            f.write("# история: прежние отпечатки (дата старый_sha256 коммит — причина)\n")
+            for l in hist:
+                f.write(l + "\n")
 
 
 def git(*args):
@@ -98,12 +145,12 @@ def parse_index(path):
     """Best-effort: купон дня из index.html (карточки take = одиночки, «в экспресс» = ноги)."""
     src = open(path, encoding="utf-8").read()
     m = re.search(r"фикс (\d+) ₽", src)
-    stake = int(m.group(1)) if m else 200
+    stake = int(m.group(1)) if m else DEFAULT_STAKE
     singles, legs = [], []
     # League containers: <div id="khl|nhl|del"> inside hock, <section id="foot"> for Norway
     blocks = []
-    for lid, lname in (("khl", "КХЛ"), ("nhl", "НХЛ"), ("del", "DEL")):
-        mm = re.search(r'<div id="%s"[^>]*>(.*?)(?=<div id="(?:khl|nhl|del)"|</section>)' % lid, src, re.S)
+    for lid, lname in (("khl", "КХЛ"), ("mhl", "МХЛ"), ("nhl", "НХЛ"), ("del", "DEL")):
+        mm = re.search(r'<div id="%s"[^>]*>(.*?)(?=<div id="(?:khl|mhl|nhl|del)"|</section>)' % lid, src, re.S)
         if mm:
             blocks.append((lname, mm.group(1)))
     mm = re.search(r'<section id="foot".*?</section>', src, re.S)
@@ -149,13 +196,13 @@ def parse_index(path):
 # ---------------------------------------------------------------- coupon model
 def normalise_coupon(date, raw, published_at=None):
     """Канонический купон: id S1,S2,E1, ноги E1-L1..; без результатов."""
-    stake = int(raw.get("stake", 200))
+    stake = int(raw.get("stake", DEFAULT_STAKE))
     out, s, e = [], 0, 0
     for b in raw["bets"]:
         if b["kind"] == "single":
             s += 1
             out.append({"id": f"S{s}", "kind": "single", "league": b["league"], "match": b["match"],
-                        "pick": b["pick"], "rule": b["rule"], "odds": fmt_odds(b["odds"]),
+                        "pick": b["pick"], "market": classify_market(b["pick"], b.get("market", "")), "rule": b["rule"], "odds": fmt_odds(b["odds"]),
                         "odds_source": b.get("odds_source", ""), "stake": b.get("stake", stake),
                         **({"kickoff_msk": b["kickoff_msk"]} if b.get("kickoff_msk") else {})})
         else:
@@ -166,7 +213,7 @@ def normalise_coupon(date, raw, published_at=None):
             for i, l in enumerate(b["legs"], 1):
                 prod *= float(l["odds"])
                 legs.append({"id": f"{eid}-L{i}", "league": l["league"], "match": l["match"], "pick": l["pick"],
-                             "rule": l["rule"], "odds": fmt_odds(l["odds"]), "odds_source": l.get("odds_source", ""),
+                             "market": classify_market(l["pick"], l.get("market", "")), "rule": l["rule"], "odds": fmt_odds(l["odds"]), "odds_source": l.get("odds_source", ""),
                              **({"kickoff_msk": l["kickoff_msk"]} if l.get("kickoff_msk") else {})})
             odds = b.get("odds") or round(prod, 2)
             out.append({"id": eid, "kind": "express", "odds": fmt_odds(odds), "stake": b.get("stake", stake),
@@ -177,6 +224,8 @@ def normalise_coupon(date, raw, published_at=None):
         c["proof"] = raw["proof"]
     if raw.get("note"):
         c["note"] = raw["note"]
+    if raw.get("stake_change"):
+        c["stake_change"] = raw["stake_change"]
     return c
 
 
@@ -191,19 +240,21 @@ def rows_from_coupon(c, first_commit="", notes=None):
     for b in c["bets"]:
         if b["kind"] == "single":
             rows.append(dict(base, bet_id=f'{c["date"]}-{b["id"]}', league=b["league"], match=b["match"],
-                             pick=b["pick"], rule=b["rule"], odds=b["odds"], odds_source=b["odds_source"],
+                             pick=b["pick"], market=classify_market(b["pick"], b.get("market", "")), rule=b["rule"],
+                             odds=b["odds"], odds_source=b["odds_source"],
                              stake=b["stake"], kind="single", express_id="", note=notes.get(b["id"], "")))
         else:
             lg = sorted({l["league"] for l in b["legs"]})
             rules = sorted({l["rule"] for l in b["legs"]})
             rows.append(dict(base, bet_id=f'{c["date"]}-{b["id"]}', league="/".join(lg),
                              match=" × ".join(l["match"] for l in b["legs"]),
-                             pick=" × ".join(l["pick"] for l in b["legs"]), rule="/".join(rules),
+                             pick=" × ".join(l["pick"] for l in b["legs"]), market="экспресс", rule="/".join(rules),
                              odds=b["odds"], odds_source="произведение кэфов ног", stake=b["stake"],
                              kind="express", express_id=f'{c["date"]}-{b["id"]}', note=notes.get(b["id"], "")))
             for l in b["legs"]:
                 rows.append(dict(base, bet_id=f'{c["date"]}-{l["id"]}', league=l["league"], match=l["match"],
-                                 pick=l["pick"], rule=l["rule"], odds=l["odds"], odds_source=l["odds_source"],
+                                 pick=l["pick"], market=classify_market(l["pick"], l.get("market", "")), rule=l["rule"],
+                                 odds=l["odds"], odds_source=l["odds_source"],
                                  stake="", kind="leg", express_id=f'{c["date"]}-{b["id"]}', profit="",
                                  note=notes.get(l["id"], "")))
     return rows
@@ -230,7 +281,7 @@ def cmd_add_coupon(a):
         if float(e["odds"]) < 3.0: warn.append(f"экспресс {e['odds']} < 3.00")
     allp = singles + [l for e in exps for l in e["legs"]]
     for p in allp:
-        if float(p["odds"]) < 1.70: warn.append(f"{p['pick']} {p['odds']} < 1.70")
+        if float(p["odds"]) < MIN_ODDS: warn.append(f"{p['pick']} {p['odds']} < {MIN_ODDS:.2f}")
         if p["league"] == "Норвегия" and float(p["odds"]) < 1.80: warn.append(f"Норвегия {p['pick']} < 1.80")
     ms = [p["match"] for p in allp]
     if len(ms) != len(set(ms)): warn.append("дубль матча")
@@ -280,14 +331,14 @@ def settle_rows(rows, d, results):
             res = [l["result"] for l in legs]
             if "loss" in res: r["result"] = "loss"
             elif "open" in res: r["result"] = "open"
-            elif all(x == "void" for x in res): r["result"] = "void"
+            elif all(x in NEUTRAL for x in res): r["result"] = "void"
             else: r["result"] = "win"
             if not r["score"]:
                 r["score"] = " × ".join(l["score"] or "?" for l in legs)
-        if r["result"] == "win" and any(l["result"] == "void" for l in legs):
+        if r["result"] == "win" and any(l["result"] in NEUTRAL for l in legs):
             odds = 1.0
             for l in legs:
-                if l["result"] != "void":
+                if l["result"] not in NEUTRAL:
                     odds *= float(l["odds"])
             r["note"] = (r["note"] + "; " if r["note"] else "") + f"кэф пересчитан на {odds:.2f} (возврат ноги)"
             r["odds"] = fmt_odds(odds)
@@ -297,7 +348,7 @@ def settle_rows(rows, d, results):
             continue
         st = int(r["stake"])
         r["profit"] = {"win": str(round(st * (float(r["odds"]) - 1))), "loss": str(-st), "void": "0",
-                       "open": ""}[r["result"]]
+                       "push": "0", "open": ""}[r["result"]]
     return rows
 
 
@@ -324,17 +375,48 @@ def cmd_verify(a):
     sys.exit(1 if bad else 0)
 
 
+def cmd_restake(a):
+    """Смена ставки дня ДО начала матчей: новый отпечаток, старый — в истории hashes.txt."""
+    d = a.date
+    path = os.path.join(CPN_DIR, f"{d}.json")
+    c = json.load(open(path, encoding="utf-8"))
+    old_sha, old = sha256_file(path), int(c.get("stake", 0))
+    at = a.at or utcnow()
+    c["stake"] = a.stake
+    for b in c["bets"]:
+        b["stake"] = a.stake
+    c["stake_change"] = {"from": old, "to": a.stake, "at_utc": at, "prev_sha256": old_sha,
+                         "reason": a.reason or "решение автора до начала матчей"}
+    data = canonical(c)
+    with open(path, "wb") as f:
+        f.write(data)
+    h = read_hashes()
+    fc = h.get(d, [old_sha, "-"])[1]
+    h[d] = [hashlib.sha256(data).hexdigest(), fc]
+    note = f"ставка изменена {old}→{a.stake} по решению автора до начала матчей, {at[11:16]} UTC"
+    write_hashes(h, [f"#~ {d} {old_sha} {fc} — до {at} (ставка {old} ₽); {note}"])
+    rows = read_rows()
+    for r in rows:
+        if r["date"] == d and r["kind"] != "leg":
+            r["stake"] = str(a.stake)
+            r["note"] = "; ".join(x for x in (r["note"], note) if x)
+            if r["result"] in RESULTS - {"open"}:
+                sys.exit("ставка уже рассчитана — менять нельзя")
+    write_rows(rows)
+    print(f"{d}: ставка {old}→{a.stake}, sha256 {old_sha[:12]} → {h[d][0][:12]}")
+
+
 # ---------------------------------------------------------------- stats
 def compute(rows):
     st = {}
     main = [r for r in rows if r["kind"] in ("single", "express")]
-    settled = [r for r in main if r["result"] in ("win", "loss", "void")]
+    settled = [r for r in main if r["result"] in ("win", "loss", "void", "push")]
     wins = sum(r["result"] == "win" for r in settled)
     losses = sum(r["result"] == "loss" for r in settled)
-    turnover = sum(int(r["stake"]) for r in settled if r["result"] != "void")
+    turnover = sum(int(r["stake"]) for r in settled if r["result"] not in NEUTRAL)
     profit = sum(int(r["profit"] or 0) for r in settled)
     opens = [r for r in main if r["result"] == "open"]
-    st.update(bets=len(settled), wins=wins, losses=losses, voids=sum(r["result"] == "void" for r in settled),
+    st.update(bets=len(settled), wins=wins, losses=losses, voids=sum(r["result"] in NEUTRAL for r in settled),
               turnover=turnover, profit=profit, open=len(opens), open_sum=sum(int(r["stake"]) for r in opens),
               hit=(100.0 * wins / (wins + losses)) if wins + losses else 0.0,
               roi=(100.0 * profit / turnover) if turnover else 0.0, bank=BASE_BANK + profit)
@@ -358,12 +440,12 @@ def compute(rows):
                 if r["result"] == "win": x["lw"] += 1
                 elif r["result"] == "loss": x["ll"] += 1
                 continue
-            if r["result"] not in ("win", "loss", "void"):
+            if r["result"] not in ("win", "loss", "void", "push"):
                 continue
             x["n"] += 1
             x["w"] += r["result"] == "win"
             x["l"] += r["result"] == "loss"
-            x["turn"] += int(r["stake"]) if r["result"] != "void" else 0
+            x["turn"] += int(r["stake"]) if r["result"] not in NEUTRAL else 0
             x["profit"] += int(r["profit"] or 0)
         return g
     singles_legs = [r for r in rows if r["kind"] in ("single", "leg")]
@@ -371,6 +453,7 @@ def compute(rows):
     st["by_type"] = group(lambda r: "Одиночки" if r["kind"] == "single" else "Экспрессы", main)
     st["by_rule"] = group(lambda r: r["rule"], singles_legs)
     st["by_stake"] = group(lambda r: f'{r["stake"]} ₽', main)
+    st["by_market"] = group(lambda r: r["market"], singles_legs)
     return st
 
 
@@ -435,12 +518,13 @@ def build_html(rows, st):
 
     def badge(r):
         res = r["result"]
-        lab = {"win": "выигрыш", "loss": "проигрыш", "open": "в игре", "void": "возврат"}[res]
-        if r["kind"] != "leg" and res in ("win", "loss", "void"):
-            lab = money(int(r["profit"] or 0)) + " ₽"
+        lab = {"win": "выигрыш", "loss": "проигрыш", "open": "в игре", "void": "отмена", "push": "возврат"}[res]
+        if r["kind"] != "leg" and res in ("win", "loss", "void", "push"):
+            lab = money(int(r["profit"] or 0)) + " ₽" + (" · возврат" if res == "push" else " · отмена" if res == "void" else "")
         if r["kind"] == "leg":
-            lab = {"win": "✓ зашла", "loss": "✗ мимо", "open": "в игре", "void": "возврат"}[res]
-        return f'<span class="badge {res}">{E(lab)}</span>'
+            lab = {"win": "✓ зашла", "loss": "✗ мимо", "open": "в игре", "void": "отмена", "push": "возврат"}[res]
+        cls = "void" if res == "push" else res
+        return f'<span class="badge {cls}">{E(lab)}</span>'
 
     curve = st["curve"]
     # ---- SVG chart
@@ -506,7 +590,7 @@ def build_html(rows, st):
         cp = f'<a href="{REPO_URL}/blob/main/data/coupons/{d}.json" target="_blank" rel="noopener">sha256 {E(sha[:12])}…</a>' if sha else ""
         items = ""
         for r in main:
-            meta = f'{E(r["rule"])} · кэф <b>{E(r["odds"])}</b> · {E(r["stake"])} ₽'
+            meta = f'{E(r["market"])} · {E(r["rule"])} · кэф <b>{E(r["odds"])}</b> · {E(r["stake"])} ₽'
             if r["kind"] == "single":
                 items += (f'<div class="bet"><div class="bt">{match_html(r["match"])}</div>'
                           f'<div class="bm"><span class="pk">{E(r["pick"])}</span><span class="mu">{meta}</span>'
@@ -516,7 +600,7 @@ def build_html(rows, st):
                 legs = [x for x in dr if x["kind"] == "leg" and x["express_id"] == r["bet_id"]]
                 lh = "".join(
                     f'<div class="leg"><div class="bt">{match_html(l["match"])}</div><div class="bm"><span class="pk">{E(l["pick"])}</span>'
-                    f'<span class="mu">{E(l["league"])} · {E(l["rule"])} · {E(l["odds"])}</span><span class="sc">{E(l["score"] or "—")}</span>{badge(l)}</div>'
+                    f'<span class="mu">{E(l["league"])} · {E(l["market"])} · {E(l["rule"])} · {E(l["odds"])}</span><span class="sc">{E(l["score"] or "—")}</span>{badge(l)}</div>'
                     + rnote(l) + '</div>' for l in legs)
                 items += (f'<div class="bet ex"><div class="bm"><span class="pk">Экспресс {E(r["odds"])}</span>'
                           f'<span class="mu">{E(r["stake"])} ₽ · {len(legs)} события</span>{badge(r)}</div>{lh}'
@@ -525,7 +609,11 @@ def build_html(rows, st):
         tot = ('<span class="badge open">в игре</span>' if is_open else
                f'<span class="badge {"win" if dprof > 0 else "loss" if dprof < 0 else "void"}">{money(dprof)} ₽</span>')
         cjs = os.path.join(CPN_DIR, f"{d}.json")
-        cnote = json.load(open(cjs, encoding="utf-8")).get("note", "") if os.path.exists(cjs) else ""
+        cj = json.load(open(cjs, encoding="utf-8")) if os.path.exists(cjs) else {}
+        cnote = cj.get("note", "")
+        sc = cj.get("stake_change")
+        if sc:
+            cnote = "; ".join(x for x in (cnote, f'ставка изменена {sc.get("from")}→{sc.get("to")} ₽ {sc.get("at_utc", "")[11:16]} UTC, до начала матчей; прежний отпечаток sha256 {sc.get("prev_sha256", "")[:12]}… — в hashes.txt') if x)
         mb = st["morning"].get(d)
         days_html += (f'<article class="card day"><div class="dh"><div><h3>{dd}.2026</h3><div class="mu">'
                       f'банк утром {money(mb, False)} ₽ · опубликован {E(pmsk)} МСК</div></div>{tot}</div>{items}'
@@ -552,6 +640,7 @@ def build_html(rows, st):
                            g_type=gtable(st["by_type"], "Одиночки и экспрессы", legs=False),
                            g_rule=gtable(st["by_rule"], "По правилу расчёта"),
                            g_stake=gtable(st["by_stake"], "По размеру ставки", legs=False),
+                           g_market=gtable(st["by_market"], "По рынкам (исход / тотал / фора / инд. тотал; одиночки и ноги экспрессов)"),
                            days=days_html, updated=E(upd), repo=REPO_URL)
 
 
@@ -658,11 +747,12 @@ table.gt{{width:100%;border-collapse:collapse;margin-top:8px;font-size:13.5px}}
 <div class="card"><div class="cw">{svg}</div><p class="mu" style="margin-top:6px">Точка — банк после расчёта дня. Зелёная — день в плюс, красная — в минус. Сейчас {bank} ₽.</p></div>
 <h2>Разбивка</h2>
 <div class="grid2">{g_type}{g_stake}</div>
+{g_market}
 {g_league}
 {g_rule}
 <h2>Все ставки по дням</h2>
 {days}
-<p class="foot">Как проверить: открой отпечаток дня — это файл data/coupons/ДАТА.json; <code>sha256sum</code> этого файла должен совпасть с хэшем на странице и в <a href="{repo}/blob/main/data/coupons/hashes.txt">hashes.txt</a>. Время публикации — время пуша на GitHub (лента событий репозитория), коммит — первый, где купон появился в исправленном виде. Для купонов 12–20 октября доказательство — коммит сайта index.html того утра (отпечаток json сделан позже, 21.10, из этих коммитов). Проходимость — доля выигрышей среди рассчитанных одиночек и экспрессов. ROI — прибыль, делённая на оборот. Полный журнал: <a href="{repo}/blob/main/data/bets.csv">data/bets.csv</a>. Обновлено {updated}. Ставки — риск, играй на то, что не жалко потерять. 18+.</p>
+<p class="foot">Как проверить: открой отпечаток дня — это файл data/coupons/ДАТА.json; <code>sha256sum</code> этого файла должен совпасть с хэшем на странице и в <a href="{repo}/blob/main/data/coupons/hashes.txt">hashes.txt</a>. Время публикации — время пуша на GitHub (лента событий репозитория), коммит — первый, где купон появился в исправленном виде. Для купонов 12–20 октября доказательство — коммит сайта index.html того утра (отпечаток json сделан позже, 21.10, из этих коммитов). Проходимость — доля выигрышей среди рассчитанных одиночек и экспрессов. Возврат (ровно в линию тотала/форы) и отмена матча — 0 ₽, в оборот не идут; нога экспресса с возвратом выпадает, кэф пересчитывается. ROI — прибыль, делённая на оборот. Полный журнал: <a href="{repo}/blob/main/data/bets.csv">data/bets.csv</a>. Обновлено {updated}. Ставки — риск, играй на то, что не жалко потерять. 18+.</p>
 <aside class="tgcta"><div><b>Capper Day в Telegram</b><span>Утренний купон, разборы и честные итоги — каждый день в 08:00 МСК. 18+.</span></div><a href="https://t.me/capperday" target="_blank" rel="noopener">✈️ Открыть @capperday</a></aside>
 </main>
 <script>document.getElementById('theme').onclick=()=>document.body.classList.toggle('light');</script>
@@ -708,6 +798,8 @@ def main():
     s.add_argument("--set", nargs=3, action="append", metavar=("ID", "RESULT", "SCORE")); s.set_defaults(f=cmd_settle)
     b = sp.add_parser("build"); b.set_defaults(f=cmd_build)
     v = sp.add_parser("verify"); v.set_defaults(f=cmd_verify)
+    rs = sp.add_parser("restake"); rs.add_argument("date"); rs.add_argument("--stake", type=int, required=True)
+    rs.add_argument("--at"); rs.add_argument("--reason"); rs.set_defaults(f=cmd_restake)
     args = p.parse_args()
     args.f(args)
 

@@ -36,7 +36,7 @@ def render(r):
         head = f"✅ {score}!"
     else:
         head = f"❌ МИМО: {score}."
-    L = [f"<b>{head} Банк {rub(bank)} ₽ ({sign(pnl)})</b>", f"Итоги {e(r['date'])}, ставка 1000 ₽:"]
+    L = [f"<b>{head} Банк {rub(bank)} ₽ ({sign(pnl)})</b>", f"Итоги {e(r['date'])}, ставка {rub(int(r.get('stake', 500)))} ₽:"]
     for b in bets:
         mark = "зашло ✅" if b["win"] else "мимо ❌"
         L.append(f"▫️ {e(b['text'])} · {e(b['score'])} — {mark} {sign(int(b['pnl']))}")

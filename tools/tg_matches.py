@@ -13,7 +13,7 @@ Template (hard limit 700 chars; dry-run and live both fail if exceeded):
   Что вижу? <b>{pick}</b>, кэф {bk}!
   Во-первых, {why1} Во-вторых, {why2}
   ⏱ {periods joined by " · "}
-  ✅ {coupon}                             (e.g. "В купоне · 1000 ₽" / "В экспрессе 3.37")
+  ✅ {coupon}                             (e.g. "В купоне · 500 ₽" / "В экспрессе 3.37")
   {signature}                             (hockey: «Шайба в деле, банк в плюсе! 🔞», football: «Мяч в деле, …»)
 Item: {id, emoji, league, home, away, time, hook, home_fact, away_fact, pick, bk, why1, why2, periods[], coupon, sport}
       or {id, text} for a raw short note.
