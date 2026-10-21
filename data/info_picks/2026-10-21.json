@@ -38,7 +38,13 @@
      "confidence": "низкая",
      "odds": null
     }
-   ]
+   ],
+   "coupon": false,
+   "recheck_utc": "2026-10-21T08:40Z",
+   "recheck_odds": "1.85 (Бетсити/Фонбет/Винлайн), Марафон 1.833 — линия упала с 2.15",
+   "implied": 0.541,
+   "prob_est": 0.5,
+   "confidence_test": "fail: нужно ≥ 59.1% и ≥ 50%, оценка 50%"
   },
   {
    "league": "МХЛ",
@@ -76,7 +82,13 @@
      "confidence": "низкая",
      "odds": null
     }
-   ]
+   ],
+   "coupon": false,
+   "recheck_utc": "2026-10-21T08:40Z",
+   "recheck_odds": "ТМ 5.5 1.88 (Выберу.Спорт); ТМ 5.25 1.83 Марафон",
+   "implied": 0.532,
+   "prob_est": 0.52,
+   "confidence_test": "fail: нужно ≥ 58.2% и ≥ 50%, оценка 52%"
   },
   {
    "league": "МХЛ",
@@ -114,7 +126,13 @@
      "confidence": "низкая",
      "odds": null
     }
-   ]
+   ],
+   "coupon": false,
+   "recheck_utc": "2026-10-21T08:40Z",
+   "recheck_odds": "1.85–1.93 (Бетсити 1.85, Фонбет 1.92, Винлайн 1.93) — линия упала с 2.00",
+   "implied": 0.518,
+   "prob_est": 0.53,
+   "confidence_test": "fail: нужно ≥ 56.8% и ≥ 50%, оценка 53%"
   },
   {
    "league": "МХЛ",
@@ -152,7 +170,11 @@
      "confidence": "низкая",
      "odds": null
     }
-   ]
+   ],
+   "coupon": false,
+   "recheck_utc": "2026-10-21T08:40Z",
+   "recheck_odds": "линии Ф1 (−1.5) от 1.80 нет",
+   "confidence_test": "fail: нет линии от 1.80"
   },
   {
    "league": "МХЛ",
@@ -190,7 +212,13 @@
      "confidence": "низкая",
      "odds": null
     }
-   ]
+   ],
+   "coupon": false,
+   "recheck_utc": "2026-10-21T08:40Z",
+   "recheck_odds": "2.10–2.18 (Бетсити 2.18, Марафон 2.14) — линия упала с 2.36",
+   "implied": 0.459,
+   "prob_est": 0.44,
+   "confidence_test": "fail: нужно ≥ 50.9% и ≥ 50%, оценка 44%"
   }
  ],
  "football_best": [
@@ -211,7 +239,12 @@
    "reason": "В 5 из 6 последних домашних матчей Спортинга больше 3.5 голов; ЛАСК проиграл Ливерпулю 3:6.",
    "result": "open",
    "score": null,
-   "prob_est": 0.57
+   "prob_est": 0.57,
+   "coupon": false,
+   "recheck_utc": "2026-10-21T08:40Z",
+   "recheck_odds": "1.81 (LiveSport.ru)",
+   "implied": 0.552,
+   "confidence_test": "fail: нужно ≥ 60.2% и ≥ 50%, оценка 57%"
   },
   {
    "league": "Лига чемпионов",
@@ -230,7 +263,12 @@
    "reason": "В трёх домашних матчах Лилля 4 гола на двоих (1:1, 1:0, 2:0); Галатасарай проиграл 1:4 Барселоне и 0:4 в Трабзоне.",
    "result": "open",
    "score": null,
-   "prob_est": 0.55
+   "prob_est": 0.55,
+   "coupon": false,
+   "recheck_utc": "2026-10-21T08:40Z",
+   "recheck_odds": "1.87 (Metaratings)",
+   "implied": 0.535,
+   "confidence_test": "fail: нужно ≥ 58.5% и ≥ 50%, оценка 55%"
   },
   {
    "league": "Лига чемпионов",
@@ -249,7 +287,12 @@
    "reason": "Лейпциг проиграл 1:6 в Мюнхене, позволив 29 ударов; у Реала 6 очков из 6.",
    "result": "open",
    "score": null,
-   "prob_est": 0.52
+   "prob_est": 0.52,
+   "coupon": false,
+   "recheck_utc": "2026-10-21T08:40Z",
+   "recheck_odds": "AH −2 1.90 Марафон / 1.92 Bet365 (matchesnow 09:00 UTC)",
+   "implied": 0.526,
+   "confidence_test": "fail: нужно ≥ 57.6% и ≥ 50%, оценка 52%"
   },
   {
    "league": "Лига чемпионов",
@@ -268,7 +311,12 @@
    "reason": "Брюгге выиграл 5 подряд, около 3 голов за игру, обыграл Интер в Милане 4:3.",
    "result": "open",
    "score": null,
-   "prob_est": 0.5
+   "prob_est": 0.5,
+   "coupon": false,
+   "recheck_utc": "2026-10-21T08:40Z",
+   "recheck_odds": "2.07 (LiveSport.ru; в таблице 1.95–2.01)",
+   "implied": 0.483,
+   "confidence_test": "fail: нужно ≥ 53.3% и ≥ 50%, оценка 50%"
   },
   {
    "league": "Лига чемпионов",
@@ -287,7 +335,13 @@
    "reason": "Интер дома пропустил 4 от Брюгге (3:4); Metaratings: обе забьют 1.73 — рынок ждёт обмена голами.",
    "result": "open",
    "score": null,
-   "prob_est": 0.49
+   "prob_est": 0.49,
+   "coupon": false,
+   "recheck_utc": "2026-10-21T08:40Z",
+   "recheck_odds": "1.99 (Metaratings)",
+   "implied": 0.503,
+   "confidence_test": "fail: нужно ≥ 55.3% и ≥ 50%, оценка 49%"
   }
- ]
+ ],
+ "confidence_test": "прошли 0 из 10 — в купон ничего не добавлено (проверка 08:40 UTC)"
 }
