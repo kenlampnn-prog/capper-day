@@ -53,6 +53,8 @@ body.light .lamp{background:radial-gradient(circle at 35% 30%,#fff,#e8edf5 70%,#
 .tabs{position:sticky;top:0;z-index:5;background:linear-gradient(180deg,rgba(253,245,232,.96) 75%,rgba(253,245,232,0))}
 body.light .tabs{background:linear-gradient(180deg,var(--bg) 70%,rgba(243,230,214,0))}
 .tabs button,.sub button{border:0;background:var(--chip);color:var(--soft);font:800 13px Nunito,sans-serif;padding:10px 16px;border-radius:999px;white-space:nowrap;cursor:pointer;box-shadow:var(--clay-sm);transition:transform .15s,background .2s,color .2s}
+.statbtn{display:inline-flex;align-items:center;border:0;background:linear-gradient(180deg,#8fe0b0,#2aa866);color:#fff;font:900 13px Nunito,sans-serif;padding:10px 16px;border-radius:999px;white-space:nowrap;text-decoration:none;box-shadow:0 6px 14px rgba(42,168,102,.25),inset 0 -3px 0 rgba(0,90,40,.16),inset 0 2px 0 rgba(255,255,255,.45);transition:transform .15s}
+.statbtn:hover{transform:translateY(-1px)}
 .tabs button:hover,.sub button:hover{transform:translateY(-1px);color:var(--text)}
 .tabs button.on{background:linear-gradient(180deg,var(--orange2),var(--orange));color:#fff;box-shadow:0 6px 14px rgba(240,120,40,.28),inset 0 -3px 0 rgba(150,60,0,.18),inset 0 2px 0 rgba(255,255,255,.45)}
 .sub button.on{background:linear-gradient(180deg,var(--sky2),var(--sky));color:#fff;box-shadow:0 6px 14px rgba(40,120,200,.25),inset 0 -3px 0 rgba(0,60,130,.16),inset 0 2px 0 rgba(255,255,255,.45)}
@@ -105,6 +107,7 @@ body.light .tgcta{background:linear-gradient(135deg,#fff1df,#ffe2c7)}
   <button data-tab="ex">Экспресс</button>
   <button data-tab="itog">Итоги</button>
   <button data-tab="bank">Банк</button>
+  <a class="statbtn" href="stats.html">📊 Статистика</a>
 </nav>
 <section id="hock">
   <nav class="sub">
