@@ -4,7 +4,9 @@
   "khl": "img.khl.ru (official khl.ru club logos, season 2026/27)",
   "nhl": "assets.nhle.com/logos/nhl/svg/<ABBR>_light.svg",
   "del": "penny-del.org/fileadmin/images/teams",
-  "nor": "eliteserien.no / obos-ligaen.no /img/logo/<code>/logo.png"
+  "nor": "eliteserien.no / obos-ligaen.no /img/logo/<code>/logo.png",
+  "mhl": "img.khl.ru/clubs/ru/<id>/80.png (official mhl.khl.ru club logos)",
+  "ucl": "img.uefa.com/imgml/TP/teams/logos/240x240/<id>.png (UEFA official, via match.uefa.com API)"
  },
  "teams": {
   "Локомотив": "logos/khl/lokomotiv.png",
@@ -330,7 +332,44 @@
   "Стреммен": "logos/nor/str.png",
   "Саннес Ульф": "logos/nor/ulf.png",
   "Sandnes Ulf": "logos/nor/ulf.png",
-  "Саннес": "logos/nor/ulf.png"
+  "Саннес": "logos/nor/ulf.png",
+  "Сибирские Снайперы": "logos/mhl/snipers.png",
+  "Снайперы": "logos/mhl/snipers.png",
+  "Чайка": "logos/mhl/chaika.png",
+  "Омские Ястребы": "logos/mhl/yastreby.png",
+  "Ястребы": "logos/mhl/yastreby.png",
+  "Ирбис": "logos/mhl/irbis.png",
+  "МХК Молот": "logos/mhl/molot.png",
+  "Молот": "logos/mhl/molot.png",
+  "АКМ-Юниор": "logos/mhl/akm.png",
+  "АКМ": "logos/mhl/akm.png",
+  "Красная Армия": "logos/mhl/krarmiya.png",
+  "Красная Машина Юниор": "logos/mhl/krmash_yunior.png",
+  "Красная Машина": "logos/mhl/krmash_yunior.png",
+  "Локо-76": "logos/mhl/loko76.png",
+  "Толпар": "logos/mhl/tolpar.png",
+  "Лилль": "logos/ucl/lille.png",
+  "Lille": "logos/ucl/lille.png",
+  "Галатасарай": "logos/ucl/galatasaray.png",
+  "Galatasaray": "logos/ucl/galatasaray.png",
+  "Реал Мадрид": "logos/ucl/realmadrid.png",
+  "Real Madrid": "logos/ucl/realmadrid.png",
+  "РБ Лейпциг": "logos/ucl/leipzig.png",
+  "Лейпциг": "logos/ucl/leipzig.png",
+  "RB Leipzig": "logos/ucl/leipzig.png",
+  "Интер": "logos/ucl/inter.png",
+  "Inter": "logos/ucl/inter.png",
+  "Шахтёр": "logos/ucl/shakhtar.png",
+  "Шахтер": "logos/ucl/shakhtar.png",
+  "Shakhtar Donetsk": "logos/ucl/shakhtar.png",
+  "Спортинг": "logos/ucl/sporting.png",
+  "Sporting CP": "logos/ucl/sporting.png",
+  "ЛАСК": "logos/ucl/lask.png",
+  "LASK": "logos/ucl/lask.png",
+  "Брюгге": "logos/ucl/brugge.png",
+  "Club Brugge": "logos/ucl/brugge.png",
+  "Ланс": "logos/ucl/lens.png",
+  "Lens": "logos/ucl/lens.png"
  },
  "files": {
   "logos/khl/lokomotiv.png": {
@@ -740,6 +779,106 @@
   "logos/nor/ulf.png": {
    "league": "nor",
    "name": "Саннес Ульф"
+  },
+  "logos/mhl/snipers.png": {
+   "league": "mhl",
+   "name": "Сибирские Снайперы",
+   "src": "https://img.khl.ru/clubs/ru/232/80.png"
+  },
+  "logos/mhl/chaika.png": {
+   "league": "mhl",
+   "name": "Чайка",
+   "src": "https://img.khl.ru/clubs/ru/223/80.png"
+  },
+  "logos/mhl/yastreby.png": {
+   "league": "mhl",
+   "name": "Омские Ястребы",
+   "src": "https://img.khl.ru/clubs/ru/230/80.png"
+  },
+  "logos/mhl/irbis.png": {
+   "league": "mhl",
+   "name": "Ирбис",
+   "src": "https://img.khl.ru/clubs/ru/226/80.png"
+  },
+  "logos/mhl/molot.png": {
+   "league": "mhl",
+   "name": "МХК Молот",
+   "src": "https://img.khl.ru/clubs/ru/435/80.png"
+  },
+  "logos/mhl/akm.png": {
+   "league": "mhl",
+   "name": "АКМ-Юниор",
+   "src": "https://img.khl.ru/clubs/ru/790/80.png"
+  },
+  "logos/mhl/krarmiya.png": {
+   "league": "mhl",
+   "name": "Красная Армия",
+   "src": "https://img.khl.ru/clubs/ru/222/80.png"
+  },
+  "logos/mhl/krmash_yunior.png": {
+   "league": "mhl",
+   "name": "Красная Машина Юниор",
+   "src": "https://img.khl.ru/clubs/ru/920/80.png"
+  },
+  "logos/mhl/loko76.png": {
+   "league": "mhl",
+   "name": "Локо-76",
+   "src": "https://img.khl.ru/clubs/ru/425/80.png"
+  },
+  "logos/mhl/tolpar.png": {
+   "league": "mhl",
+   "name": "Толпар",
+   "src": "https://img.khl.ru/clubs/ru/234/80.png"
+  },
+  "logos/ucl/lille.png": {
+   "league": "ucl",
+   "name": "Лилль",
+   "src": "https://img.uefa.com/imgml/TP/teams/logos/240x240/75797.png"
+  },
+  "logos/ucl/galatasaray.png": {
+   "league": "ucl",
+   "name": "Галатасарай",
+   "src": "https://img.uefa.com/imgml/TP/teams/logos/240x240/50067.png"
+  },
+  "logos/ucl/realmadrid.png": {
+   "league": "ucl",
+   "name": "Реал Мадрид",
+   "src": "https://img.uefa.com/imgml/TP/teams/logos/240x240/50051.png"
+  },
+  "logos/ucl/leipzig.png": {
+   "league": "ucl",
+   "name": "РБ Лейпциг",
+   "src": "https://img.uefa.com/imgml/TP/teams/logos/240x240/2603790.png"
+  },
+  "logos/ucl/inter.png": {
+   "league": "ucl",
+   "name": "Интер",
+   "src": "https://img.uefa.com/imgml/TP/teams/logos/240x240/50138.png"
+  },
+  "logos/ucl/shakhtar.png": {
+   "league": "ucl",
+   "name": "Шахтёр",
+   "src": "https://img.uefa.com/imgml/TP/teams/logos/240x240/52707.png"
+  },
+  "logos/ucl/sporting.png": {
+   "league": "ucl",
+   "name": "Спортинг",
+   "src": "https://img.uefa.com/imgml/TP/teams/logos/240x240/50149.png"
+  },
+  "logos/ucl/lask.png": {
+   "league": "ucl",
+   "name": "ЛАСК",
+   "src": "https://img.uefa.com/imgml/TP/teams/logos/240x240/63405.png"
+  },
+  "logos/ucl/brugge.png": {
+   "league": "ucl",
+   "name": "Брюгге",
+   "src": "https://img.uefa.com/imgml/TP/teams/logos/240x240/50043.png"
+  },
+  "logos/ucl/lens.png": {
+   "league": "ucl",
+   "name": "Ланс",
+   "src": "https://img.uefa.com/imgml/TP/teams/logos/240x240/52277.png"
   }
  }
 }

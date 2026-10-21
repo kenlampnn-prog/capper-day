@@ -1,0 +1,293 @@
+{
+ "date": "2026-10-21",
+ "note": "Информационные прогнозы: не в купоне и не в банке. Грейдить на следующий день: result = win/lose/push/void, score = итог основного времени.",
+ "mhl": [
+  {
+   "league": "МХЛ",
+   "match": "Сибирские Снайперы — Чайка",
+   "home": "Сибирские Снайперы",
+   "away": "Чайка",
+   "date": "2026-10-21",
+   "kickoff_msk": "14:30",
+   "pick": "П2 Чайка (осн. время)",
+   "market": "исход",
+   "line": null,
+   "rule": "основное время",
+   "odds": 2.15,
+   "odds_source": "Марафон",
+   "source_url": "https://sport.vbr.ru/events/hockey/2026-10-21-sibirskie-snaipery-caika-niznii-novgorod/",
+   "reason": "Вчера та же пара в Новосибирске — 1:5. Чайка 4 победы в 5 последних (14:6), первая в дивизионе; у Снайперов 2.4 пропущенных за игру против 1.5 у Чайки.",
+   "result": "open",
+   "score": null,
+   "periods": [
+    {
+     "period": 1,
+     "pick": "1-й: ТМ 1.5",
+     "confidence": "низкая",
+     "odds": null
+    },
+    {
+     "period": 2,
+     "pick": "2-й: П Чайка",
+     "confidence": "низкая",
+     "odds": null
+    },
+    {
+     "period": 3,
+     "pick": "3-й: ТБ 1.5",
+     "confidence": "низкая",
+     "odds": null
+    }
+   ]
+  },
+  {
+   "league": "МХЛ",
+   "match": "Омские Ястребы — Ирбис",
+   "home": "Омские Ястребы",
+   "away": "Ирбис",
+   "date": "2026-10-21",
+   "kickoff_msk": "15:30",
+   "pick": "ТМ 5.5 (осн. время)",
+   "market": "тотал",
+   "line": 5.5,
+   "rule": "основное время",
+   "odds": 1.88,
+   "odds_source": "линия Выберу.Спорт (БК не указана)",
+   "source_url": "https://sport.vbr.ru/events/hockey/2026-10-21-omskie-iastreby-irbis/",
+   "reason": "Вчера 1:0 — одна шайба на двоих. Ирбис пропустил 4 в своих 4 прошлых матчах (серия из четырёх побед), игра двух вратарей.",
+   "result": "open",
+   "score": null,
+   "periods": [
+    {
+     "period": 1,
+     "pick": "1-й: ТМ 1.5",
+     "confidence": "средняя",
+     "odds": null
+    },
+    {
+     "period": 2,
+     "pick": "2-й: ТМ 1.5",
+     "confidence": "низкая",
+     "odds": null
+    },
+    {
+     "period": 3,
+     "pick": "3-й: ТМ 1.5",
+     "confidence": "низкая",
+     "odds": null
+    }
+   ]
+  },
+  {
+   "league": "МХЛ",
+   "match": "МХК Молот — АКМ-Юниор",
+   "home": "МХК Молот",
+   "away": "АКМ-Юниор",
+   "date": "2026-10-21",
+   "kickoff_msk": "17:00",
+   "pick": "П2 АКМ-Юниор (осн. время)",
+   "market": "исход",
+   "line": null,
+   "rule": "основное время",
+   "odds": 2.0,
+   "odds_source": "Бетсити (Бет-М 1.98); Марафон не дал линию",
+   "source_url": "https://sport.vbr.ru/events/hockey/2026-10-21-molot-perm-akademiia-mixailova-iunior/",
+   "reason": "АКМ 4 победы подряд (23:10), разница в сезоне 33:19; Молот пропустил 24 в 4 последних, в сезоне 34:42.",
+   "result": "open",
+   "score": null,
+   "periods": [
+    {
+     "period": 1,
+     "pick": "1-й: П АКМ",
+     "confidence": "низкая",
+     "odds": null
+    },
+    {
+     "period": 2,
+     "pick": "2-й: ТБ 1.5",
+     "confidence": "средняя",
+     "odds": null
+    },
+    {
+     "period": 3,
+     "pick": "3-й: П АКМ",
+     "confidence": "низкая",
+     "odds": null
+    }
+   ]
+  },
+  {
+   "league": "МХЛ",
+   "match": "Красная Армия — Красная Машина Юниор",
+   "home": "Красная Армия",
+   "away": "Красная Машина Юниор",
+   "date": "2026-10-21",
+   "kickoff_msk": "18:30",
+   "pick": "Ф1 (−1.5) Красная Армия (осн. время)",
+   "market": "фора",
+   "line": -1.5,
+   "rule": "основное время",
+   "odds": null,
+   "odds_source": "кэф н/д (Фонбет/Марафон не нашёл)",
+   "source_url": "https://stavka.tv/matches/ice-hockey/21-10-2026-krasnaya-armiya-red-machine-u20",
+   "reason": "КА 4 победы подряд, забивает 3.0 и пропускает 2.4; у КМЮ 2.2 и 2.9. Две последние очные — 6:2 и 6:2. На stavka.tv (БК не указана) П1 1.21, Ф1 (−2.5) 1.77 — ниже 1.80, поэтому Ф1 (−1.5) без кэфа.",
+   "result": "open",
+   "score": null,
+   "periods": [
+    {
+     "period": 1,
+     "pick": "1-й: П КА",
+     "confidence": "средняя",
+     "odds": null
+    },
+    {
+     "period": 2,
+     "pick": "2-й: П КА",
+     "confidence": "низкая",
+     "odds": null
+    },
+    {
+     "period": 3,
+     "pick": "3-й: ТБ 1.5",
+     "confidence": "низкая",
+     "odds": null
+    }
+   ]
+  },
+  {
+   "league": "МХЛ",
+   "match": "Локо-76 — Толпар",
+   "home": "Локо-76",
+   "away": "Толпар",
+   "date": "2026-10-21",
+   "kickoff_msk": "18:30",
+   "pick": "П1 Локо-76 (осн. время)",
+   "market": "исход",
+   "line": null,
+   "rule": "основное время",
+   "odds": 2.36,
+   "odds_source": "Марафон",
+   "source_url": "https://sport.vbr.ru/events/hockey/2026-10-21-loko-76-tolpar/",
+   "reason": "Толпар пропустил 23 в 4 последних (в т.ч. 2:10 от АКМ), в сезоне 47:59; Локо-76 — 34:28. Вчера Локо-76 выиграл 3:2 в ОТ.",
+   "result": "open",
+   "score": null,
+   "periods": [
+    {
+     "period": 1,
+     "pick": "1-й: ничья",
+     "confidence": "низкая",
+     "odds": null
+    },
+    {
+     "period": 2,
+     "pick": "2-й: П Локо-76",
+     "confidence": "низкая",
+     "odds": null
+    },
+    {
+     "period": 3,
+     "pick": "3-й: П Локо-76",
+     "confidence": "низкая",
+     "odds": null
+    }
+   ]
+  }
+ ],
+ "football_best": [
+  {
+   "league": "Лига чемпионов",
+   "match": "Спортинг — ЛАСК",
+   "home": "Спортинг",
+   "away": "ЛАСК",
+   "date": "2026-10-21",
+   "kickoff_msk": "22:00",
+   "pick": "ТБ 3.5",
+   "market": "тотал",
+   "line": 3.5,
+   "rule": "90 минут",
+   "odds": 1.81,
+   "odds_source": "LiveSport.ru",
+   "source_url": "https://www.livesport.ru/tips/football/2026/10/21/sporting-clube-lask/",
+   "reason": "В 5 из 6 последних домашних матчей Спортинга больше 3.5 голов; ЛАСК проиграл Ливерпулю 3:6.",
+   "result": "open",
+   "score": null,
+   "prob_est": 0.57
+  },
+  {
+   "league": "Лига чемпионов",
+   "match": "Лилль — Галатасарай",
+   "home": "Лилль",
+   "away": "Галатасарай",
+   "date": "2026-10-21",
+   "kickoff_msk": "19:45",
+   "pick": "ТМ 3 (азиат., возврат при 3 голах)",
+   "market": "тотал",
+   "line": 3,
+   "rule": "90 минут",
+   "odds": 1.87,
+   "odds_source": "Metaratings",
+   "source_url": "https://metaratings.ru/prognozy/futbol/lill-galatasaray-prognoz-na-match-ligi-chempionov-21-oktyabrya-2026-goda/",
+   "reason": "В трёх домашних матчах Лилля 4 гола на двоих (1:1, 1:0, 2:0); Галатасарай проиграл 1:4 Барселоне и 0:4 в Трабзоне.",
+   "result": "open",
+   "score": null,
+   "prob_est": 0.55
+  },
+  {
+   "league": "Лига чемпионов",
+   "match": "Реал Мадрид — РБ Лейпциг",
+   "home": "Реал Мадрид",
+   "away": "РБ Лейпциг",
+   "date": "2026-10-21",
+   "kickoff_msk": "22:00",
+   "pick": "Ф1 (−2) азиат. (возврат при победе в 2 мяча)",
+   "market": "фора",
+   "line": -2,
+   "rule": "90 минут",
+   "odds": 1.9,
+   "odds_source": "Марафон (matchesnow.co.uk)",
+   "source_url": "https://matchesnow.co.uk/leagues/uefa-champions-league/2026/real-madrid-rb-leipzig/odds",
+   "reason": "Лейпциг проиграл 1:6 в Мюнхене, позволив 29 ударов; у Реала 6 очков из 6.",
+   "result": "open",
+   "score": null,
+   "prob_est": 0.52
+  },
+  {
+   "league": "Лига чемпионов",
+   "match": "Брюгге — Ланс",
+   "home": "Брюгге",
+   "away": "Ланс",
+   "date": "2026-10-21",
+   "kickoff_msk": "22:00",
+   "pick": "П1",
+   "market": "исход",
+   "line": null,
+   "rule": "90 минут",
+   "odds": 2.07,
+   "odds_source": "LiveSport.ru (в таблице 1.95–2.01)",
+   "source_url": "https://www.livesport.ru/tips/football/2026/10/21/brugge-lens/",
+   "reason": "Брюгге выиграл 5 подряд, около 3 голов за игру, обыграл Интер в Милане 4:3.",
+   "result": "open",
+   "score": null,
+   "prob_est": 0.5
+  },
+  {
+   "league": "Лига чемпионов",
+   "match": "Интер — Шахтёр",
+   "home": "Интер",
+   "away": "Шахтёр",
+   "date": "2026-10-21",
+   "kickoff_msk": "22:00",
+   "pick": "ТБ 3.5",
+   "market": "тотал",
+   "line": 3.5,
+   "rule": "90 минут",
+   "odds": 1.99,
+   "odds_source": "Metaratings",
+   "source_url": "https://metaratings.ru/prognozy/futbol/inter-shakhter-donetsk-prognoz-na-match-ligi-chempionov-21-oktyabrya-2026-goda/",
+   "reason": "Интер дома пропустил 4 от Брюгге (3:4); Metaratings: обе забьют 1.73 — рынок ждёт обмена голами.",
+   "result": "open",
+   "score": null,
+   "prob_est": 0.49
+  }
+ ]
+}
