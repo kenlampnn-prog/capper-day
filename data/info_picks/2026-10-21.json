@@ -17,26 +17,29 @@
    "odds_source": "Марафон",
    "source_url": "https://sport.vbr.ru/events/hockey/2026-10-21-sibirskie-snaipery-caika-niznii-novgorod/",
    "reason": "Вчера та же пара в Новосибирске — 1:5. Чайка 4 победы в 5 последних (14:6), первая в дивизионе; у Снайперов 2.4 пропущенных за игру против 1.5 у Чайки.",
-   "result": "open",
-   "score": null,
+   "result": "win",
+   "score": "2:5",
    "periods": [
     {
      "period": 1,
      "pick": "1-й: ТМ 1.5",
      "confidence": "низкая",
-     "odds": null
+     "odds": null,
+     "result": "n/a (счёт по периодам не найден)"
     },
     {
      "period": 2,
      "pick": "2-й: П Чайка",
      "confidence": "низкая",
-     "odds": null
+     "odds": null,
+     "result": "n/a (счёт по периодам не найден)"
     },
     {
      "period": 3,
      "pick": "3-й: ТБ 1.5",
      "confidence": "низкая",
-     "odds": null
+     "odds": null,
+     "result": "n/a (счёт по периодам не найден)"
     }
    ],
    "coupon": false,
@@ -61,26 +64,29 @@
    "odds_source": "линия Выберу.Спорт (БК не указана)",
    "source_url": "https://sport.vbr.ru/events/hockey/2026-10-21-omskie-iastreby-irbis/",
    "reason": "Вчера 1:0 — одна шайба на двоих. Ирбис пропустил 4 в своих 4 прошлых матчах (серия из четырёх побед), игра двух вратарей.",
-   "result": "open",
-   "score": null,
+   "result": "lose",
+   "score": "5:5 (итог 5:6 Б)",
    "periods": [
     {
      "period": 1,
      "pick": "1-й: ТМ 1.5",
      "confidence": "средняя",
-     "odds": null
+     "odds": null,
+     "result": "n/a (счёт по периодам не найден)"
     },
     {
      "period": 2,
      "pick": "2-й: ТМ 1.5",
      "confidence": "низкая",
-     "odds": null
+     "odds": null,
+     "result": "n/a (счёт по периодам не найден)"
     },
     {
      "period": 3,
      "pick": "3-й: ТМ 1.5",
      "confidence": "низкая",
-     "odds": null
+     "odds": null,
+     "result": "n/a (счёт по периодам не найден)"
     }
    ],
    "coupon": false,
@@ -105,26 +111,29 @@
    "odds_source": "Бетсити (Бет-М 1.98); Марафон не дал линию",
    "source_url": "https://sport.vbr.ru/events/hockey/2026-10-21-molot-perm-akademiia-mixailova-iunior/",
    "reason": "АКМ 4 победы подряд (23:10), разница в сезоне 33:19; Молот пропустил 24 в 4 последних, в сезоне 34:42.",
-   "result": "open",
-   "score": null,
+   "result": "win",
+   "score": "4:6",
    "periods": [
     {
      "period": 1,
      "pick": "1-й: П АКМ",
      "confidence": "низкая",
-     "odds": null
+     "odds": null,
+     "result": "n/a (счёт по периодам не найден)"
     },
     {
      "period": 2,
      "pick": "2-й: ТБ 1.5",
      "confidence": "средняя",
-     "odds": null
+     "odds": null,
+     "result": "n/a (счёт по периодам не найден)"
     },
     {
      "period": 3,
      "pick": "3-й: П АКМ",
      "confidence": "низкая",
-     "odds": null
+     "odds": null,
+     "result": "n/a (счёт по периодам не найден)"
     }
    ],
    "coupon": false,
@@ -149,26 +158,29 @@
    "odds_source": "кэф н/д (Фонбет/Марафон не нашёл)",
    "source_url": "https://stavka.tv/matches/ice-hockey/21-10-2026-krasnaya-armiya-red-machine-u20",
    "reason": "КА 4 победы подряд, забивает 3.0 и пропускает 2.4; у КМЮ 2.2 и 2.9. Две последние очные — 6:2 и 6:2. На stavka.tv (БК не указана) П1 1.21, Ф1 (−2.5) 1.77 — ниже 1.80, поэтому Ф1 (−1.5) без кэфа.",
-   "result": "open",
-   "score": null,
+   "result": "lose",
+   "score": "3:3 (итог 4:3 ОТ)",
    "periods": [
     {
      "period": 1,
      "pick": "1-й: П КА",
      "confidence": "средняя",
-     "odds": null
+     "odds": null,
+     "result": "n/a (счёт по периодам не найден)"
     },
     {
      "period": 2,
      "pick": "2-й: П КА",
      "confidence": "низкая",
-     "odds": null
+     "odds": null,
+     "result": "n/a (счёт по периодам не найден)"
     },
     {
      "period": 3,
      "pick": "3-й: ТБ 1.5",
      "confidence": "низкая",
-     "odds": null
+     "odds": null,
+     "result": "n/a (счёт по периодам не найден)"
     }
    ],
    "coupon": false,
@@ -191,26 +203,29 @@
    "odds_source": "Марафон",
    "source_url": "https://sport.vbr.ru/events/hockey/2026-10-21-loko-76-tolpar/",
    "reason": "Толпар пропустил 23 в 4 последних (в т.ч. 2:10 от АКМ), в сезоне 47:59; Локо-76 — 34:28. Вчера Локо-76 выиграл 3:2 в ОТ.",
-   "result": "open",
-   "score": null,
+   "result": "lose",
+   "score": "2:5",
    "periods": [
     {
      "period": 1,
      "pick": "1-й: ничья",
      "confidence": "низкая",
-     "odds": null
+     "odds": null,
+     "result": "n/a (счёт по периодам не найден)"
     },
     {
      "period": 2,
      "pick": "2-й: П Локо-76",
      "confidence": "низкая",
-     "odds": null
+     "odds": null,
+     "result": "n/a (счёт по периодам не найден)"
     },
     {
      "period": 3,
      "pick": "3-й: П Локо-76",
      "confidence": "низкая",
-     "odds": null
+     "odds": null,
+     "result": "n/a (счёт по периодам не найден)"
     }
    ],
    "coupon": false,
@@ -237,8 +252,8 @@
    "odds_source": "LiveSport.ru",
    "source_url": "https://www.livesport.ru/tips/football/2026/10/21/sporting-clube-lask/",
    "reason": "В 5 из 6 последних домашних матчей Спортинга больше 3.5 голов; ЛАСК проиграл Ливерпулю 3:6.",
-   "result": "open",
-   "score": null,
+   "result": "win",
+   "score": "2:3",
    "prob_est": 0.57,
    "coupon": false,
    "recheck_utc": "2026-10-21T08:40Z",
@@ -261,8 +276,8 @@
    "odds_source": "Metaratings",
    "source_url": "https://metaratings.ru/prognozy/futbol/lill-galatasaray-prognoz-na-match-ligi-chempionov-21-oktyabrya-2026-goda/",
    "reason": "В трёх домашних матчах Лилля 4 гола на двоих (1:1, 1:0, 2:0); Галатасарай проиграл 1:4 Барселоне и 0:4 в Трабзоне.",
-   "result": "open",
-   "score": null,
+   "result": "lose",
+   "score": "2:4",
    "prob_est": 0.55,
    "coupon": false,
    "recheck_utc": "2026-10-21T08:40Z",
@@ -285,8 +300,8 @@
    "odds_source": "Марафон (matchesnow.co.uk)",
    "source_url": "https://matchesnow.co.uk/leagues/uefa-champions-league/2026/real-madrid-rb-leipzig/odds",
    "reason": "Лейпциг проиграл 1:6 в Мюнхене, позволив 29 ударов; у Реала 6 очков из 6.",
-   "result": "open",
-   "score": null,
+   "result": "win",
+   "score": "4:1",
    "prob_est": 0.52,
    "coupon": false,
    "recheck_utc": "2026-10-21T08:40Z",
@@ -309,8 +324,8 @@
    "odds_source": "LiveSport.ru (в таблице 1.95–2.01)",
    "source_url": "https://www.livesport.ru/tips/football/2026/10/21/brugge-lens/",
    "reason": "Брюгге выиграл 5 подряд, около 3 голов за игру, обыграл Интер в Милане 4:3.",
-   "result": "open",
-   "score": null,
+   "result": "win",
+   "score": "3:0",
    "prob_est": 0.5,
    "coupon": false,
    "recheck_utc": "2026-10-21T08:40Z",
@@ -333,8 +348,8 @@
    "odds_source": "Metaratings",
    "source_url": "https://metaratings.ru/prognozy/futbol/inter-shakhter-donetsk-prognoz-na-match-ligi-chempionov-21-oktyabrya-2026-goda/",
    "reason": "Интер дома пропустил 4 от Брюгге (3:4); Metaratings: обе забьют 1.73 — рынок ждёт обмена голами.",
-   "result": "open",
-   "score": null,
+   "result": "lose",
+   "score": "1:0",
    "prob_est": 0.49,
    "coupon": false,
    "recheck_utc": "2026-10-21T08:40Z",
@@ -343,5 +358,7 @@
    "confidence_test": "fail: нужно ≥ 55.3% и ≥ 50%, оценка 49%"
   }
  ],
- "confidence_test": "прошли 0 из 10 — в купон ничего не добавлено (проверка 08:40 UTC)"
+ "confidence_test": "прошли 0 из 10 — в купон ничего не добавлено (проверка 08:40 UTC)",
+ "graded_at": "2026-10-22T05:30Z",
+ "graded_summary": "МХЛ 2/5, ЛЧ 3/5 (итого 5/10). Источники: allhockey.ru, sport-express.net, eurosport.it"
 }

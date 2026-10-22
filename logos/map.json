@@ -6,7 +6,7 @@
   "del": "penny-del.org/fileadmin/images/teams",
   "nor": "eliteserien.no / obos-ligaen.no /img/logo/<code>/logo.png",
   "mhl": "img.khl.ru/clubs/ru/<id>/80.png (official mhl.khl.ru club logos)",
-  "ucl": "img.uefa.com/imgml/TP/teams/logos/240x240/<id>.png (UEFA official, via match.uefa.com API)"
+  "ucl": "img.uefa.com/imgml/TP/teams/logos/240x240/<id>.png (UEFA official, via match.uefa.com API); with 22.10.2026 Europa/Conference League clubs from Wikimedia (img.uefa.com unreachable from the box)"
  },
  "teams": {
   "Локомотив": "logos/khl/lokomotiv.png",
@@ -369,7 +369,51 @@
   "Брюгге": "logos/ucl/brugge.png",
   "Club Brugge": "logos/ucl/brugge.png",
   "Ланс": "logos/ucl/lens.png",
-  "Lens": "logos/ucl/lens.png"
+  "Lens": "logos/ucl/lens.png",
+  "Ювентус": "logos/ucl/juventus.png",
+  "Juventus": "logos/ucl/juventus.png",
+  "Ренн": "logos/ucl/rennes.png",
+  "Rennes": "logos/ucl/rennes.png",
+  "Стад Ренн": "logos/ucl/rennes.png",
+  "Штурм": "logos/ucl/sturm.png",
+  "Штурм Грац": "logos/ucl/sturm.png",
+  "Sturm Graz": "logos/ucl/sturm.png",
+  "Марсель": "logos/ucl/marseille.png",
+  "Marseille": "logos/ucl/marseille.png",
+  "Хоффенхайм": "logos/ucl/hoffenheim.png",
+  "Hoffenheim": "logos/ucl/hoffenheim.png",
+  "Лион": "logos/ucl/lyon.png",
+  "Lyon": "logos/ucl/lyon.png",
+  "Бешикташ": "logos/ucl/besiktas.png",
+  "Beşiktaş": "logos/ucl/besiktas.png",
+  "Besiktas": "logos/ucl/besiktas.png",
+  "Кристал Пэлас": "logos/ucl/crystalpalace.png",
+  "Crystal Palace": "logos/ucl/crystalpalace.png",
+  "Селтик": "logos/ucl/celtic.png",
+  "Celtic": "logos/ucl/celtic.png",
+  "Сельта": "logos/ucl/celta.png",
+  "Celta": "logos/ucl/celta.png",
+  "Реал Сосьедад": "logos/ucl/realsociedad.png",
+  "Real Sociedad": "logos/ucl/realsociedad.png",
+  "Сосьедад": "logos/ucl/realsociedad.png",
+  "Локо": "logos/mhl/loko.png",
+  "Локо Ярославль": "logos/mhl/loko.png",
+  "Красная Машина Атлант": "logos/mhl/krmash_atlant.png",
+  "Красная машина Атлант": "logos/mhl/krmash_atlant.png",
+  "Красная машина Атлант МО": "logos/mhl/krmash_atlant.png",
+  "Атлант": "logos/mhl/krmash_atlant.png",
+  "СКА-1946": "logos/mhl/ska1946.png",
+  "СКА 1946": "logos/mhl/ska1946.png",
+  "Кузнецкие Медведи": "logos/mhl/kuzmedvedi.png",
+  "Кузнецкие медведи": "logos/mhl/kuzmedvedi.png",
+  "Снежные Барсы": "logos/mhl/snbarsy.png",
+  "Снежные барсы": "logos/mhl/snbarsy.png",
+  "Динамо-Шинник": "logos/mhl/dinshinnik.png",
+  "МХК Динамо-Шинник": "logos/mhl/dinshinnik.png",
+  "Академия СКА": "logos/mhl/akska.png",
+  "СКА-Варяги": "logos/mhl/akska.png",
+  "Крылья Советов": "logos/mhl/krsovetov.png",
+  "МХК Крылья Советов": "logos/mhl/krsovetov.png"
  },
  "files": {
   "logos/khl/lokomotiv.png": {
@@ -879,6 +923,101 @@
    "league": "ucl",
    "name": "Ланс",
    "src": "https://img.uefa.com/imgml/TP/teams/logos/240x240/52277.png"
+  },
+  "logos/ucl/juventus.png": {
+   "league": "uefa",
+   "name": "Ювентус",
+   "src": "Wikimedia: Juventus FC - logo black (Italy, 2020).svg"
+  },
+  "logos/ucl/rennes.png": {
+   "league": "uefa",
+   "name": "Ренн",
+   "src": "Wikimedia: Stade Rennais FC.svg"
+  },
+  "logos/ucl/sturm.png": {
+   "league": "uefa",
+   "name": "Штурм",
+   "src": "Wikimedia: SK Sturm Graz.svg"
+  },
+  "logos/ucl/marseille.png": {
+   "league": "uefa",
+   "name": "Марсель",
+   "src": "Wikimedia: Olympique de Marseille 2026 logo.svg"
+  },
+  "logos/ucl/hoffenheim.png": {
+   "league": "uefa",
+   "name": "Хоффенхайм",
+   "src": "Wikimedia: Logo TSG Hoffenheim.svg"
+  },
+  "logos/ucl/lyon.png": {
+   "league": "uefa",
+   "name": "Лион",
+   "src": "Wikimedia: Olympique Lyonnais logo.svg"
+  },
+  "logos/ucl/besiktas.png": {
+   "league": "uefa",
+   "name": "Бешикташ",
+   "src": "Wikimedia: BesiktasJK-Logo.svg"
+  },
+  "logos/ucl/crystalpalace.png": {
+   "league": "uefa",
+   "name": "Кристал Пэлас",
+   "src": "Wikimedia: Crystal Palace FC logo (2022).svg"
+  },
+  "logos/ucl/celtic.png": {
+   "league": "uefa",
+   "name": "Селтик",
+   "src": "Wikimedia: Celtic FC crest.svg"
+  },
+  "logos/ucl/celta.png": {
+   "league": "uefa",
+   "name": "Сельта",
+   "src": "Wikimedia: Escudo RC Celta de Vigo.svg"
+  },
+  "logos/ucl/realsociedad.png": {
+   "league": "uefa",
+   "name": "Реал Сосьедад",
+   "src": "Wikimedia: Real Sociedad logo.svg"
+  },
+  "logos/mhl/loko.png": {
+   "league": "mhl",
+   "name": "Локо",
+   "src": "https://img.khl.ru/clubs/ru/215/80.png"
+  },
+  "logos/mhl/krmash_atlant.png": {
+   "league": "mhl",
+   "name": "Красная Машина Атлант",
+   "src": "https://img.khl.ru/clubs/ru/218/80.png"
+  },
+  "logos/mhl/ska1946.png": {
+   "league": "mhl",
+   "name": "СКА-1946",
+   "src": "https://img.khl.ru/clubs/ru/220/80.png"
+  },
+  "logos/mhl/kuzmedvedi.png": {
+   "league": "mhl",
+   "name": "Кузнецкие Медведи",
+   "src": "https://img.khl.ru/clubs/ru/228/80.png"
+  },
+  "logos/mhl/snbarsy.png": {
+   "league": "mhl",
+   "name": "Снежные Барсы",
+   "src": "Wikimedia (ru.wikipedia): Снежные барсы.png"
+  },
+  "logos/mhl/dinshinnik.png": {
+   "league": "mhl",
+   "name": "Динамо-Шинник",
+   "src": "Wikimedia (ru.wikipedia): МХК Динамо-Шинник.svg"
+  },
+  "logos/mhl/akska.png": {
+   "league": "mhl",
+   "name": "Академия СКА",
+   "src": "Wikimedia (ru.wikipedia): Академия СКА (логотип).png"
+  },
+  "logos/mhl/krsovetov.png": {
+   "league": "mhl",
+   "name": "Крылья Советов",
+   "src": "Wikimedia (ru.wikipedia): Логотип хоккейного клуба Крылья Советов.png"
   }
  }
 }

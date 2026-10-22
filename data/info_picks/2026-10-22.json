@@ -1,0 +1,605 @@
+{
+ "date": "2026-10-22",
+ "note": "Информационные прогнозы: не в купоне и не в банке. Грейдить на следующий день.",
+ "mhl": [
+  {
+   "league": "МХЛ",
+   "match": "Академия СКА — Красная Машина Атлант",
+   "home": "Академия СКА",
+   "away": "Красная Машина Атлант",
+   "date": "2026-10-22",
+   "kickoff_msk": "13:00",
+   "pick": "П1 Академия СКА (осн. время)",
+   "market": "исход",
+   "line": null,
+   "rule": "основное время",
+   "odds": 2.31,
+   "odds_source": "Winline",
+   "source_url": "https://freebety.ru/prognozy/hokkey/akademiya-ska-krasnaya-mashina-atlant-2026-10-22/",
+   "reason": "Академия СКА 8 очков из 10 в 5 последних (2.0 забитой, 1.0 пропущенной), Атлант 4 из 10 (2.2 и 2.6), в таблице 3 победы в 11.",
+   "implied": 0.433,
+   "prob_est": 0.44,
+   "confidence_test": "fail: нужно ≥ 48.3%, оценка 44%",
+   "coupon": false,
+   "result": "open",
+   "score": null,
+   "periods": [
+    {
+     "period": 1,
+     "pick": "1-й: ТМ 1.5",
+     "confidence": "низкая",
+     "odds": null
+    },
+    {
+     "period": 2,
+     "pick": "2-й: П Академия СКА",
+     "confidence": "низкая",
+     "odds": null
+    },
+    {
+     "period": 3,
+     "pick": "3-й: ТБ 1.5",
+     "confidence": "низкая",
+     "odds": null
+    }
+   ]
+  },
+  {
+   "league": "МХЛ",
+   "match": "Кузнецкие Медведи — Снежные Барсы",
+   "home": "Кузнецкие Медведи",
+   "away": "Снежные Барсы",
+   "date": "2026-10-22",
+   "kickoff_msk": "14:30",
+   "pick": "П1 Кузнецкие Медведи (осн. время)",
+   "market": "исход",
+   "line": null,
+   "rule": "основное время",
+   "odds": null,
+   "odds_source": "кэф н/д",
+   "source_url": "https://www.sport-express.net/hockey/L/mhl/2026-2027/calendar/",
+   "reason": "Снежные Барсы — последние в Серебряном дивизионе Востока (4 победы в 16), Медведи 5 побед в 11. Линии от 1.80 с названной БК не нашёл.",
+   "implied": null,
+   "prob_est": null,
+   "confidence_test": "fail: нет кэфа от 1.80 с названной БК",
+   "coupon": false,
+   "result": "open",
+   "score": null,
+   "periods": [
+    {
+     "period": 1,
+     "pick": "1-й: ТБ 1.5",
+     "confidence": "низкая",
+     "odds": null
+    },
+    {
+     "period": 2,
+     "pick": "2-й: П Кузнецкие Медведи",
+     "confidence": "низкая",
+     "odds": null
+    },
+    {
+     "period": 3,
+     "pick": "3-й: ТБ 1.5",
+     "confidence": "низкая",
+     "odds": null
+    }
+   ]
+  },
+  {
+   "league": "МХЛ",
+   "match": "МХК Молот — АКМ-Юниор",
+   "home": "МХК Молот",
+   "away": "АКМ-Юниор",
+   "date": "2026-10-22",
+   "kickoff_msk": "17:00",
+   "pick": "П2 АКМ-Юниор (осн. время)",
+   "market": "исход",
+   "line": null,
+   "rule": "основное время",
+   "odds": 1.8,
+   "odds_source": "Бет-М/Мелбет (Фонбет 1.78)",
+   "source_url": "https://sport.vbr.ru/events/hockey/2026-10-22-molot-perm-akademiia-mixailova-iunior/",
+   "reason": "Вчера та же пара — 4:6. АКМ лидер дивизиона (8 побед в 11), Молот 3 победы в 11 и 24 пропущенных в 4 матчах до вчерашнего.",
+   "implied": 0.556,
+   "prob_est": 0.5,
+   "confidence_test": "fail: нужно ≥ 60.6%, оценка 50%",
+   "coupon": false,
+   "result": "open",
+   "score": null,
+   "periods": [
+    {
+     "period": 1,
+     "pick": "1-й: ТБ 1.5",
+     "confidence": "средняя",
+     "odds": null
+    },
+    {
+     "period": 2,
+     "pick": "2-й: П АКМ",
+     "confidence": "низкая",
+     "odds": null
+    },
+    {
+     "period": 3,
+     "pick": "3-й: ТБ 1.5",
+     "confidence": "низкая",
+     "odds": null
+    }
+   ]
+  },
+  {
+   "league": "МХЛ",
+   "match": "Локо — Динамо-Шинник",
+   "home": "Локо",
+   "away": "Динамо-Шинник",
+   "date": "2026-10-22",
+   "kickoff_msk": "18:30",
+   "pick": "ТБ 5.5 (осн. время)",
+   "market": "тотал",
+   "line": 5.5,
+   "rule": "основное время",
+   "odds": 1.9,
+   "odds_source": "sport5.by (БК не указана)",
+   "source_url": "https://sport5.by/tips/hockey/prognoz-na-match-loko-dinamo-shinnik-2/",
+   "reason": "Локо — первый на Западе (10 побед в 12), Динамо-Шинник четвёртый (9 в 14); две сильные атаки, но пара плотная — ничья в 60 минут вероятна.",
+   "implied": 0.526,
+   "prob_est": 0.5,
+   "confidence_test": "fail: нужно ≥ 57.6%, оценка 50%",
+   "coupon": false,
+   "result": "open",
+   "score": null,
+   "periods": [
+    {
+     "period": 1,
+     "pick": "1-й: ТМ 1.5",
+     "confidence": "низкая",
+     "odds": null
+    },
+    {
+     "period": 2,
+     "pick": "2-й: ТБ 1.5",
+     "confidence": "низкая",
+     "odds": null
+    },
+    {
+     "period": 3,
+     "pick": "3-й: П Локо",
+     "confidence": "низкая",
+     "odds": null
+    }
+   ]
+  },
+  {
+   "league": "МХЛ",
+   "match": "СКА-1946 — Крылья Советов",
+   "home": "СКА-1946",
+   "away": "Крылья Советов",
+   "date": "2026-10-22",
+   "kickoff_msk": "19:00",
+   "pick": "ТБ 5.5 (осн. время)",
+   "market": "тотал",
+   "line": 5.5,
+   "rule": "основное время",
+   "odds": 1.8,
+   "odds_source": "Фонбет (Бет-М 1.84)",
+   "source_url": "https://sport.vbr.ru/events/hockey/2026-10-22-ska-1946-mxk-krylia-sovetov/",
+   "reason": "СКА-1946 П1 1.40, Ф1 (−1.5) 1.75 — ниже планки. Крылья пропускают много (5 побед в 14), но СКА-1946 сам не самый результативный (7 побед в 13).",
+   "implied": 0.556,
+   "prob_est": 0.52,
+   "confidence_test": "fail: нужно ≥ 60.6%, оценка 52%",
+   "coupon": false,
+   "result": "open",
+   "score": null,
+   "periods": [
+    {
+     "period": 1,
+     "pick": "1-й: ТБ 1.5",
+     "confidence": "низкая",
+     "odds": null
+    },
+    {
+     "period": 2,
+     "pick": "2-й: П СКА-1946",
+     "confidence": "низкая",
+     "odds": null
+    },
+    {
+     "period": 3,
+     "pick": "3-й: ТБ 1.5",
+     "confidence": "низкая",
+     "odds": null
+    }
+   ]
+  }
+ ],
+ "football_best": [
+  {
+   "league": "Лига Европы",
+   "match": "Ювентус — Ренн",
+   "home": "Ювентус",
+   "away": "Ренн",
+   "date": "2026-10-22",
+   "kickoff_msk": "19:45",
+   "pick": "Ф1 (−1)",
+   "rule": "90 минут",
+   "odds": 1.8,
+   "odds_source": "Марафон",
+   "source_url": "https://sport.vbr.ru/events/football/2026-10-22-iuventus-renn/",
+   "reason": "Ф1 (−1) — победа в 2+ мяча, при победе в один — возврат. Ювентус П1 1.47–1.52; у Ренна 4 матча подряд ТБ 2.5 (в среднем 4.75 гола), у Юве 10:7 в 5 последних (СТАВКА ТВ).",
+   "implied": 0.556,
+   "prob_est": 0.58,
+   "confidence_test": "fail: нужно ≥ 60.6%, оценка 58%",
+   "coupon": false,
+   "result": "open",
+   "score": null,
+   "halves": [
+    {
+     "half": 1,
+     "pick": "П Ювентус",
+     "confidence": "низкая"
+    },
+    {
+     "half": 2,
+     "pick": "ТБ 1.5",
+     "confidence": "низкая"
+    }
+   ]
+  },
+  {
+   "league": "Лига Европы",
+   "match": "Штурм — Марсель",
+   "home": "Штурм",
+   "away": "Марсель",
+   "date": "2026-10-22",
+   "kickoff_msk": "19:45",
+   "pick": "П2",
+   "rule": "90 минут",
+   "odds": 2.03,
+   "odds_source": "Марафон",
+   "source_url": "https://sport.vbr.ru/events/football/2026-10-22-sturm-marsel/",
+   "reason": "У Штурма 0 голов в двух турах ЛЕ (xG 1.08 на двоих матча) и девять травмированных игроков основы (СТАВКА ТВ); Фонбет 1.97.",
+   "implied": 0.493,
+   "prob_est": 0.52,
+   "confidence_test": "fail: нужно ≥ 54.3%, оценка 52%",
+   "coupon": false,
+   "result": "open",
+   "score": null,
+   "halves": [
+    {
+     "half": 1,
+     "pick": "ТМ 1.5",
+     "confidence": "средняя"
+    },
+    {
+     "half": 2,
+     "pick": "П Марсель",
+     "confidence": "низкая"
+    }
+   ]
+  },
+  {
+   "league": "Лига Европы",
+   "match": "Хоффенхайм — Лион",
+   "home": "Хоффенхайм",
+   "away": "Лион",
+   "date": "2026-10-22",
+   "kickoff_msk": "22:00",
+   "pick": "X2",
+   "rule": "90 минут",
+   "odds": 1.81,
+   "odds_source": "СТАВКА ТВ",
+   "source_url": "https://stavka.tv/articles/express/express-2026-october-22-europa-league",
+   "reason": "Хоффенхайм — 6 поражений в 8 матчах и много травм; Лион выиграл оба тура ЛЕ и идёт в группе лидеров Лиги 1. Фонбет: П1 1.97, П2 3.40.",
+   "implied": 0.552,
+   "prob_est": 0.56,
+   "confidence_test": "fail: нужно ≥ 60.2%, оценка 56%",
+   "coupon": false,
+   "result": "open",
+   "score": null,
+   "halves": [
+    {
+     "half": 1,
+     "pick": "ТМ 1.5",
+     "confidence": "низкая"
+    },
+    {
+     "half": 2,
+     "pick": "ТБ 1.5",
+     "confidence": "средняя"
+    }
+   ]
+  },
+  {
+   "league": "Лига Европы",
+   "match": "Бешикташ — Кристал Пэлас",
+   "home": "Бешикташ",
+   "away": "Кристал Пэлас",
+   "date": "2026-10-22",
+   "kickoff_msk": "22:00",
+   "pick": "ИТБ1 1.5",
+   "rule": "90 минут",
+   "odds": 1.82,
+   "odds_source": "СТАВКА ТВ",
+   "source_url": "https://stavka.tv/articles/express/express-2026-october-22-europa-league",
+   "reason": "Бешикташ забивал 2+ в 7 из 8 последних (в среднем 2.75); Пэлас пропускал 2+ в 7 из 11 и, по данным СТАВКА ТВ, без основного вратаря.",
+   "implied": 0.549,
+   "prob_est": 0.55,
+   "confidence_test": "fail: нужно ≥ 59.9%, оценка 55%",
+   "coupon": false,
+   "result": "open",
+   "score": null,
+   "halves": [
+    {
+     "half": 1,
+     "pick": "ТМ 1.5",
+     "confidence": "низкая"
+    },
+    {
+     "half": 2,
+     "pick": "ТБ 1.5",
+     "confidence": "низкая"
+    }
+   ]
+  },
+  {
+   "league": "Лига Европы",
+   "match": "Селтик — Сельта",
+   "home": "Селтик",
+   "away": "Сельта",
+   "date": "2026-10-22",
+   "kickoff_msk": "22:00",
+   "pick": "Ф2 (0)",
+   "rule": "90 минут",
+   "odds": 1.85,
+   "odds_source": "Фонбет",
+   "source_url": "https://sport.vbr.ru/events/football/2026-10-22-seltik-selta/",
+   "reason": "Ф2 (0) — при ничьей возврат. Селтик проиграл три последних еврокубковых матча; Сельта П2 2.55 (Фонбет) — фаворит на выезде.",
+   "implied": 0.541,
+   "prob_est": 0.53,
+   "confidence_test": "fail: нужно ≥ 59.1%, оценка 53%",
+   "coupon": false,
+   "result": "open",
+   "score": null,
+   "halves": [
+    {
+     "half": 1,
+     "pick": "ТМ 1.5",
+     "confidence": "средняя"
+    },
+    {
+     "half": 2,
+     "pick": "П Сельта",
+     "confidence": "низкая"
+    }
+   ]
+  },
+  {
+   "league": "Лига Европы (Норвегия)",
+   "match": "Лиллестрём — Реал Сосьедад",
+   "home": "Лиллестрём",
+   "away": "Реал Сосьедад",
+   "date": "2026-10-22",
+   "kickoff_msk": "22:00",
+   "pick": "П2 в 1-м тайме",
+   "rule": "1-й тайм",
+   "odds": 2.0,
+   "odds_source": "LiveSport.ru (БК не указана)",
+   "source_url": "https://www.livesport.ru/tips/football/2026/10/22/lillestrom-sociedad/",
+   "reason": "П2 1.50, ТБ 2.5 1.62; Сосьедад забил 5 Малаге",
+   "implied": 0.5,
+   "prob_est": 0.45,
+   "confidence_test": "fail: оценка 45% < 50%",
+   "coupon": false,
+   "result": "open",
+   "score": null,
+   "halves": [
+    {
+     "half": 1,
+     "pick": "П Реал Сосьедад",
+     "confidence": "низкая"
+    },
+    {
+     "half": 2,
+     "pick": "ТБ 1.5",
+     "confidence": "низкая"
+    }
+   ]
+  }
+ ],
+ "nhl_periods": [
+  {
+   "match": "Нэшвилл @ Бостон",
+   "home": "Бостон",
+   "away": "Нэшвилл",
+   "kickoff_msk": "02:00",
+   "periods": [
+    "ТМ 1.5",
+    "ТБ 1.5",
+    "ТБ 1.5"
+   ],
+   "conf": [
+    "низкая",
+    "низкая",
+    "низкая"
+   ]
+  },
+  {
+   "match": "Рейнджерс @ Торонто",
+   "home": "Торонто",
+   "away": "Рейнджерс",
+   "kickoff_msk": "02:00",
+   "periods": [
+    "ТМ 1.5",
+    "ТБ 1.5",
+    "ТБ 1.5"
+   ],
+   "conf": [
+    "низкая",
+    "низкая",
+    "низкая"
+   ]
+  },
+  {
+   "match": "Сан-Хосе @ Оттава",
+   "home": "Оттава",
+   "away": "Сан-Хосе",
+   "kickoff_msk": "02:00",
+   "periods": [
+    "ТМ 1.5",
+    "ТБ 1.5",
+    "ТБ 1.5"
+   ],
+   "conf": [
+    "низкая",
+    "низкая",
+    "низкая"
+   ]
+  },
+  {
+   "match": "Анахайм @ Нью-Джерси",
+   "home": "Нью-Джерси",
+   "away": "Анахайм",
+   "kickoff_msk": "02:00",
+   "periods": [
+    "ТМ 1.5",
+    "ТБ 1.5",
+    "П Нью-Джерси"
+   ],
+   "conf": [
+    "низкая",
+    "низкая",
+    "низкая"
+   ]
+  },
+  {
+   "match": "Флорида @ Питтсбург",
+   "home": "Питтсбург",
+   "away": "Флорида",
+   "kickoff_msk": "02:00",
+   "periods": [
+    "ТБ 1.5",
+    "ТБ 1.5",
+    "ТБ 1.5"
+   ],
+   "conf": [
+    "низкая",
+    "средняя",
+    "низкая"
+   ]
+  },
+  {
+   "match": "Лос-Анджелес @ Айлендерс",
+   "home": "Айлендерс",
+   "away": "Лос-Анджелес",
+   "kickoff_msk": "02:30",
+   "periods": [
+    "ТМ 1.5",
+    "ТБ 1.5",
+    "ТБ 1.5"
+   ],
+   "conf": [
+    "средняя",
+    "низкая",
+    "низкая"
+   ]
+  },
+  {
+   "match": "Вегас @ Сент-Луис",
+   "home": "Сент-Луис",
+   "away": "Вегас",
+   "kickoff_msk": "03:00",
+   "periods": [
+    "ТМ 1.5",
+    "ТБ 1.5",
+    "ТБ 1.5"
+   ],
+   "conf": [
+    "низкая",
+    "низкая",
+    "низкая"
+   ]
+  },
+  {
+   "match": "Виннипег @ Даллас",
+   "home": "Даллас",
+   "away": "Виннипег",
+   "kickoff_msk": "03:00",
+   "periods": [
+    "ТМ 1.5",
+    "ТМ 1.5",
+    "П Даллас"
+   ],
+   "conf": [
+    "средняя",
+    "низкая",
+    "низкая"
+   ]
+  },
+  {
+   "match": "Миннесота @ Калгари",
+   "home": "Калгари",
+   "away": "Миннесота",
+   "kickoff_msk": "04:00",
+   "periods": [
+    "ТМ 1.5",
+    "ТБ 1.5",
+    "П Миннесота"
+   ],
+   "conf": [
+    "низкая",
+    "низкая",
+    "низкая"
+   ]
+  },
+  {
+   "match": "Каролина @ Эдмонтон",
+   "home": "Эдмонтон",
+   "away": "Каролина",
+   "kickoff_msk": "04:00",
+   "periods": [
+    "ТБ 1.5",
+    "ТБ 1.5",
+    "ТБ 1.5"
+   ],
+   "conf": [
+    "низкая",
+    "средняя",
+    "низкая"
+   ]
+  },
+  {
+   "match": "Юта @ Сиэтл",
+   "home": "Сиэтл",
+   "away": "Юта",
+   "kickoff_msk": "05:00",
+   "periods": [
+    "ТБ 1.5",
+    "ТБ 1.5",
+    "П Юта"
+   ],
+   "conf": [
+    "низкая",
+    "средняя",
+    "низкая"
+   ]
+  },
+  {
+   "match": "Детройт @ Ванкувер",
+   "home": "Ванкувер",
+   "away": "Детройт",
+   "kickoff_msk": "05:00",
+   "periods": [
+    "ТБ 1.5",
+    "ТБ 1.5",
+    "П Детройт"
+   ],
+   "conf": [
+    "низкая",
+    "средняя",
+    "низкая"
+   ]
+  }
+ ],
+ "confidence_test": "Тест: оценка ≥ 1/кэф + 5 п.п. и ≥ 50%. Из МХЛ и футбола не прошёл никто. В купон прошла только НХЛ: Виннипег @ Даллас ТМ 5.5 2.00 (Фонбет), оценка 57%."
+}
