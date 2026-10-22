@@ -224,7 +224,7 @@ def render(data, out):
     d.text((M + 40, 60), "КУПОН ", font=f["h"], fill=NAVY)
     d.text((M + 40 + tw(d, "КУПОН ", f["h"]), 60), "CAPPER DAY", font=f["h"], fill=ORANGE)
     n_bets = len(data["singles"]) + (1 if data.get("express") else 0)
-    d.text((M + 42, 154), f"{data['date']} · {n_bets} ставки · фикс {rub(stake)}", font=f["date"], fill=SOFT)
+    d.text((M + 42, 154), f"{data['date']} · {n_bets} {'ставка' if n_bets % 10 == 1 and n_bets % 100 != 11 else ('ставки' if n_bets % 10 in (2, 3, 4) and n_bets % 100 not in (12, 13, 14) else 'ставок')} · фикс {rub(stake)}", font=f["date"], fill=SOFT)
     if os.path.exists(MASCOT):
         try:
             m = Image.open(MASCOT).convert("RGBA").resize((170, 170), Image.LANCZOS)
