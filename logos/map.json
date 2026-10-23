@@ -6,7 +6,8 @@
   "del": "penny-del.org/fileadmin/images/teams",
   "nor": "eliteserien.no / obos-ligaen.no /img/logo/<code>/logo.png",
   "mhl": "img.khl.ru/clubs/ru/<id>/80.png (official mhl.khl.ru club logos)",
-  "ucl": "img.uefa.com/imgml/TP/teams/logos/240x240/<id>.png (UEFA official, via match.uefa.com API); with 22.10.2026 Europa/Conference League clubs from Wikimedia (img.uefa.com unreachable from the box)"
+  "ucl": "img.uefa.com/imgml/TP/teams/logos/240x240/<id>.png (UEFA official, via match.uefa.com API); with 22.10.2026 Europa/Conference League clubs from Wikimedia (img.uefa.com unreachable from the box)",
+  "fb": "Wikimedia Commons / en.wikipedia.org club crests (Special:FilePath), resized to 96×96 PNG"
  },
  "teams": {
   "Локомотив": "logos/khl/lokomotiv.png",
@@ -413,7 +414,16 @@
   "Академия СКА": "logos/mhl/akska.png",
   "СКА-Варяги": "logos/mhl/akska.png",
   "Крылья Советов": "logos/mhl/krsovetov.png",
-  "МХК Крылья Советов": "logos/mhl/krsovetov.png"
+  "МХК Крылья Советов": "logos/mhl/krsovetov.png",
+  "Штутгарт": "logos/fb/stuttgart.png",
+  "Боруссия М": "logos/fb/gladbach.png",
+  "Торино": "logos/fb/torino.png",
+  "Монца": "logos/fb/monza.png",
+  "Ахмат": "logos/fb/akhmat.png",
+  "Оренбург": "logos/fb/orenburg.png",
+  "Брест": "logos/fb/brest.png",
+  "Ницца": "logos/fb/nice.png",
+  "Боруссия Мёнхенгладбах": "logos/fb/gladbach.png"
  },
  "files": {
   "logos/khl/lokomotiv.png": {
@@ -1018,6 +1028,46 @@
    "league": "mhl",
    "name": "Крылья Советов",
    "src": "Wikimedia (ru.wikipedia): Логотип хоккейного клуба Крылья Советов.png"
+  },
+  "logos/fb/stuttgart.png": {
+   "league": "fb",
+   "name": "Штутгарт",
+   "src": "https://commons.wikimedia.org/wiki/Special:FilePath/VfB_Stuttgart_1893_Logo.svg"
+  },
+  "logos/fb/gladbach.png": {
+   "league": "fb",
+   "name": "Боруссия М",
+   "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Borussia_M%C3%B6nchengladbach_logo.svg"
+  },
+  "logos/fb/torino.png": {
+   "league": "fb",
+   "name": "Торино",
+   "src": "https://en.wikipedia.org/wiki/Special:FilePath/Torino_FC_Logo.svg"
+  },
+  "logos/fb/monza.png": {
+   "league": "fb",
+   "name": "Монца",
+   "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Logo_of_AC_Monza.png"
+  },
+  "logos/fb/akhmat.png": {
+   "league": "fb",
+   "name": "Ахмат",
+   "src": "https://en.wikipedia.org/wiki/Special:FilePath/Akhmat_Grozny_logo.png"
+  },
+  "logos/fb/orenburg.png": {
+   "league": "fb",
+   "name": "Оренбург",
+   "src": "https://en.wikipedia.org/wiki/Special:FilePath/FC_Orenburg_logo.svg"
+  },
+  "logos/fb/brest.png": {
+   "league": "fb",
+   "name": "Брест",
+   "src": "https://en.wikipedia.org/wiki/Special:FilePath/Stade_Brestois_29_logo.svg"
+  },
+  "logos/fb/nice.png": {
+   "league": "fb",
+   "name": "Ницца",
+   "src": "https://commons.wikimedia.org/wiki/Special:FilePath/OGC_Nice_%28simplified_logo%29.svg"
   }
  }
 }

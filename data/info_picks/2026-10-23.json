@@ -1,0 +1,337 @@
+{
+ "date": "2026-10-23",
+ "note": "Информационные прогнозы: не в купоне и не в банке. Грейдить на следующий день.",
+ "mhl": [
+  {
+   "league": "МХЛ",
+   "match": "Кузнецкие Медведи — Снежные Барсы",
+   "home": "Кузнецкие Медведи",
+   "away": "Снежные Барсы",
+   "date": "2026-10-23",
+   "kickoff_msk": "14:30",
+   "pick": "ТБ 5.5 (осн. время)",
+   "market": "тотал",
+   "line": 5.5,
+   "rule": "основное время",
+   "odds": 1.86,
+   "odds_source": "Выберу.Спорт (линия 1.85–1.87)",
+   "source_url": "https://sport.vbr.ru/events/hockey/2026-10-23-kuzneckie-medvedi-snezhnye-barsy/",
+   "reason": "Вчера та же пара — 4:1. Ф1 (−1) 1.62, Ф1 (−2) 2.18–2.27; тотал 5.5 почти ровный.",
+   "implied": 0.538,
+   "prob_est": 0.5,
+   "confidence_test": "fail: нужно ≥ 58.8%, оценка 50%",
+   "coupon": false,
+   "result": "open",
+   "score": null,
+   "periods": [
+    {
+     "period": 1,
+     "pick": "1-й: ТМ 1.5",
+     "confidence": "низкая",
+     "odds": null
+    },
+    {
+     "period": 2,
+     "pick": "2-й: П Медведи",
+     "confidence": "низкая",
+     "odds": null
+    },
+    {
+     "period": 3,
+     "pick": "3-й: ТБ 1.5",
+     "confidence": "низкая",
+     "odds": null
+    }
+   ]
+  },
+  {
+   "league": "МХЛ",
+   "match": "Локо — Динамо-Шинник",
+   "home": "Локо",
+   "away": "Динамо-Шинник",
+   "date": "2026-10-23",
+   "kickoff_msk": "18:30",
+   "pick": "ТМ 5.5 (осн. время)",
+   "market": "тотал",
+   "line": 5.5,
+   "rule": "основное время",
+   "odds": 1.85,
+   "odds_source": "СТАВКА ТВ (БК не названа)",
+   "source_url": "https://stavka.tv/",
+   "reason": "Повтор вчерашней пары (5:4). По сезонным средним «меньше» ~60%, но очные в среднем 6.3 шайбы; сама СТАВКА ТВ оценивает ~56%. Локо П1 1.37, Ф1 (−1.5) 1.57.",
+   "implied": 0.541,
+   "prob_est": 0.57,
+   "confidence_test": "fail: нужно ≥ 59.1%, оценка 57%",
+   "coupon": false,
+   "result": "open",
+   "score": null,
+   "periods": [
+    {
+     "period": 1,
+     "pick": "1-й: ТМ 1.5",
+     "confidence": "низкая",
+     "odds": null
+    },
+    {
+     "period": 2,
+     "pick": "2-й: ТБ 1.5",
+     "confidence": "низкая",
+     "odds": null
+    },
+    {
+     "period": 3,
+     "pick": "3-й: П Локо",
+     "confidence": "низкая",
+     "odds": null
+    }
+   ]
+  },
+  {
+   "league": "МХЛ",
+   "match": "МХК Динамо СПб — Алмаз",
+   "home": "МХК Динамо СПб",
+   "away": "Алмаз",
+   "date": "2026-10-23",
+   "kickoff_msk": "19:00",
+   "pick": "ТБ 5.5 (осн. время)",
+   "market": "тотал",
+   "line": 5.5,
+   "rule": "основное время",
+   "odds": 1.9,
+   "odds_source": "Выберу.Спорт",
+   "source_url": "https://sport.vbr.ru/events/hockey/2026-10-23-mxk-dinamo-spb-almaz/",
+   "reason": "Исход ровный: 2.35 / 4.30 / 2.55 в 60 минут, с ОТ 1.76 / 1.95; ТМ 5.5 1.80–1.82 — рынок 50/50.",
+   "implied": 0.526,
+   "prob_est": 0.5,
+   "confidence_test": "fail: нужно ≥ 57.6%, оценка 50%",
+   "coupon": false,
+   "result": "open",
+   "score": null,
+   "periods": [
+    {
+     "period": 1,
+     "pick": "1-й: ТБ 1.5",
+     "confidence": "низкая",
+     "odds": null
+    },
+    {
+     "period": 2,
+     "pick": "2-й: ТБ 1.5",
+     "confidence": "низкая",
+     "odds": null
+    },
+    {
+     "period": 3,
+     "pick": "3-й: ничья",
+     "confidence": "низкая",
+     "odds": null
+    }
+   ]
+  }
+ ],
+ "football_best": [
+  {
+   "league": "РПЛ",
+   "match": "Ахмат — Оренбург",
+   "home": "Ахмат",
+   "away": "Оренбург",
+   "date": "2026-10-23",
+   "kickoff_msk": "19:30",
+   "pick": "X2 (Оренбург не проиграет)",
+   "rule": "90 минут",
+   "odds": 1.85,
+   "odds_source": "ВсеПроСпорт 1.86 / LiveSport.ru 1.84",
+   "source_url": "https://www.livesport.ru/tips/football/",
+   "reason": "Исход 1.90 / 3.69 / 4.61 (OddStorm) — рынок даёт X2 ~48%. ТБ 2.5 2.17, ТМ 1.81.",
+   "implied": 0.541,
+   "prob_est": 0.5,
+   "confidence_test": "fail: нужно ≥ 59.1%, оценка 50%",
+   "coupon": false,
+   "result": "open",
+   "score": null,
+   "halves": [
+    {
+     "half": 1,
+     "pick": "ТМ 1.5",
+     "confidence": "средняя"
+    },
+    {
+     "half": 2,
+     "pick": "ТМ 1.5",
+     "confidence": "низкая"
+    }
+   ]
+  },
+  {
+   "league": "Бундеслига",
+   "match": "Штутгарт — Боруссия М",
+   "home": "Штутгарт",
+   "away": "Боруссия М",
+   "date": "2026-10-23",
+   "kickoff_msk": "21:30",
+   "pick": "Ф1 (−1.5)",
+   "rule": "90 минут",
+   "odds": 1.92,
+   "odds_source": "ВсеПроСпорт (Metaratings 1.90, LiveSport.ru 2.00)",
+   "source_url": "https://www.livesport.ru/tips/football/",
+   "reason": "Штутгарт П1 1.35–1.40, ТБ 3.5 1.75; модель Zort — 70% на победу Штутгарта. Победа в 2+ мяча — ниже 50%.",
+   "implied": 0.521,
+   "prob_est": 0.47,
+   "confidence_test": "fail: нужно ≥ 57.1%, оценка 47%",
+   "coupon": false,
+   "result": "open",
+   "score": null,
+   "halves": [
+    {
+     "half": 1,
+     "pick": "П Штутгарт",
+     "confidence": "низкая"
+    },
+    {
+     "half": 2,
+     "pick": "ТБ 1.5",
+     "confidence": "средняя"
+    }
+   ]
+  },
+  {
+   "league": "Серия А",
+   "match": "Торино — Монца",
+   "home": "Торино",
+   "away": "Монца",
+   "date": "2026-10-23",
+   "kickoff_msk": "21:45",
+   "pick": "ТМ 2.5",
+   "rule": "90 минут",
+   "odds": 1.88,
+   "odds_source": "odds.directory",
+   "source_url": "https://odds.directory/",
+   "reason": "Торино П1 2.14–2.21 (Metaratings 2.17, LiveSport.ru 2.15); ТБ 2.5 1.94, обе забьют 1.79 — рынок около 50/50 по тоталу.",
+   "implied": 0.532,
+   "prob_est": 0.52,
+   "confidence_test": "fail: нужно ≥ 58.2%, оценка 52%",
+   "coupon": false,
+   "result": "open",
+   "score": null,
+   "halves": [
+    {
+     "half": 1,
+     "pick": "ТМ 1.5",
+     "confidence": "средняя"
+    },
+    {
+     "half": 2,
+     "pick": "ТМ 1.5",
+     "confidence": "низкая"
+    }
+   ]
+  },
+  {
+   "league": "Лига 1",
+   "match": "Брест — Ницца",
+   "home": "Брест",
+   "away": "Ницца",
+   "date": "2026-10-23",
+   "kickoff_msk": "21:45",
+   "pick": "П1",
+   "rule": "90 минут",
+   "odds": 2.25,
+   "odds_source": "Metaratings (OddStorm 2.25–2.31)",
+   "source_url": "https://metaratings.ru/prognozy/futbol/brest-nicca-prognoz-na-match-ligi-1-23-oktyabrya-2026-goda/",
+   "reason": "Исход 2.25–2.31 / 3.40–3.60 / 3.10–3.38; Zort 43/27/30; ТБ 2.5 1.63–1.70.",
+   "implied": 0.444,
+   "prob_est": 0.43,
+   "confidence_test": "fail: нужно ≥ 50.0%, оценка 43%",
+   "coupon": false,
+   "result": "open",
+   "score": null,
+   "halves": [
+    {
+     "half": 1,
+     "pick": "ТМ 1.5",
+     "confidence": "низкая"
+    },
+    {
+     "half": 2,
+     "pick": "П Брест",
+     "confidence": "низкая"
+    }
+   ]
+  }
+ ],
+ "nhl_periods": [
+  {
+   "match": "Монреаль @ Чикаго",
+   "kickoff_msk": "03:00",
+   "periods": [
+    "ТБ 1.5",
+    "ТБ 1.5",
+    "П Монреаль"
+   ],
+   "conf": [
+    "низкая",
+    "низкая",
+    "низкая"
+   ]
+  },
+  {
+   "match": "Тампа-Бэй @ Колорадо",
+   "kickoff_msk": "04:00",
+   "periods": [
+    "ТМ 1.5",
+    "ТБ 1.5",
+    "П Колорадо"
+   ],
+   "conf": [
+    "низкая",
+    "низкая",
+    "низкая"
+   ]
+  }
+ ],
+ "del_matches": [
+  {
+   "h": "Айсберен Берлин",
+   "a": "Аугсбург",
+   "line": "Берлин 1.40 (с ОТ), −1.5 1.64; ТБ 6.5 2.20 (Tipico)",
+   "why": "Пас: фаворит ниже 1.80, ТБ 6.5 2.20 — оценка ~39% при пороге 50.5%. Берлин первый (23 очка, 38:16), Аугсбург 9-й (33:34). Модель Sportspred — 76% Берлин."
+  },
+  {
+   "h": "Штраубинг",
+   "a": "Кёльн",
+   "line": "с ОТ 1.78 / 1.96; осн. 2.25 / 4.30 / 2.53 (tipsterio)",
+   "why": "Пас: Кёльн с ОТ 1.96 — порог 56.0%, оценка ~50% (Sportspred 50/50). Штраубинг 20 очков, Кёльн 16."
+  },
+  {
+   "h": "Мангейм",
+   "a": "Франкфурт",
+   "line": "Мангейм «фора 0:2» 1.90 (Tipico)",
+   "why": "Пас: победа Мангейма в 3+ шайбы — оценка ~30%. Модель Sportspred — 56% Мангейм; у Мангейма 20 очков."
+  },
+  {
+   "h": "Мюнхен",
+   "a": "Изерлон",
+   "line": "ТМ 6.5 1.62 (Tipico)",
+   "why": "Пас: линий от 1.80 с краем нет. Модель Sportspred — 72% Мюнхен."
+  },
+  {
+   "h": "Швеннинген",
+   "a": "Бремерхафен",
+   "line": "Бремерхафен «фора 0:1» 1.83 (Tipico)",
+   "why": "Пас: Sportspred — 50/50, победа Бремерхафена в 2+ — оценка ~33%."
+  },
+  {
+   "h": "Нюрнберг",
+   "a": "Крефельд",
+   "line": "Нюрнберг осн. 1.62, с ОТ 1.35 (Unibet)",
+   "why": "Пас: фаворит ниже 1.80. Нюрнберг 19 очков, Крефельд — новичок лиги; Sportspred 69%, forebet 57%."
+  },
+  {
+   "h": "Вольфсбург",
+   "a": "Ингольштадт",
+   "line": "Ингольштадт «2» 1.90 (Tipico)",
+   "why": "Пас: порог 57.6%, Sportspred даёт Ингольштадту 53.5% с ОТ. Ингольштадт 17 очков, Вольфсбург 15."
+  }
+ ],
+ "confidence_test": "Тест: оценка ≥ 1/кэф + 5 п.п. и ≥ 50%, кэф ≥ 1.80. 23.10 не прошёл ни один кандидат (КХЛ, НХЛ, DEL, МХЛ, футбол) — купона нет, экспресса нет."
+}
