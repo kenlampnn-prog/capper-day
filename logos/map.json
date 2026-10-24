@@ -423,7 +423,28 @@
   "Оренбург": "logos/fb/orenburg.png",
   "Брест": "logos/fb/brest.png",
   "Ницца": "logos/fb/nice.png",
-  "Боруссия Мёнхенгладбах": "logos/fb/gladbach.png"
+  "Боруссия Мёнхенгладбах": "logos/fb/gladbach.png",
+  "Авто": "logos/mhl/avto.png",
+  "Авто Екатеринбург": "logos/mhl/avto.png",
+  "Амурские Тигры": "logos/mhl/amtigry.png",
+  "Амурские тигры": "logos/mhl/amtigry.png",
+  "Белые Медведи": "logos/mhl/belmedvedi.png",
+  "Белые медведи": "logos/mhl/belmedvedi.png",
+  "Мамонты Югры": "logos/mhl/mamonty.png",
+  "Алмаз": "logos/mhl/almaz.png",
+  "Арсенал": "logos/fb/arsenal.png",
+  "Эвертон": "logos/fb/everton.png",
+  "Рома": "logos/fb/roma.png",
+  "Roma": "logos/fb/roma.png",
+  "Челси": "logos/fb/chelsea.png",
+  "Тоттенхэм": "logos/fb/tottenham.png",
+  "Тоттенхэм Хотспур": "logos/fb/tottenham.png",
+  "Краснодар": "logos/fb/krasnodar.png",
+  "Балтика": "logos/fb/baltika.png",
+  "Наполи": "logos/fb/napoli.png",
+  "Napoli": "logos/fb/napoli.png",
+  "МХК Динамо СПб": "logos/mhl/dinspb.png",
+  "МХК Динамо Санкт-Петербург": "logos/mhl/dinspb.png"
  },
  "files": {
   "logos/khl/lokomotiv.png": {
@@ -1068,6 +1089,76 @@
    "league": "fb",
    "name": "Ницца",
    "src": "https://commons.wikimedia.org/wiki/Special:FilePath/OGC_Nice_%28simplified_logo%29.svg"
+  },
+  "logos/mhl/avto.png": {
+   "league": "mhl",
+   "name": "Авто",
+   "src": "Wikimedia (ru.wikipedia.org): HC Avtomobilist Logo.svg"
+  },
+  "logos/mhl/amtigry.png": {
+   "league": "mhl",
+   "name": "Амурские Тигры",
+   "src": "Wikimedia (ru.wikipedia.org): Логотип ХК Амурские тигры.png"
+  },
+  "logos/mhl/belmedvedi.png": {
+   "league": "mhl",
+   "name": "Белые Медведи",
+   "src": "Wikimedia (ru.wikipedia.org): Chelyabinsk Polar Bears.png"
+  },
+  "logos/mhl/mamonty.png": {
+   "league": "mhl",
+   "name": "Мамонты Югры",
+   "src": "Wikimedia (ru.wikipedia.org): Mamonty yugri.jpg"
+  },
+  "logos/mhl/almaz.png": {
+   "league": "mhl",
+   "name": "Алмаз",
+   "src": "Wikimedia (ru.wikipedia.org): МХК Алмаз.png"
+  },
+  "logos/fb/arsenal.png": {
+   "league": "fb",
+   "name": "Арсенал",
+   "src": "Wikimedia (en.wikipedia.org): Arsenal FC.svg"
+  },
+  "logos/fb/everton.png": {
+   "league": "fb",
+   "name": "Эвертон",
+   "src": "Wikimedia (en.wikipedia.org): Everton FC logo.svg"
+  },
+  "logos/fb/roma.png": {
+   "league": "fb",
+   "name": "Рома",
+   "src": "Wikimedia (en.wikipedia.org): AS Roma logo (2017).svg"
+  },
+  "logos/fb/chelsea.png": {
+   "league": "fb",
+   "name": "Челси",
+   "src": "Wikimedia (en.wikipedia.org): Chelsea FC.svg"
+  },
+  "logos/fb/tottenham.png": {
+   "league": "fb",
+   "name": "Тоттенхэм",
+   "src": "Wikimedia (en.wikipedia.org): Tottenham Hotspur.svg"
+  },
+  "logos/fb/krasnodar.png": {
+   "league": "fb",
+   "name": "Краснодар",
+   "src": "Wikimedia (en.wikipedia.org): FC Krasnodar logo.svg"
+  },
+  "logos/fb/baltika.png": {
+   "league": "fb",
+   "name": "Балтика",
+   "src": "Wikimedia (en.wikipedia.org): FC_Baltika_Kaliningrad_logo.png"
+  },
+  "logos/fb/napoli.png": {
+   "league": "fb",
+   "name": "Наполи",
+   "src": "Wikimedia (commons.wikimedia.org): SSC_Napoli_2025_(white_and_azure).svg"
+  },
+  "logos/mhl/dinspb.png": {
+   "league": "mhl",
+   "name": "МХК Динамо СПб",
+   "src": "Wikimedia (ru.wikipedia.org): ХК Динамо Санкт-Петербург.svg"
   }
  }
 }

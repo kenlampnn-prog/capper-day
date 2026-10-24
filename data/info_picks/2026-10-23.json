@@ -21,26 +21,29 @@
    "prob_est": 0.5,
    "confidence_test": "fail: нужно ≥ 58.8%, оценка 50%",
    "coupon": false,
-   "result": "open",
-   "score": null,
+   "result": "loss",
+   "score": "1:2",
    "periods": [
     {
      "period": 1,
      "pick": "1-й: ТМ 1.5",
      "confidence": "низкая",
-     "odds": null
+     "odds": null,
+     "result": "н/д (нет счёта по периодам)"
     },
     {
      "period": 2,
      "pick": "2-й: П Медведи",
      "confidence": "низкая",
-     "odds": null
+     "odds": null,
+     "result": "н/д (нет счёта по периодам)"
     },
     {
      "period": 3,
      "pick": "3-й: ТБ 1.5",
      "confidence": "низкая",
-     "odds": null
+     "odds": null,
+     "result": "н/д (нет счёта по периодам)"
     }
    ]
   },
@@ -63,26 +66,29 @@
    "prob_est": 0.57,
    "confidence_test": "fail: нужно ≥ 59.1%, оценка 57%",
    "coupon": false,
-   "result": "open",
-   "score": null,
+   "result": "loss",
+   "score": "4:3 ОТ (3:3 в осн. время)",
    "periods": [
     {
      "period": 1,
      "pick": "1-й: ТМ 1.5",
      "confidence": "низкая",
-     "odds": null
+     "odds": null,
+     "result": "н/д (нет счёта по периодам)"
     },
     {
      "period": 2,
      "pick": "2-й: ТБ 1.5",
      "confidence": "низкая",
-     "odds": null
+     "odds": null,
+     "result": "н/д (нет счёта по периодам)"
     },
     {
      "period": 3,
      "pick": "3-й: П Локо",
      "confidence": "низкая",
-     "odds": null
+     "odds": null,
+     "result": "н/д (нет счёта по периодам)"
     }
    ]
   },
@@ -105,26 +111,29 @@
    "prob_est": 0.5,
    "confidence_test": "fail: нужно ≥ 57.6%, оценка 50%",
    "coupon": false,
-   "result": "open",
-   "score": null,
+   "result": "loss",
+   "score": "3:2 Б (2:2 в осн. время)",
    "periods": [
     {
      "period": 1,
      "pick": "1-й: ТБ 1.5",
      "confidence": "низкая",
-     "odds": null
+     "odds": null,
+     "result": "н/д (нет счёта по периодам)"
     },
     {
      "period": 2,
      "pick": "2-й: ТБ 1.5",
      "confidence": "низкая",
-     "odds": null
+     "odds": null,
+     "result": "н/д (нет счёта по периодам)"
     },
     {
      "period": 3,
      "pick": "3-й: ничья",
      "confidence": "низкая",
-     "odds": null
+     "odds": null,
+     "result": "н/д (нет счёта по периодам)"
     }
    ]
   }
@@ -147,18 +156,20 @@
    "prob_est": 0.5,
    "confidence_test": "fail: нужно ≥ 59.1%, оценка 50%",
    "coupon": false,
-   "result": "open",
-   "score": null,
+   "result": "win",
+   "score": "0:1 (0:1, 0:0)",
    "halves": [
     {
      "half": 1,
      "pick": "ТМ 1.5",
-     "confidence": "средняя"
+     "confidence": "средняя",
+     "result": "win"
     },
     {
      "half": 2,
      "pick": "ТМ 1.5",
-     "confidence": "низкая"
+     "confidence": "низкая",
+     "result": "win"
     }
    ]
   },
@@ -179,18 +190,20 @@
    "prob_est": 0.47,
    "confidence_test": "fail: нужно ≥ 57.1%, оценка 47%",
    "coupon": false,
-   "result": "open",
-   "score": null,
+   "result": "loss",
+   "score": "2:3 (1:1, 1:2)",
    "halves": [
     {
      "half": 1,
      "pick": "П Штутгарт",
-     "confidence": "низкая"
+     "confidence": "низкая",
+     "result": "loss"
     },
     {
      "half": 2,
      "pick": "ТБ 1.5",
-     "confidence": "средняя"
+     "confidence": "средняя",
+     "result": "win"
     }
    ]
   },
@@ -211,18 +224,20 @@
    "prob_est": 0.52,
    "confidence_test": "fail: нужно ≥ 58.2%, оценка 52%",
    "coupon": false,
-   "result": "open",
-   "score": null,
+   "result": "loss",
+   "score": "3:2 (1:0, 2:2)",
    "halves": [
     {
      "half": 1,
      "pick": "ТМ 1.5",
-     "confidence": "средняя"
+     "confidence": "средняя",
+     "result": "win"
     },
     {
      "half": 2,
      "pick": "ТМ 1.5",
-     "confidence": "низкая"
+     "confidence": "низкая",
+     "result": "loss"
     }
    ]
   },
@@ -243,18 +258,20 @@
    "prob_est": 0.43,
    "confidence_test": "fail: нужно ≥ 50.0%, оценка 43%",
    "coupon": false,
-   "result": "open",
-   "score": null,
+   "result": "loss",
+   "score": "1:2 (1:0, 0:2)",
    "halves": [
     {
      "half": 1,
      "pick": "ТМ 1.5",
-     "confidence": "низкая"
+     "confidence": "низкая",
+     "result": "win"
     },
     {
      "half": 2,
      "pick": "П Брест",
-     "confidence": "низкая"
+     "confidence": "низкая",
+     "result": "loss"
     }
    ]
   }
@@ -333,5 +350,20 @@
    "why": "Пас: порог 57.6%, Sportspred даёт Ингольштадту 53.5% с ОТ. Ингольштадт 17 очков, Вольфсбург 15."
   }
  ],
- "confidence_test": "Тест: оценка ≥ 1/кэф + 5 п.п. и ≥ 50%, кэф ≥ 1.80. 23.10 не прошёл ни один кандидат (КХЛ, НХЛ, DEL, МХЛ, футбол) — купона нет, экспресса нет."
+ "confidence_test": "Тест: оценка ≥ 1/кэф + 5 п.п. и ≥ 50%, кэф ≥ 1.80. 23.10 не прошёл ни один кандидат (КХЛ, НХЛ, DEL, МХЛ, футбол) — купона нет, экспресса нет.",
+ "graded": {
+  "date": "2026-10-24",
+  "info_picks": "1/7 (МХЛ 0/3, футбол 1/4)",
+  "periods": "28/50: КХЛ 9/15, НХЛ 5/6, DEL 9/21, футбол по таймам 5/8; МХЛ по периодам не оценены",
+  "sources": [
+   "khl.ru",
+   "api-web.nhle.com",
+   "eisbaeren.de",
+   "m.sport.bild.de",
+   "sport-express.net",
+   "matchtv.ru",
+   "ria.ru",
+   "fontanka.ru"
+  ]
+ }
 }
