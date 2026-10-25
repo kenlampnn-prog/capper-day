@@ -444,7 +444,18 @@
   "Наполи": "logos/fb/napoli.png",
   "Napoli": "logos/fb/napoli.png",
   "МХК Динамо СПб": "logos/mhl/dinspb.png",
-  "МХК Динамо Санкт-Петербург": "logos/mhl/dinspb.png"
+  "МХК Динамо Санкт-Петербург": "logos/mhl/dinspb.png",
+  "Фиорентина": "logos/fb/fiorentina.png",
+  "Аталанта": "logos/fb/atalanta.png",
+  "Барселона": "logos/fb/barcelona.png",
+  "Удинезе": "logos/fb/udinese.png",
+  "Милан": "logos/fb/milan.png",
+  "Фрозиноне": "logos/fb/frosinone.png",
+  "Зенит": "logos/fb/zenit.png",
+  "Динамо Махачкала": "logos/fb/dynamo_mkh.png",
+  "Стальные Лисы": "logos/mhl/stlisy.png",
+  "Красноярские Рыси": "logos/mhl/krrysi.png",
+  "МХК Динамо М": "logos/mhl/mhk_dinamo_m.png"
  },
  "files": {
   "logos/khl/lokomotiv.png": {
@@ -1159,6 +1170,61 @@
    "league": "mhl",
    "name": "МХК Динамо СПб",
    "src": "Wikimedia (ru.wikipedia.org): ХК Динамо Санкт-Петербург.svg"
+  },
+  "logos/fb/fiorentina.png": {
+   "league": "fb",
+   "name": "Фиорентина",
+   "source": "en.wikipedia.org File:ACF_Fiorentina_-_logo_(Italy,_2022).svg"
+  },
+  "logos/fb/atalanta.png": {
+   "league": "fb",
+   "name": "Аталанта",
+   "source": "en.wikipedia.org File:Atalanta_BC.png"
+  },
+  "logos/fb/barcelona.png": {
+   "league": "fb",
+   "name": "Барселона",
+   "source": "en.wikipedia.org File:FC_Barcelona_(crest).svg"
+  },
+  "logos/fb/udinese.png": {
+   "league": "fb",
+   "name": "Удинезе",
+   "source": "en.wikipedia.org File:Udinese Calcio logo.svg"
+  },
+  "logos/fb/milan.png": {
+   "league": "fb",
+   "name": "Милан",
+   "source": "en.wikipedia.org File:Logo_of_AC_Milan.svg"
+  },
+  "logos/fb/frosinone.png": {
+   "league": "fb",
+   "name": "Фрозиноне",
+   "source": "en.wikipedia.org File:Frosinone Calcio logo.svg"
+  },
+  "logos/fb/zenit.png": {
+   "league": "fb",
+   "name": "Зенит",
+   "source": "en.wikipedia.org File:FC Zenit Saint Petersburg crest.svg"
+  },
+  "logos/fb/dynamo_mkh.png": {
+   "league": "fb",
+   "name": "Динамо Махачкала",
+   "source": "en.wikipedia.org File:FC Dynamo Makhachkala logo.svg"
+  },
+  "logos/mhl/stlisy.png": {
+   "league": "mhl",
+   "name": "Стальные Лисы",
+   "source": "ru.wikipedia.org File:Стальные лисы.png"
+  },
+  "logos/mhl/krrysi.png": {
+   "league": "mhl",
+   "name": "Красноярские Рыси",
+   "source": "ru.wikipedia.org File:Логотип ХК Красноярские рыси.png"
+  },
+  "logos/mhl/mhk_dinamo_m.png": {
+   "league": "mhl",
+   "name": "МХК Динамо М",
+   "source": "ru.wikipedia.org File:МХК Динамо Москва лого.png"
   }
  }
 }

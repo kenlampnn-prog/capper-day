@@ -21,8 +21,8 @@
    "prob_est": 0.5,
    "confidence_test": "fail: нужно ≥ 57.6%, оценка 50%",
    "coupon": false,
-   "result": "open",
-   "score": null,
+   "result": "win",
+   "score": "3:5",
    "periods": [
     {
      "period": 1,
@@ -63,8 +63,8 @@
    "prob_est": 0.47,
    "confidence_test": "fail: нужно ≥ 53.8%, оценка 47%",
    "coupon": false,
-   "result": "open",
-   "score": null,
+   "result": "loss",
+   "score": "3:2 Б (2:2 в осн. время)",
    "periods": [
     {
      "period": 1,
@@ -105,8 +105,8 @@
    "prob_est": 0.46,
    "confidence_test": "fail: нужно ≥ 52.6%, оценка 46%",
    "coupon": false,
-   "result": "open",
-   "score": null,
+   "result": "win",
+   "score": "3:0",
    "periods": [
     {
      "period": 1,
@@ -147,8 +147,8 @@
    "prob_est": 0.5,
    "confidence_test": "fail: нужно ≥ 57.6%, оценка 50%",
    "coupon": false,
-   "result": "open",
-   "score": null,
+   "result": "win",
+   "score": "1:2",
    "periods": [
     {
      "period": 1,
@@ -189,8 +189,8 @@
    "prob_est": null,
    "confidence_test": "нет кэфа",
    "coupon": false,
-   "result": "open",
-   "score": null,
+   "result": "void",
+   "score": "2:1 Б",
    "periods": [
     {
      "period": 1,
@@ -231,8 +231,8 @@
    "prob_est": null,
    "confidence_test": "нет кэфа",
    "coupon": false,
-   "result": "open",
-   "score": null,
+   "result": "void",
+   "score": "2:3 Б",
    "periods": [
     {
      "period": 1,
@@ -273,8 +273,8 @@
    "prob_est": 0.5,
    "confidence_test": "fail: нужно ≥ 56.8%, оценка 50%",
    "coupon": false,
-   "result": "open",
-   "score": null,
+   "result": "loss",
+   "score": "0:1 (0:0, 0:1)",
    "halves": [
     {
      "half": 1,
@@ -286,6 +286,10 @@
      "pick": "ТБ 1.5",
      "confidence": "средняя"
     }
+   ],
+   "halves_results": [
+    "loss",
+    "loss"
    ]
   },
   {
@@ -305,8 +309,8 @@
    "prob_est": 0.53,
    "confidence_test": "fail: нужно ≥ 57.1%, оценка 53%",
    "coupon": false,
-   "result": "open",
-   "score": null,
+   "result": "loss",
+   "score": "2:0 (1:0, 1:0)",
    "halves": [
     {
      "half": 1,
@@ -318,6 +322,10 @@
      "pick": "П Арсенал",
      "confidence": "низкая"
     }
+   ],
+   "halves_results": [
+    "win",
+    "win"
    ]
   },
   {
@@ -337,8 +345,8 @@
    "prob_est": 0.54,
    "confidence_test": "fail: нужно ≥ 56.8%, оценка 54%",
    "coupon": false,
-   "result": "open",
-   "score": null,
+   "result": "loss",
+   "score": "3:3 (1:0, 2:3)",
    "halves": [
     {
      "half": 1,
@@ -350,6 +358,10 @@
      "pick": "ТМ 1.5",
      "confidence": "низкая"
     }
+   ],
+   "halves_results": [
+    "win",
+    "loss"
    ]
   },
   {
@@ -369,8 +381,8 @@
    "prob_est": 0.55,
    "confidence_test": "fail: нужно ≥ 59.9%, оценка 55%",
    "coupon": false,
-   "result": "open",
-   "score": null,
+   "result": "loss",
+   "score": "1:1 (1:0, 0:1)",
    "halves": [
     {
      "half": 1,
@@ -382,6 +394,10 @@
      "pick": "П Краснодар",
      "confidence": "низкая"
     }
+   ],
+   "halves_results": [
+    "win",
+    "loss"
    ]
   },
   {
@@ -401,8 +417,8 @@
    "prob_est": 0.55,
    "confidence_test": "fail: нужно ≥ 59.6%, оценка 55%",
    "coupon": false,
-   "result": "open",
-   "score": null,
+   "result": "loss",
+   "score": "0:2 (0:0, 0:2)",
    "halves": [
     {
      "half": 1,
@@ -414,6 +430,10 @@
      "pick": "П Челси",
      "confidence": "низкая"
     }
+   ],
+   "halves_results": [
+    "loss",
+    "loss"
    ]
   },
   {
@@ -433,8 +453,8 @@
    "prob_est": 0.43,
    "confidence_test": "fail: нужно ≥ 45.8%, оценка 43%",
    "coupon": false,
-   "result": "open",
-   "score": null,
+   "result": "win",
+   "score": "1:3 (1:1, 0:2)",
    "halves": [
     {
      "half": 1,
@@ -446,6 +466,10 @@
      "pick": "П Ранхейм",
      "confidence": "низкая"
     }
+   ],
+   "halves_results": [
+    "win",
+    "win"
    ]
   }
  ],
@@ -462,7 +486,13 @@
     "средняя",
     "низкая",
     "низкая"
-   ]
+   ],
+   "results": [
+    "win",
+    "win",
+    "win"
+   ],
+   "score": "5:1 (0:0, 3:1, 2:0)"
   },
   {
    "match": "Торпедо — Динамо Мн",
@@ -476,7 +506,13 @@
     "средняя",
     "низкая",
     "низкая"
-   ]
+   ],
+   "results": [
+    "win",
+    "win",
+    "win"
+   ],
+   "score": "1:2 ОТ (1:0, 0:1, 0:0)"
   }
  ],
  "nhl_periods": [
@@ -492,7 +528,13 @@
     "средняя",
     "низкая",
     "низкая"
-   ]
+   ],
+   "results": [
+    "loss",
+    "loss",
+    "win"
+   ],
+   "score": "5:4 (0:2, 3:1, 2:1)"
   },
   {
    "match": "Лос-Анджелес @ Нью-Джерси",
@@ -506,7 +548,13 @@
     "низкая",
     "низкая",
     "низкая"
-   ]
+   ],
+   "results": [
+    "win",
+    "loss",
+    "win"
+   ],
+   "score": "1:3 (0:0, 1:1, 0:2)"
   },
   {
    "match": "Сан-Хосе @ Бостон",
@@ -520,7 +568,13 @@
     "низкая",
     "низкая",
     "низкая"
-   ]
+   ],
+   "results": [
+    "loss",
+    "loss",
+    "win"
+   ],
+   "score": "4:6 (1:1, 1:1, 2:4)"
   },
   {
    "match": "Рейнджерс @ Оттава",
@@ -534,7 +588,13 @@
     "средняя",
     "низкая",
     "низкая"
-   ]
+   ],
+   "results": [
+    "loss",
+    "loss",
+    "win"
+   ],
+   "score": "4:7 (0:2, 3:2, 1:3)"
   },
   {
    "match": "Нэшвилл @ Питтсбург",
@@ -548,7 +608,13 @@
     "низкая",
     "низкая",
     "низкая"
-   ]
+   ],
+   "results": [
+    "loss",
+    "win",
+    "win"
+   ],
+   "score": "2:3 ОТ (1:0, 1:1, 0:1)"
   },
   {
    "match": "Баффало @ Вашингтон",
@@ -562,7 +628,13 @@
     "низкая",
     "низкая",
     "низкая"
-   ]
+   ],
+   "results": [
+    "loss",
+    "win",
+    "loss"
+   ],
+   "score": "3:4 ОТ (2:1, 0:2, 1:0)"
   },
   {
    "match": "Вегас @ Коламбус",
@@ -576,7 +648,13 @@
     "низкая",
     "низкая",
     "низкая"
-   ]
+   ],
+   "results": [
+    "win",
+    "loss",
+    "loss"
+   ],
+   "score": "1:2 ОТ (1:1, 0:0, 0:0)"
   },
   {
    "match": "Каролина @ Сент-Луис",
@@ -590,7 +668,13 @@
     "низкая",
     "низкая",
     "низкая"
-   ]
+   ],
+   "results": [
+    "loss",
+    "win",
+    "loss"
+   ],
+   "score": "4:0 (0:0, 3:0, 1:0)"
   },
   {
    "match": "Торонто @ Эдмонтон",
@@ -604,7 +688,13 @@
     "средняя",
     "низкая",
     "низкая"
-   ]
+   ],
+   "results": [
+    "loss",
+    "win",
+    "loss"
+   ],
+   "score": "7:2 (1:0, 2:1, 4:1)"
   },
   {
    "match": "Тампа-Бэй @ Юта",
@@ -618,7 +708,13 @@
     "низкая",
     "низкая",
     "низкая"
-   ]
+   ],
+   "results": [
+    "win",
+    "win",
+    "loss"
+   ],
+   "score": "4:5 ОТ (3:2, 1:2, 0:0)"
   },
   {
    "match": "Детройт @ Калгари",
@@ -632,7 +728,13 @@
     "низкая",
     "низкая",
     "низкая"
-   ]
+   ],
+   "results": [
+    "win",
+    "loss",
+    "loss"
+   ],
+   "score": "1:4 (0:1, 1:3, 0:0)"
   },
   {
    "match": "Миннесота @ Сиэтл",
@@ -646,7 +748,13 @@
     "низкая",
     "низкая",
     "низкая"
-   ]
+   ],
+   "results": [
+    "loss",
+    "win",
+    "win"
+   ],
+   "score": "5:1 (1:1, 3:0, 1:0)"
   }
  ],
  "nhl_matches": [
@@ -724,5 +832,15 @@
   }
  ],
  "del_matches": [],
- "confidence_test": "Тест: оценка ≥ 1/кэф + 5 п.п. и ≥ 50%, кэф ≥ 1.80. 24.10 не прошёл ни один из 22 кандидатов (КХЛ 2, НХЛ 11, футбол 9) — купона нет, экспресса нет. Ближе всех: Анахайм@Филадельфия ТМ 5.5 2.03 (оценка ~52% при пороге 54.3%), Рейнджерс@Оттава ТМ 5.5 2.10 (~51% при 52.6%)."
+ "confidence_test": "Тест: оценка ≥ 1/кэф + 5 п.п. и ≥ 50%, кэф ≥ 1.80. 24.10 не прошёл ни один из 22 кандидатов (КХЛ 2, НХЛ 11, футбол 9) — купона нет, экспресса нет. Ближе всех: Анахайм@Филадельфия ТМ 5.5 2.03 (оценка ~52% при пороге 54.3%), Рейнджерс@Оттава ТМ 5.5 2.10 (~51% при 52.6%).",
+ "graded": {
+  "periods": "28/54",
+  "by_league": {
+   "КХЛ": "6/6",
+   "НХЛ": "16/36",
+   "Футбол": "6/12"
+  },
+  "picks": "4/10 (МХЛ 3/4, футбол 1/6; 2 МХЛ без кэфа не оцениваются)",
+  "graded_at": "2026-10-25"
+ }
 }
