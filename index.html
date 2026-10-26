@@ -4,8 +4,465 @@
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
 <meta name="theme-color" content="#8fd0ff"/>
-<meta name="capper-build" content="2026-10-26-0810"/>
+<meta name="capper-build" content="2026-10-20-0815"/>
 <title>Capper Day — купон КХЛ/НХЛ</title>
 <meta name="description" content="Capper Day: ежедневный купон в 08:00 МСК по КХЛ, НХЛ, DEL и футболу Норвегии. Фикс 200 ₽, открытый банк со всеми итогами, включая минусы, прогнозы по периодам. 18+."/>
 <link rel="canonical" href="https://kenlampnn-prog.github.io/capper-day/"/>
-<!-- truncated for length, full content is the updated index.html from local -->
+<meta property="og:type" content="website"/>
+<meta property="og:site_name" content="Capper Day"/>
+<meta property="og:title" content="Capper Day — купон КХЛ/НХЛ"/>
+<meta property="og:description" content="Купон каждый день в 08:00 МСК, фикс 200 ₽, все итоги и минусы на виду. Telegram: @capperday. 18+."/>
+<meta property="og:url" content="https://kenlampnn-prog.github.io/capper-day/"/>
+<meta property="og:image" content="https://kenlampnn-prog.github.io/capper-day/arena.jpg"/>
+<meta property="og:locale" content="ru_RU"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Capper Day — купон КХЛ/НХЛ"/>
+<meta name="telegram:channel" content="@capperday"/>
+<link rel="manifest" href="manifest.json?v=3"/>
+<link rel="icon" href="favicon.ico?v=3" sizes="any"/>
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png?v=3"/>
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png?v=3"/>
+<link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=3"/>
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png?v=3"/>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet"/>
+<style>
+/* Capper Day: soft cartoon look. Warm palette, clay cards, soft shadows. No neon, no glow. */
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#fdf5e8;--bg2:#cfeaff;--card:#fffdf8;--card2:#fff6ea;--line:rgba(52,84,122,.12);--text:#26354d;--muted:#6f7d92;--soft:#46556d;--chip:#ffffff;--ice:#f1f7fd;--sky:#3c9be6;--sky2:#7cc4f5;--orange:#ff8b3d;--orange2:#ffb36b;--red:#ef5f52;--ok:#2aa866;--bad:#e2564b;--warn:#e0922a;--clay:0 12px 26px rgba(52,84,122,.14),0 3px 6px rgba(52,84,122,.08),inset 0 -5px 0 rgba(52,84,122,.06),inset 0 2px 0 rgba(255,255,255,.9);--clay-sm:0 6px 14px rgba(52,84,122,.13),inset 0 -3px 0 rgba(52,84,122,.07),inset 0 2px 0 rgba(255,255,255,.85)}
+/* lamp toggle → cozy evening: soft warm dusk, still no neon */
+body.light{--bg:#f3e6d6;--bg2:#ffd9b8;--card:#fffaf2;--card2:#fdeedd;--line:rgba(110,70,40,.14);--text:#3a2c22;--muted:#86705e;--soft:#5b4636;--chip:#fffaf2;--ice:#fbf0e3;--sky:#4a8fd0;--sky2:#8fbfe8;--orange:#f27a2e;--orange2:#ffab66;--clay:0 12px 26px rgba(110,70,40,.15),0 3px 6px rgba(110,70,40,.08),inset 0 -5px 0 rgba(110,70,40,.06),inset 0 2px 0 rgba(255,255,255,.85);--clay-sm:0 6px 14px rgba(110,70,40,.14),inset 0 -3px 0 rgba(110,70,40,.07),inset 0 2px 0 rgba(255,255,255,.8)}
+body{font-family:Nunito,system-ui,sans-serif;color:var(--text);min-height:100dvh;background:radial-gradient(700px 380px at 0% 0%,rgba(255,200,140,.35),transparent 70%),radial-gradient(800px 420px at 100% 0%,rgba(150,210,255,.45),transparent 70%),linear-gradient(180deg,var(--bg2),var(--bg) 420px);background-attachment:fixed;transition:background .3s,color .3s}
+body>*{max-width:880px;margin-left:auto;margin-right:auto}
+.hero{position:relative;height:230px;border-radius:0 0 36px 36px;overflow:hidden;background:radial-gradient(120px 60px at 18% 30%,rgba(255,255,255,.95),rgba(255,255,255,0) 70%),radial-gradient(150px 70px at 52% 18%,rgba(255,255,255,.85),rgba(255,255,255,0) 70%),linear-gradient(180deg,#8fd0ff 0%,#bfe5ff 55%,#fff1dc 100%);box-shadow:0 14px 30px rgba(52,84,122,.16)}
+body.light .hero{background:radial-gradient(120px 60px at 18% 30%,rgba(255,240,225,.9),rgba(255,240,225,0) 70%),linear-gradient(180deg,#f7a86b 0%,#ffc999 50%,#ffe9d2 100%)}
+.hero:before{content:"";position:absolute;left:-10%;right:-10%;bottom:-60px;height:130px;border-radius:50%;background:linear-gradient(180deg,#f4fbff,#dcefff);box-shadow:inset 0 6px 0 rgba(255,255,255,.9)}
+body.light .hero:before{background:linear-gradient(180deg,#fff6ec,#f7e3cf)}
+.hero:after{content:"";position:absolute;right:20px;top:12px;width:132px;height:132px;border-radius:50%;background:url(mascot-hero.webp?v=3) center/cover no-repeat;border:5px solid #fff;box-shadow:0 10px 22px rgba(52,84,122,.2)}
+.hero-in{position:relative;z-index:1;height:100%;padding:18px 16px 16px;display:flex;justify-content:space-between;align-items:flex-end;gap:10px}
+.brand{font-family:"Baloo 2",Nunito,sans-serif;font-weight:800;font-size:36px;line-height:1;letter-spacing:.02em;color:#24406a;background:rgba(255,255,255,.72);padding:12px 18px 10px;border-radius:24px;box-shadow:var(--clay-sm)}
+.brand b{color:var(--orange);font-weight:800}
+.brand small{display:block;font-family:Nunito,sans-serif;font-size:12.5px;letter-spacing:.01em;color:var(--soft);font-weight:800;margin-top:4px}
+body.light .brand{color:#5a3418}
+.bal{background:#fff;border:0;padding:10px 16px;border-radius:18px;font-weight:900;color:var(--ok);box-shadow:var(--clay-sm);white-space:nowrap}
+.tools{display:flex;align-items:center;gap:8px;flex-wrap:wrap;justify-content:flex-end}
+/* soft cartoon lamp button (toggle), no glow */
+.lamp{position:relative;width:44px;height:44px;border-radius:50%;border:0;background:radial-gradient(circle at 35% 30%,#fff7d6,#ffd66b 70%,#f5b83d);color:#7a4a00;font-size:20px;cursor:pointer;box-shadow:var(--clay-sm);transition:transform .2s}
+.lamp:hover{transform:translateY(-2px) rotate(-6deg)}
+body.light .lamp{background:radial-gradient(circle at 35% 30%,#fff,#e8edf5 70%,#cfd8e6)}
+.tabs,.sub{display:flex;gap:8px;padding:12px 14px;overflow-x:auto;scrollbar-width:none}
+.tabs{position:sticky;top:0;z-index:5;background:linear-gradient(180deg,rgba(253,245,232,.96) 75%,rgba(253,245,232,0))}
+body.light .tabs{background:linear-gradient(180deg,var(--bg) 70%,rgba(243,230,214,0))}
+.tabs button,.sub button{border:0;background:var(--chip);color:var(--soft);font:800 13px Nunito,sans-serif;padding:10px 16px;border-radius:999px;white-space:nowrap;cursor:pointer;box-shadow:var(--clay-sm);transition:transform .15s,background .2s,color .2s}
+.statbtn{display:inline-flex;align-items:center;border:0;background:linear-gradient(180deg,#8fe0b0,#2aa866);color:#fff;font:900 13px Nunito,sans-serif;padding:10px 16px;border-radius:999px;white-space:nowrap;text-decoration:none;box-shadow:0 6px 14px rgba(42,168,102,.25),inset 0 -3px 0 rgba(0,90,40,.16),inset 0 2px 0 rgba(255,255,255,.45);transition:transform .15s}
+.statbtn:hover{transform:translateY(-1px)}
+.tabs button:hover,.sub button:hover{transform:translateY(-1px);color:var(--text)}
+.tabs button.on{background:linear-gradient(180deg,var(--orange2),var(--orange));color:#fff;box-shadow:0 6px 14px rgba(240,120,40,.28),inset 0 -3px 0 rgba(150,60,0,.18),inset 0 2px 0 rgba(255,255,255,.45)}
+.sub button.on{background:linear-gradient(180deg,var(--sky2),var(--sky));color:#fff;box-shadow:0 6px 14px rgba(40,120,200,.25),inset 0 -3px 0 rgba(0,60,130,.16),inset 0 2px 0 rgba(255,255,255,.45)}
+.league{margin:14px 16px 2px;color:var(--sky);font-size:12px;font-weight:900;letter-spacing:.08em;text-transform:uppercase}
+.card{position:relative;margin:14px 14px;background:linear-gradient(170deg,var(--card),var(--card2));border:1px solid var(--line);border-radius:28px;padding:16px;box-shadow:var(--clay);transition:transform .2s}
+.card:hover{transform:translateY(-3px)}
+.toprow{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;gap:8px}
+.time{color:var(--muted);font-size:12.5px;font-weight:800}
+.badge{font-size:11.5px;font-weight:900;border-radius:999px;padding:5px 12px;border:0;white-space:nowrap;box-shadow:inset 0 -2px 0 rgba(0,0,0,.06)}
+.take,.win{background:#dff5e8;color:var(--ok)}
+.skip,.loss{background:#fde3df;color:var(--bad)}
+.live{background:#fff0d6;color:var(--warn)}
+.teams{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.av{width:40px;height:40px;border-radius:50%;display:grid;place-items:center;font-family:Nunito,sans-serif;font-weight:900;font-size:13px;color:#fff;flex:none;box-shadow:0 4px 8px rgba(52,84,122,.2),inset 0 -3px 0 rgba(0,0,0,.18),inset 0 2px 0 rgba(255,255,255,.3)}
+.av.logo{background:#fff!important;border-radius:14px;width:42px;height:42px;box-shadow:0 5px 12px rgba(52,84,122,.16),inset 0 -3px 0 rgba(52,84,122,.07),inset 0 2px 0 rgba(255,255,255,.9)}
+.av.logo img{width:30px;height:30px;object-fit:contain;display:block}
+.av.logo span{display:none}
+.nm{font-weight:900;font-size:15.5px}
+.vs{color:var(--muted);font-size:12px;margin:0 2px}
+.markets{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:14px}
+.m{background:var(--ice);border:0;border-radius:18px;padding:10px;box-shadow:inset 0 -3px 0 rgba(52,84,122,.06)}
+.m .k{color:var(--muted);font-size:11.5px;font-weight:800}
+.m .v{font-family:Nunito,sans-serif;font-weight:900;font-size:21px;margin-top:2px}
+.m.on{background:#e3f6ea;border:2px solid rgba(42,168,102,.5);padding:8px;box-shadow:inset 0 -3px 0 rgba(42,168,102,.15)}
+.m.on .v{color:var(--ok)}
+.note{color:var(--soft);font-size:13px;line-height:1.55;margin-top:12px}
+.pad{padding:8px 16px 22px}
+.big{font-family:"Baloo 2",Nunito,sans-serif;font-weight:800;font-size:54px;line-height:1.1;color:var(--orange)}
+.row{display:flex;justify-content:space-between;align-items:center;padding:12px 0;border-bottom:2px dashed var(--line);gap:10px}
+.hidden{display:none}
+.foot{color:var(--muted);font-size:12px;margin-top:12px;line-height:1.5}
+section .pad{margin:14px 14px;border:1px solid var(--line);border-radius:28px;background:linear-gradient(170deg,var(--card),var(--card2));box-shadow:var(--clay)}
+.card .pad{margin:0;border:0;background:none;padding:0;box-shadow:none}
+@media(max-width:600px){.markets{grid-template-columns:1fr 1fr}.brand{font-size:28px;padding:10px 14px 8px}.hero{height:220px}.hero:after{width:96px;height:96px;right:10px;top:10px;border-width:4px}.hero-in{flex-direction:column;align-items:flex-start;justify-content:flex-end}.tools{justify-content:flex-start}.big{font-size:44px}}
+.tgbtn{display:inline-flex;align-items:center;gap:6px;height:44px;padding:0 16px;border-radius:999px;border:0;background:linear-gradient(180deg,var(--sky2),var(--sky));color:#fff;font:900 13px Nunito,sans-serif;text-decoration:none;white-space:nowrap;box-shadow:0 6px 14px rgba(40,120,200,.25),inset 0 -3px 0 rgba(0,60,130,.18),inset 0 2px 0 rgba(255,255,255,.45);transition:transform .2s}
+.tgbtn:hover{transform:translateY(-2px)}
+.tgcta{display:flex;align-items:center;justify-content:space-between;gap:14px;margin:20px 14px 28px;padding:18px;border:0;border-radius:30px;background:linear-gradient(135deg,#fff4e3,#e3f3ff);box-shadow:var(--clay)}
+body.light .tgcta{background:linear-gradient(135deg,#fff1df,#ffe2c7)}
+.tgcta b{display:block;font-family:Nunito,sans-serif;font-weight:900;font-size:22px;color:var(--text)}
+.tgcta span{display:block;color:var(--soft);font-size:13px;margin-top:3px;line-height:1.5}
+.tgcta a{flex:none;padding:13px 20px;border-radius:999px;background:linear-gradient(180deg,var(--orange2),var(--orange));color:#fff;font:900 14px Nunito,sans-serif;text-decoration:none;white-space:nowrap;box-shadow:0 6px 14px rgba(240,120,40,.28),inset 0 -3px 0 rgba(150,60,0,.18),inset 0 2px 0 rgba(255,255,255,.45)}
+@media(max-width:600px){.tgbtn .tgl{display:none}.tgbtn{padding:0 14px}.tgcta{flex-direction:column;align-items:stretch;text-align:left}.tgcta a{text-align:center}}
+</style>
+</head>
+<body>
+<div class="hero"><div class="hero-in"><div class="brand">CAPPER <b>DAY</b><small>26 октября · фикс 200 ₽ · купон: 2 одиночки</small></div><div class="tools"><button class="lamp" id="theme" type="button" aria-label="Тема">💡</button><a class="tgbtn" href="https://t.me/capperday" target="_blank" rel="noopener" aria-label="Наш Telegram">✈️<span class="tgl"> Наш Telegram</span></a><span class="bal">7 042 ₽</span></div></div></div>
+<nav class="tabs">
+  <button class="on" data-tab="hock">Хоккей</button>
+  <button data-tab="foot">Футбол</button>
+  <button data-tab="ex">Экспресс</button>
+  <button data-tab="itog">Итоги</button>
+  <button data-tab="bank">Банк</button>
+  <a class="statbtn" href="stats.html">📊 Статистика</a>
+</nav>
+<section id="hock">
+  <nav class="sub">
+    <button class="on" data-lg="khl">КХЛ</button>
+    <button data-lg="nhl">НХЛ</button>
+    <button data-lg="del">DEL</button>
+    <button data-lg="mhl">МХЛ</button>
+  </nav>
+  <div id="khl">
+    <div class="league">26 октября · линия (основное время) · в КХЛ три матча · в купоне: Трактор — Сибирь П1 (одиночка)</div>
+    <article class="card">
+      <div class="toprow"><span class="time">17:00 МСК в купоне</span><span class="badge take">в купоне</span></div>
+      <div class="teams"><div class="av logo" style="background:#3c9be6"><img src="logos/khl/traktor.png" alt="Трактор" title="Трактор" width="30" height="30" loading="lazy" onerror="this.parentNode.classList.remove('logo');this.remove()"><span>ТР</span></div><div class="nm">Трактор</div><span class="vs">—</span><div class="nm">Сибирь</div><div class="av logo" style="background:#ff8b3d"><img src="logos/khl/sibir.png" alt="Сибирь" title="Сибирь" width="30" height="30" loading="lazy" onerror="this.parentNode.classList.remove('logo');this.remove()"><span>СИ</span></div></div>
+      <div class="markets"><div class="m on"><div class="k">П1 осн. время</div><div class="v">1.95</div></div><div class="m"><div class="k">X 60 мин</div><div class="v">4.30</div></div><div class="m"><div class="k">П2 60 мин</div><div class="v">3.20</div></div><div class="m"><div class="k">ТБ 4.5</div><div class="v">1.70</div></div></div>
+      <div class="note">В КУПОНЕ · одиночка 200 ₽. П1 Трактор, основное время, 1.95 (Бетсити; Винлайн 1.90, <a href="https://sport.vbr.ru/events/hockey/2026-10-26-traktor-novosibirsk/" style="color:inherit">Выберу.Спорт</a>; Фонбета и Марафона в линии нет). Наша оценка ~53% против 51.3% в кэфе (≈48.5% без маржи). Трактор пропустил меньше трёх шайб в 9 из 10 последних матчей и выиграл в основное время 7 из 11 последних очных встреч. У Сибири четвёртый выезд за 7 дней и 11 пропущенных в двух последних играх (61 в 20 матчах). Риск — слабая атака Трактора: 36 голов в 17 матчах (metaratings.ru, stavka.tv, livesport.com, vseprosport.ru).</div>
+    </article>
+    <article class="card">
+      <div class="toprow"><span class="time">17:00 МСК пас</span><span class="badge skip">пас</span></div>
+      <div class="teams"><div class="av logo" style="background:#3c9be6"><img src="logos/khl/avtomobilist.png" alt="Автомобилист" title="Автомобилист" width="30" height="30" loading="lazy" onerror="this.parentNode.classList.remove('logo');this.remove()"><span>АВ</span></div><div class="nm">Автомобилист</div><span class="vs">—</span><div class="nm">Барыс</div><div class="av logo" style="background:#ff8b3d"><img src="logos/khl/barys.png" alt="Барыс" title="Барыс" width="30" height="30" loading="lazy" onerror="this.parentNode.classList.remove('logo');this.remove()"><span>БА</span></div></div>
+      <div class="markets"><div class="m"><div class="k">П1 60 мин</div><div class="v">1.80</div></div><div class="m"><div class="k">ТМ 5.5</div><div class="v">1.70</div></div><div class="m"><div class="k">Линия</div><div class="v">metaratings</div></div><div class="m"><div class="k">Правило</div><div class="v">осн. время</div></div></div>
+      <div class="note">Пас. Автомобилист — 7-й на Востоке, без Слепышева. Барыс — 3-й на Востоке с лучшей атакой, однако это девятый матч его выезда; первую встречу сезона Барыс выиграл 4:1. П1 1.80 (Винлайн) — 55.6% в кэфе, оценка ~52%. На Выберу.Спорт линии нет, сверить кэфы не можем — в купон не идёт (<a href="https://metaratings.ru/" style="color:inherit">metaratings.ru</a>).</div>
+    </article>
+    <article class="card">
+      <div class="toprow"><span class="time">19:30 МСК пас</span><span class="badge skip">пас</span></div>
+      <div class="teams"><div class="av logo" style="background:#3c9be6"><img src="logos/khl/dinamo-m.png" alt="Динамо М" title="Динамо М" width="30" height="30" loading="lazy" onerror="this.parentNode.classList.remove('logo');this.remove()"><span>ДМ</span></div><div class="nm">Динамо М</div><span class="vs">—</span><div class="nm">Авангард</div><div class="av logo" style="background:#ff8b3d"><img src="logos/khl/avangard.png" alt="Авангард" title="Авангард" width="30" height="30" loading="lazy" onerror="this.parentNode.classList.remove('logo');this.remove()"><span>АВ</span></div></div>
+      <div class="markets"><div class="m"><div class="k">П1 60 мин</div><div class="v">2.65</div></div><div class="m"><div class="k">X 60 мин</div><div class="v">4.20</div></div><div class="m"><div class="k">П2 60 мин</div><div class="v">2.40</div></div><div class="m"><div class="k">ТБ 4.5</div><div class="v">1.70</div></div></div>
+      <div class="note">Пас. Динамо — 9-е на Западе и не выигрывало в основное время с 17 сентября; Авангард — последний на Востоке. П2 2.40 (Фонбет) — 41.7% в кэфе, оценка ~40%; П1 2.65 — 37.7%, оценка ~36%. Края нет ни в одну сторону (<a href="https://sport.vbr.ru/events/hockey/2026-10-26-dinamo-moskva-avangard/" style="color:inherit">Выберу.Спорт</a>, metaratings.ru).</div>
+    </article>
+    <div class="league">КХЛ по периодам · 26 октября · информационно, не в купоне и не в банке</div>
+    <article class="card">
+      <div class="toprow"><span class="time">17:00 МСК · по периодам</span><span class="badge live">инфо</span></div>
+      <div class="teams"><div class="av logo" style="background:#3c9be6"><img src="logos/khl/traktor.png" alt="Трактор" title="Трактор" width="30" height="30" loading="lazy" onerror="this.parentNode.classList.remove('logo');this.remove()"><span>ТР</span></div><div class="nm">Трактор</div><span class="vs">—</span><div class="nm">Сибирь</div><div class="av logo" style="background:#ff8b3d"><img src="logos/khl/sibir.png" alt="Сибирь" title="Сибирь" width="30" height="30" loading="lazy" onerror="this.parentNode.classList.remove('logo');this.remove()"><span>СИ</span></div></div>
+      <div class="markets"><div class="m"><div class="k">1-й: ничья · низкая</div><div class="v">2.50</div></div><div class="m"><div class="k">2-й: П Трактор · низкая</div><div class="v">2.40</div></div><div class="m"><div class="k">3-й: П Трактор · низкая</div><div class="v">2.43</div></div><div class="m"><div class="k">Кэфы</div><div class="v">Бетсити</div></div></div>
+      <div class="note">Трактор дома играет от обороны — первый период вязкий, давление растёт к концу. Выбор — самый вероятный исход периода по линии БК.</div>
+    </article>
+    <article class="card">
+      <div class="toprow"><span class="time">17:00 МСК · по периодам</span><span class="badge live">инфо</span></div>
+      <div class="teams"><div class="av logo" style="background:#3c9be6"><img src="logos/khl/avtomobilist.png" alt="Автомобилист" title="Автомобилист" width="30" height="30" loading="lazy" onerror="this.parentNode.classList.remove('logo');this.remove()"><span>АВ</span></div><div class="nm">Автомобилист</div><span class="vs">—</span><div class="nm">Барыс</div><div class="av logo" style="background:#ff8b3d"><img src="logos/khl/barys.png" alt="Барыс" title="Барыс" width="30" height="30" loading="lazy" onerror="this.parentNode.classList.remove('logo');this.remove()"><span>БА</span></div></div>
+      <div class="markets"><div class="m"><div class="k">1-й: ничья · низкая</div><div class="v">кэф н/д</div></div><div class="m"><div class="k">2-й: ничья · низкая</div><div class="v">кэф н/д</div></div><div class="m"><div class="k">3-й: ничья · низкая</div><div class="v">кэф н/д</div></div><div class="m"><div class="k">Кэфы</div><div class="v">н/д</div></div></div>
+      <div class="note">Линии периодов не нашли — прогноз без кэфа.</div>
+    </article>
+    <article class="card">
+      <div class="toprow"><span class="time">19:30 МСК · по периодам</span><span class="badge live">инфо</span></div>
+      <div class="teams"><div class="av logo" style="background:#3c9be6"><img src="logos/khl/dinamo-m.png" alt="Динамо М" title="Динамо М" width="30" height="30" loading="lazy" onerror="this.parentNode.classList.remove('logo');this.remove()"><span>ДМ</span></div><div class="nm">Динамо М</div><span class="vs">—</span><div class="nm">Авангард</div><div class="av logo" style="background:#ff8b3d"><img src="logos/khl/avangard.png" alt="Авангард" title="Авангард" width="30" height="30" loading="lazy" onerror="this.parentNode.classList.remove('logo');this.remove()"><span>АВ</span></div></div>
+      <div class="markets"><div class="m"><div class="k">1-й: ничья · низкая</div><div class="v">2.55</div></div><div class="m"><div class="k">2-й: П Авангард · низкая</div><div class="v">2.70</div></div><div class="m"><div class="k">3-й: П Авангард · низкая</div><div class="v">2.70</div></div><div class="m"><div class="k">Кэфы</div><div class="v">Фонбет</div></div></div>
+      <div class="note">Две команды в кризисе — периоды равные, ничья в периоде вероятна. Выбор — самый вероятный исход периода по линии БК.</div>
+    </article>
+    <p class="foot">Периоды: исход периода (П1/Х/П2) через Выберу.Спорт — Фонбет, по Трактору — Бетсити. Автомобилист — Барыс: линии периодов нет, «кэф н/д». Уверенность «средняя» — кэф до 2.30. 18+.</p>
+  </div>
+  <div id="nhl" class="hidden">
+    <div class="league">ночь 26→27 октября · 3 матча · время МСК · в купоне: Эдмонтон П1 (основное время)</div>
+    <article class="card">
+      <div class="toprow"><span class="time">02:00 МСК 27.10 пас</span><span class="badge skip">пас</span></div>
+      <div class="teams"><div class="av logo" style="background:#3c9be6"><img src="logos/nhl/lak.png" alt="Лос-Анджелес" title="Лос-Анджелес" width="30" height="30" loading="lazy" onerror="this.parentNode.classList.remove('logo');this.remove()"><span>ЛА</span></div><div class="nm">Лос-Анджелес</div><span class="vs">@</span><div class="nm">Рейнджерс</div><div class="av logo" style="background:#ff8b3d"><img src="logos/nhl/nyr.png" alt="Рейнджерс" title="Рейнджерс" width="30" height="30" loading="lazy" onerror="this.parentNode.classList.remove('logo');this.remove()"><span>РЕ</span></div></div>
+      <div class="markets"><div class="m"><div class="k">Рейнджерс с ОТ</div><div class="v">1.70</div></div><div class="m"><div class="k">Линия</div><div class="v">metaratings</div></div><div class="m"><div class="k">Правило</div><div class="v">с ОТ и Б</div></div></div>
+      <div class="note">Пас. Рейнджерс дома 6-0-0, но играют без Шестёркина и проиграли 4 из 5 последних (4:7 в Оттаве). Лос-Анджелес 2-5-2, шайбы 21:32. Победа Рейнджерс 1.70 — 58.8% в кэфе, оценка ~57%. Линии на Выберу.Спорт нет — кэф не сверить (<a href="https://metaratings.ru/" style="color:inherit">metaratings.ru</a>, <a href="https://api-web.nhle.com/v1/standings/2026-10-26" style="color:inherit">NHL.com</a>).</div>
+    </article>
+    <article class="card">
+      <div class="toprow"><span class="time">03:30 МСК 27.10 пас</span><span class="badge skip">пас</span></div>
+      <div class="teams"><div class="av logo" style="background:#3c9be6"><img src="logos/nhl/tor.png" alt="Торонто" title="Торонто" width="30" height="30" loading="lazy" onerror="this.parentNode.classList.remove('logo');this.remove()"><span>ТО</span></div><div class="nm">Торонто</div><span class="vs">@</span><div class="nm">Калгари</div><div class="av logo" style="background:#ff8b3d"><img src="logos/nhl/cgy.png" alt="Калгари" title="Калгари" width="30" height="30" loading="lazy" onerror="this.parentNode.classList.remove('logo');this.remove()"><span>КА</span></div></div>
+      <div class="markets"><div class="m"><div class="k">Торонто 60 мин</div><div class="v">2.02</div></div><div class="m"><div class="k">Калгари 60 мин</div><div class="v">3.00</div></div><div class="m"><div class="k">Ничья 60 мин</div><div class="v">4.40</div></div><div class="m"><div class="k">ТБ 6</div><div class="v">1.67</div></div></div>
+      <div class="note">Пас. Торонто 7-4-2 и 4 победы подряд; Калгари 4-6-0, шайбы 23:39, но выиграл 3 последних. Торонто в 60 минут 2.02 (Фонбет) — 49.5% в кэфе, оценка ~48%; с ОТ ~1.65 — ниже 1.70 (<a href="https://sport.vbr.ru/events/hockey/2026-10-27-kalgari-toronto/" style="color:inherit">Выберу.Спорт</a>, <a href="https://api-web.nhle.com/v1/standings/2026-10-26" style="color:inherit">NHL.com</a>).</div>
+    </article>
+    <article class="card">
+      <div class="toprow"><span class="time">04:30 МСК 27.10 в купоне</span><span class="badge take">в купоне</span></div>
+      <div class="teams"><div class="av logo" style="background:#3c9be6"><img src="logos/nhl/det.png" alt="Детройт" title="Детройт" width="30" height="30" loading="lazy" onerror="this.parentNode.classList.remove('logo');this.remove()"><span>ДЕ</span></div><div class="nm">Детройт</div><span class="vs">@</span><div class="nm">Эдмонтон</div><div class="av logo" style="background:#ff8b3d"><img src="logos/nhl/edm.png" alt="Эдмонтон" title="Эдмонтон" width="30" height="30" loading="lazy" onerror="this.parentNode.classList.remove('logo');this.remove()"><span>ЭД</span></div></div>
+      <div class="markets"><div class="m on"><div class="k">Эдмонтон осн. время</div><div class="v">1.94</div></div><div class="m"><div class="k">Детройт 60 мин</div><div class="v">3.28</div></div><div class="m"><div class="k">Ничья 60 мин</div><div class="v">4.40</div></div><div class="m"><div class="k">ТБ 6</div><div class="v">1.72</div></div></div>
+      <div class="note">В КУПОНЕ · одиночка 200 ₽. П1 Эдмонтон, основное время, 1.94 (Марафон; Фонбет 1.92, <a href="https://sport.vbr.ru/events/hockey/2026-10-27-edmonton-detroit/" style="color:inherit">Выберу.Спорт</a>). Наша оценка ~53% против 51.5% в кэфе (≈49.6% без маржи). Эдмонтон 8-2-1, в последних 10 — 8-2-0, шайбы 49:39. Детройт 4-4-3, забивает 2.6 за матч (29 в 11), в гостях 1-1-2. Риск: дома Эдмонтон пока лишь 3-2-1 (<a href="https://api-web.nhle.com/v1/standings/2026-10-26" style="color:inherit">NHL.com</a>).</div>
+    </article>
+    <p class="foot">Кэфы — через <a href="https://sport.vbr.ru/events/hockey/" style="color:inherit">Выберу.Спорт</a> (Фонбет, Марафон); Лос-Анджелес @ Рейнджерс — только metaratings. Таблица — NHL.com. Вратари не подтверждены. 18+.</p>
+    <div class="league">НХЛ по периодам · ночь 26→27 октября · информационно, не в купоне и не в банке</div>
+    <article class="card">
+      <div class="toprow"><span class="time">02:00 МСК · по периодам</span><span class="badge live">инфо</span></div>
+      <div class="teams"><div class="av logo" style="background:#3c9be6"><img src="logos/nhl/lak.png" alt="Лос-Анджелес" title="Лос-Анджелес" width="30" height="30" loading="lazy" onerror="this.parentNode.classList.remove('logo');this.remove()"><span>ЛА</span></div><div class="nm">Лос-Анджелес</div><span class="vs">@</span><div class="nm">Рейнджерс</div><div class="av logo" style="background:#ff8b3d"><img src="logos/nhl/nyr.png" alt="Рейнджерс" title="Рейнджерс" width="30" height="30" loading="lazy" onerror="this.parentNode.classList.remove('logo');this.remove()"><span>РЕ</span></div></div>
+      <div class="markets"><div class="m"><div class="k">1-й: ничья · низкая</div><div class="v">кэф н/д</div></div><div class="m"><div class="k">2-й: ничья · низкая</div><div class="v">кэф н/д</div></div><div class="m"><div class="k">3-й: ничья · низкая</div><div class="v">кэф н/д</div></div><div class="m"><div class="k">Кэфы</div><div class="v">н/д</div></div></div>
+      <div class="note">Линии периодов не нашли — прогноз без кэфа, уверенность низкая.</div>
+    </article>
+    <article class="card">
+      <div class="toprow"><span class="time">03:30 МСК · по периодам</span><span class="badge live">инфо</span></div>
+      <div class="teams"><div class="av logo" style="background:#3c9be6"><img src="logos/nhl/tor.png" alt="Торонто" title="Торонто" width="30" height="30" loading="lazy" onerror="this.parentNode.classList.remove('logo');this.remove()"><span>ТО</span></div><div class="nm">Торонто</div><span class="vs">@</span><div class="nm">Калгари</div><div class="av logo" style="background:#ff8b3d"><img src="logos/nhl/cgy.png" alt="Калгари" title="Калгари" width="30" height="30" loading="lazy" onerror="this.parentNode.classList.remove('logo');this.remove()"><span>КА</span></div></div>
+      <div class="markets"><div class="m"><div class="k">1-й: П Торонто · низкая</div><div class="v">2.40</div></div><div class="m"><div class="k">2-й: П Торонто · средняя</div><div class="v">2.30</div></div><div class="m"><div class="k">3-й: П Торонто · средняя</div><div class="v">2.20</div></div><div class="m"><div class="k">Кэфы</div><div class="v">Фонбет</div></div></div>
+      <div class="note">Самый вероятный исход периода по линии Фонбета.</div>
+    </article>
+    <article class="card">
+      <div class="toprow"><span class="time">04:30 МСК · по периодам</span><span class="badge live">инфо</span></div>
+      <div class="teams"><div class="av logo" style="background:#3c9be6"><img src="logos/nhl/det.png" alt="Детройт" title="Детройт" width="30" height="30" loading="lazy" onerror="this.parentNode.classList.remove('logo');this.remove()"><span>ДЕ</span></div><div class="nm">Детройт</div><span class="vs">@</span><div class="nm">Эдмонтон</div><div class="av logo" style="background:#ff8b3d"><img src="logos/nhl/edm.png" alt="Эдмонтон" title="Эдмонтон" width="30" height="30" loading="lazy" onerror="this.parentNode.classList.remove('logo');this.remove()"><span>ЭД</span></div></div>
+      <div class="markets"><div class="m"><div class="k">1-й: П Эдмонтон · средняя</div><div class="v">2.30</div></div><div class="m"><div class="k">2-й: П Эдмонтон · средняя</div><div class="v">2.20</div></div><div class="m"><div class="k">3-й: П Эдмонтон · средняя</div><div class="v">2.13</div></div><div class="m"><div class="k">Кэфы</div><div class="v">Фонбет</div></div></div>
+      <div class="note">Самый вероятный исход периода по линии Фонбета.</div>
+    </article>
+    <p class="foot">Исход периода — по линии Фонбета через Выберу.Спорт. 18+.</p>
+  </div>
+  <div id="del" class="hidden">
+    <div class="league">26 октября · DEL · матчей нет</div>
+    <p class="foot">В понедельник в DEL игр нет — DEL по периодам сегодня не публикуем. 18+.</p>
+  </div>
+  <div id="mhl" class="hidden">
+    <div class="league">МХЛ · 26 октября · основное время · информационно, не в купоне и не в банке</div>
+    <article class="card">
+      <div class="toprow"><span class="time">14:30 МСК · МХЛ</span><span class="badge live">инфо</span></div>
+      <div class="teams"><div class="av logo" style="background:#3c9be6"><img src="logos/mhl/krrysi.png" alt="Красноярские Рыси" title="Красноярские Рыси" width="30" height="30" loading="lazy" onerror="this.parentNode.classList.remove('logo');this.remove()"><span>КР</span></div><div class="nm">Красноярские Рыси</div><span class="vs">—</span><div class="nm">Молот</div><div class="av logo" style="background:#ff8b3d"><img src="logos/mhl/molot.png" alt="Молот" title="Молот" width="30" height="30" loading="lazy" onerror="this.parentNode.classList.remove('logo');this.remove()"><span>МО</span></div></div>
+      <div class="markets"><div class="m on"><div class="k">Исход: П1</div><div class="v">2.15</div></div><div class="m"><div class="k">Источник</div><div class="v">Фонбет</div></div><div class="m"><div class="k">Вероятность</div><div class="v">≈45%</div></div><div class="m"><div class="k">В кэфе</div><div class="v">46.5%</div></div></div>
+      <div class="note">Инфо-пик: П1 (осн. время) — 2.15 (Фонбет, <a href="https://sport.vbr.ru/events/hockey/2026-10-26-krasnoiarskie-rysi-molot-perm/" style="color:inherit">источник</a>). Вторая игра серии: вчера Рыси выиграли 3:2. Хозяева — небольшой фаворит (2.12–2.18 против 2.60–2.70); ТБ 5.5 1.75. Оценка ~45% при 46.5% в кэфе — не в купоне (МХЛ только справочно).</div>
+    </article>
+    <article class="card">
+      <div class="toprow"><span class="time">18:30 МСК · МХЛ</span><span class="badge live">инфо</span></div>
+      <div class="teams"><div class="av logo" style="background:#3c9be6"><img src="logos/mhl/sputnik.png" alt="Спутник" title="Спутник" width="30" height="30" loading="lazy" onerror="this.parentNode.classList.remove('logo');this.remove()"><span>СП</span></div><div class="nm">Спутник</div><span class="vs">—</span><div class="nm">МХК Спартак</div><div class="av logo" style="background:#ff8b3d"><img src="logos/khl/spartak.png" alt="МХК Спартак" title="МХК Спартак" width="30" height="30" loading="lazy" onerror="this.parentNode.classList.remove('logo');this.remove()"><span>МС</span></div></div>
+      <div class="markets"><div class="m on"><div class="k">Исход: П2</div><div class="v">2.12</div></div><div class="m"><div class="k">Источник</div><div class="v">Фонбет</div></div><div class="m"><div class="k">Вероятность</div><div class="v">≈46%</div></div><div class="m"><div class="k">В кэфе</div><div class="v">47.2%</div></div></div>
+      <div class="note">Инфо-пик: П2 (осн. время) — 2.12 (Фонбет, <a href="https://sport.vbr.ru/events/hockey/2026-10-26-sputnik-almetevsk-mxk-spartak-max/" style="color:inherit">источник</a>). Спартак — фаворит в гостях (2.07–2.13); тотал 5.5 ровный — 1.85/1.85 у Фонбета. Оценка ~46% при 47.2% в кэфе — не в купоне (МХЛ только справочно).</div>
+    </article>
+    <article class="card">
+      <div class="toprow"><span class="time">19:00 МСК · МХЛ</span><span class="badge live">инфо</span></div>
+      <div class="teams"><div class="av logo" style="background:#3c9be6"><img src="logos/mhl/akm.png" alt="АКМ-Юниор" title="АКМ-Юниор" width="30" height="30" loading="lazy" onerror="this.parentNode.classList.remove('logo');this.remove()"><span>АЮ</span></div><div class="nm">АКМ-Юниор</div><span class="vs">—</span><div class="nm">Снежные Барсы</div><div class="av logo" style="background:#ff8b3d"><img src="logos/mhl/snbarsy.png" alt="Снежные Барсы" title="Снежные Барсы" width="30" height="30" loading="lazy" onerror="this.parentNode.classList.remove('logo');this.remove()"><span>СБ</span></div></div>
+      <div class="markets"><div class="m on"><div class="k">Тотал: ТБ 5.5</div><div class="v">1.85</div></div><div class="m"><div class="k">Источник</div><div class="v">Фонбет</div></div><div class="m"><div class="k">Вероятность</div><div class="v">≈50%</div></div><div class="m"><div class="k">В кэфе</div><div class="v">54.1%</div></div></div>
+      <div class="note">Инфо-пик: ТБ 5.5 — 1.85 (Фонбет, <a href="https://sport.vbr.ru/events/hockey/2026-10-26-akademiia-mixailova-iunior-sneznye-barsy/" style="color:inherit">источник</a>). АКМ-Юниор — крупный фаворит (П1 1.40, ниже 1.80, поэтому тотал); ТБ/ТМ 5.5 1.85/1.85 — рынок 50/50. Оценка ~50% при 54.1% в кэфе — не в купоне (МХЛ только справочно).</div>
+    </article>
+    <p class="foot">МХЛ — инфо-блок, в банк не идёт. Расписание и линии — Выберу.Спорт (Фонбет). 18+.</p>
+    <div class="league">МХЛ по периодам · 26 октября · информационно, не в купоне и не в банке</div>
+    <article class="card">
+      <div class="toprow"><span class="time">14:30 МСК · по периодам</span><span class="badge live">инфо</span></div>
+      <div class="teams"><div class="av logo" style="background:#3c9be6"><img src="logos/mhl/krrysi.png" alt="Красноярские Рыси" title="Красноярские Рыси" width="30" height="30" loading="lazy" onerror="this.parentNode.classList.remove('logo');this.remove()"><span>КР</span></div><div class="nm">Красноярские Рыси</div><span class="vs">—</span><div class="nm">Молот</div><div class="av logo" style="background:#ff8b3d"><img src="logos/mhl/molot.png" alt="Молот" title="Молот" width="30" height="30" loading="lazy" onerror="this.parentNode.classList.remove('logo');this.remove()"><span>МО</span></div></div>
+      <div class="markets"><div class="m"><div class="k">1-й: П Красноярские Рыси · низкая</div><div class="v">2.60</div></div><div class="m"><div class="k">2-й: П Красноярские Рыси · низкая</div><div class="v">2.45</div></div><div class="m"><div class="k">3-й: П Красноярские Рыси · низкая</div><div class="v">2.45</div></div><div class="m"><div class="k">Кэфы</div><div class="v">Фонбет</div></div></div>
+      <div class="note">Самый вероятный исход периода по линии Фонбета. Статистики МХЛ по периодам мало — уверенность низкая.</div>
+    </article>
+    <article class="card">
+      <div class="toprow"><span class="time">18:30 МСК · по периодам</span><span class="badge live">инфо</span></div>
+      <div class="teams"><div class="av logo" style="background:#3c9be6"><img src="logos/mhl/sputnik.png" alt="Спутник" title="Спутник" width="30" height="30" loading="lazy" onerror="this.parentNode.classList.remove('logo');this.remove()"><span>СП</span></div><div class="nm">Спутник</div><span class="vs">—</span><div class="nm">МХК Спартак</div><div class="av logo" style="background:#ff8b3d"><img src="logos/khl/spartak.png" alt="МХК Спартак" title="МХК Спартак" width="30" height="30" loading="lazy" onerror="this.parentNode.classList.remove('logo');this.remove()"><span>МС</span></div></div>
+      <div class="markets"><div class="m"><div class="k">1-й: П МХК Спартак · низкая</div><div class="v">2.60</div></div><div class="m"><div class="k">2-й: П МХК Спартак · низкая</div><div class="v">2.50</div></div><div class="m"><div class="k">3-й: П МХК Спартак · низкая</div><div class="v">2.45</div></div><div class="m"><div class="k">Кэфы</div><div class="v">Фонбет</div></div></div>
+      <div class="note">Самый вероятный исход периода по линии Фонбета. Статистики МХЛ по периодам мало — уверенность низкая.</div>
+    </article>
+    <article class="card">
+      <div class="toprow"><span class="time">19:00 МСК · по периодам</span><span class="badge live">инфо</span></div>
+      <div class="teams"><div class="av logo" style="background:#3c9be6"><img src="logos/mhl/akm.png" alt="АКМ-Юниор" title="АКМ-Юниор" width="30" height="30" loading="lazy" onerror="this.parentNode.classList.remove('logo');this.remove()"><span>АЮ</span></div><div class="nm">АКМ-Юниор</div><span class="vs">—</span><div class="nm">Снежные Барсы</div><div class="av logo" style="background:#ff8b3d"><img src="logos/mhl/snbarsy.png" alt="Снежные Барсы" title="Снежные Барсы" width="30" height="30" loading="lazy" onerror="this.parentNode.classList.remove('logo');this.remove()"><span>СБ</span></div></div>
+      <div class="markets"><div class="m"><div class="k">1-й: П АКМ-Юниор · средняя</div><div class="v">1.90</div></div><div class="m"><div class="k">2-й: П АКМ-Юниор · средняя</div><div class="v">1.80</div></div><div class="m"><div class="k">3-й: П АКМ-Юниор · средняя</div><div class="v">1.78</div></div><div class="m"><div class="k">Кэфы</div><div class="v">Фонбет</div></div></div>
+      <div class="note">Самый вероятный исход периода по линии Фонбета. Статистики МХЛ по периодам мало — уверенность низкая.</div>
+    </article>
+    <p class="foot">Исход периода — по линии Фонбета через Выберу.Спорт. 18+.</p>
+  </div>
+</section>
+<section id="foot" class="hidden">
+  <nav class="sub">
+    <button class="on" data-fl="el">Элитсерия</button>
+    <button data-fl="obos">OBOS</button>
+    <button data-fl="d2">2-й дивизион</button>
+    <button data-fl="d3">3-й дивизион</button>
+    <button data-fl="cup">Кубок</button>
+    <button data-fl="u19">U19</button>
+  </nav>
+  <div id="el">
+    <div class="league">Самые проходимые матчи дня · 26 октября · Турция, Болгария, Португалия, Ла Лига · информационно, не в купоне и не в банке</div>
+    <article class="card">
+      <div class="toprow"><span class="time">19:00 МСК · Турция</span><span class="badge live">инфо</span></div>
+      <div class="teams"><div class="av logo" style="background:#3c9be6"><img src="logos/ucl/besiktas.png" alt="Бешикташ" title="Бешикташ" width="30" height="30" loading="lazy" onerror="this.parentNode.classList.remove('logo');this.remove()"><span>БЕ</span></div><div class="nm">Бешикташ</div><span class="vs">—</span><div class="nm">Истанбул Башакшехир</div><div class="av logo" style="background:#ff8b3d"><img src="logos/fb/basaksehir.png" alt="Истанбул Башакшехир" title="Истанбул Башакшехир" width="30" height="30" loading="lazy" onerror="this.parentNode.classList.remove('logo');this.remove()"><span>ИБ</span></div></div>
+      <div class="markets"><div class="m on"><div class="k">Выбор: Ф1 (−1.5)</div><div class="v">1.92</div></div><div class="m"><div class="k">Источник</div><div class="v">Фонбет</div></div><div class="m"><div class="k">Вероятность</div><div class="v">≈50%</div></div><div class="m"><div class="k">Лига</div><div class="v">Турция</div></div></div>
+      <div class="note">Ф1 (−1.5) — 1.92 (Фонбет, <a href="https://sport.vbr.ru/events/football/2026-10-26-besiktas-istanbul-basaksexir/" style="color:inherit">источник</a>). П1 1.35, ТБ 2.5 1.40 — рынок ждёт уверенную победу Бешикташа; победа в 2+ мяча — около половины. Оценка ~50% при 52.1% в кэфе — не в купоне.</div>
+    </article>
+    <article class="card">
+      <div class="toprow"><span class="time">19:00 МСК · Турция</span><span class="badge live">инфо</span></div>
+      <div class="teams"><div class="av logo" style="background:#3c9be6"><img src="logos/fb/rizespor.png" alt="Ризеспор" title="Ризеспор" width="30" height="30" loading="lazy" onerror="this.parentNode.classList.remove('logo');this.remove()"><span>РИ</span></div><div class="nm">Ризеспор</div><span class="vs">—</span><div class="nm">Трабзонспор</div><div class="av logo" style="background:#ff8b3d"><img src="logos/fb/trabzonspor.png" alt="Трабзонспор" title="Трабзонспор" width="30" height="30" loading="lazy" onerror="this.parentNode.classList.remove('logo');this.remove()"><span>ТР</span></div></div>
+      <div class="markets"><div class="m on"><div class="k">Выбор: П2</div><div class="v">1.93</div></div><div class="m"><div class="k">Источник</div><div class="v">Фонбет</div></div><div class="m"><div class="k">Вероятность</div><div class="v">≈51%</div></div><div class="m"><div class="k">Лига</div><div class="v">Турция</div></div></div>
+      <div class="note">П2 — 1.93 (Фонбет, <a href="https://sport.vbr.ru/events/football/2026-10-26-rizespor-trabzonspor/" style="color:inherit">источник</a>). Исход 3.50 / 3.80 / 1.93 (Фонбет); обе забьют 1.55, ТБ 2.5 1.58 — ждут открытый матч. Оценка ~51% при 51.8% в кэфе — не в купоне.</div>
+    </article>
+    <article class="card">
+      <div class="toprow"><span class="time">20:30 МСК · Болгария</span><span class="badge live">инфо</span></div>
+      <div class="teams"><div class="av logo" style="background:#3c9be6"><img src="logos/fb/cska_sofia.png" alt="ЦСКА София" title="ЦСКА София" width="30" height="30" loading="lazy" onerror="this.parentNode.classList.remove('logo');this.remove()"><span>ЦС</span></div><div class="nm">ЦСКА София</div><span class="vs">—</span><div class="nm">Лудогорец</div><div class="av logo" style="background:#ff8b3d"><img src="logos/fb/ludogorets.png" alt="Лудогорец" title="Лудогорец" width="30" height="30" loading="lazy" onerror="this.parentNode.classList.remove('logo');this.remove()"><span>ЛУ</span></div></div>
+      <div class="markets"><div class="m on"><div class="k">Выбор: ТМ 2.5</div><div class="v">1.85</div></div><div class="m"><div class="k">Источник</div><div class="v">Фонбет</div></div><div class="m"><div class="k">Вероятность</div><div class="v">≈54%</div></div><div class="m"><div class="k">Лига</div><div class="v">Болгария</div></div></div>
+      <div class="note">ТМ 2.5 — 1.85 (Фонбет, <a href="https://sport.vbr.ru/events/football/2026-10-26-cska-sofiia-ludogorec-razgrad/" style="color:inherit">источник</a>). Дерби: исход 2.40 / 3.25 / 2.90, ТБ/ТМ 2.5 1.90/1.85 — ничья 3.25, рынок ждёт плотную игру. Оценка ~54% при 54.1% в кэфе — не в купоне.</div>
+    </article>
+    <article class="card">
+      <div class="toprow"><span class="time">21:45 МСК · Португалия</span><span class="badge live">инфо</span></div>
+      <div class="teams"><div class="av logo" style="background:#3c9be6"><img src="logos/fb/arouca.png" alt="Ароука" title="Ароука" width="30" height="30" loading="lazy" onerror="this.parentNode.classList.remove('logo');this.remove()"><span>АР</span></div><div class="nm">Ароука</div><span class="vs">—</span><div class="nm">Бенфика</div><div class="av logo" style="background:#ff8b3d"><img src="logos/fb/benfica.png" alt="Бенфика" title="Бенфика" width="30" height="30" loading="lazy" onerror="this.parentNode.classList.remove('logo');this.remove()"><span>БЕ</span></div></div>
+      <div class="markets"><div class="m on"><div class="k">Выбор: ТБ 2.5</div><div class="v">1.80</div></div><div class="m"><div class="k">Источник</div><div class="v">Фонбет</div></div><div class="m"><div class="k">Вероятность</div><div class="v">≈54%</div></div><div class="m"><div class="k">Лига</div><div class="v">Португалия</div></div></div>
+      <div class="note">ТБ 2.5 — 1.80 (Фонбет, <a href="https://sport.vbr.ru/events/football/2026-10-26-aroka-benfika/" style="color:inherit">источник</a>). Бенфика П2 1.40 (ниже 1.80, поэтому тотал); ТБ/ТМ 2.5 1.80/1.95 у Фонбета. Оценка ~54% при 55.6% в кэфе — не в купоне.</div>
+    </article>
+    <article class="card">
+      <div class="toprow"><span class="time">23:00 МСК · Ла Лига</span><span class="badge live">инфо</span></div>
+      <div class="teams"><div class="av logo" style="background:#3c9be6"><img src="logos/fb/sevilla.png" alt="Севилья" title="Севилья" width="30" height="30" loading="lazy" onerror="this.parentNode.classList.remove('logo');this.remove()"><span>СЕ</span></div><div class="nm">Севилья</div><span class="vs">—</span><div class="nm">Осасуна</div><div class="av logo" style="background:#ff8b3d"><img src="logos/fb/osasuna.png" alt="Осасуна" title="Осасуна" width="30" height="30" loading="lazy" onerror="this.parentNode.classList.remove('logo');this.remove()"><span>ОС</span></div></div>
+      <div class="markets"><div class="m on"><div class="k">Выбор: П1</div><div class="v">1.90</div></div><div class="m"><div class="k">Источник</div><div class="v">Фонбет</div></div><div class="m"><div class="k">Вероятность</div><div class="v">≈52%</div></div><div class="m"><div class="k">Лига</div><div class="v">Ла Лига</div></div></div>
+      <div class="note">П1 — 1.90 (Фонбет, <a href="https://sport.vbr.ru/events/football/2026-10-26-sevilia-osasuna/" style="color:inherit">источник</a>). Исход 1.90 / 3.45 / 4.40 (Фонбет); ТМ 2.5 1.68 — ждут немного голов. Оценка ~52% при 52.6% в кэфе — не в купоне.</div>
+    </article>
+    <p class="foot">Вероятность — наша оценка по рыночной цене и форме, не гарантия. 18+.</p>
+    <div class="league">Элитсерия · 26 октября · матчей нет</div>
+    <p class="foot">Норвегия в понедельник не играет — норвежских ставок в купоне сегодня нет.</p>
+    <div class="league">Футбол по таймам · 26 октября · информационно, не в купоне и не в банке</div>
+    <article class="card">
+      <div class="toprow"><span class="time">19:00 МСК · по таймам</span><span class="badge live">инфо</span></div>
+      <div class="teams"><div class="av logo" style="background:#3c9be6"><img src="logos/ucl/besiktas.png" alt="Бешикташ" title="Бешикташ" width="30" height="30" loading="lazy" onerror="this.parentNode.classList.remove('logo');this.remove()"><span>БЕ</span></div><div class="nm">Бешикташ</div><span class="vs">—</span><div class="nm">Истанбул Башакшехир</div><div class="av logo" style="background:#ff8b3d"><img src="logos/fb/basaksehir.png" alt="Истанбул Башакшехир" title="Истанбул Башакшехир" width="30" height="30" loading="lazy" onerror="this.parentNode.classList.remove('logo');this.remove()"><span>ИБ</span></div></div>
+      <div class="markets"><div class="m"><div class="k">1-й тайм: ТМ 1.5 · средняя</div><div class="v">кэф н/д</div></div><div class="m"><div class="k">2-й тайм: П Бешикташ · средняя</div><div class="v">кэф н/д</div></div><div class="m"><div class="k">Кэфы</div><div class="v">н/д</div></div></div>
+      <div class="note">П1 1.35, ТБ 2.5 1.40 — рынок ждёт уверенную победу Бешикташа.</div>
+    </article>
+    <article class="card">
+      <div class="toprow"><span class="time">19:00 МСК · по таймам</span><span class="badge live">инфо</span></div>
+      <div class="teams"><div class="av logo" style="background:#3c9be6"><img src="logos/fb/rizespor.png" alt="Ризеспор" title="Ризеспор" width="30" height="30" loading="lazy" onerror="this.parentNode.classList.remove('logo');this.remove()"><span>РИ</span></div><div class="nm">Ризеспор</div><span class="vs">—</span><div class="nm">Трабзонспор</div><div class="av logo" style="background:#ff8b3d"><img src="logos/fb/trabzonspor.png" alt="Трабзонспор" title="Трабзонспор" width="30" height="30" loading="lazy" onerror="this.parentNode.classList.remove('logo');this.remove()"><span>ТР</span></div></div>
+      <div class="markets"><div class="m"><div class="k">1-й тайм: ТМ 1.5 · средняя</div><div class="v">кэф н/д</div></div><div class="m"><div class="k">2-й тайм: ТБ 1.5 · низкая</div><div class="v">кэф н/д</div></div><div class="m"><div class="k">Кэфы</div><div class="v">н/д</div></div></div>
+      <div class="note">Исход 3.50 / 3.80 / 1.93 (Фонбет).</div>
+    </article>
+    <article class="card">
+      <div class="toprow"><span class="time">20:30 МСК · по таймам</span><span class="badge live">инфо</span></div>
+      <div class="teams"><div class="av logo" style="background:#3c9be6"><img src="logos/fb/cska_sofia.png" alt="ЦСКА София" title="ЦСКА София" width="30" height="30" loading="lazy" onerror="this.parentNode.classList.remove('logo');this.remove()"><span>ЦС</span></div><div class="nm">ЦСКА София</div><span class="vs">—</span><div class="nm">Лудогорец</div><div class="av logo" style="background:#ff8b3d"><img src="logos/fb/ludogorets.png" alt="Лудогорец" title="Лудогорец" width="30" height="30" loading="lazy" onerror="this.parentNode.classList.remove('logo');this.remove()"><span>ЛУ</span></div></div>
+      <div class="markets"><div class="m"><div class="k">1-й тайм: ТМ 1.5 · средняя</div><div class="v">кэф н/д</div></div><div class="m"><div class="k">2-й тайм: ТМ 1.5 · средняя</div><div class="v">кэф н/д</div></div><div class="m"><div class="k">Кэфы</div><div class="v">н/д</div></div></div>
+      <div class="note">Дерби: исход 2.40 / 3.25 / 2.90, ТБ/ТМ 2.5 1.90/1.85 — ничья 3.25, рынок ждёт плотную игру.</div>
+    </article>
+    <article class="card">
+      <div class="toprow"><span class="time">21:45 МСК · по таймам</span><span class="badge live">инфо</span></div>
+      <div class="teams"><div class="av logo" style="background:#3c9be6"><img src="logos/fb/arouca.png" alt="Ароука" title="Ароука" width="30" height="30" loading="lazy" onerror="this.parentNode.classList.remove('logo');this.remove()"><span>АР</span></div><div class="nm">Ароука</div><span class="vs">—</span><div class="nm">Бенфика</div><div class="av logo" style="background:#ff8b3d"><img src="logos/fb/benfica.png" alt="Бенфика" title="Бенфика" width="30" height="30" loading="lazy" onerror="this.parentNode.classList.remove('logo');this.remove()"><span>БЕ</span></div></div>
+      <div class="markets"><div class="m"><div class="k">1-й тайм: ТМ 1.5 · средняя</div><div class="v">кэф н/д</div></div><div class="m"><div class="k">2-й тайм: П Бенфика · средняя</div><div class="v">кэф н/д</div></div><div class="m"><div class="k">Кэфы</div><div class="v">н/д</div></div></div>
+      <div class="note">Бенфика П2 1.40 (ниже 1.80, поэтому тотал).</div>
+    </article>
+    <article class="card">
+      <div class="toprow"><span class="time">23:00 МСК · по таймам</span><span class="badge live">инфо</span></div>
+      <div class="teams"><div class="av logo" style="background:#3c9be6"><img src="logos/fb/sevilla.png" alt="Севилья" title="Севилья" width="30" height="30" loading="lazy" onerror="this.parentNode.classList.remove('logo');this.remove()"><span>СЕ</span></div><div class="nm">Севилья</div><span class="vs">—</span><div class="nm">Осасуна</div><div class="av logo" style="background:#ff8b3d"><img src="logos/fb/osasuna.png" alt="Осасуна" title="Осасуна" width="30" height="30" loading="lazy" onerror="this.parentNode.classList.remove('logo');this.remove()"><span>ОС</span></div></div>
+      <div class="markets"><div class="m"><div class="k">1-й тайм: ТМ 1.5 · средняя</div><div class="v">кэф н/д</div></div><div class="m"><div class="k">2-й тайм: ТМ 1.5 · средняя</div><div class="v">кэф н/д</div></div><div class="m"><div class="k">Кэфы</div><div class="v">н/д</div></div></div>
+      <div class="note">Исход 1.90 / 3.45 / 4.40 (Фонбет).</div>
+    </article>
+    <p class="foot">Линии на таймы с названной БК не нашёл. 18+.</p>
+  </div>
+  <div id="obos" class="hidden"><div class="league">26 октября · матчей нет</div></div>
+  <div id="d2" class="hidden"><div class="league">26 октября · матчей нет</div></div>
+  <div id="d3" class="hidden"><div class="league">26 октября · матчей нет</div></div>
+  <div id="cup" class="hidden"><div class="league">26 октября · матчей нет</div></div>
+  <div id="u19" class="hidden"><div class="league">26 октября · матчей нет</div></div>
+</section>
+<section id="ex" class="hidden">
+  <div class="league">экспресс · один, от 3.00 · ноги от 1.70 (футбол от 1.80)</div>
+  <article class="card">
+    <div class="toprow"><span class="time">26 октября</span><span class="badge skip">нет</span></div>
+    <div class="note">Экспресса сегодня нет. Одиночки (Трактор, Эдмонтон) в экспресс не повторяем, а других ног с краем нет: Торонто в 60 минут 2.02 — оценка ниже цены, с ОТ 1.65 — ниже 1.70; Динамо М — Авангард — края ни в одну сторону; Автомобилист и Рейнджерс — кэфы не сверить на Выберу.Спорт. Норвегия не играет. Добирать купон ради экспресса не будем.</div>
+  </article>
+  <p class="foot">Фикс 200 ₽ с 24.10.2026. 18+.</p>
+</section>
+<section id="itog" class="hidden">
+  <div class="pad">
+    <div class="league">25 октября · снято по счёту</div>
+    <div class="row"><span>Амур — Адмирал 3:0 (3:0, 0:0, 0:0), ТМ 4.5 2.15, основное время</span><span class="badge win">+230</span></div>
+    <div class="row"><span>Швеннинген — Айсберен Берлин 1:4 (0:1, 1:2, 0:1), П2 1.77, основное время</span><span class="badge win">+154</span></div>
+    <p class="foot">Обе одиночки зашли: Амур забил три в первом периоде и закрыл игру на ноль — всего 3 шайбы; Берлин выиграл в основное время 4:1. Утро 25.10 — 6 658 ₽, после — 7 042 ₽ (+384). Ставки по 200 ₽. Счета — khl.ru, penny-del.org.</p>
+    <div class="league">25 октября · прогнозы по периодам · инфо, не в банке</div>
+    <div class="row"><span>КХЛ · Амур — Адмирал 3:0 (3:0, 0:0, 0:0): 1-й П Амур ✓ · 2-й П Амур ✗ · 3-й П Амур ✗</span><span class="badge loss">1/3</span></div>
+    <div class="row"><span>КХЛ · Лада — Сочи 3:4 (1:2, 1:1, 1:1): 1-й П Лада ✗ · 2-й П Лада ✗ · 3-й П Лада ✗</span><span class="badge loss">0/3</span></div>
+    <div class="row"><span>КХЛ · Салават Юлаев — Ак Барс 1:2 (0:0, 1:1, 0:1): 1-й ничья ✓ · 2-й П Салават Юлаев ✗ · 3-й П Салават Юлаев ✗</span><span class="badge loss">1/3</span></div>
+    <div class="row"><span>КХЛ · Локомотив — Северсталь 1:0 (1:0, 0:0, 0:0): 1-й ничья ✗ · 2-й П Локомотив ✗ · 3-й П Локомотив ✗</span><span class="badge loss">0/3</span></div>
+    <div class="row"><span>КХЛ · СКА — ЦСКА 1:3 (0:0, 0:2, 1:1): 1-й ничья ✓ · 2-й П ЦСКА ✓ · 3-й П ЦСКА ✗</span><span class="badge win">2/3</span></div>
+    <div class="row"><span>КХЛ · Спартак — Шанхай 3:4 Б (0:1, 2:0, 1:2): 1-й П Спартак ✗ · 2-й П Спартак ✓ · 3-й П Спартак ✗</span><span class="badge loss">1/3</span></div>
+    <div class="row"><span>НХЛ · Флорида @ Чикаго 3:2 (2:1, 0:1, 1:0): 1-й П Флорида ✓ · 2-й П Флорида ✗ · 3-й П Флорида ✓</span><span class="badge win">2/3</span></div>
+    <div class="row"><span>НХЛ · Айлендерс @ Даллас 3:6 (1:2, 2:1, 0:3): 1-й П Даллас ✓ · 2-й П Даллас ✗ · 3-й П Даллас ✓</span><span class="badge win">2/3</span></div>
+    <div class="row"><span>НХЛ · Монреаль @ Виннипег 2:1 (0:0, 2:0, 0:1): 1-й П Монреаль ✗ · 2-й П Монреаль ✓ · 3-й П Монреаль ✗</span><span class="badge loss">1/3</span></div>
+    <div class="row"><span>НХЛ · Колорадо @ Нэшвилл 2:6 (0:2, 1:3, 1:1): 1-й П Колорадо ✗ · 2-й П Колорадо ✗ · 3-й П Колорадо ✗</span><span class="badge loss">0/3</span></div>
+    <div class="row"><span>НХЛ · Миннесота @ Ванкувер 4:2 (1:0, 2:0, 1:2): 1-й П Миннесота ✓ · 2-й П Миннесота ✓ · 3-й П Миннесота ✗</span><span class="badge win">2/3</span></div>
+    <div class="row"><span>DEL · Швеннинген — Айсберен Берлин 1:4 (0:1, 1:2, 0:1): 1-й П Берлин ✓ · 2-й П Берлин ✓ · 3-й П Берлин ✓</span><span class="badge win">3/3</span></div>
+    <div class="row"><span>DEL · Франкфурт — Вольфсбург 1:2 Б (0:1, 0:0, 1:0): 1-й ничья ✗ · 2-й П Франкфурт ✗ · 3-й П Франкфурт ✓</span><span class="badge loss">1/3</span></div>
+    <div class="row"><span>DEL · Аугсбург — Штраубинг 2:4 (0:0, 1:2, 1:2): 1-й П Штраубинг ✗ · 2-й П Штраубинг ✓ · 3-й П Штраубинг ✓</span><span class="badge win">2/3</span></div>
+    <div class="row"><span>DEL · Изерлон — Нюрнберг 2:4 (1:3, 0:0, 1:1): 1-й П Нюрнберг ✓ · 2-й П Нюрнберг ✗ · 3-й П Нюрнберг ✗</span><span class="badge loss">1/3</span></div>
+    <div class="row"><span>DEL · Крефельд — Мюнхен 2:4 (1:2, 0:1, 1:1): 1-й П Мюнхен ✓ · 2-й П Мюнхен ✓ · 3-й П Мюнхен ✗</span><span class="badge win">2/3</span></div>
+    <div class="row"><span>DEL · Бремерхафен — Ингольштадт 5:2 (2:0, 3:2, 0:0): 1-й П Ингольштадт ✗ · 2-й П Ингольштадт ✗ · 3-й П Ингольштадт ✗</span><span class="badge loss">0/3</span></div>
+    <div class="row"><span>МХЛ · Сибирские Снайперы — Ирбис 0:3: периоды — П Ирбис · П Ирбис · П Ирбис</span><span class="badge win">3/3</span></div>
+    <div class="row"><span>МХЛ · Омские Ястребы — Чайка 5:4 ОТ: периоды — ничья · П Чайка · П Чайка</span><span class="badge loss">1/3</span></div>
+    <div class="row"><span>МХЛ · Толпар — Стальные Лисы 1:2 Б: периоды — П Стальные Лисы · П Стальные Лисы · П Стальные Лисы</span><span class="badge loss">0/3</span></div>
+    <div class="row"><span>МХЛ · СКА-1946 — Алмаз 3:8: периоды — П СКА-1946 · П СКА-1946 · П СКА-1946</span><span class="badge loss">0/3</span></div>
+    <div class="row"><span>МХЛ · Локо-76 — Авто 6:4: периоды — П Авто · П Авто · П Авто</span><span class="badge loss">1/3</span></div>
+    <div class="row"><span>МХЛ · Красноярские Рыси — Молот 3:2: периоды — П Красноярские Рыси · П Красноярские Рыси · П Красноярские Рыси</span><span class="badge loss">1/3</span></div>
+    <div class="row"><span>МХЛ · МХК Динамо М — Красная Армия 3:0: периоды — П Красная Армия · П Красная Армия · П Красная Армия</span><span class="badge loss">0/3</span></div>
+    <div class="row"><span>Футбол · Интер — Фиорентина 2:1: таймы — ТМ 1.5 · П Интер</span><span class="badge win">2/2</span></div>
+    <div class="row"><span>Футбол · Аталанта — Фрозиноне 4:4: таймы — ТМ 1.5 · ТБ 1.5</span><span class="badge win">1/2</span></div>
+    <div class="row"><span>Футбол · Зенит — Динамо Махачкала 2:0: таймы — ТМ 1.5 · П Зенит</span><span class="badge win">2/2</span></div>
+    <div class="row"><span>Футбол · Удинезе — Милан 0:2: таймы — ТМ 1.5 · ТБ 1.5</span><span class="badge win">1/2</span></div>
+    <div class="row"><span>Футбол · Барселона — Реал Мадрид 1:2: таймы — ТБ 1.5 · ТБ 1.5</span><span class="badge win">1/2</span></div>
+    <div class="row"><span>Футбол · Сарпсборг — Олесунн 2:1: таймы — ТМ 1.5 · П Сарпсборг</span><span class="badge win">2/2</span></div>
+    <div class="row"><span>Футбол · Мосс — Осане 1:3: таймы — ТБ 1.5 · ТБ 1.5</span><span class="badge win">2/2</span></div>
+    <p class="foot">Итого 38 из 86: КХЛ 5/18, НХЛ 7/15, DEL 9/18, МХЛ 6/21, футбол по таймам 11/14. В банк не идёт. Источники: khl.ru, NHL.com (api-web.nhle.com), penny-del.org / NDR, mhl.khl.ru, championat.com.</p>
+    <div class="league">25 октября · инфо-пики МХЛ и «Самые проходимые» · не в банке</div>
+    <div class="row"><span>МХЛ · Сибирские Снайперы — Ирбис 0:3 · П2 1.80</span><span class="badge win">✓</span></div>
+    <div class="row"><span>МХЛ · Омские Ястребы — Чайка 5:4 ОТ · П2 2.10</span><span class="badge loss">✗</span></div>
+    <div class="row"><span>МХЛ · Толпар — Стальные Лисы 1:2 Б · П2 1.95</span><span class="badge loss">✗</span></div>
+    <div class="row"><span>МХЛ · СКА-1946 — Алмаз 3:8 · ТБ 5.5 1.95</span><span class="badge win">✓</span></div>
+    <div class="row"><span>МХЛ · Локо-76 — Авто 6:4 · П2 1.85</span><span class="badge loss">✗</span></div>
+    <div class="row"><span>МХЛ · Красноярские Рыси — Молот 3:2 · П1 2.15</span><span class="badge win">✓</span></div>
+    <div class="row"><span>МХЛ · МХК Динамо М — Красная Армия 3:0 · П2 2.10</span><span class="badge loss">✗</span></div>
+    <div class="row"><span>Серия А · Интер — Фиорентина 2:1 · Ф1 (−1.5) 1.90</span><span class="badge loss">✗</span></div>
+    <div class="row"><span>Серия А · Аталанта — Фрозиноне 4:4 · П1 1.83</span><span class="badge loss">✗</span></div>
+    <div class="row"><span>РПЛ · Зенит — Динамо Махачкала 2:0 · Ф1 (−1.5) 1.85</span><span class="badge win">✓</span></div>
+    <div class="row"><span>Серия А · Удинезе — Милан 0:2 · ТБ 2.5 1.88</span><span class="badge loss">✗</span></div>
+    <div class="row"><span>Ла Лига · Барселона — Реал Мадрид 1:2 · Ф1 (−1) 1.97</span><span class="badge loss">✗</span></div>
+    <div class="row"><span>Элитсерия · Сарпсборг — Олесунн 2:1 · П1 1.82</span><span class="badge win">✓</span></div>
+    <div class="row"><span>OBOS · Мосс — Осане 1:3 · ТБ 3.5 1.80</span><span class="badge win">✓</span></div>
+    <p class="foot">МХЛ 3 из 7, футбол 3 из 7 — всего 6 из 14. Источники: mhl.khl.ru, championat.com, sport-express.ru.</p>
+    <div class="league">24 октября · архив</div>
+    <div class="row"><span>Анахайм @ Филадельфия 5:4, ТМ 5.5 2.03, с ОТ</span><span class="badge loss">−200</span></div>
+    <div class="row"><span>Рейнджерс @ Оттава 4:7, ТМ 5.5 2.10, с ОТ</span><span class="badge loss">−200</span></div>
+    <div class="row"><span>Экспресс: Рауфосс — Ранхейм 1:3 × Торпедо — Динамо Мн 1:2 ОТ (1:1 в осн. время), кэф 4.80</span><span class="badge win">+760</span></div>
+    <p class="foot">Утро 24.10 — 6 298 ₽, после — 6 658 ₽ (+360). Периоды 28 из 54, инфо-пики 4 из 10.</p>
+    <div class="league">23 октября · архив</div>
+    <p class="foot">Купон 23.10 был пустым: тест уверенности не прошёл ни один кандидат. Банк не изменился — 6 298 ₽. Периоды 28 из 50, инфо-пики 1 из 7.</p>
+    <div class="league">22 октября · архив</div>
+    <div class="row"><span>Виннипег @ Даллас 2:3 ОТ (0:0, 2:1, 0:1, ОТ 0:1), ТМ 5.5 2.00, с ОТ</span><span class="badge win">+500</span></div>
+    <p class="foot">ЗАШЛО. Даллас дожал в овертайме, всего 5 шайб — «меньше 5.5» сыграло. Утро 22.10 — 5 798 ₽, после — 6 298 ₽ (+500). Ставка по 500 ₽. Счёт — NHL.com (api-web.nhle.com).</p>
+    <div class="league">21 октября · архив</div>
+    <div class="row"><span>Металлург Мг — Салават Юлаев 4:5 Б (3:1, 0:0, 1:3), П1 1.80, 60 мин (в осн. время 4:4)</span><span class="badge loss">−500</span></div>
+    <div class="row"><span>Северсталь — Шанхайские Драконы 1:5 (0:2, 0:2, 1:1), П1 1.95, 60 мин</span><span class="badge loss">−500</span></div>
+    <div class="row"><span>Экспресс: Спартак — ЦСКА 2:0 × Флорида @ Оттава 1:5, кэф 4.15</span><span class="badge loss">−500</span></div>
+    <p class="foot">МИМО по всем трём, ничего не прячем. Металлург вёл 3:1 и пропустил три в третьем — 4:4 в основное время, буллиты не считаются. Северсталь перебросала Драконов 43:24, но проиграла 1:5. Оттава свою ногу сделала (5:1), а ЦСКА впервые за 13 матчей проиграл — 0:2 от Спартака, экспресс мимо. Утро 21.10 — 7 298 ₽, после — 5 798 ₽ (−1 500). Ставки 21.10 по 500 ₽.</p>
+    <div class="league">20 октября · архив</div>
+    <div class="row"><span>СКА — Автомобилист 1:3 (0:0, 1:1, 0:2), П1 2.05, 60 мин</span><span class="badge loss">−1 000</span></div>
+    <div class="row"><span>Локомотив — Нефтехимик 0:1 (0:0, 0:0, 0:1), Ф1 (−1.5) 2.10, 60 мин</span><span class="badge loss">−1 000</span></div>
+    <div class="row"><span>Экспресс: Миннесота @ Эдмонтон 3:4 ОТ × Тампа-Бэй @ Вегас 6:2, кэф 3.37</span><span class="badge loss">−1 000</span></div>
+    <p class="foot">Плохой день, ничего не прячем. СКА проиграл в первом матче Разина (шестое поражение подряд), Локомотив не забил Долганову, решающую шайбу в большинстве забросил Белозёров. Эдмонтон свою ногу сделал в овертайме, Вегас уступил Тампе 2:6 — экспресс мимо. Утро 20.10 — 10 298 ₽, после — 7 298 ₽ (−3 000). Ставки 20.10 по 1000 ₽.</p>
+    <div class="league">19 октября · архив</div>
+    <div class="row"><span>Амур — Барыс 5:2, П1 2.20, 60 мин</span><span class="badge win">+1 200</span></div>
+    <div class="row"><span>Северсталь — Торпедо 4:1 (2:0, 2:0, 0:1), П1 2.10, 60 мин</span><span class="badge win">+1 100</span></div>
+    <div class="row"><span>Экспресс: Адмирал — Салават Юлаев 2:0 × Сочи — Шанхай 2:5, кэф 3.55</span><span class="badge loss">−1 000</span></div>
+    <p class="foot">Амур и Северсталь выиграли в основное время. Экспресс: Салават проиграл во Владивостоке 0:2 — мимо, хотя Шанхай свою часть сделал (5:2). Утро 19.10 — 8 998 ₽, после — 10 298 ₽ (+1 300). Ставки 19.10 по 1000 ₽.</p>
+    <div class="league">18 октября · архив</div>
+    <div class="row"><span>Металлург Мг — Автомобилист 4:2, П1 1.85, 60 мин</span><span class="badge win">+170</span></div>
+    <div class="row"><span>Авангард — Трактор 2:1 Б, П1 1.90, 60 мин (рег. ничья)</span><span class="badge loss">−200</span></div>
+    <div class="row"><span>Экспресс: Динамо Минск — Ак Барс 1:4 × Strømsgodset — Haugesund 5:0, кэф 4.14</span><span class="badge loss">−200</span></div>
+    <p class="foot">Металлург зашёл в основное время. Авангард только в буллитах — ставка на 60 мин мимо. Экспресс: Минск проиграл, Godset выиграл — мимо. Утро 18.10 — 9 228 ₽, после — 8 998 ₽ (−230). Ставки 18.10 по 200 ₽.</p>
+    <div class="league">17 октября · архив</div>
+    <div class="row"><span>Сибирь — Барыс 0:1, П1 2.40, 60 мин</span><span class="badge loss">−200</span></div>
+    <div class="row"><span>Нью-Джерси @ Вашингтон 2:4, Вашингтон с ОТ 1.80</span><span class="badge win">+160</span></div>
+    <div class="row"><span>Экспресс: Кристиансунн — Олесунн 1:4 × Эдмонтон @ Юта 6:2, кэф 4.08</span><span class="badge loss">−200</span></div>
+    <p class="foot">Сибирь мимо (0:1, гол Морелли). Вашингтон 4:2 в основное время — зашло. Экспресс: Кристиансунн 1:4 и Юта 2:6 — оба мимо. Утро 17.10 — 9 468 ₽, после — 9 228 ₽ (−240). Ставки 17.10 по 200 ₽.</p>
+    <div class="league">16 октября · архив</div>
+    <div class="row"><span>Торпедо — Динамо М 5:4, П1 2.24, 60 мин</span><span class="badge win">+248</span></div>
+    <div class="row"><span>Адмирал — Спартак 1:5, П2 1.99, 60 мин</span><span class="badge win">+198</span></div>
+    <div class="row"><span>Экспресс: Авангард — Автомобилист 4:2 × Бостон @ Анахайм 4:2, кэф 4.37</span><span class="badge win">+674</span></div>
+    <p class="foot">Всё зашло, все победы в основное время. Утро 16.10 — 8 348 ₽, после — 9 468 ₽ (+1 120). Ставки 16.10 по 200 ₽.</p>
+  </div>
+</section>
+<section id="bank" class="hidden">
+  <div class="pad">
+    <div class="big">7 042 ₽</div>
+    <p class="foot">Утро 26 октября. База утра 25 октября: 6 658 ₽; итог 25.10: +384 ₽ (Амур — Адмирал ТМ 4.5 +230, Айсберен Берлин П2 +154). Купон 26.10: 2 одиночки по 200 ₽ (Трактор П1 осн. время 1.95, Эдмонтон П1 осн. время 1.94), экспресса нет; открытые 400 ₽ из банка не вычитаются до расчёта. С начала месяца (12.10, 9 708 ₽): −2 666 ₽ (−27.5%). Цель +100% в месяц сейчас не достигается. 18+.</p>
+    <p class="foot">С купона 24.10.2026 — фикс 200 ₽ на ставку (12.10 — 200; 13–15 — 1000; 16–18 — 200; 19–20 — 1000; 21–23 — 500). Купон: не больше 2 одиночек и 1 экспресс от 3.00. Кэф каждой ставки и ноги от 1.70, футбол от 1.80. В купон — КХЛ, НХЛ, DEL и Норвегия; победа только с подписью «основное время» или «с ОТ и буллитами». Тоталы и фора аутсайдера — не по умолчанию. Берём ставки, где наша оценка не ниже вероятности по кэфу; нет таких — ставок меньше. МХЛ и «Самые проходимые» — справочно. 18+.</p>
+  </div>
+</section>
+<aside class="tgcta" id="tgcta"><div><b>Capper Day в Telegram</b><span>Утренний купон, разборы и честные итоги — каждый день в 08:00 МСК. 18+.</span></div><a href="https://t.me/capperday" target="_blank" rel="noopener">✈️ Открыть @capperday</a></aside>
+<script>
+const theme=document.getElementById('theme');
+theme.onclick=()=>document.body.classList.toggle('light');
+document.querySelectorAll('.tabs button').forEach(b=>b.onclick=()=>{
+  document.querySelectorAll('.tabs button').forEach(x=>x.classList.remove('on'));
+  b.classList.add('on');
+  ['hock','foot','ex','itog','bank'].forEach(id=>{
+    const n=document.getElementById(id);
+    if(n) n.classList.toggle('hidden', id!==b.dataset.tab);
+  });
+});
+document.querySelectorAll('[data-lg]').forEach(b=>b.onclick=()=>{
+  document.querySelectorAll('[data-lg]').forEach(x=>x.classList.remove('on'));
+  b.classList.add('on');
+  ['khl','nhl','del','mhl'].forEach(id=>document.getElementById(id).classList.toggle('hidden', id!==b.dataset.lg));
+});
+document.querySelectorAll('[data-fl]').forEach(b=>b.onclick=()=>{
+  document.querySelectorAll('[data-fl]').forEach(x=>x.classList.remove('on'));
+  b.classList.add('on');
+  ['el','obos','d2','d3','cup','u19'].forEach(id=>document.getElementById(id).classList.toggle('hidden', id!==b.dataset.fl));
+});
+</script>
+</body>
+</html>

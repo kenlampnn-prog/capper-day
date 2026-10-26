@@ -455,7 +455,23 @@
   "Динамо Махачкала": "logos/fb/dynamo_mkh.png",
   "Стальные Лисы": "logos/mhl/stlisy.png",
   "Красноярские Рыси": "logos/mhl/krrysi.png",
-  "МХК Динамо М": "logos/mhl/mhk_dinamo_m.png"
+  "МХК Динамо М": "logos/mhl/mhk_dinamo_m.png",
+  "Севилья": "logos/fb/sevilla.png",
+  "Осасуна": "logos/fb/osasuna.png",
+  "Истанбул Башакшехир": "logos/fb/basaksehir.png",
+  "Башакшехир": "logos/fb/basaksehir.png",
+  "Ризеспор": "logos/fb/rizespor.png",
+  "Трабзонспор": "logos/fb/trabzonspor.png",
+  "Копенгаген": "logos/fb/kobenhavn.png",
+  "Оденсе": "logos/fb/ob.png",
+  "Ароука": "logos/fb/arouca.png",
+  "Бенфика": "logos/fb/benfica.png",
+  "ЦСКА София": "logos/fb/cska_sofia.png",
+  "Лудогорец": "logos/fb/ludogorets.png",
+  "Спутник": "logos/mhl/sputnik.png",
+  "Спутник Альметьевск": "logos/mhl/sputnik.png",
+  "МХК Спартак": "logos/khl/spartak.png",
+  "МХК Спартак МАХ": "logos/khl/spartak.png"
  },
  "files": {
   "logos/khl/lokomotiv.png": {
@@ -1225,6 +1241,66 @@
    "league": "mhl",
    "name": "МХК Динамо М",
    "source": "ru.wikipedia.org File:МХК Динамо Москва лого.png"
+  },
+  "logos/fb/sevilla.png": {
+   "league": "fb",
+   "name": "Севилья",
+   "source": "Wikipedia/Wikimedia (club crest)"
+  },
+  "logos/fb/osasuna.png": {
+   "league": "fb",
+   "name": "Осасуна",
+   "source": "Wikipedia/Wikimedia (club crest)"
+  },
+  "logos/fb/basaksehir.png": {
+   "league": "fb",
+   "name": "Истанбул Башакшехир",
+   "source": "Wikipedia/Wikimedia (club crest)"
+  },
+  "logos/fb/rizespor.png": {
+   "league": "fb",
+   "name": "Ризеспор",
+   "source": "Wikipedia/Wikimedia (club crest)"
+  },
+  "logos/fb/trabzonspor.png": {
+   "league": "fb",
+   "name": "Трабзонспор",
+   "source": "Wikipedia/Wikimedia (club crest)"
+  },
+  "logos/fb/kobenhavn.png": {
+   "league": "fb",
+   "name": "Копенгаген",
+   "source": "Wikipedia/Wikimedia (club crest)"
+  },
+  "logos/fb/ob.png": {
+   "league": "fb",
+   "name": "Оденсе",
+   "source": "Wikipedia/Wikimedia (club crest)"
+  },
+  "logos/fb/arouca.png": {
+   "league": "fb",
+   "name": "Ароука",
+   "source": "Wikipedia/Wikimedia (club crest)"
+  },
+  "logos/fb/benfica.png": {
+   "league": "fb",
+   "name": "Бенфика",
+   "source": "Wikipedia/Wikimedia (club crest)"
+  },
+  "logos/fb/cska_sofia.png": {
+   "league": "fb",
+   "name": "ЦСКА София",
+   "source": "Wikipedia/Wikimedia (club crest)"
+  },
+  "logos/fb/ludogorets.png": {
+   "league": "fb",
+   "name": "Лудогорец",
+   "source": "Wikipedia/Wikimedia (club crest)"
+  },
+  "logos/mhl/sputnik.png": {
+   "league": "mhl",
+   "name": "Спутник Альметьевск",
+   "source": "ru.wikipedia (club logo)"
   }
  }
 }
