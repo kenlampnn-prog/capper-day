@@ -471,7 +471,18 @@
   "Спутник": "logos/mhl/sputnik.png",
   "Спутник Альметьевск": "logos/mhl/sputnik.png",
   "МХК Спартак": "logos/khl/spartak.png",
-  "МХК Спартак МАХ": "logos/khl/spartak.png"
+  "МХК Спартак МАХ": "logos/khl/spartak.png",
+  "Боруссия Д": "logos/fb/dortmund.png",
+  "Дортмунд": "logos/fb/dortmund.png",
+  "Вердер": "logos/fb/werder.png",
+  "Унион Берлин": "logos/fb/union_berlin.png",
+  "Унион": "logos/fb/union_berlin.png",
+  "Гамбург": "logos/fb/hamburg.png",
+  "Айнтрахт": "logos/fb/eintracht.png",
+  "Айнтрахт Франкфурт": "logos/fb/eintracht.png",
+  "Кальяри": "logos/fb/cagliari.png",
+  "ФК Кёльн": "logos/fb/fc_koeln.png",
+  "ФК Динамо Москва": "logos/fb/dynamo_moscow_fc.png"
  },
  "files": {
   "logos/khl/lokomotiv.png": {
@@ -1301,6 +1312,46 @@
    "league": "mhl",
    "name": "Спутник Альметьевск",
    "source": "ru.wikipedia (club logo)"
+  },
+  "logos/fb/dortmund.png": {
+   "league": "fb",
+   "name": "Боруссия Д",
+   "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Borussia_Dortmund_logo.svg"
+  },
+  "logos/fb/werder.png": {
+   "league": "fb",
+   "name": "Вердер",
+   "src": "https://commons.wikimedia.org/wiki/Special:FilePath/SV-Werder-Bremen-Logo.svg"
+  },
+  "logos/fb/union_berlin.png": {
+   "league": "fb",
+   "name": "Унион Берлин",
+   "src": "https://commons.wikimedia.org/wiki/Special:FilePath/1._FC_Union_Berlin_Logo.svg"
+  },
+  "logos/fb/hamburg.png": {
+   "league": "fb",
+   "name": "Гамбург",
+   "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Hamburger_SV_logo.svg"
+  },
+  "logos/fb/eintracht.png": {
+   "league": "fb",
+   "name": "Айнтрахт",
+   "src": "https://en.wikipedia.org/wiki/Special:FilePath/Eintracht_Frankfurt_crest.svg"
+  },
+  "logos/fb/cagliari.png": {
+   "league": "fb",
+   "name": "Кальяри",
+   "src": "https://it.wikipedia.org/wiki/Special:FilePath/Cagliari_calcio.svg"
+  },
+  "logos/fb/fc_koeln.png": {
+   "league": "fb",
+   "name": "ФК Кёльн",
+   "src": "https://commons.wikimedia.org/wiki/Special:FilePath/1._FC_Koeln_Logo_2014–.svg"
+  },
+  "logos/fb/dynamo_moscow_fc.png": {
+   "league": "fb",
+   "name": "ФК Динамо Москва",
+   "src": "https://de.wikipedia.org/wiki/Special:FilePath/DinamoMoscow.svg"
   }
  }
 }
