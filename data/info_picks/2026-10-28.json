@@ -1,0 +1,712 @@
+{
+ "date": "2026-10-28",
+ "note": "Информационные прогнозы: не в купоне и не в банке. Грейдить на следующий день. Норвегия 28.10 — только Кубок (1/16), справочно.",
+ "mhl": [
+  {
+   "league": "МХЛ",
+   "match": "Реактор — МХК Спартак",
+   "home": "Реактор",
+   "away": "МХК Спартак",
+   "date": "2026-10-28",
+   "kickoff_msk": "18:30",
+   "pick": "П1 (осн. время)",
+   "odds": 2.05,
+   "odds_source": "Фонбет",
+   "source_url": "https://sport.vbr.ru/events/hockey/2026-10-28-reaktor-mxk-spartak-max/",
+   "reason": "Реактор дома — небольшой фаворит (2.05 / 4.40 / 2.75 у Фонбета); ТМ 5.5 1.75 — рынок ждёт плотную игру.",
+   "implied": 0.488,
+   "prob_est": 0.47,
+   "confidence_test": "fail: оценка 47% < 48.8% в кэфе",
+   "coupon": false,
+   "result": "open",
+   "score": null,
+   "rule": "основное время",
+   "periods": [
+    {
+     "period": 1,
+     "pick": "П Реактор",
+     "confidence": "низкая",
+     "odds": 2.6,
+     "odds_source": "Фонбет"
+    },
+    {
+     "period": 2,
+     "pick": "П Реактор",
+     "confidence": "низкая",
+     "odds": 2.45,
+     "odds_source": "Фонбет"
+    },
+    {
+     "period": 3,
+     "pick": "П Реактор",
+     "confidence": "низкая",
+     "odds": 2.45,
+     "odds_source": "Фонбет"
+    }
+   ]
+  },
+  {
+   "league": "МХЛ",
+   "match": "Красная Машина — Амурские Тигры",
+   "home": "Красная Машина",
+   "away": "Амурские Тигры",
+   "date": "2026-10-28",
+   "kickoff_msk": "19:00",
+   "pick": "П2 с ОТ и буллитами",
+   "odds": 1.91,
+   "odds_source": "Марафон",
+   "source_url": "https://sport.vbr.ru/events/hockey/2026-10-28-krasnaia-masina-atlant-amurskie-tigry/",
+   "reason": "Линия почти равная (2.25 / 4.40 / 2.40 у Фонбета); с учётом овертайма гости чуть впереди — 1.91 против 1.80 у хозяев.",
+   "implied": 0.524,
+   "prob_est": 0.51,
+   "confidence_test": "fail: оценка 51% < 52.4% в кэфе",
+   "coupon": false,
+   "result": "open",
+   "score": null,
+   "rule": "с ОТ и буллитами",
+   "periods": [
+    {
+     "period": 1,
+     "pick": "ничья",
+     "confidence": "низкая",
+     "odds": 2.65,
+     "odds_source": "Фонбет"
+    },
+    {
+     "period": 2,
+     "pick": "П Красная Машина",
+     "confidence": "низкая",
+     "odds": 2.65,
+     "odds_source": "Фонбет"
+    },
+    {
+     "period": 3,
+     "pick": "П Красная Машина",
+     "confidence": "низкая",
+     "odds": 2.65,
+     "odds_source": "Фонбет"
+    }
+   ]
+  },
+  {
+   "league": "МХЛ",
+   "match": "АКМ-Юниор — Тайфун",
+   "home": "АКМ-Юниор",
+   "away": "Тайфун",
+   "date": "2026-10-28",
+   "kickoff_msk": "19:00",
+   "pick": "Ф1 (−1.5)",
+   "odds": 2.2,
+   "odds_source": "Фонбет",
+   "source_url": "https://sport.vbr.ru/events/hockey/2026-10-28-mikhaylov-academy-u20-taifun-vladivostok/",
+   "reason": "Академия Михайлова — крупный фаворит (П1 1.30, ниже 1.80, поэтому фора); ТБ 5.5 1.65 — рынок ждёт голевой матч.",
+   "implied": 0.455,
+   "prob_est": 0.45,
+   "confidence_test": "fail: оценка 45% < 45.5% в кэфе",
+   "coupon": false,
+   "result": "open",
+   "score": null,
+   "rule": "основное время",
+   "periods": [
+    {
+     "period": 1,
+     "pick": "П АКМ-Юниор",
+     "confidence": "средняя",
+     "odds": 1.77,
+     "odds_source": "Фонбет"
+    },
+    {
+     "period": 2,
+     "pick": "П АКМ-Юниор",
+     "confidence": "средняя",
+     "odds": 1.68,
+     "odds_source": "Фонбет"
+    },
+    {
+     "period": 3,
+     "pick": "П АКМ-Юниор",
+     "confidence": "средняя",
+     "odds": 1.67,
+     "odds_source": "Фонбет"
+    }
+   ]
+  }
+ ],
+ "football_best": [
+  {
+   "league": "Кубок Германии",
+   "match": "Фрайбург — Вольфсбург",
+   "home": "Фрайбург",
+   "away": "Вольфсбург",
+   "date": "2026-10-28",
+   "kickoff_msk": "20:00",
+   "pick": "Ф1 (−1.5)",
+   "odds": 2.25,
+   "odds_source": "Фонбет",
+   "source_url": "https://sport.vbr.ru/events/football/2026-10-28-fraiburg-volfsburg/",
+   "reason": "П1 1.53 (ниже 1.80, поэтому фора), ТБ 3.5 1.95 — рынок ждёт голевой матч; ставка на 90 минут, без дополнительного времени.",
+   "implied": 0.444,
+   "prob_est": 0.43,
+   "confidence_test": "fail: оценка 43% < 44.4% в кэфе",
+   "coupon": false,
+   "result": "open",
+   "score": null,
+   "rule": "90 минут",
+   "halves": [
+    {
+     "half": 1,
+     "pick": "П Фрайбург",
+     "confidence": "средняя",
+     "odds": 1.92,
+     "odds_source": "Фонбет"
+    },
+    {
+     "half": 2,
+     "pick": "П Фрайбург",
+     "confidence": "средняя",
+     "odds": 1.8,
+     "odds_source": "Фонбет"
+    }
+   ]
+  },
+  {
+   "league": "Кубок России",
+   "match": "Спартак — Рубин",
+   "home": "Спартак",
+   "away": "Рубин",
+   "date": "2026-10-28",
+   "kickoff_msk": "20:30",
+   "pick": "Ф1 (−1.5)",
+   "odds": 2.15,
+   "odds_source": "Фонбет",
+   "source_url": "https://sport.vbr.ru/events/football/2026-10-28-spartak-m-rubin/",
+   "reason": "П1 1.43 / 4.60 / 7.70 (Фонбет) — Спартак дома явный фаворит; 1-й тайм за Спартаком 1.85. Ставка на 90 минут.",
+   "implied": 0.465,
+   "prob_est": 0.45,
+   "confidence_test": "fail: оценка 45% < 46.5% в кэфе",
+   "coupon": false,
+   "result": "open",
+   "score": null,
+   "rule": "90 минут",
+   "halves": [
+    {
+     "half": 1,
+     "pick": "П Спартак",
+     "confidence": "средняя",
+     "odds": 1.85,
+     "odds_source": "Фонбет"
+    },
+    {
+     "half": 2,
+     "pick": "П Спартак",
+     "confidence": "средняя",
+     "odds": 1.7,
+     "odds_source": "Фонбет"
+    }
+   ]
+  },
+  {
+   "league": "Серия А",
+   "match": "Венеция — Интер",
+   "home": "Венеция",
+   "away": "Интер",
+   "date": "2026-10-28",
+   "kickoff_msk": "20:30",
+   "pick": "ТБ 3.5",
+   "odds": 1.9,
+   "odds_source": "Фонбет",
+   "source_url": "https://sport.vbr.ru/events/football/2026-10-28-veneciia-inter/",
+   "reason": "П2 1.35 — Интер крупный фаворит; ТБ 3.5 по 1.90 и Ф2 (−1.5) 1.90 — линия ждёт крупную победу гостей.",
+   "implied": 0.526,
+   "prob_est": 0.5,
+   "confidence_test": "fail: оценка 50% < 52.6% в кэфе",
+   "coupon": false,
+   "result": "open",
+   "score": null,
+   "rule": "90 минут",
+   "halves": [
+    {
+     "half": 1,
+     "pick": "П Интер",
+     "confidence": "средняя",
+     "odds": 1.7,
+     "odds_source": "Фонбет"
+    },
+    {
+     "half": 2,
+     "pick": "П Интер",
+     "confidence": "средняя",
+     "odds": 1.57,
+     "odds_source": "Фонбет"
+    }
+   ]
+  },
+  {
+   "league": "Серия А",
+   "match": "Милан — Болонья",
+   "home": "Милан",
+   "away": "Болонья",
+   "date": "2026-10-28",
+   "kickoff_msk": "20:30",
+   "pick": "ТМ 2.5",
+   "odds": 1.97,
+   "odds_source": "Фонбет",
+   "source_url": "https://sport.vbr.ru/events/football/2026-10-28-milan-bolonia/",
+   "reason": "Исход 1.70 / 3.85 / 5.00 (Фонбет); тотал 2.5 почти поровну (ТБ 1.85 / ТМ 1.97), в первом тайме ничья — самый вероятный исход (2.30).",
+   "implied": 0.508,
+   "prob_est": 0.5,
+   "confidence_test": "fail: оценка 50% < 50.8% в кэфе",
+   "coupon": false,
+   "result": "open",
+   "score": null,
+   "rule": "90 минут",
+   "halves": [
+    {
+     "half": 1,
+     "pick": "П Милан",
+     "confidence": "средняя",
+     "odds": 2.2,
+     "odds_source": "Фонбет"
+    },
+    {
+     "half": 2,
+     "pick": "П Милан",
+     "confidence": "средняя",
+     "odds": 2.0,
+     "odds_source": "Фонбет"
+    }
+   ]
+  },
+  {
+   "league": "Кубок английской лиги",
+   "match": "Манчестер Сити — Брайтон",
+   "home": "Манчестер Сити",
+   "away": "Брайтон",
+   "date": "2026-10-28",
+   "kickoff_msk": "22:30",
+   "pick": "Ф1 (−1.5)",
+   "odds": 2.67,
+   "odds_source": "Марафон",
+   "source_url": "https://sport.vbr.ru/events/football/2026-10-28-mancester-siti-braiton/",
+   "reason": "П1 1.70 (Марафон) — фаворит, но не подавляющий; кубок — ставка на 90 минут. Цена высокая, уверенность низкая.",
+   "implied": 0.375,
+   "prob_est": 0.37,
+   "confidence_test": "fail: оценка 37% < 37.5% в кэфе",
+   "coupon": false,
+   "result": "open",
+   "score": null,
+   "rule": "90 минут",
+   "halves": [
+    {
+     "half": 1,
+     "pick": "П Манчестер Сити",
+     "confidence": "средняя",
+     "odds": 2.14,
+     "odds_source": "Марафон"
+    },
+    {
+     "half": 2,
+     "pick": "П Манчестер Сити",
+     "confidence": "средняя",
+     "odds": 1.95,
+     "odds_source": "Марафон"
+    }
+   ]
+  }
+ ],
+ "norway_cup": [
+  {
+   "league": "Кубок Норвегии",
+   "match": "Мольде — Стрёмсгодсет",
+   "home": "Мольде",
+   "away": "Стрёмсгодсет",
+   "date": "2026-10-28",
+   "kickoff_msk": "20:00",
+   "pick": "Ф1 (−1.5)",
+   "odds": 1.57,
+   "odds_source": "Фонбет",
+   "source_url": "https://sport.vbr.ru/events/football/2026-10-28-molde-stremgodset/",
+   "reason": "П1 1.19 — Мольде дома крупный фаворит над клубом лигой ниже. Ставка на 90 минут.",
+   "implied": 0.637,
+   "prob_est": 0.6,
+   "confidence_test": "fail: оценка 60% < 63.7% в кэфе",
+   "coupon": false,
+   "result": "open",
+   "score": null,
+   "rule": "90 минут",
+   "halves": [
+    {
+     "half": 1,
+     "pick": "П Мольде",
+     "confidence": "средняя",
+     "odds": 1.47,
+     "odds_source": "Фонбет"
+    },
+    {
+     "half": 2,
+     "pick": "П Мольде",
+     "confidence": "средняя",
+     "odds": 1.4,
+     "odds_source": "Фонбет"
+    }
+   ]
+  },
+  {
+   "league": "Кубок Норвегии",
+   "match": "Тромсё — Хёугесунн",
+   "home": "Тромсё",
+   "away": "Хёугесунн",
+   "date": "2026-10-28",
+   "kickoff_msk": "21:00",
+   "pick": "Ф1 (−1.5)",
+   "odds": 1.5,
+   "odds_source": "Фонбет",
+   "source_url": "https://sport.vbr.ru/events/football/2026-10-28-tromse-xogesund/",
+   "reason": "П1 1.14 — линия ждёт уверенную победу Тромсё. Ставка на 90 минут.",
+   "implied": 0.667,
+   "prob_est": 0.63,
+   "confidence_test": "fail: оценка 63% < 66.7% в кэфе",
+   "coupon": false,
+   "result": "open",
+   "score": null,
+   "rule": "90 минут",
+   "halves": [
+    {
+     "half": 1,
+     "pick": "П Тромсё",
+     "confidence": "средняя",
+     "odds": 1.47,
+     "odds_source": "Фонбет"
+    },
+    {
+     "half": 2,
+     "pick": "П Тромсё",
+     "confidence": "средняя",
+     "odds": 1.33,
+     "odds_source": "Фонбет"
+    }
+   ]
+  },
+  {
+   "league": "Кубок Норвегии",
+   "match": "Кристиансунн — Олесунн",
+   "home": "Кристиансунн",
+   "away": "Олесунн",
+   "date": "2026-10-28",
+   "kickoff_msk": "20:00",
+   "pick": "П1",
+   "odds": 2.1,
+   "odds_source": "Фонбет",
+   "source_url": "https://sport.vbr.ru/events/football/2026-10-28-kristiansund-olesund/",
+   "reason": "Исход 2.10 / 3.60 / 2.85 (Фонбет) — хозяева чуть впереди; ТБ 2.5 1.47 — линия ждёт голы.",
+   "implied": 0.476,
+   "prob_est": 0.46,
+   "confidence_test": "fail: оценка 46% < 47.6% в кэфе",
+   "coupon": false,
+   "result": "open",
+   "score": null,
+   "rule": "90 минут",
+   "halves": [
+    {
+     "half": 1,
+     "pick": "ничья",
+     "confidence": "низкая",
+     "odds": 2.45,
+     "odds_source": "Фонбет"
+    },
+    {
+     "half": 2,
+     "pick": "П Кристиансунн",
+     "confidence": "средняя",
+     "odds": 2.3,
+     "odds_source": "Фонбет"
+    }
+   ]
+  },
+  {
+   "league": "Кубок Норвегии",
+   "match": "Сарпсборг 08 — Волеренга",
+   "home": "Сарпсборг 08",
+   "away": "Волеренга",
+   "date": "2026-10-28",
+   "kickoff_msk": "20:00",
+   "pick": "П1",
+   "odds": 2.05,
+   "odds_source": "Фонбет",
+   "source_url": "https://sport.vbr.ru/events/football/2026-10-28-sarpsborg-08-volerenga/",
+   "reason": "Исход 2.05 / 3.65 / 2.90 (Фонбет) — Сарпсборг дома небольшой фаворит.",
+   "implied": 0.488,
+   "prob_est": 0.47,
+   "confidence_test": "fail: оценка 47% < 48.8% в кэфе",
+   "coupon": false,
+   "result": "open",
+   "score": null,
+   "rule": "90 минут",
+   "halves": [
+    {
+     "half": 1,
+     "pick": "ничья",
+     "confidence": "низкая",
+     "odds": 2.4,
+     "odds_source": "Фонбет"
+    },
+    {
+     "half": 2,
+     "pick": "П Сарпсборг 08",
+     "confidence": "средняя",
+     "odds": 2.3,
+     "odds_source": "Фонбет"
+    }
+   ]
+  }
+ ],
+ "khl_periods": [
+  {
+   "match": "Ак Барс — Авангард",
+   "kickoff_msk": "19:00",
+   "periods": [
+    {
+     "period": 1,
+     "pick": "ничья",
+     "confidence": "низкая",
+     "odds": 2.5,
+     "odds_source": "Фонбет"
+    },
+    {
+     "period": 2,
+     "pick": "ничья",
+     "confidence": "низкая",
+     "odds": 2.75,
+     "odds_source": "Фонбет"
+    },
+    {
+     "period": 3,
+     "pick": "П Ак Барс",
+     "confidence": "низкая",
+     "odds": 2.7,
+     "odds_source": "Фонбет"
+    }
+   ]
+  },
+  {
+   "match": "Динамо Минск — Барыс",
+   "kickoff_msk": "19:10",
+   "periods": [
+    {
+     "period": 1,
+     "pick": "П Динамо Минск",
+     "confidence": "низкая",
+     "odds": 2.35,
+     "odds_source": "Фонбет"
+    },
+    {
+     "period": 2,
+     "pick": "П Динамо Минск",
+     "confidence": "средняя",
+     "odds": 2.25,
+     "odds_source": "Фонбет"
+    },
+    {
+     "period": 3,
+     "pick": "П Динамо Минск",
+     "confidence": "средняя",
+     "odds": 2.15,
+     "odds_source": "Фонбет"
+    }
+   ]
+  },
+  {
+   "match": "ЦСКА — Трактор",
+   "kickoff_msk": "19:30",
+   "periods": [
+    {
+     "period": 1,
+     "pick": "П ЦСКА",
+     "confidence": "средняя",
+     "odds": 2.25,
+     "odds_source": "Фонбет"
+    },
+    {
+     "period": 2,
+     "pick": "П ЦСКА",
+     "confidence": "средняя",
+     "odds": 2.12,
+     "odds_source": "Фонбет"
+    },
+    {
+     "period": 3,
+     "pick": "П ЦСКА",
+     "confidence": "средняя",
+     "odds": 2.05,
+     "odds_source": "Фонбет"
+    }
+   ]
+  },
+  {
+   "match": "Динамо Москва — Амур",
+   "kickoff_msk": "19:30",
+   "periods": [
+    {
+     "period": 1,
+     "pick": "П Динамо Москва",
+     "confidence": "низкая",
+     "odds": 2.45,
+     "odds_source": "Фонбет"
+    },
+    {
+     "period": 2,
+     "pick": "П Динамо Москва",
+     "confidence": "средняя",
+     "odds": 2.3,
+     "odds_source": "Фонбет"
+    },
+    {
+     "period": 3,
+     "pick": "П Динамо Москва",
+     "confidence": "средняя",
+     "odds": 2.25,
+     "odds_source": "Фонбет"
+    }
+   ]
+  }
+ ],
+ "nhl_periods": [
+  {
+   "match": "Филадельфия @ Вашингтон",
+   "kickoff_msk": "02:30",
+   "periods": [
+    {
+     "period": 1,
+     "pick": "П Вашингтон",
+     "confidence": "средняя",
+     "odds": 2.17,
+     "odds_source": "Фонбет"
+    },
+    {
+     "period": 2,
+     "pick": "П Вашингтон",
+     "confidence": "средняя",
+     "odds": 2.07,
+     "odds_source": "Фонбет"
+    },
+    {
+     "period": 3,
+     "pick": "П Вашингтон",
+     "confidence": "средняя",
+     "odds": 2.0,
+     "odds_source": "Фонбет"
+    }
+   ]
+  },
+  {
+   "match": "Калгари @ Эдмонтон",
+   "kickoff_msk": "03:30",
+   "periods": [
+    {
+     "period": 1,
+     "pick": "П Эдмонтон",
+     "confidence": "средняя",
+     "odds": 2.18,
+     "odds_source": "Фонбет"
+    },
+    {
+     "period": 2,
+     "pick": "П Эдмонтон",
+     "confidence": "средняя",
+     "odds": 2.08,
+     "odds_source": "Фонбет"
+    },
+    {
+     "period": 3,
+     "pick": "П Эдмонтон",
+     "confidence": "средняя",
+     "odds": 2.0,
+     "odds_source": "Фонбет"
+    }
+   ]
+  },
+  {
+   "match": "Нью-Джерси @ Колорадо",
+   "kickoff_msk": "04:00",
+   "periods": [
+    {
+     "period": 1,
+     "pick": "П Колорадо",
+     "confidence": "низкая",
+     "odds": 2.35,
+     "odds_source": "Фонбет"
+    },
+    {
+     "period": 2,
+     "pick": "П Колорадо",
+     "confidence": "средняя",
+     "odds": 2.25,
+     "odds_source": "Фонбет"
+    },
+    {
+     "period": 3,
+     "pick": "П Колорадо",
+     "confidence": "средняя",
+     "odds": 2.17,
+     "odds_source": "Фонбет"
+    }
+   ]
+  },
+  {
+   "match": "Торонто @ Сиэтл",
+   "kickoff_msk": "05:00",
+   "periods": [
+    {
+     "period": 1,
+     "pick": "П Торонто",
+     "confidence": "низкая",
+     "odds": 2.6,
+     "odds_source": "Фонбет"
+    },
+    {
+     "period": 2,
+     "pick": "П Торонто",
+     "confidence": "низкая",
+     "odds": 2.5,
+     "odds_source": "Фонбет"
+    },
+    {
+     "period": 3,
+     "pick": "П Торонто",
+     "confidence": "низкая",
+     "odds": 2.45,
+     "odds_source": "Фонбет"
+    }
+   ]
+  }
+ ],
+ "del_periods": [
+  {
+   "match": "Крефельд — Швеннинген",
+   "kickoff_msk": "21:30",
+   "periods": [
+    {
+     "period": 1,
+     "pick": "П Крефельд",
+     "confidence": "низкая",
+     "odds": 2.55,
+     "odds_source": "Фонбет"
+    },
+    {
+     "period": 2,
+     "pick": "П Крефельд",
+     "confidence": "низкая",
+     "odds": 2.4,
+     "odds_source": "Фонбет"
+    },
+    {
+     "period": 3,
+     "pick": "П Крефельд",
+     "confidence": "низкая",
+     "odds": 2.35,
+     "odds_source": "Фонбет"
+    }
+   ]
+  }
+ ]
+}

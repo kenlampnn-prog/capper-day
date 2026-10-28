@@ -482,7 +482,18 @@
   "Айнтрахт Франкфурт": "logos/fb/eintracht.png",
   "Кальяри": "logos/fb/cagliari.png",
   "ФК Кёльн": "logos/fb/fc_koeln.png",
-  "ФК Динамо Москва": "logos/fb/dynamo_moscow_fc.png"
+  "ФК Динамо Москва": "logos/fb/dynamo_moscow_fc.png",
+  "Реактор": "logos/mhl/reaktor.png",
+  "Тайфун": "logos/mhl/taifun.png",
+  "Тайфун Владивосток": "logos/mhl/taifun.png",
+  "Болонья": "logos/fb/bologna.png",
+  "Венеция": "logos/fb/venezia.png",
+  "Брайтон": "logos/fb/brighton.png",
+  "Манчестер Сити": "logos/fb/man_city.png",
+  "Фрайбург": "logos/fb/freiburg.png",
+  "Рубин": "logos/fb/rubin.png",
+  "Рубин Казань": "logos/fb/rubin.png",
+  "Мольде": "logos/nor/molde.png"
  },
  "files": {
   "logos/khl/lokomotiv.png": {
@@ -1352,6 +1363,51 @@
    "league": "fb",
    "name": "ФК Динамо Москва",
    "src": "https://de.wikipedia.org/wiki/Special:FilePath/DinamoMoscow.svg"
+  },
+  "logos/mhl/reaktor.png": {
+   "league": "mhl",
+   "name": "Реактор",
+   "src": "https://ru.wikipedia.org/wiki/Файл:Логотип_ХК_Реактор.png"
+  },
+  "logos/mhl/taifun.png": {
+   "league": "mhl",
+   "name": "Тайфун",
+   "src": "https://ru.wikipedia.org/wiki/Файл:ХК_Тайфун_лого.png"
+  },
+  "logos/fb/bologna.png": {
+   "league": "fb",
+   "name": "Болонья",
+   "src": "https://a.espncdn.com/i/teamlogos/soccer/500/107.png"
+  },
+  "logos/fb/venezia.png": {
+   "league": "fb",
+   "name": "Венеция",
+   "src": "https://a.espncdn.com/i/teamlogos/soccer/500/17530.png"
+  },
+  "logos/fb/brighton.png": {
+   "league": "fb",
+   "name": "Брайтон",
+   "src": "https://a.espncdn.com/i/teamlogos/soccer/500/331.png"
+  },
+  "logos/fb/man_city.png": {
+   "league": "fb",
+   "name": "Манчестер Сити",
+   "src": "https://a.espncdn.com/i/teamlogos/soccer/500/382.png"
+  },
+  "logos/fb/freiburg.png": {
+   "league": "fb",
+   "name": "Фрайбург",
+   "src": "https://a.espncdn.com/i/teamlogos/soccer/500/126.png"
+  },
+  "logos/fb/rubin.png": {
+   "league": "fb",
+   "name": "Рубин",
+   "src": "https://a.espncdn.com/i/teamlogos/soccer/500/3851.png"
+  },
+  "logos/nor/molde.png": {
+   "league": "nor",
+   "name": "Мольде",
+   "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Molde_Fotball_Logo.svg"
   }
  }
 }
