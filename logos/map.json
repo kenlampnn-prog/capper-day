@@ -7,7 +7,7 @@
   "nor": "eliteserien.no / obos-ligaen.no /img/logo/<code>/logo.png",
   "mhl": "img.khl.ru/clubs/ru/<id>/80.png (official mhl.khl.ru club logos)",
   "ucl": "img.uefa.com/imgml/TP/teams/logos/240x240/<id>.png (UEFA official, via match.uefa.com API); with 22.10.2026 Europa/Conference League clubs from Wikimedia (img.uefa.com unreachable from the box)",
-  "fb": "Wikimedia Commons / en.wikipedia.org club crests (Special:FilePath), resized to 96×96 PNG"
+  "fb": "Wikimedia Commons / en.wikipedia.org club crests (Special:FilePath), resized to 96×96 PNG; с 29.10.2026 часть гербов — ESPN (a.espncdn.com/i/teamlogos/soccer/500/<id>.png), сохранены локально 96×96"
  },
  "teams": {
   "Локомотив": "logos/khl/lokomotiv.png",
@@ -493,7 +493,16 @@
   "Фрайбург": "logos/fb/freiburg.png",
   "Рубин": "logos/fb/rubin.png",
   "Рубин Казань": "logos/fb/rubin.png",
-  "Мольде": "logos/nor/molde.png"
+  "Мольде": "logos/nor/molde.png",
+  "Хаммарбю": "logos/fb/hammarby.png",
+  "Hammarby": "logos/fb/hammarby.png",
+  "Сириус": "logos/fb/sirius.png",
+  "Sirius": "logos/fb/sirius.png",
+  "Жил Висенте": "logos/fb/gil_vicente.png",
+  "Gil Vicente": "logos/fb/gil_vicente.png",
+  "ФК ЦСКА": "logos/fb/cska_fc.png",
+  "ФК Локомотив": "logos/fb/lokomotiv_fc.png",
+  "ФК Крылья Советов": "logos/fb/krylia_fc.png"
  },
  "files": {
   "logos/khl/lokomotiv.png": {
