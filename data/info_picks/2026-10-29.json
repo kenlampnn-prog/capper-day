@@ -1,6 +1,6 @@
 {
  "date": "2026-10-29",
- "note": "Информационные прогнозы: не в купоне и не в банке. Грейдить на следующий день. Норвегия 29.10 — матчей Элитсерии/OBOS нет.",
+ "note": "Информационные прогнозы: не в купоне и не в банке. Грейдить на следующий день. Норвегия 29.10 — матчей Элитсерии/OBOS нет. Итоги проставлены 30.10.",
  "mhl": [
   {
    "league": "МХЛ",
@@ -18,8 +18,8 @@
    "prob_est": 0.47,
    "confidence_test": "fail: оценка 47% < 51.3% в кэфе",
    "coupon": false,
-   "result": "open",
-   "score": null,
+   "result": "win",
+   "score": "3:1 (2:0, 0:1, 1:0)",
    "rule": "основное время",
    "periods": [
     {
@@ -27,23 +27,30 @@
      "pick": "П Красноярские Рыси",
      "confidence": "низкая",
      "odds": 2.45,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "result": "П Красноярские Рыси",
+     "hit": true
     },
     {
      "period": 2,
      "pick": "П Красноярские Рыси",
      "confidence": "низкая",
      "odds": 2.35,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "result": "П Спутник",
+     "hit": false
     },
     {
      "period": 3,
      "pick": "П Красноярские Рыси",
      "confidence": "средняя",
      "odds": 2.3,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "result": "П Красноярские Рыси",
+     "hit": true
     }
-   ]
+   ],
+   "periods_graded": "2/3"
   },
   {
    "league": "МХЛ",
@@ -61,8 +68,8 @@
    "prob_est": 0.44,
    "confidence_test": "fail: оценка 44% < 46.5% в кэфе",
    "coupon": false,
-   "result": "open",
-   "score": null,
+   "result": "lose",
+   "score": "5:4 ОТ (2:0, 1:4, 1:0)",
    "rule": "основное время",
    "periods": [
     {
@@ -70,23 +77,30 @@
      "pick": "П Красная Машина",
      "confidence": "низкая",
      "odds": 2.7,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "result": "П Красная Машина",
+     "hit": true
     },
     {
      "period": 2,
      "pick": "П Красная Машина",
      "confidence": "низкая",
      "odds": 2.55,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "result": "П Амурские Тигры",
+     "hit": false
     },
     {
      "period": 3,
      "pick": "П Красная Машина",
      "confidence": "низкая",
      "odds": 2.55,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "result": "П Красная Машина",
+     "hit": true
     }
-   ]
+   ],
+   "periods_graded": "2/3"
   },
   {
    "league": "МХЛ",
@@ -104,8 +118,8 @@
    "prob_est": 0.5,
    "confidence_test": "fail: оценка 50% < 55.6% в кэфе",
    "coupon": false,
-   "result": "open",
-   "score": null,
+   "result": "lose",
+   "score": "2:4 (0:1, 1:1, 1:2)",
    "rule": "основное время",
    "periods": [
     {
@@ -113,23 +127,30 @@
      "pick": "П АКМ-Юниор",
      "confidence": "средняя",
      "odds": 1.97,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "result": "П Тайфун",
+     "hit": false
     },
     {
      "period": 2,
      "pick": "П АКМ-Юниор",
      "confidence": "средняя",
      "odds": 1.85,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "result": "ничья",
+     "hit": false
     },
     {
      "period": 3,
      "pick": "П АКМ-Юниор",
      "confidence": "средняя",
      "odds": 1.85,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "result": "П Тайфун",
+     "hit": false
     }
-   ]
+   ],
+   "periods_graded": "0/3"
   }
  ],
  "football_best": [
@@ -149,8 +170,8 @@
    "prob_est": 0.5,
    "confidence_test": "fail: оценка 50% < 51.3% в кэфе",
    "coupon": false,
-   "result": "open",
-   "score": null,
+   "result": "win",
+   "score": "2:0 (1:0)",
    "rule": "90 минут",
    "halves": [
     {
@@ -158,16 +179,21 @@
      "pick": "ничья",
      "confidence": "средняя",
      "odds": 2.18,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "result": "П Крылья Советов",
+     "hit": false
     },
     {
      "half": 2,
      "pick": "П Крылья Советов",
      "confidence": "средняя",
      "odds": 2.25,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "result": "П Крылья Советов",
+     "hit": true
     }
-   ]
+   ],
+   "halves_graded": "1/2"
   },
   {
    "league": "Кубок России",
@@ -185,8 +211,8 @@
    "prob_est": 0.48,
    "confidence_test": "fail: оценка 48% < 50.0% в кэфе",
    "coupon": false,
-   "result": "open",
-   "score": null,
+   "result": "win",
+   "score": "3:1 (2:1)",
    "rule": "90 минут",
    "halves": [
     {
@@ -194,16 +220,21 @@
      "pick": "ничья",
      "confidence": "низкая",
      "odds": 2.35,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "result": "П ЦСКА",
+     "hit": false
     },
     {
      "half": 2,
      "pick": "П ЦСКА",
      "confidence": "средняя",
      "odds": 2.25,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "result": "П ЦСКА",
+     "hit": true
     }
-   ]
+   ],
+   "halves_graded": "1/2"
   },
   {
    "league": "Аллсвенскан",
@@ -221,8 +252,8 @@
    "prob_est": 0.44,
    "confidence_test": "fail: оценка 44% < 45.5% в кэфе",
    "coupon": false,
-   "result": "open",
-   "score": null,
+   "result": "win",
+   "score": "2:0 (1:0)",
    "rule": "90 минут",
    "halves": [
     {
@@ -230,16 +261,21 @@
      "pick": "П Хаммарбю",
      "confidence": "средняя",
      "odds": 1.95,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "result": "П Хаммарбю",
+     "hit": true
     },
     {
      "half": 2,
      "pick": "П Хаммарбю",
      "confidence": "средняя",
      "odds": 1.75,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "result": "П Хаммарбю",
+     "hit": true
     }
-   ]
+   ],
+   "halves_graded": "2/2"
   },
   {
    "league": "Кубок России",
@@ -257,8 +293,8 @@
    "prob_est": 0.52,
    "confidence_test": "fail: оценка 52% < 53.2% в кэфе",
    "coupon": false,
-   "result": "open",
-   "score": null,
+   "result": "win",
+   "score": "2:3 (0:1)",
    "rule": "90 минут",
    "halves": [
     {
@@ -266,16 +302,21 @@
      "pick": "ничья",
      "confidence": "средняя",
      "odds": 2.05,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "result": "П Зенит",
+     "hit": false
     },
     {
      "half": 2,
      "pick": "П Зенит",
      "confidence": "средняя",
      "odds": 2.3,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "result": "ничья",
+     "hit": false
     }
-   ]
+   ],
+   "halves_graded": "0/2"
   },
   {
    "league": "Кубок лиги Португалии",
@@ -293,8 +334,8 @@
    "prob_est": 0.53,
    "confidence_test": "fail: оценка 53% < 55.6% в кэфе",
    "coupon": false,
-   "result": "open",
-   "score": null,
+   "result": "win",
+   "score": "4:1 (2:0)",
    "rule": "90 минут",
    "halves": [
     {
@@ -302,16 +343,21 @@
      "pick": "П Бенфика",
      "confidence": "средняя",
      "odds": 1.58,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "result": "П Бенфика",
+     "hit": true
     },
     {
      "half": 2,
      "pick": "П Бенфика",
      "confidence": "средняя",
      "odds": 1.47,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "result": "П Бенфика",
+     "hit": true
     }
-   ]
+   ],
+   "halves_graded": "2/2"
   }
  ],
  "norway": [],
@@ -325,23 +371,31 @@
      "pick": "П Металлург Мг",
      "confidence": "средняя",
      "odds": 2.18,
-     "odds_source": "Бетсити"
+     "odds_source": "Бетсити",
+     "result": "П Сибирь",
+     "hit": false
     },
     {
      "period": 2,
      "pick": "П Металлург Мг",
      "confidence": "средняя",
      "odds": 2.05,
-     "odds_source": "Бетсити"
+     "odds_source": "Бетсити",
+     "result": "П Сибирь",
+     "hit": false
     },
     {
      "period": 3,
      "pick": "П Металлург Мг",
      "confidence": "средняя",
      "odds": 2.07,
-     "odds_source": "Бетсити"
+     "odds_source": "Бетсити",
+     "result": "ничья",
+     "hit": false
     }
-   ]
+   ],
+   "score": "5:2 (1:0, 3:1, 1:1)",
+   "graded": "0/3"
   },
   {
    "match": "Локомотив — Сочи",
@@ -352,23 +406,31 @@
      "pick": "П Локомотив",
      "confidence": "средняя",
      "odds": 1.78,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "result": "П Локомотив",
+     "hit": true
     },
     {
      "period": 2,
      "pick": "П Локомотив",
      "confidence": "средняя",
      "odds": 1.68,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "result": "П Локомотив",
+     "hit": true
     },
     {
      "period": 3,
      "pick": "П Локомотив",
      "confidence": "средняя",
      "odds": 1.63,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "result": "П Локомотив",
+     "hit": true
     }
-   ]
+   ],
+   "score": "6:2 (1:0, 3:2, 2:0)",
+   "graded": "3/3"
   },
   {
    "match": "Северсталь — Спартак",
@@ -379,23 +441,31 @@
      "pick": "ничья",
      "confidence": "низкая",
      "odds": 2.55,
-     "odds_source": "Бетсити"
+     "odds_source": "Бетсити",
+     "result": "ничья",
+     "hit": true
     },
     {
      "period": 2,
      "pick": "П Спартак",
      "confidence": "низкая",
      "odds": 2.7,
-     "odds_source": "Бетсити"
+     "odds_source": "Бетсити",
+     "result": "П Спартак",
+     "hit": true
     },
     {
      "period": 3,
      "pick": "ничья",
      "confidence": "низкая",
      "odds": 2.7,
-     "odds_source": "Бетсити"
+     "odds_source": "Бетсити",
+     "result": "П Северсталь",
+     "hit": false
     }
-   ]
+   ],
+   "score": "3:2 Б (1:1, 0:1, 1:0)",
+   "graded": "2/3"
   }
  ],
  "nhl_periods": [
@@ -408,23 +478,31 @@
      "pick": "П Тампа-Бэй",
      "confidence": "средняя",
      "odds": 2.15,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "result": "ничья",
+     "hit": false
     },
     {
      "period": 2,
      "pick": "П Тампа-Бэй",
      "confidence": "средняя",
      "odds": 2.05,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "result": "П Тампа-Бэй",
+     "hit": true
     },
     {
      "period": 3,
      "pick": "П Тампа-Бэй",
      "confidence": "средняя",
      "odds": 1.98,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "result": "П Виннипег",
+     "hit": false
     }
-   ]
+   ],
+   "score": "4:6 (1:1, 0:4, 3:1)",
+   "graded": "1/3"
   },
   {
    "match": "Коламбус @ Каролина",
@@ -435,23 +513,31 @@
      "pick": "П Каролина",
      "confidence": "средняя",
      "odds": 2.13,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "result": "П Каролина",
+     "hit": true
     },
     {
      "period": 2,
      "pick": "П Каролина",
      "confidence": "средняя",
      "odds": 2.03,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "result": "П Каролина",
+     "hit": true
     },
     {
      "period": 3,
      "pick": "П Каролина",
      "confidence": "средняя",
      "odds": 1.95,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "result": "П Коламбус",
+     "hit": false
     }
-   ]
+   ],
+   "score": "2:3 (0:1, 0:1, 2:1)",
+   "graded": "2/3"
   },
   {
    "match": "Чикаго @ Детройт",
@@ -462,23 +548,31 @@
      "pick": "П Детройт",
      "confidence": "низкая",
      "odds": 2.35,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "result": "П Чикаго",
+     "hit": false
     },
     {
      "period": 2,
      "pick": "П Детройт",
      "confidence": "средняя",
      "odds": 2.25,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "result": "П Детройт",
+     "hit": true
     },
     {
      "period": 3,
      "pick": "П Детройт",
      "confidence": "средняя",
      "odds": 2.15,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "result": "П Детройт",
+     "hit": true
     }
-   ]
+   ],
+   "score": "1:4 (1:0, 0:1, 0:3)",
+   "graded": "2/3"
   },
   {
    "match": "Бостон @ Сент-Луис",
@@ -489,23 +583,31 @@
      "pick": "П Сент-Луис",
      "confidence": "низкая",
      "odds": 2.75,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "result": "ничья",
+     "hit": false
     },
     {
      "period": 2,
      "pick": "П Сент-Луис",
      "confidence": "низкая",
      "odds": 2.65,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "result": "П Сент-Луис",
+     "hit": true
     },
     {
      "period": 3,
      "pick": "П Сент-Луис",
      "confidence": "низкая",
      "odds": 2.55,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "result": "П Сент-Луис",
+     "hit": true
     }
-   ]
+   ],
+   "score": "1:4 (1:1, 0:2, 0:1)",
+   "graded": "2/3"
   },
   {
    "match": "Вашингтон @ Нэшвилл",
@@ -516,23 +618,31 @@
      "pick": "П Вашингтон",
      "confidence": "низкая",
      "odds": 2.7,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "result": "ничья",
+     "hit": false
     },
     {
      "period": 2,
      "pick": "П Вашингтон",
      "confidence": "низкая",
      "odds": 2.6,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "result": "П Вашингтон",
+     "hit": true
     },
     {
      "period": 3,
      "pick": "П Вашингтон",
      "confidence": "низкая",
      "odds": 2.5,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "result": "ничья",
+     "hit": false
     }
-   ]
+   ],
+   "score": "4:3 (1:1, 2:1, 1:1)",
+   "graded": "1/3"
   },
   {
    "match": "Монреаль @ Даллас",
@@ -543,23 +653,31 @@
      "pick": "П Даллас",
      "confidence": "низкая",
      "odds": 2.45,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "result": "П Монреаль",
+     "hit": false
     },
     {
      "period": 2,
      "pick": "П Даллас",
      "confidence": "низкая",
      "odds": 2.35,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "result": "ничья",
+     "hit": false
     },
     {
      "period": 3,
      "pick": "П Даллас",
      "confidence": "средняя",
      "odds": 2.25,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "result": "П Монреаль",
+     "hit": false
     }
-   ]
+   ],
+   "score": "5:2 (3:1, 1:1, 1:0)",
+   "graded": "0/3"
   },
   {
    "match": "Айлендерс @ Миннесота",
@@ -570,23 +688,31 @@
      "pick": "П Миннесота",
      "confidence": "средняя",
      "odds": 2.3,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "result": "ничья",
+     "hit": false
     },
     {
      "period": 2,
      "pick": "П Миннесота",
      "confidence": "средняя",
      "odds": 2.2,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "result": "ничья",
+     "hit": false
     },
     {
      "period": 3,
      "pick": "П Миннесота",
      "confidence": "средняя",
      "odds": 2.13,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "result": "ничья",
+     "hit": false
     }
-   ]
+   ],
+   "score": "4:3 ОТ (1:1, 1:1, 1:1)",
+   "graded": "0/3"
   },
   {
    "match": "Баффало @ Анахайм",
@@ -597,23 +723,31 @@
      "pick": "П Баффало",
      "confidence": "низкая",
      "odds": 2.5,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "result": "ничья",
+     "hit": false
     },
     {
      "period": 2,
      "pick": "П Баффало",
      "confidence": "низкая",
      "odds": 2.4,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "result": "П Баффало",
+     "hit": true
     },
     {
      "period": 3,
      "pick": "П Баффало",
      "confidence": "средняя",
      "odds": 2.3,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "result": "П Анахайм",
+     "hit": false
     }
-   ]
+   ],
+   "score": "7:6 (3:3, 2:0, 2:3)",
+   "graded": "1/3"
   },
   {
    "match": "Оттава @ Лос-Анджелес",
@@ -624,23 +758,31 @@
      "pick": "П Лос-Анджелес",
      "confidence": "низкая",
      "odds": 2.75,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "result": "ничья",
+     "hit": false
     },
     {
      "period": 2,
      "pick": "П Лос-Анджелес",
      "confidence": "низкая",
      "odds": 2.65,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "result": "П Лос-Анджелес",
+     "hit": true
     },
     {
      "period": 3,
      "pick": "П Лос-Анджелес",
      "confidence": "низкая",
      "odds": 2.6,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "result": "П Оттава",
+     "hit": false
     }
-   ]
+   ],
+   "score": "5:6 ОТ (1:1, 0:4, 4:0)",
+   "graded": "1/3"
   },
   {
    "match": "Ванкувер @ Сан-Хосе",
@@ -651,23 +793,31 @@
      "pick": "П Сан-Хосе",
      "confidence": "средняя",
      "odds": 2.25,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "result": "П Ванкувер",
+     "hit": false
     },
     {
      "period": 2,
      "pick": "П Сан-Хосе",
      "confidence": "средняя",
      "odds": 2.17,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "result": "П Ванкувер",
+     "hit": false
     },
     {
      "period": 3,
      "pick": "П Сан-Хосе",
      "confidence": "средняя",
      "odds": 2.1,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "result": "П Сан-Хосе",
+     "hit": true
     }
-   ]
+   ],
+   "score": "2:3 (1:0, 1:0, 0:3)",
+   "graded": "1/3"
   }
  ],
  "del_periods": [
@@ -680,23 +830,31 @@
      "pick": "П Аугсбург",
      "confidence": "средняя",
      "odds": 2.2,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "result": "П Франкфурт",
+     "hit": false
     },
     {
      "period": 2,
      "pick": "П Аугсбург",
      "confidence": "средняя",
      "odds": 2.12,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "result": "П Аугсбург",
+     "hit": true
     },
     {
      "period": 3,
      "pick": "П Аугсбург",
      "confidence": "средняя",
      "odds": 2.05,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "result": "ничья",
+     "hit": false
     }
-   ]
+   ],
+   "score": "3:2 ОТ (0:1, 1:0, 1:1)",
+   "graded": "1/3"
   }
  ],
  "khl_index": {
@@ -707,18 +865,27 @@
     "home_win": 0.358,
     "reg_home": 0.275,
     "reg_away": 0.495,
-    "xg": "2.53:2.77"
+    "xg": "2.53:2.77",
+    "favourite": "Металлург Мг",
+    "favourite_won": false,
+    "score": "5:2"
    },
    {
     "match": "Локомотив — Сочи",
     "home_win": 0.774,
     "draw60": 0.23,
-    "xg": "2.90:2.40"
+    "xg": "2.90:2.40",
+    "favourite": "Локомотив",
+    "favourite_won": true,
+    "score": "6:2"
    },
    {
     "match": "Северсталь — Спартак",
     "home_win": 0.563,
-    "xg": "2.70:2.60"
+    "xg": "2.70:2.60",
+    "favourite": "Северсталь",
+    "favourite_won": true,
+    "score": "3:2 Б"
    }
   ]
  }

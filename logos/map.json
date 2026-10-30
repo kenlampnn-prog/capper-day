@@ -502,7 +502,16 @@
   "Gil Vicente": "logos/fb/gil_vicente.png",
   "ФК ЦСКА": "logos/fb/cska_fc.png",
   "ФК Локомотив": "logos/fb/lokomotiv_fc.png",
-  "ФК Крылья Советов": "logos/fb/krylia_fc.png"
+  "ФК Крылья Советов": "logos/fb/krylia_fc.png",
+  "Вильярреал": "logos/fb/villarreal.png",
+  "Эспаньол": "logos/fb/espanyol.png",
+  "Каза Пиа": "logos/fb/casapia.png",
+  "Де Графсхап": "logos/fb/graafschap.png",
+  "Волендам": "logos/fb/volendam.png",
+  "Меппен": "logos/fb/meppen.png",
+  "Фортуна Дюссельдорф": "logos/fb/fortuna.png",
+  "Арсенал Тула": "logos/fb/arsenal_tula.png",
+  "Пари НН": "logos/fb/pari_nn.png"
  },
  "files": {
   "logos/khl/lokomotiv.png": {
@@ -1417,6 +1426,51 @@
    "league": "nor",
    "name": "Мольде",
    "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Molde_Fotball_Logo.svg"
+  },
+  "logos/fb/villarreal.png": {
+   "league": "fb",
+   "name": "Вильярреал",
+   "src": "https://a.espncdn.com/i/teamlogos/soccer/500/102.png"
+  },
+  "logos/fb/espanyol.png": {
+   "league": "fb",
+   "name": "Эспаньол",
+   "src": "https://a.espncdn.com/i/teamlogos/soccer/500/88.png"
+  },
+  "logos/fb/casapia.png": {
+   "league": "fb",
+   "name": "Каза Пиа",
+   "src": "https://a.espncdn.com/i/teamlogos/soccer/500/21581.png"
+  },
+  "logos/fb/graafschap.png": {
+   "league": "fb",
+   "name": "Де Графсхап",
+   "src": "https://a.espncdn.com/i/teamlogos/soccer/500/144.png"
+  },
+  "logos/fb/volendam.png": {
+   "league": "fb",
+   "name": "Волендам",
+   "src": "https://a.espncdn.com/i/teamlogos/soccer/500/2727.png"
+  },
+  "logos/fb/meppen.png": {
+   "league": "fb",
+   "name": "Меппен",
+   "src": "https://commons.wikimedia.org/wiki/Special:FilePath/SV_Meppen_Logo_2022.svg"
+  },
+  "logos/fb/fortuna.png": {
+   "league": "fb",
+   "name": "Фортуна Дюссельдорф",
+   "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Fortuna_D%C3%BCsseldorf.svg"
+  },
+  "logos/fb/arsenal_tula.png": {
+   "league": "fb",
+   "name": "Арсенал Тула",
+   "src": "https://ru.wikipedia.org/wiki/Special:FilePath/FC_Arsenal_Tula_Logo.svg"
+  },
+  "logos/fb/pari_nn.png": {
+   "league": "fb",
+   "name": "Пари НН",
+   "src": "https://ru.wikipedia.org/wiki/Special:FilePath/FC_Nizhny_Novgorod_Logo_2026.svg"
   }
  }
 }
