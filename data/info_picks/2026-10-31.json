@@ -1,0 +1,630 @@
+{
+ "date": "2026-10-31",
+ "note": "Информационные прогнозы: не в купоне и не в банке. Грейдить на следующий день. Норвегия 31.10 — Фредрикстад — Русенборг и Олесунн — Саннефьорд (пас для купона, справочно). DEL 31.10 — матчей нет.",
+ "mhl": [
+  {
+   "league": "МХЛ",
+   "match": "Ирбис — Мамонты Югры",
+   "home": "Ирбис",
+   "away": "Мамонты Югры",
+   "date": "2026-10-31",
+   "kickoff_msk": "13:00",
+   "pick": "Ф1 (−1.5)",
+   "odds": 1.95,
+   "odds_source": "Фонбет",
+   "source_url": "https://sport.vbr.ru/events/hockey/2026-10-31-irbis-mamonty-iugry/",
+   "reason": "П1 1.55 — ниже 1.80, поэтому фора (Фонбет 1.95, Бетсити 1.95). Ирбис — явный фаворит дома (1.55 / 4.50 / 4.70).",
+   "implied": 0.513,
+   "prob_est": 0.49,
+   "confidence_test": "fail: оценка 49% < 51.3% в кэфе",
+   "coupon": false,
+   "result": "open",
+   "score": null,
+   "rule": "основное время",
+   "periods": [
+    {
+     "period": 1,
+     "pick": "П Ирбис",
+     "confidence": "средняя",
+     "odds": 2.1,
+     "odds_source": "Фонбет"
+    },
+    {
+     "period": 2,
+     "pick": "П Ирбис",
+     "confidence": "средняя",
+     "odds": 1.97,
+     "odds_source": "Фонбет"
+    },
+    {
+     "period": 3,
+     "pick": "П Ирбис",
+     "confidence": "средняя",
+     "odds": 1.95,
+     "odds_source": "Фонбет"
+    }
+   ]
+  },
+  {
+   "league": "МХЛ",
+   "match": "Крылья Советов — Спартак",
+   "home": "Крылья Советов",
+   "away": "Спартак",
+   "date": "2026-10-31",
+   "kickoff_msk": "13:00",
+   "pick": "Ф2 (−1.5)",
+   "odds": 1.85,
+   "odds_source": "Фонбет",
+   "source_url": "https://sport.vbr.ru/events/hockey/2026-10-31-mxk-krylia-sovetov-mxk-spartak-moskva/",
+   "reason": "П2 1.48 — ниже 1.80, поэтому фора (Фонбет 1.85, Марафон 1.90). Спартак — крупный фаворит в гостях (5.30 / 4.60 / 1.48).",
+   "implied": 0.541,
+   "prob_est": 0.52,
+   "confidence_test": "fail: оценка 52% < 54.1% в кэфе",
+   "coupon": false,
+   "result": "open",
+   "score": null,
+   "rule": "основное время",
+   "periods": [
+    {
+     "period": 1,
+     "pick": "П Спартак",
+     "confidence": "средняя",
+     "odds": 2.0,
+     "odds_source": "Фонбет"
+    },
+    {
+     "period": 2,
+     "pick": "П Спартак",
+     "confidence": "средняя",
+     "odds": 1.9,
+     "odds_source": "Фонбет"
+    },
+    {
+     "period": 3,
+     "pick": "П Спартак",
+     "confidence": "средняя",
+     "odds": 1.88,
+     "odds_source": "Фонбет"
+    }
+   ]
+  }
+ ],
+ "football_best": [
+  {
+   "league": "РПЛ",
+   "match": "Рубин — Факел",
+   "home": "Рубин",
+   "away": "Факел",
+   "date": "2026-10-31",
+   "kickoff_msk": "15:15",
+   "pick": "П1",
+   "odds": 2.0,
+   "odds_source": "Фонбет",
+   "source_url": "https://sport.vbr.ru/events/football/2026-10-31-rubin-fakel/",
+   "reason": "Исход 2.00 / 3.30 / 4.05 — Рубин дома фаворит. Ставка на 90 минут. Уверенность низкая.",
+   "implied": 0.5,
+   "prob_est": 0.48,
+   "confidence_test": "fail: оценка 48% < 50.0% в кэфе",
+   "coupon": false,
+   "result": "open",
+   "score": null,
+   "rule": "90 минут",
+   "halves": [
+    {
+     "half": 1,
+     "pick": "ничья",
+     "confidence": "средняя",
+     "odds": 1.95,
+     "odds_source": "Фонбет"
+    },
+    {
+     "half": 2,
+     "pick": "ничья",
+     "confidence": "средняя",
+     "odds": 2.2,
+     "odds_source": "Фонбет"
+    }
+   ]
+  },
+  {
+   "league": "АПЛ",
+   "match": "Челси — Манчестер Юнайтед",
+   "home": "Челси",
+   "away": "Манчестер Юнайтед",
+   "date": "2026-10-31",
+   "kickoff_msk": "15:30",
+   "pick": "П1",
+   "odds": 1.98,
+   "odds_source": "Фонбет",
+   "source_url": "https://sport.vbr.ru/events/football/2026-10-31-celsi-mancester-iun/",
+   "reason": "Исход 1.98 / 3.80 / 3.60 — Челси дома фаворит. Ставка на 90 минут.",
+   "implied": 0.505,
+   "prob_est": 0.49,
+   "confidence_test": "fail: оценка 49% < 50.5% в кэфе",
+   "coupon": false,
+   "result": "open",
+   "score": null,
+   "rule": "90 минут",
+   "halves": [
+    {
+     "half": 1,
+     "pick": "П Челси",
+     "confidence": "низкая",
+     "odds": 2.4,
+     "odds_source": "Фонбет"
+    },
+    {
+     "half": 2,
+     "pick": "П Челси",
+     "confidence": "средняя",
+     "odds": 2.3,
+     "odds_source": "Фонбет"
+    }
+   ]
+  },
+  {
+   "league": "Бундеслига",
+   "match": "Бавария — Боруссия Д",
+   "home": "Бавария",
+   "away": "Боруссия Д",
+   "date": "2026-10-31",
+   "kickoff_msk": "20:30",
+   "pick": "Ф1 (−1.5)",
+   "odds": 1.85,
+   "odds_source": "Фонбет",
+   "source_url": "https://sport.vbr.ru/events/football/2026-10-31-bavariia-borussiia-dortmund/",
+   "reason": "П1 1.35 — ниже 1.80, поэтому фора: Бавария дома — крупный фаворит (1.35 / 5.60 / 7.80).",
+   "implied": 0.541,
+   "prob_est": 0.52,
+   "confidence_test": "fail: оценка 52% < 54.1% в кэфе",
+   "coupon": false,
+   "result": "open",
+   "score": null,
+   "rule": "90 минут",
+   "halves": [
+    {
+     "half": 1,
+     "pick": "П Бавария",
+     "confidence": "средняя",
+     "odds": 1.7,
+     "odds_source": "Фонбет"
+    },
+    {
+     "half": 2,
+     "pick": "П Бавария",
+     "confidence": "средняя",
+     "odds": 1.52,
+     "odds_source": "Фонбет"
+    }
+   ]
+  },
+  {
+   "league": "Ла Лига",
+   "match": "Бетис — Малага",
+   "home": "Бетис",
+   "away": "Малага",
+   "date": "2026-10-31",
+   "kickoff_msk": "20:30",
+   "pick": "Ф1 (−1.5)",
+   "odds": 1.85,
+   "odds_source": "Фонбет",
+   "source_url": "https://sport.vbr.ru/events/football/2026-10-31-real-betis-malaga/",
+   "reason": "П1 1.30 — ниже 1.80, поэтому фора (Фонбет 1.85, Марафон 1.86).",
+   "implied": 0.541,
+   "prob_est": 0.52,
+   "confidence_test": "fail: оценка 52% < 54.1% в кэфе",
+   "coupon": false,
+   "result": "open",
+   "score": null,
+   "rule": "90 минут",
+   "halves": [
+    {
+     "half": 1,
+     "pick": "П Бетис",
+     "confidence": "средняя",
+     "odds": 1.67,
+     "odds_source": "Фонбет"
+    },
+    {
+     "half": 2,
+     "pick": "П Бетис",
+     "confidence": "средняя",
+     "odds": 1.55,
+     "odds_source": "Фонбет"
+    }
+   ]
+  }
+ ],
+ "norway": [
+  {
+   "league": "Элитсерия",
+   "match": "Фредрикстад — Русенборг",
+   "home": "Фредрикстад",
+   "away": "Русенборг",
+   "date": "2026-10-31",
+   "kickoff_msk": "18:00",
+   "pick": "П2",
+   "odds": 1.84,
+   "odds_source": "Винлайн",
+   "source_url": "https://sport.vbr.ru/events/football/2026-10-31-fredrikstad-rusenborg/",
+   "reason": "Русенборг 4-й (12-4-8, мячи 46:31), две последние выездные победы — 3:0; Фредрикстад 11-й (29:41), в прошлом туре проиграл в Молде 1:5. П2 1.75 у Фонбета и Марафона — ниже 1.80; 1.84 есть только у Винлайна — 54.3% в кэфе при нашей оценке ~55%, край меньше процента, а лимит одиночек занят НХЛ. Пас, справочно.",
+   "implied": 0.543,
+   "prob_est": 0.55,
+   "confidence_test": "pass по цене, но инфо-блок",
+   "coupon": false,
+   "result": "open",
+   "score": null,
+   "rule": "90 минут",
+   "halves": [
+    {
+     "half": 1,
+     "pick": "П Русенборг",
+     "confidence": "средняя",
+     "odds": 2.2,
+     "odds_source": "Фонбет"
+    },
+    {
+     "half": 2,
+     "pick": "П Русенборг",
+     "confidence": "средняя",
+     "odds": 2.1,
+     "odds_source": "Фонбет"
+    }
+   ]
+  },
+  {
+   "league": "Элитсерия",
+   "match": "Олесунн — Саннефьорд",
+   "home": "Олесунн",
+   "away": "Саннефьорд",
+   "date": "2026-10-31",
+   "kickoff_msk": "20:00",
+   "pick": "П1",
+   "odds": 1.86,
+   "odds_source": "Марафон",
+   "source_url": "https://sport.vbr.ru/events/football/2026-10-31-olesund-sandefyord/",
+   "reason": "Олесунн дома 1.85–1.86 — 53.8% в кэфе, наша оценка ~48%: у Олесунна 14-е место и 40:53 по мячам — слабая оборона; у Саннефьорда 13-е место и 22:31 — игра соперника закрытая, ничья вероятна. Пас, справочно.",
+   "implied": 0.538,
+   "prob_est": 0.48,
+   "confidence_test": "fail: оценка 48% < 53.8% в кэфе",
+   "coupon": false,
+   "result": "open",
+   "score": null,
+   "rule": "90 минут",
+   "halves": [
+    {
+     "half": 1,
+     "pick": "П Олесунн",
+     "confidence": "средняя",
+     "odds": 2.3,
+     "odds_source": "Фонбет"
+    },
+    {
+     "half": 2,
+     "pick": "П Олесунн",
+     "confidence": "средняя",
+     "odds": 2.15,
+     "odds_source": "Фонбет"
+    }
+   ]
+  }
+ ],
+ "khl_periods": [
+  {
+   "match": "Автомобилист — Металлург Мг",
+   "kickoff_msk": "15:00",
+   "periods": [
+    {
+     "period": 1,
+     "pick": "ничья",
+     "confidence": "низкая",
+     "odds": null,
+     "odds_source": null
+    },
+    {
+     "period": 2,
+     "pick": "П Металлург Мг",
+     "confidence": "низкая",
+     "odds": null,
+     "odds_source": null
+    },
+    {
+     "period": 3,
+     "pick": "П Металлург Мг",
+     "confidence": "низкая",
+     "odds": null,
+     "odds_source": null
+    }
+   ],
+   "basis": "линии на периоды нет; по индексу (Металлург фаворит, xG 2.56:2.74, ничья после 60 минут 23%)"
+  }
+ ],
+ "nhl_periods": [
+  {
+   "match": "Чикаго @ Бостон",
+   "kickoff_msk": "20:00 31.10",
+   "periods": [
+    {
+     "period": 1,
+     "pick": "П Бостон",
+     "confidence": "средняя",
+     "odds": 2.17,
+     "odds_source": "Фонбет"
+    },
+    {
+     "period": 2,
+     "pick": "П Бостон",
+     "confidence": "средняя",
+     "odds": 2.07,
+     "odds_source": "Фонбет"
+    },
+    {
+     "period": 3,
+     "pick": "П Бостон",
+     "confidence": "средняя",
+     "odds": 2.0,
+     "odds_source": "Фонбет"
+    }
+   ]
+  },
+  {
+   "match": "Сент-Луис @ Детройт",
+   "kickoff_msk": "20:00 31.10",
+   "periods": [
+    {
+     "period": 1,
+     "pick": "П Сент-Луис",
+     "confidence": "низкая",
+     "odds": 2.75,
+     "odds_source": "Фонбет"
+    },
+    {
+     "period": 2,
+     "pick": "П Сент-Луис",
+     "confidence": "низкая",
+     "odds": 2.6,
+     "odds_source": "Фонбет"
+    },
+    {
+     "period": 3,
+     "pick": "П Сент-Луис",
+     "confidence": "низкая",
+     "odds": 2.55,
+     "odds_source": "Фонбет"
+    }
+   ]
+  },
+  {
+   "match": "Тампа-Бэй @ Нэшвилл",
+   "kickoff_msk": "21:00 31.10",
+   "periods": [
+    {
+     "period": 1,
+     "pick": "П Тампа-Бэй",
+     "confidence": "низкая",
+     "odds": 2.4,
+     "odds_source": "Фонбет"
+    },
+    {
+     "period": 2,
+     "pick": "П Тампа-Бэй",
+     "confidence": "средняя",
+     "odds": 2.25,
+     "odds_source": "Фонбет"
+    },
+    {
+     "period": 3,
+     "pick": "П Тампа-Бэй",
+     "confidence": "средняя",
+     "odds": 2.2,
+     "odds_source": "Фонбет"
+    }
+   ]
+  },
+  {
+   "match": "Эдмонтон @ Айлендерс",
+   "kickoff_msk": "21:00 31.10",
+   "periods": [
+    {
+     "period": 1,
+     "pick": "П Эдмонтон",
+     "confidence": "низкая",
+     "odds": 2.55,
+     "odds_source": "Фонбет"
+    },
+    {
+     "period": 2,
+     "pick": "П Эдмонтон",
+     "confidence": "низкая",
+     "odds": 2.45,
+     "odds_source": "Фонбет"
+    },
+    {
+     "period": 3,
+     "pick": "П Эдмонтон",
+     "confidence": "низкая",
+     "odds": 2.35,
+     "odds_source": "Фонбет"
+    }
+   ]
+  },
+  {
+   "match": "Баффало @ Лос-Анджелес",
+   "kickoff_msk": "23:00 31.10",
+   "periods": [
+    {
+     "period": 1,
+     "pick": "П Баффало",
+     "confidence": "низкая",
+     "odds": 2.65,
+     "odds_source": "Фонбет"
+    },
+    {
+     "period": 2,
+     "pick": "П Баффало",
+     "confidence": "низкая",
+     "odds": 2.55,
+     "odds_source": "Фонбет"
+    },
+    {
+     "period": 3,
+     "pick": "П Баффало",
+     "confidence": "низкая",
+     "odds": 2.45,
+     "odds_source": "Фонбет"
+    }
+   ]
+  },
+  {
+   "match": "Оттава @ Сан-Хосе",
+   "kickoff_msk": "23:00 31.10",
+   "periods": [
+    {
+     "period": 1,
+     "pick": "П Оттава",
+     "confidence": "низкая",
+     "odds": 2.55,
+     "odds_source": "Фонбет"
+    },
+    {
+     "period": 2,
+     "pick": "П Оттава",
+     "confidence": "низкая",
+     "odds": 2.4,
+     "odds_source": "Фонбет"
+    },
+    {
+     "period": 3,
+     "pick": "П Оттава",
+     "confidence": "низкая",
+     "odds": 2.35,
+     "odds_source": "Фонбет"
+    }
+   ]
+  },
+  {
+   "match": "Питтсбург @ Монреаль",
+   "kickoff_msk": "02:00 01.11",
+   "periods": [
+    {
+     "period": 1,
+     "pick": "П Монреаль",
+     "confidence": "низкая",
+     "odds": 2.4,
+     "odds_source": "Фонбет"
+    },
+    {
+     "period": 2,
+     "pick": "П Монреаль",
+     "confidence": "средняя",
+     "odds": 2.3,
+     "odds_source": "Фонбет"
+    },
+    {
+     "period": 3,
+     "pick": "П Монреаль",
+     "confidence": "средняя",
+     "odds": 2.25,
+     "odds_source": "Фонбет"
+    }
+   ]
+  },
+  {
+   "match": "Торонто @ Ванкувер",
+   "kickoff_msk": "02:00 01.11",
+   "periods": [
+    {
+     "period": 1,
+     "pick": "П Торонто",
+     "confidence": "средняя",
+     "odds": 2.3,
+     "odds_source": "Фонбет"
+    },
+    {
+     "period": 2,
+     "pick": "П Торонто",
+     "confidence": "средняя",
+     "odds": 2.2,
+     "odds_source": "Фонбет"
+    },
+    {
+     "period": 3,
+     "pick": "П Торонто",
+     "confidence": "средняя",
+     "odds": 2.15,
+     "odds_source": "Фонбет"
+    }
+   ]
+  },
+  {
+   "match": "Коламбус @ Даллас",
+   "kickoff_msk": "03:00 01.11",
+   "periods": [
+    {
+     "period": 1,
+     "pick": "П Даллас",
+     "confidence": "низкая",
+     "odds": 2.35,
+     "odds_source": "Фонбет"
+    },
+    {
+     "period": 2,
+     "pick": "П Даллас",
+     "confidence": "средняя",
+     "odds": 2.25,
+     "odds_source": "Фонбет"
+    },
+    {
+     "period": 3,
+     "pick": "П Даллас",
+     "confidence": "средняя",
+     "odds": 2.18,
+     "odds_source": "Фонбет"
+    }
+   ]
+  },
+  {
+   "match": "Калгари @ Колорадо",
+   "kickoff_msk": "05:00 01.11",
+   "periods": [
+    {
+     "period": 1,
+     "pick": "П Колорадо",
+     "confidence": "средняя",
+     "odds": 1.68,
+     "odds_source": "Фонбет"
+    },
+    {
+     "period": 2,
+     "pick": "П Колорадо",
+     "confidence": "средняя",
+     "odds": 1.6,
+     "odds_source": "Фонбет"
+    },
+    {
+     "period": 3,
+     "pick": "П Колорадо",
+     "confidence": "средняя",
+     "odds": 1.55,
+     "odds_source": "Фонбет"
+    }
+   ]
+  }
+ ],
+ "del_periods": [],
+ "khl_index": {
+  "source": "maxkhl.ru (кэш поисковика, живая страница недоступна)",
+  "matches": [
+   {
+    "match": "Автомобилист — Металлург Мг",
+    "home_win": 0.391,
+    "away_win": 0.609,
+    "home_win_reg": 0.301,
+    "away_win_reg": 0.469,
+    "draw60": 0.23,
+    "xg": "2.56:2.74",
+    "reliability": 0.78
+   }
+  ]
+ }
+}

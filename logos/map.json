@@ -511,7 +511,14 @@
   "Меппен": "logos/fb/meppen.png",
   "Фортуна Дюссельдорф": "logos/fb/fortuna.png",
   "Арсенал Тула": "logos/fb/arsenal_tula.png",
-  "Пари НН": "logos/fb/pari_nn.png"
+  "Пари НН": "logos/fb/pari_nn.png",
+  "Бавария": "logos/fb/bayern.png",
+  "Бетис": "logos/fb/betis.png",
+  "Малага": "logos/fb/malaga.png",
+  "Манчестер Юнайтед": "logos/fb/manutd.png",
+  "Саннефьорд": "logos/nor/sandefjord.png",
+  "Факел": "logos/fb/fakel.png",
+  "Реал Бетис": "logos/fb/betis.png"
  },
  "files": {
   "logos/khl/lokomotiv.png": {
