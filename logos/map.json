@@ -518,7 +518,10 @@
   "Манчестер Юнайтед": "logos/fb/manutd.png",
   "Саннефьорд": "logos/nor/sandefjord.png",
   "Факел": "logos/fb/fakel.png",
-  "Реал Бетис": "logos/fb/betis.png"
+  "Реал Бетис": "logos/fb/betis.png",
+  "Анже": "logos/fb/angers.png",
+  "Тулуза": "logos/fb/toulouse.png",
+  "Кристиансунд": "logos/nor/kbk.png"
  },
  "files": {
   "logos/khl/lokomotiv.png": {
@@ -1478,6 +1481,21 @@
    "league": "fb",
    "name": "Пари НН",
    "src": "https://ru.wikipedia.org/wiki/Special:FilePath/FC_Nizhny_Novgorod_Logo_2026.svg"
+  },
+  "logos/fb/angers.png": {
+   "league": "fb",
+   "name": "Анже",
+   "src": "https://a.espncdn.com/i/teamlogos/soccer/500/7868.png"
+  },
+  "logos/fb/toulouse.png": {
+   "league": "fb",
+   "name": "Тулуза",
+   "src": "https://a.espncdn.com/i/teamlogos/soccer/500/179.png"
+  },
+  "logos/nor/kbk.png": {
+   "league": "nor",
+   "name": "Кристиансунд",
+   "src": "https://a.espncdn.com/i/teamlogos/soccer/500/6672.png"
   }
  }
 }
