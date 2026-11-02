@@ -521,7 +521,12 @@
   "Реал Бетис": "logos/fb/betis.png",
   "Анже": "logos/fb/angers.png",
   "Тулуза": "logos/fb/toulouse.png",
-  "Кристиансунд": "logos/nor/kbk.png"
+  "Кристиансунд": "logos/nor/kbk.png",
+  "Парма": "logos/fb/parma.png",
+  "Ньюкасл": "logos/fb/newcastle.png",
+  "Леганес": "logos/fb/leganes.png",
+  "Вальядолид": "logos/fb/valladolid.png",
+  "Сахалинские Акулы": "logos/mhl/sakhakuly.png"
  },
  "files": {
   "logos/khl/lokomotiv.png": {
@@ -1496,6 +1501,31 @@
    "league": "nor",
    "name": "Кристиансунд",
    "src": "https://a.espncdn.com/i/teamlogos/soccer/500/6672.png"
+  },
+  "logos/fb/parma.png": {
+   "league": "fb",
+   "name": "Парма",
+   "src": "https://a.espncdn.com/i/teamlogos/soccer/500/115.png"
+  },
+  "logos/fb/newcastle.png": {
+   "league": "fb",
+   "name": "Ньюкасл",
+   "src": "https://a.espncdn.com/i/teamlogos/soccer/500/361.png"
+  },
+  "logos/fb/leganes.png": {
+   "league": "fb",
+   "name": "Леганес",
+   "src": "https://a.espncdn.com/i/teamlogos/soccer/500/17534.png"
+  },
+  "logos/fb/valladolid.png": {
+   "league": "fb",
+   "name": "Вальядолид",
+   "src": "https://a.espncdn.com/i/teamlogos/soccer/500/95.png"
+  },
+  "logos/mhl/sakhakuly.png": {
+   "league": "mhl",
+   "name": "Сахалинские Акулы",
+   "src": "ru.wikipedia.org File:LogoSakhAkuly.jpg"
   }
  }
 }
