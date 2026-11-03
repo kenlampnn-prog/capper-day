@@ -526,7 +526,10 @@
   "Ньюкасл": "logos/fb/newcastle.png",
   "Леганес": "logos/fb/leganes.png",
   "Вальядолид": "logos/fb/valladolid.png",
-  "Сахалинские Акулы": "logos/mhl/sakhakuly.png"
+  "Сахалинские Акулы": "logos/mhl/sakhakuly.png",
+  "Бирмингем": "logos/fb/birmingham.png",
+  "Миллуолл": "logos/fb/millwall.png",
+  "Фейеноорд": "logos/fb/feyenoord.png"
  },
  "files": {
   "logos/khl/lokomotiv.png": {
@@ -1526,6 +1529,21 @@
    "league": "mhl",
    "name": "Сахалинские Акулы",
    "src": "ru.wikipedia.org File:LogoSakhAkuly.jpg"
+  },
+  "logos/fb/birmingham.png": {
+   "league": "fb",
+   "name": "Бирмингем",
+   "src": "https://a.espncdn.com/i/teamlogos/soccer/500/392.png"
+  },
+  "logos/fb/millwall.png": {
+   "league": "fb",
+   "name": "Миллуолл",
+   "src": "https://a.espncdn.com/i/teamlogos/soccer/500/391.png"
+  },
+  "logos/fb/feyenoord.png": {
+   "league": "fb",
+   "name": "Фейеноорд",
+   "src": "https://a.espncdn.com/i/teamlogos/soccer/500/142.png"
   }
  }
 }
