@@ -1,0 +1,538 @@
+{
+ "date": "2026-11-04",
+ "note": "Информационные прогнозы: не в купоне и не в банке. Грейдить на следующий день. Норвегия 4.11 — Элитсерия и OBOS не играют; Викинг — Сабах Баку (Лига чемпионов) справочно. DEL 4.11 не играет.",
+ "mhl": [
+  {
+   "league": "МХЛ",
+   "match": "Стальные Лисы — Авто",
+   "home": "Стальные Лисы",
+   "away": "Авто",
+   "date": "2026-11-04",
+   "kickoff_msk": "11:00",
+   "pick": "П1 (осн. время)",
+   "odds": 2.2,
+   "odds_source": "Фонбет",
+   "source_url": "https://sport.vbr.ru/events/hockey/2026-11-04-stalnye-lisy-avto-ekaterinburg/",
+   "reason": "Стальные Лисы выиграли четыре последних матча (3:1 и 3:2 Рыси, 8:5 Молот, 2:1 Толпар); Авто проиграл 2 из 3 последних. Линия 2.20 / 4.30 / 2.55. Уверенность низкая.",
+   "implied": 0.455,
+   "prob_est": 0.45,
+   "confidence_test": "fail: оценка 45% < 45.5% в кэфе",
+   "coupon": false,
+   "result": "open",
+   "score": null,
+   "rule": "основное время",
+   "periods": [
+    {
+     "period": 1,
+     "pick": "ничья",
+     "confidence": "низкая",
+     "odds": 2.65,
+     "odds_source": "Фонбет"
+    },
+    {
+     "period": 2,
+     "pick": "П Стальные Лисы",
+     "confidence": "низкая",
+     "odds": 2.6,
+     "odds_source": "Фонбет"
+    },
+    {
+     "period": 3,
+     "pick": "П Стальные Лисы",
+     "confidence": "низкая",
+     "odds": 2.55,
+     "odds_source": "Фонбет"
+    }
+   ]
+  },
+  {
+   "league": "МХЛ",
+   "match": "Чайка — Локо-76",
+   "home": "Чайка",
+   "away": "Локо-76",
+   "date": "2026-11-04",
+   "kickoff_msk": "13:00",
+   "pick": "Ф1 (−1.5) (осн. время)",
+   "odds": 1.82,
+   "odds_source": "Бетсити",
+   "source_url": "https://sport.vbr.ru/events/hockey/2026-11-04-caika-niznii-novgorod-loko-76/",
+   "reason": "Чайка — крупный фаворит (1.45 / 5.00 / 5.30), дома выигрывала с разницей 2+ (6:1, 5:0 и др.). Победа П1 1.45 ниже порога, поэтому фора −1.5. Уверенность низкая.",
+   "implied": 0.549,
+   "prob_est": 0.53,
+   "confidence_test": "fail: оценка 53% < 54.9% в кэфе",
+   "coupon": false,
+   "result": "open",
+   "score": null,
+   "rule": "основное время",
+   "periods": [
+    {
+     "period": 1,
+     "pick": "П Чайка",
+     "confidence": "средняя",
+     "odds": 2.0,
+     "odds_source": "Фонбет"
+    },
+    {
+     "period": 2,
+     "pick": "П Чайка",
+     "confidence": "средняя",
+     "odds": 1.88,
+     "odds_source": "Фонбет"
+    },
+    {
+     "period": 3,
+     "pick": "П Чайка",
+     "confidence": "средняя",
+     "odds": 1.85,
+     "odds_source": "Фонбет"
+    }
+   ]
+  }
+ ],
+ "football_best": [
+  {
+   "league": "Чемпионшип",
+   "match": "Кардифф — Вест Хэм",
+   "home": "Кардифф",
+   "away": "Вест Хэм",
+   "date": "2026-11-04",
+   "kickoff_msk": "22:45",
+   "pick": "П2",
+   "odds": 1.92,
+   "odds_source": "Фонбет",
+   "source_url": "https://sport.vbr.ru/events/football/2026-11-04-kardiff-siti-vest-xem/",
+   "reason": "Линия 3.25 / 4.15 / 1.92 — Вест Хэм фаворит в гостях; Кардифф 31.10 проиграл Вулверхэмптону 0:3; риск — Вест Хэм проиграл два подряд (2:3 Саутгемптон, 1:3 Вест Бромвич). Ставка на 90 минут. Уверенность низкая.",
+   "implied": 0.521,
+   "prob_est": 0.5,
+   "confidence_test": "fail: оценка 50% < 52.1% в кэфе",
+   "coupon": false,
+   "result": "open",
+   "score": null,
+   "rule": "90 минут",
+   "halves": [
+    {
+     "half": 1,
+     "pick": "П Вест Хэм",
+     "confidence": "низкая",
+     "odds": 2.39,
+     "odds_source": "Марафон"
+    },
+    {
+     "half": 2,
+     "pick": "П Вест Хэм",
+     "confidence": "средняя",
+     "odds": 2.17,
+     "odds_source": "Марафон"
+    }
+   ]
+  },
+  {
+   "league": "Лига чемпионов",
+   "match": "Порту — Наполи",
+   "home": "Порту",
+   "away": "Наполи",
+   "date": "2026-11-04",
+   "kickoff_msk": "23:00",
+   "pick": "П1",
+   "odds": 1.93,
+   "odds_source": "Фонбет",
+   "source_url": "https://sport.vbr.ru/events/football/2026-11-04-portu-napoli/",
+   "reason": "Линия 1.93 / 3.70 / 3.85 — Порту дома фаворит, выиграл три последних матча (4:0 Эшторил); Наполи 1.11 проиграл Ювентусу 0:2. Ставка на 90 минут. Уверенность низкая.",
+   "implied": 0.518,
+   "prob_est": 0.5,
+   "confidence_test": "fail: оценка 50% < 51.8% в кэфе",
+   "coupon": false,
+   "result": "open",
+   "score": null,
+   "rule": "90 минут",
+   "halves": [
+    {
+     "half": 1,
+     "pick": "П Порту",
+     "confidence": "низкая",
+     "odds": 2.35,
+     "odds_source": "Фонбет"
+    },
+    {
+     "half": 2,
+     "pick": "П Порту",
+     "confidence": "средняя",
+     "odds": 2.25,
+     "odds_source": "Фонбет"
+    }
+   ]
+  },
+  {
+   "league": "Лига чемпионов",
+   "match": "ПСВ — Брюгге",
+   "home": "ПСВ",
+   "away": "Брюгге",
+   "date": "2026-11-04",
+   "kickoff_msk": "23:00",
+   "pick": "П1",
+   "odds": 1.95,
+   "odds_source": "Фонбет",
+   "source_url": "https://sport.vbr.ru/events/football/2026-11-04-psv-briugge/",
+   "reason": "Линия 1.95 / 4.40 / 3.30 — ПСВ дома фаворит, 31.10 разгромил Виллем II 7:0, 20.10 выиграл в Порту 1:0; Брюгге выиграл шесть подряд — риск. Ставка на 90 минут. Уверенность низкая.",
+   "implied": 0.513,
+   "prob_est": 0.5,
+   "confidence_test": "fail: оценка 50% < 51.3% в кэфе",
+   "coupon": false,
+   "result": "open",
+   "score": null,
+   "rule": "90 минут",
+   "halves": [
+    {
+     "half": 1,
+     "pick": "П ПСВ",
+     "confidence": "низкая",
+     "odds": 2.35,
+     "odds_source": "Фонбет"
+    },
+    {
+     "half": 2,
+     "pick": "П ПСВ",
+     "confidence": "средняя",
+     "odds": 2.2,
+     "odds_source": "Фонбет"
+    }
+   ]
+  }
+ ],
+ "norway": [
+  {
+   "league": "Лига чемпионов (норвежский клуб)",
+   "match": "Викинг — Сабах Баку",
+   "home": "Викинг",
+   "away": "Сабах Баку",
+   "date": "2026-11-04",
+   "kickoff_msk": "23:00",
+   "pick": "Ф1 (−1.5)",
+   "odds": 1.98,
+   "odds_source": "Фонбет",
+   "source_url": "https://sport.vbr.ru/events/football/2026-11-04-viking-fk-sabax-baku/",
+   "reason": "Норвежский клуб, но это Лига чемпионов — в купон не идёт (купон: Элитсерия и OBOS). Линия 1.40 / 5.30 / 6.70, П1 ниже 1.80, поэтому справочно фора Викинга (−1.5) — 1.98. Викинг дома забивает много (3:3 Бавария, 3:1 Тромсё, 3:2 Фредрикстад), но и пропускает. Оценка ~48% при 50.5% в кэфе — пас.",
+   "implied": 0.505,
+   "prob_est": 0.48,
+   "confidence_test": "fail: оценка 48% < 50.5% в кэфе",
+   "coupon": false,
+   "result": "open",
+   "score": null,
+   "rule": "90 минут, фора −1.5",
+   "halves": [
+    {
+     "half": 1,
+     "pick": "П Викинг",
+     "confidence": "средняя",
+     "odds": 1.75,
+     "odds_source": "Фонбет"
+    },
+    {
+     "half": 2,
+     "pick": "П Викинг",
+     "confidence": "средняя",
+     "odds": 1.62,
+     "odds_source": "Фонбет"
+    }
+   ]
+  }
+ ],
+ "khl_periods": [
+  {
+   "match": "Адмирал — СКА",
+   "kickoff_msk": "10:00",
+   "periods": [
+    {
+     "period": 1,
+     "pick": "П СКА",
+     "confidence": "низкая",
+     "odds": 2.4,
+     "odds_source": "Фонбет"
+    },
+    {
+     "period": 2,
+     "pick": "П СКА",
+     "confidence": "средняя",
+     "odds": 2.3,
+     "odds_source": "Фонбет"
+    },
+    {
+     "period": 3,
+     "pick": "П СКА",
+     "confidence": "средняя",
+     "odds": 2.2,
+     "odds_source": "Фонбет"
+    }
+   ]
+  },
+  {
+   "match": "Сибирь — Ак Барс",
+   "kickoff_msk": "13:30",
+   "periods": [
+    {
+     "period": 1,
+     "pick": "ничья",
+     "confidence": "низкая",
+     "odds": 2.5,
+     "odds_source": "Бетсити"
+    },
+    {
+     "period": 2,
+     "pick": "ничья",
+     "confidence": "низкая",
+     "odds": 2.7,
+     "odds_source": "Бетсити"
+    },
+    {
+     "period": 3,
+     "pick": "ничья",
+     "confidence": "низкая",
+     "odds": 2.65,
+     "odds_source": "Бетсити"
+    }
+   ]
+  },
+  {
+   "match": "Трактор — Барыс",
+   "kickoff_msk": "14:00",
+   "periods": [
+    {
+     "period": 1,
+     "pick": "П Трактор",
+     "confidence": "низкая",
+     "odds": 2.5,
+     "odds_source": "Фонбет"
+    },
+    {
+     "period": 2,
+     "pick": "П Трактор",
+     "confidence": "низкая",
+     "odds": 2.4,
+     "odds_source": "Фонбет"
+    },
+    {
+     "period": 3,
+     "pick": "П Трактор",
+     "confidence": "средняя",
+     "odds": 2.3,
+     "odds_source": "Фонбет"
+    }
+   ]
+  },
+  {
+   "match": "Салават Юлаев — Лада",
+   "kickoff_msk": "14:30",
+   "periods": [
+    {
+     "period": 1,
+     "pick": "П Салават Юлаев",
+     "confidence": "средняя",
+     "odds": 2.12,
+     "odds_source": "Фонбет"
+    },
+    {
+     "period": 2,
+     "pick": "П Салават Юлаев",
+     "confidence": "средняя",
+     "odds": 2.0,
+     "odds_source": "Фонбет"
+    },
+    {
+     "period": 3,
+     "pick": "П Салават Юлаев",
+     "confidence": "средняя",
+     "odds": 1.93,
+     "odds_source": "Фонбет"
+    }
+   ]
+  },
+  {
+   "match": "Спартак — Локомотив",
+   "kickoff_msk": "17:00",
+   "periods": [
+    {
+     "period": 1,
+     "pick": "ничья",
+     "confidence": "низкая",
+     "odds": 2.5,
+     "odds_source": "Фонбет"
+    },
+    {
+     "period": 2,
+     "pick": "П Локомотив",
+     "confidence": "низкая",
+     "odds": 2.7,
+     "odds_source": "Фонбет"
+    },
+    {
+     "period": 3,
+     "pick": "П Локомотив",
+     "confidence": "низкая",
+     "odds": 2.6,
+     "odds_source": "Фонбет"
+    }
+   ]
+  }
+ ],
+ "nhl_periods": [
+  {
+   "match": "Оттава @ Баффало",
+   "kickoff_msk": "03:30 05.11",
+   "periods": [
+    {
+     "period": 1,
+     "pick": "П Баффало",
+     "confidence": "низкая",
+     "odds": 2.5,
+     "odds_source": "Фонбет"
+    },
+    {
+     "period": 2,
+     "pick": "П Баффало",
+     "confidence": "низкая",
+     "odds": 2.4,
+     "odds_source": "Фонбет"
+    },
+    {
+     "period": 3,
+     "pick": "П Баффало",
+     "confidence": "низкая",
+     "odds": 2.35,
+     "odds_source": "Фонбет"
+    }
+   ]
+  },
+  {
+   "match": "Чикаго @ Флорида",
+   "kickoff_msk": "03:30 05.11",
+   "periods": [
+    {
+     "period": 1,
+     "pick": "П Флорида",
+     "confidence": "средняя",
+     "odds": 2.15,
+     "odds_source": "Фонбет"
+    },
+    {
+     "period": 2,
+     "pick": "П Флорида",
+     "confidence": "средняя",
+     "odds": 2.05,
+     "odds_source": "Фонбет"
+    },
+    {
+     "period": 3,
+     "pick": "П Флорида",
+     "confidence": "средняя",
+     "odds": 1.97,
+     "odds_source": "Фонбет"
+    }
+   ]
+  },
+  {
+   "match": "Сан-Хосе @ Лос-Анджелес",
+   "kickoff_msk": "06:00 05.11",
+   "periods": [
+    {
+     "period": 1,
+     "pick": "П Лос-Анджелес",
+     "confidence": "низкая",
+     "odds": 2.45,
+     "odds_source": "Фонбет"
+    },
+    {
+     "period": 2,
+     "pick": "П Лос-Анджелес",
+     "confidence": "средняя",
+     "odds": 2.3,
+     "odds_source": "Фонбет"
+    },
+    {
+     "period": 3,
+     "pick": "П Лос-Анджелес",
+     "confidence": "средняя",
+     "odds": 2.25,
+     "odds_source": "Фонбет"
+    }
+   ]
+  },
+  {
+   "match": "Калгари @ Сиэтл",
+   "kickoff_msk": "06:00 05.11",
+   "periods": [
+    {
+     "period": 1,
+     "pick": "П Сиэтл",
+     "confidence": "низкая",
+     "odds": 2.5,
+     "odds_source": "Фонбет"
+    },
+    {
+     "period": 2,
+     "pick": "П Сиэтл",
+     "confidence": "низкая",
+     "odds": 2.4,
+     "odds_source": "Фонбет"
+    },
+    {
+     "period": 3,
+     "pick": "П Сиэтл",
+     "confidence": "низкая",
+     "odds": 2.35,
+     "odds_source": "Фонбет"
+    }
+   ]
+  }
+ ],
+ "del_periods": [],
+ "khl_index": {
+  "source": "maxkhl.ru — сводка поисковика по кэшу таблицы /games (живая страница недоступна: 500 / ошибка сертификата); строки напрямую не видны",
+  "matches": [
+   {
+    "match": "Адмирал — СКА",
+    "home_win": 0.498,
+    "away_win": 0.502,
+    "draw60": null,
+    "reg_time": "н/д",
+    "xg": "2.65:2.65",
+    "reliability": 0.69
+   },
+   {
+    "match": "Сибирь — Ак Барс",
+    "home_win": 0.356,
+    "away_win": 0.644,
+    "draw60": null,
+    "reg_time": "н/д",
+    "xg": "2.53:2.77",
+    "reliability": 0.7
+   },
+   {
+    "match": "Трактор — Барыс",
+    "home_win": 0.589,
+    "away_win": 0.411,
+    "draw60": null,
+    "reg_time": "н/д",
+    "xg": "2.72:2.58",
+    "reliability": null
+   },
+   {
+    "match": "Салават Юлаев — Лада",
+    "home_win": 0.74,
+    "away_win": 0.26,
+    "draw60": null,
+    "reg_time": "н/д",
+    "xg": "2.87:2.43",
+    "reliability": 0.66
+   },
+   {
+    "match": "Спартак — Локомотив",
+    "home_win": 0.481,
+    "away_win": 0.519,
+    "draw60": null,
+    "reg_time": "н/д",
+    "xg": "2.63:2.67",
+    "reliability": 0.8
+   }
+  ]
+ }
+}

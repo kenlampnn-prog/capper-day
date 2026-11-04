@@ -529,7 +529,12 @@
   "Сахалинские Акулы": "logos/mhl/sakhakuly.png",
   "Бирмингем": "logos/fb/birmingham.png",
   "Миллуолл": "logos/fb/millwall.png",
-  "Фейеноорд": "logos/fb/feyenoord.png"
+  "Фейеноорд": "logos/fb/feyenoord.png",
+  "Порту": "logos/fb/porto.png",
+  "ПСВ": "logos/fb/psv.png",
+  "Сабах Баку": "logos/fb/sabah.png",
+  "Кардифф": "logos/fb/cardiff.png",
+  "Вест Хэм": "logos/fb/westham.png"
  },
  "files": {
   "logos/khl/lokomotiv.png": {
@@ -1544,6 +1549,31 @@
    "league": "fb",
    "name": "Фейеноорд",
    "src": "https://a.espncdn.com/i/teamlogos/soccer/500/142.png"
+  },
+  "logos/fb/porto.png": {
+   "league": "fb",
+   "name": "Порту",
+   "src": "https://a.espncdn.com/i/teamlogos/soccer/500/437.png"
+  },
+  "logos/fb/psv.png": {
+   "league": "fb",
+   "name": "ПСВ",
+   "src": "https://a.espncdn.com/i/teamlogos/soccer/500/148.png"
+  },
+  "logos/fb/sabah.png": {
+   "league": "fb",
+   "name": "Сабах Баку",
+   "src": "https://a.espncdn.com/i/teamlogos/soccer/500/21922.png"
+  },
+  "logos/fb/cardiff.png": {
+   "league": "fb",
+   "name": "Кардифф",
+   "src": "https://a.espncdn.com/i/teamlogos/soccer/500/347.png"
+  },
+  "logos/fb/westham.png": {
+   "league": "fb",
+   "name": "Вест Хэм",
+   "src": "https://a.espncdn.com/i/teamlogos/soccer/500/371.png"
   }
  }
 }
