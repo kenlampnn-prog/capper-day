@@ -534,7 +534,12 @@
   "ПСВ": "logos/fb/psv.png",
   "Сабах Баку": "logos/fb/sabah.png",
   "Кардифф": "logos/fb/cardiff.png",
-  "Вест Хэм": "logos/fb/westham.png"
+  "Вест Хэм": "logos/fb/westham.png",
+  "Андерлехт": "logos/fb/anderlecht.png",
+  "Байер": "logos/fb/leverkusen.png",
+  "Виктория Пльзень": "logos/fb/plzen.png",
+  "Зальцбург": "logos/fb/salzburg.png",
+  "Ференцварош": "logos/fb/ferencvaros.png"
  },
  "files": {
   "logos/khl/lokomotiv.png": {
@@ -1574,6 +1579,31 @@
    "league": "fb",
    "name": "Вест Хэм",
    "src": "https://a.espncdn.com/i/teamlogos/soccer/500/371.png"
+  },
+  "logos/fb/anderlecht.png": {
+   "league": "fb",
+   "name": "Андерлехт",
+   "src": "https://a.espncdn.com/i/teamlogos/soccer/500/441.png"
+  },
+  "logos/fb/leverkusen.png": {
+   "league": "fb",
+   "name": "Байер",
+   "src": "https://a.espncdn.com/i/teamlogos/soccer/500/131.png"
+  },
+  "logos/fb/plzen.png": {
+   "league": "fb",
+   "name": "Виктория Пльзень",
+   "src": "https://a.espncdn.com/i/teamlogos/soccer/500/11706.png"
+  },
+  "logos/fb/salzburg.png": {
+   "league": "fb",
+   "name": "Зальцбург",
+   "src": "https://a.espncdn.com/i/teamlogos/soccer/500/2790.png"
+  },
+  "logos/fb/ferencvaros.png": {
+   "league": "fb",
+   "name": "Ференцварош",
+   "src": "https://a.espncdn.com/i/teamlogos/soccer/500/622.png"
   }
  }
 }
