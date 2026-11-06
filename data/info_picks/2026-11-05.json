@@ -1,6 +1,6 @@
 {
  "date": "2026-11-05",
- "note": "Информационные прогнозы: не в купоне и не в банке. Грейдить на следующий день. Норвегия 5.11 — Элитсерия и OBOS не играют; Лиллестрём — Виктория Пльзень (еврокубок) справочно. DEL 5.11 не играет. Металлург Мг — Нефтехимик: линии на периоды нет.",
+ "note": "Информационные прогнозы: не в купоне и не в банке. Грейдить на следующий день. Норвегия 5.11 — Элитсерия и OBOS не играют; Лиллестрём — Виктория Пльзень (еврокубок) справочно. DEL 5.11 не играет. Металлург Мг — Нефтехимик: линии на периоды нет. Итоги проставлены 06.11.",
  "mhl": [
   {
    "league": "МХЛ",
@@ -18,8 +18,8 @@
    "prob_est": 0.43,
    "confidence_test": "fail: оценка 43% < 46.5% в кэфе",
    "coupon": false,
-   "result": "open",
-   "score": null,
+   "result": "win",
+   "score": "4:5",
    "rule": "основное время",
    "periods": [
     {
@@ -61,8 +61,8 @@
    "prob_est": 0.48,
    "confidence_test": "fail: оценка 48% < 54.1% в кэфе",
    "coupon": false,
-   "result": "open",
-   "score": null,
+   "result": "loss",
+   "score": "1:2 ОТ",
    "rule": "основное время",
    "periods": [
     {
@@ -106,8 +106,8 @@
    "prob_est": 0.52,
    "confidence_test": "fail: оценка 52% < 53.5% в кэфе",
    "coupon": false,
-   "result": "open",
-   "score": null,
+   "result": "loss",
+   "score": "1:1",
    "rule": "90 минут",
    "halves": [
     {
@@ -142,8 +142,8 @@
    "prob_est": 0.5,
    "confidence_test": "fail: оценка 50% < 51.3% в кэфе",
    "coupon": false,
-   "result": "open",
-   "score": null,
+   "result": "win",
+   "score": "2:0",
    "rule": "90 минут",
    "halves": [
     {
@@ -178,8 +178,8 @@
    "prob_est": 0.5,
    "confidence_test": "fail: оценка 50% < 51.8% в кэфе",
    "coupon": false,
-   "result": "open",
-   "score": null,
+   "result": "loss",
+   "score": "0:2",
    "rule": "90 минут",
    "halves": [
     {
@@ -214,8 +214,8 @@
    "prob_est": 0.5,
    "confidence_test": "fail: оценка 50% < 52.6% в кэфе",
    "coupon": false,
-   "result": "open",
-   "score": null,
+   "result": "loss",
+   "score": "0:1",
    "rule": "90 минут",
    "halves": [
     {
@@ -612,7 +612,10 @@
     "draw60": null,
     "reg_time": "н/д",
     "xg": "н/д",
-    "reliability": 0.84
+    "reliability": 0.84,
+    "favourite": "Авангард",
+    "favourite_won": true,
+    "score": "2:1 ОТ"
    },
    {
     "match": "Металлург Мг — Нефтехимик",
@@ -621,7 +624,10 @@
     "draw60": null,
     "reg_time": "н/д",
     "xg": "2.85:2.45",
-    "reliability": 0.78
+    "reliability": 0.78,
+    "favourite": "Металлург Мг",
+    "favourite_won": true,
+    "score": "8:1"
    },
    {
     "match": "Шанхайские Драконы — Динамо М",
@@ -630,7 +636,10 @@
     "draw60": null,
     "reg_time": "н/д",
     "xg": "2.48:2.82",
-    "reliability": 0.6
+    "reliability": 0.6,
+    "favourite": "Динамо М",
+    "favourite_won": true,
+    "score": "2:3"
    },
    {
     "match": "ХК Сочи — Северсталь",
@@ -639,8 +648,12 @@
     "draw60": null,
     "reg_time": "н/д",
     "xg": "2.50:2.80",
-    "reliability": 0.64
+    "reliability": 0.64,
+    "favourite": "Северсталь",
+    "favourite_won": true,
+    "score": "1:4"
    }
-  ]
+  ],
+  "accuracy": "4/4"
  }
 }

@@ -539,7 +539,10 @@
   "Байер": "logos/fb/leverkusen.png",
   "Виктория Пльзень": "logos/fb/plzen.png",
   "Зальцбург": "logos/fb/salzburg.png",
-  "Ференцварош": "logos/fb/ferencvaros.png"
+  "Ференцварош": "logos/fb/ferencvaros.png",
+  "Локомотив М": "logos/khl/lokomotiv.png",
+  "Алавес": "logos/fb/alaves.png",
+  "Ковентри": "logos/fb/coventry.png"
  },
  "files": {
   "logos/khl/lokomotiv.png": {

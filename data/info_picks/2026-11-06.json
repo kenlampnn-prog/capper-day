@@ -1,0 +1,510 @@
+{
+ "date": "2026-11-06",
+ "note": "Информационные прогнозы: не в купоне и не в банке. Грейдить на следующий день. Норвегия 6.11 — Элитсерия и OBOS не играют. DEL 6.11 не играет. Часть КХЛ/МХЛ без линий Выберу.Спорт — Metaratings/календарь.",
+ "mhl": [
+  {
+   "league": "МХЛ",
+   "match": "МХК Молот — Омские Ястребы",
+   "home": "МХК Молот",
+   "away": "Омские Ястребы",
+   "date": "2026-11-06",
+   "kickoff_msk": "17:00",
+   "pick": "П2 (осн. время)",
+   "odds": 1.9,
+   "odds_source": "оценка",
+   "source_url": "#",
+   "reason": "По календарю МХЛ — Молот принимает Омских Ястребов. Свежих линий на Выберу.Спорт нет; пик справочный, уверенность низкая.",
+   "implied": 0.526,
+   "prob_est": 0.48,
+   "confidence_test": "fail: оценка ниже кэфа",
+   "coupon": false,
+   "result": "open",
+   "score": null,
+   "rule": "основное время",
+   "periods": [
+    {
+     "period": 1,
+     "pick": "ничья",
+     "confidence": "низкая",
+     "odds": null,
+     "odds_source": null
+    },
+    {
+     "period": 2,
+     "pick": "ничья",
+     "confidence": "низкая",
+     "odds": null,
+     "odds_source": null
+    },
+    {
+     "period": 3,
+     "pick": "ничья",
+     "confidence": "низкая",
+     "odds": null,
+     "odds_source": null
+    }
+   ]
+  },
+  {
+   "league": "МХЛ",
+   "match": "Спутник — Академия СКА",
+   "home": "Спутник",
+   "away": "Академия СКА",
+   "date": "2026-11-06",
+   "kickoff_msk": "18:30",
+   "pick": "П1 (осн. время)",
+   "odds": 1.85,
+   "odds_source": "оценка",
+   "source_url": "#",
+   "reason": "Матч МХЛ по календарю. Линий на Выберу.Спорт нет — только ориентир. Уверенность низкая.",
+   "implied": 0.541,
+   "prob_est": 0.48,
+   "confidence_test": "fail: оценка ниже кэфа",
+   "coupon": false,
+   "result": "open",
+   "score": null,
+   "rule": "основное время",
+   "periods": [
+    {
+     "period": 1,
+     "pick": "ничья",
+     "confidence": "низкая",
+     "odds": null,
+     "odds_source": null
+    },
+    {
+     "period": 2,
+     "pick": "ничья",
+     "confidence": "низкая",
+     "odds": null,
+     "odds_source": null
+    },
+    {
+     "period": 3,
+     "pick": "ничья",
+     "confidence": "низкая",
+     "odds": null,
+     "odds_source": null
+    }
+   ]
+  }
+ ],
+ "football_best": [
+  {
+   "league": "Ла Лига",
+   "match": "Севилья — Алавес",
+   "home": "Севилья",
+   "away": "Алавес",
+   "date": "2026-11-06",
+   "kickoff_msk": "23:00",
+   "pick": "П1",
+   "odds": 1.95,
+   "odds_source": "Фонбет",
+   "source_url": "https://sport.vbr.ru/events/football/2026-11-06-sevilya-alaves/",
+   "reason": "Линия около 1.95 на победу Севильи дома (Metaratings/обзоры). Порог 1.80 выполнен. Уверенность низкая — инфо-блок.",
+   "implied": 0.513,
+   "prob_est": 0.5,
+   "confidence_test": "fail: оценка ниже кэфа",
+   "coupon": false,
+   "result": "open",
+   "score": null,
+   "rule": "90 минут",
+   "halves": [
+    {
+     "half": 1,
+     "pick": "П Севилья",
+     "confidence": "низкая",
+     "odds": null,
+     "odds_source": null
+    },
+    {
+     "half": 2,
+     "pick": "П Севилья",
+     "confidence": "низкая",
+     "odds": null,
+     "odds_source": null
+    }
+   ]
+  },
+  {
+   "league": "АПЛ",
+   "match": "Эвертон — Ковентри",
+   "home": "Эвертон",
+   "away": "Ковентри",
+   "date": "2026-11-06",
+   "kickoff_msk": "22:30",
+   "pick": "П1",
+   "odds": 1.85,
+   "odds_source": "оценка",
+   "source_url": "https://sport.vbr.ru/events/football/2026-11-06-everton-koventri/",
+   "reason": "Эвертон дома фаворит; часть линий ниже 1.80. Берём как справочный ориентир ≥1.80. Уверенность низкая.",
+   "implied": 0.541,
+   "prob_est": 0.5,
+   "confidence_test": "fail: оценка ниже кэфа",
+   "coupon": false,
+   "result": "open",
+   "score": null,
+   "rule": "90 минут",
+   "halves": [
+    {
+     "half": 1,
+     "pick": "П Эвертон",
+     "confidence": "низкая",
+     "odds": null,
+     "odds_source": null
+    },
+    {
+     "half": 2,
+     "pick": "П Эвертон",
+     "confidence": "низкая",
+     "odds": null,
+     "odds_source": null
+    }
+   ]
+  },
+  {
+   "league": "РПЛ",
+   "match": "Локомотив М — Рубин",
+   "home": "Локомотив М",
+   "away": "Рубин",
+   "date": "2026-11-06",
+   "kickoff_msk": "20:00",
+   "pick": "П1",
+   "odds": 1.85,
+   "odds_source": "оценка",
+   "source_url": "https://sport.vbr.ru/events/football/2026-11-06-lokomotiv-rubin/",
+   "reason": "Домашний фаворит по обзорам дня. Справочно, не Норвегия — в купон не идёт. Уверенность низкая.",
+   "implied": 0.541,
+   "prob_est": 0.5,
+   "confidence_test": "fail: оценка ниже кэфа",
+   "coupon": false,
+   "result": "open",
+   "score": null,
+   "rule": "90 минут",
+   "halves": [
+    {
+     "half": 1,
+     "pick": "П Локомотив М",
+     "confidence": "низкая",
+     "odds": null,
+     "odds_source": null
+    },
+    {
+     "half": 2,
+     "pick": "П Локомотив М",
+     "confidence": "низкая",
+     "odds": null,
+     "odds_source": null
+    }
+   ]
+  }
+ ],
+ "norway": [],
+ "khl_periods": [
+  {
+   "match": "Амур — СКА",
+   "kickoff_msk": "12:00",
+   "periods": [
+    {
+     "period": 1,
+     "pick": "ничья",
+     "confidence": "низкая",
+     "odds": 2.55,
+     "odds_source": "Фонбет"
+    },
+    {
+     "period": 2,
+     "pick": "П СКА",
+     "confidence": "низкая",
+     "odds": 2.7,
+     "odds_source": "Фонбет"
+    },
+    {
+     "period": 3,
+     "pick": "П СКА",
+     "confidence": "низкая",
+     "odds": 2.6,
+     "odds_source": "Фонбет"
+    }
+   ]
+  },
+  {
+   "match": "Адмирал — Барыс",
+   "kickoff_msk": "12:30",
+   "periods": [
+    {
+     "period": 1,
+     "pick": "ничья",
+     "confidence": "низкая",
+     "odds": 2.65,
+     "odds_source": "Фонбет"
+    },
+    {
+     "period": 2,
+     "pick": "П Барыс",
+     "confidence": "низкая",
+     "odds": 2.65,
+     "odds_source": "Фонбет"
+    },
+    {
+     "period": 3,
+     "pick": "П Барыс",
+     "confidence": "низкая",
+     "odds": 2.55,
+     "odds_source": "Фонбет"
+    }
+   ]
+  },
+  {
+   "match": "Трактор — Ак Барс",
+   "kickoff_msk": "17:00",
+   "periods": [
+    {
+     "period": 1,
+     "pick": "ничья",
+     "confidence": "низкая",
+     "odds": null,
+     "odds_source": null
+    },
+    {
+     "period": 2,
+     "pick": "ничья",
+     "confidence": "низкая",
+     "odds": null,
+     "odds_source": null
+    },
+    {
+     "period": 3,
+     "pick": "ничья",
+     "confidence": "низкая",
+     "odds": null,
+     "odds_source": null
+    }
+   ]
+  },
+  {
+   "match": "Салават Юлаев — Автомобилист",
+   "kickoff_msk": "17:00",
+   "periods": [
+    {
+     "period": 1,
+     "pick": "ничья",
+     "confidence": "низкая",
+     "odds": null,
+     "odds_source": null
+    },
+    {
+     "period": 2,
+     "pick": "ничья",
+     "confidence": "низкая",
+     "odds": null,
+     "odds_source": null
+    },
+    {
+     "period": 3,
+     "pick": "ничья",
+     "confidence": "низкая",
+     "odds": null,
+     "odds_source": null
+    }
+   ]
+  },
+  {
+   "match": "Лада — Локомотив",
+   "kickoff_msk": "18:00",
+   "periods": [
+    {
+     "period": 1,
+     "pick": "ничья",
+     "confidence": "низкая",
+     "odds": null,
+     "odds_source": null
+    },
+    {
+     "period": 2,
+     "pick": "ничья",
+     "confidence": "низкая",
+     "odds": null,
+     "odds_source": null
+    },
+    {
+     "period": 3,
+     "pick": "ничья",
+     "confidence": "низкая",
+     "odds": null,
+     "odds_source": null
+    }
+   ]
+  },
+  {
+   "match": "Спартак — Динамо Мн",
+   "kickoff_msk": "19:30",
+   "periods": [
+    {
+     "period": 1,
+     "pick": "П Спартак",
+     "confidence": "низкая",
+     "odds": 2.55,
+     "odds_source": "Фонбет"
+    },
+    {
+     "period": 2,
+     "pick": "П Спартак",
+     "confidence": "низкая",
+     "odds": 2.45,
+     "odds_source": "Фонбет"
+    },
+    {
+     "period": 3,
+     "pick": "П Спартак",
+     "confidence": "низкая",
+     "odds": 2.35,
+     "odds_source": "Фонбет"
+    }
+   ]
+  }
+ ],
+ "nhl_periods": [
+  {
+   "match": "Коламбус @ Баффало",
+   "kickoff_msk": "03:00 07.11",
+   "periods": [
+    {
+     "period": 1,
+     "pick": "П Баффало",
+     "confidence": "низкая",
+     "odds": 2.35,
+     "odds_source": "Фонбет"
+    },
+    {
+     "period": 2,
+     "pick": "П Баффало",
+     "confidence": "средняя",
+     "odds": 2.25,
+     "odds_source": "Фонбет"
+    },
+    {
+     "period": 3,
+     "pick": "П Баффало",
+     "confidence": "средняя",
+     "odds": 2.15,
+     "odds_source": "Фонбет"
+    }
+   ]
+  },
+  {
+   "match": "Сан-Хосе @ Миннесота",
+   "kickoff_msk": "04:00 07.11",
+   "periods": [
+    {
+     "period": 1,
+     "pick": "П Миннесота",
+     "confidence": "средняя",
+     "odds": 2.1,
+     "odds_source": "Фонбет"
+    },
+    {
+     "period": 2,
+     "pick": "П Миннесота",
+     "confidence": "средняя",
+     "odds": 2.0,
+     "odds_source": "Фонбет"
+    },
+    {
+     "period": 3,
+     "pick": "П Миннесота",
+     "confidence": "средняя",
+     "odds": 1.95,
+     "odds_source": "Фонбет"
+    }
+   ]
+  },
+  {
+   "match": "Анахайм @ Калгари",
+   "kickoff_msk": "04:00 07.11",
+   "periods": [
+    {
+     "period": 1,
+     "pick": "П Калгари",
+     "confidence": "низкая",
+     "odds": 2.6,
+     "odds_source": "Фонбет"
+    },
+    {
+     "period": 2,
+     "pick": "П Калгари",
+     "confidence": "низкая",
+     "odds": 2.5,
+     "odds_source": "Фонбет"
+    },
+    {
+     "period": 3,
+     "pick": "П Калгари",
+     "confidence": "низкая",
+     "odds": 2.45,
+     "odds_source": "Фонбет"
+    }
+   ]
+  }
+ ],
+ "del_periods": [],
+ "khl_index": {
+  "source": "maxkhl.ru — сводка поисковика по кэшу /games (живая страница 500); только Амур—СКА и Трактор—Ак Барс",
+  "matches": [
+   {
+    "match": "Амур — СКА",
+    "home_win": 0.432,
+    "away_win": 0.568,
+    "draw60": null,
+    "reg_time": "н/д",
+    "xg": "2.59:2.71",
+    "reliability": 0.72
+   },
+   {
+    "match": "Адмирал — Барыс",
+    "home_win": null,
+    "away_win": null,
+    "draw60": null,
+    "reg_time": "н/д",
+    "xg": "н/д",
+    "reliability": null
+   },
+   {
+    "match": "Трактор — Ак Барс",
+    "home_win": 0.35,
+    "away_win": 0.65,
+    "draw60": null,
+    "reg_time": "н/д",
+    "xg": "2.52:2.78",
+    "reliability": 0.74
+   },
+   {
+    "match": "Салават Юлаев — Автомобилист",
+    "home_win": null,
+    "away_win": null,
+    "draw60": null,
+    "reg_time": "н/д",
+    "xg": "н/д",
+    "reliability": null
+   },
+   {
+    "match": "Лада — Локомотив",
+    "home_win": null,
+    "away_win": null,
+    "draw60": null,
+    "reg_time": "н/д",
+    "xg": "н/д",
+    "reliability": null
+   },
+   {
+    "match": "Спартак — Динамо Мн",
+    "home_win": null,
+    "away_win": null,
+    "draw60": null,
+    "reg_time": "н/д",
+    "xg": "н/д",
+    "reliability": null
+   }
+  ]
+ }
+}
