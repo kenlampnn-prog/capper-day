@@ -544,7 +544,10 @@
   "Алавес": "logos/fb/alaves.png",
   "Ковентри": "logos/fb/coventry.png",
   "ФК Аугсбург": "logos/fb/augsburg_fc.png",
-  "FC Augsburg": "logos/fb/augsburg_fc.png"
+  "FC Augsburg": "logos/fb/augsburg_fc.png",
+  "Генуя": "logos/fb/genoa.png",
+  "Дженоа": "logos/fb/genoa.png",
+  "Genoa": "logos/fb/genoa.png"
  },
  "files": {
   "logos/khl/lokomotiv.png": {
@@ -1614,6 +1617,11 @@
    "league": "fb",
    "name": "ФК Аугсбург",
    "src": "https://a.espncdn.com/i/teamlogos/soccer/500/3841.png"
+  },
+  "logos/fb/genoa.png": {
+   "league": "fb",
+   "name": "Генуя",
+   "source": "ESPN CDN (a.espncdn.com/i/teamlogos/soccer/500/3263.png)"
   }
  }
 }
