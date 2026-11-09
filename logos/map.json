@@ -547,7 +547,18 @@
   "FC Augsburg": "logos/fb/augsburg_fc.png",
   "Генуя": "logos/fb/genoa.png",
   "Дженоа": "logos/fb/genoa.png",
-  "Genoa": "logos/fb/genoa.png"
+  "Genoa": "logos/fb/genoa.png",
+  "Черноморец Бургас": "logos/fb/chernomorets_burgas.png",
+  "Черноморец": "logos/fb/chernomorets_burgas.png",
+  "Черно море": "logos/fb/cherno_more.png",
+  "Черно Море Варна": "logos/fb/cherno_more.png",
+  "Сабадель": "logos/fb/sabadell.png",
+  "Реал Сосьедад Б": "logos/ucl/realsociedad.png",
+  "Торренсе": "logos/fb/torreense.png",
+  "Униан Лейрия": "logos/fb/uniao_leiria.png",
+  "Лейрия": "logos/fb/uniao_leiria.png",
+  "Алания": "logos/fb/alania.png",
+  "Машук-КМВ": "logos/fb/mashuk_kmv.png"
  },
  "files": {
   "logos/khl/lokomotiv.png": {
@@ -1622,6 +1633,41 @@
    "league": "fb",
    "name": "Генуя",
    "source": "ESPN CDN (a.espncdn.com/i/teamlogos/soccer/500/3263.png)"
+  },
+  "logos/fb/chernomorets_burgas.png": {
+   "league": "fb",
+   "name": "Черноморец Бургас",
+   "source": "Wikipedia (en) club crest, https://en.wikipedia.org/wiki/File:Chernomorets_new_logo.png, resized 96×96"
+  },
+  "logos/fb/cherno_more.png": {
+   "league": "fb",
+   "name": "Черно море",
+   "source": "Wikipedia (en) club crest, https://en.wikipedia.org/wiki/File:Cherno_More_Varna.svg, resized 96×96"
+  },
+  "logos/fb/sabadell.png": {
+   "league": "fb",
+   "name": "Сабадель",
+   "source": "Wikipedia (en) club crest, https://en.wikipedia.org/wiki/File:CE_Sabadell_FC_logo.svg, resized 96×96"
+  },
+  "logos/fb/torreense.png": {
+   "league": "fb",
+   "name": "Торренсе",
+   "source": "Wikipedia (en) club crest, https://en.wikipedia.org/wiki/File:S.C.U._Torreense_logo.svg, resized 96×96"
+  },
+  "logos/fb/uniao_leiria.png": {
+   "league": "fb",
+   "name": "Униан Лейрия",
+   "source": "Wikipedia (en) club crest, https://en.wikipedia.org/wiki/File:U.D._Leiria_logo.svg, resized 96×96"
+  },
+  "logos/fb/alania.png": {
+   "league": "fb",
+   "name": "Алания",
+   "source": "Wikipedia (en) club crest, https://en.wikipedia.org/wiki/File:Logo_alania_vladikavkaz.png, resized 96×96"
+  },
+  "logos/fb/mashuk_kmv.png": {
+   "league": "fb",
+   "name": "Машук-КМВ",
+   "source": "Wikipedia (en) club crest, https://en.wikipedia.org/wiki/File:FC_Mashuk-KMV_Pyatigorsk_logo.png, resized 96×96"
   }
  }
 }
