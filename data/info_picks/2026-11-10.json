@@ -1,0 +1,598 @@
+{
+ "date": "2026-11-10",
+ "note": "Информационные прогнозы: не в купоне и не в банке. Грейдить на следующий день. Норвегия 10.11 — матчей нет. DEL 10.11 не играет (пауза). Нефтехимик — Салават: линии на Выберу.Спорт нет, периоды без кэфов.",
+ "mhl": [
+  {
+   "league": "МХЛ",
+   "match": "Амурские Тигры — МХК Динамо М",
+   "home": "Амурские Тигры",
+   "away": "МХК Динамо М",
+   "date": "2026-11-10",
+   "kickoff_msk": "12:00",
+   "pick": "П2 (осн. время)",
+   "odds": 2.05,
+   "odds_source": "Фонбет",
+   "source_url": "https://sport.vbr.ru/events/hockey/2026-11-10-amurskie-tigry-dyn-moscow/",
+   "reason": "Динамо М — фаворит в гостях (П2 60 мин 2.05–2.06, с ОТ 1.65 у Винлайна). Тотал 5.5: больше 2.00, меньше 1.73 (Фонбет). Оценка ~47% при 48.8% в кэфе — справочно.",
+   "implied": 0.488,
+   "prob_est": 0.47,
+   "confidence_test": "fail: оценка ниже кэфа",
+   "coupon": false,
+   "result": "open",
+   "score": null,
+   "rule": "основное время",
+   "periods": [
+    {
+     "period": 1,
+     "pick": "П МХК Динамо М",
+     "confidence": "низкая",
+     "odds": 2.6,
+     "odds_source": "Фонбет"
+    },
+    {
+     "period": 2,
+     "pick": "П МХК Динамо М",
+     "confidence": "низкая",
+     "odds": 2.45,
+     "odds_source": "Фонбет"
+    },
+    {
+     "period": 3,
+     "pick": "П МХК Динамо М",
+     "confidence": "низкая",
+     "odds": 2.45,
+     "odds_source": "Фонбет"
+    }
+   ]
+  },
+  {
+   "league": "МХЛ",
+   "match": "МХК Спартак — МХК Крылья Советов",
+   "home": "МХК Спартак",
+   "away": "МХК Крылья Советов",
+   "date": "2026-11-10",
+   "kickoff_msk": "18:30",
+   "pick": "П1 (осн. время)",
+   "odds": 2.15,
+   "odds_source": "Фонбет",
+   "source_url": "https://sport.vbr.ru/events/hockey/2026-11-10-mxk-spartak-max-mxk-krylia-sovetov/",
+   "reason": "Повторная встреча: вчера Спартак выиграл 2:1 в овертайме (Агентство «Москва») — четвёртая победа над Крыльями в сезоне. П1 60 мин 2.15 (Фонбет), с ОТ 1.70 (Марафон). Оценка ~45% при 46.5% в кэфе — на цене, справочно.",
+   "implied": 0.465,
+   "prob_est": 0.45,
+   "confidence_test": "fail: оценка ниже кэфа",
+   "coupon": false,
+   "result": "open",
+   "score": null,
+   "rule": "основное время",
+   "periods": [
+    {
+     "period": 1,
+     "pick": "ничья",
+     "confidence": "низкая",
+     "odds": 2.6,
+     "odds_source": "Фонбет"
+    },
+    {
+     "period": 2,
+     "pick": "П МХК Спартак",
+     "confidence": "низкая",
+     "odds": 2.55,
+     "odds_source": "Фонбет"
+    },
+    {
+     "period": 3,
+     "pick": "П МХК Спартак",
+     "confidence": "низкая",
+     "odds": 2.55,
+     "odds_source": "Фонбет"
+    }
+   ]
+  },
+  {
+   "league": "МХЛ",
+   "match": "Спутник — Кузнецкие Медведи",
+   "home": "Спутник",
+   "away": "Кузнецкие Медведи",
+   "date": "2026-11-10",
+   "kickoff_msk": "18:30",
+   "pick": "П2 (осн. время)",
+   "odds": 2.25,
+   "odds_source": "Фонбет",
+   "source_url": "https://sport.vbr.ru/events/hockey/2026-11-10-sputnik-almetevsk-kuzneckie-medvedi/",
+   "reason": "Повторная встреча: вчера Спутник выиграл 3:1 (Выберу.Спорт). Линия снова за гостями: П2 60 мин 2.23–2.32, с ОТ 1.76 (Винлайн). Оценка ~43% при 44.4% в кэфе — справочно.",
+   "implied": 0.444,
+   "prob_est": 0.43,
+   "confidence_test": "fail: оценка ниже кэфа",
+   "coupon": false,
+   "result": "open",
+   "score": null,
+   "rule": "основное время",
+   "periods": [
+    {
+     "period": 1,
+     "pick": "ничья",
+     "confidence": "низкая",
+     "odds": 2.7,
+     "odds_source": "Фонбет"
+    },
+    {
+     "period": 2,
+     "pick": "П Кузнецкие Медведи",
+     "confidence": "низкая",
+     "odds": 2.6,
+     "odds_source": "Фонбет"
+    },
+    {
+     "period": 3,
+     "pick": "П Кузнецкие Медведи",
+     "confidence": "низкая",
+     "odds": 2.6,
+     "odds_source": "Фонбет"
+    }
+   ]
+  }
+ ],
+ "football_best": [
+  {
+   "league": "ЛЧ (жен.)",
+   "match": "Реал Мадрид (ж) — Пари (ж)",
+   "home": "Реал Мадрид (ж)",
+   "away": "Пари (ж)",
+   "date": "2026-11-10",
+   "kickoff_msk": "20:45",
+   "pick": "Ф1 (−1.5)",
+   "odds": 2.03,
+   "odds_source": "Фонбет",
+   "source_url": "https://sport.vbr.ru/events/football/2026-11-10-real-madrid-z-pariz-fk-z/",
+   "reason": "Реал — явный фаворит дома (П1 1.35–1.39 у всех БК), победа с разницей в 2+ мяча у Фонбета 2.03. ТБ 2.5 — 1.48.",
+   "implied": 0.493,
+   "prob_est": 0.48,
+   "confidence_test": "fail: оценка ниже кэфа",
+   "coupon": false,
+   "result": "open",
+   "score": null,
+   "rule": "90 минут",
+   "halves": [
+    {
+     "half": 1,
+     "pick": "П Реал Мадрид (ж)",
+     "confidence": "средняя",
+     "odds": 1.85,
+     "odds_source": "Фонбет"
+    },
+    {
+     "half": 2,
+     "pick": "П Реал Мадрид (ж)",
+     "confidence": "средняя",
+     "odds": 1.64,
+     "odds_source": "Марафон"
+    }
+   ]
+  },
+  {
+   "league": "Англия",
+   "match": "Бристоль Роверс — Рединг",
+   "home": "Бристоль Роверс",
+   "away": "Рединг",
+   "date": "2026-11-10",
+   "kickoff_msk": "22:00",
+   "pick": "П2",
+   "odds": 1.8,
+   "odds_source": "Фонбет",
+   "source_url": "https://sport.vbr.ru/events/football/2026-11-10-bristol-rovers-reding/",
+   "reason": "Рединг — фаворит в гостях (П2 1.80–1.90, П1 3.40–3.60). ТМ 2.5 у букмекеров 2.33–2.40 — рынок ждёт голов.",
+   "implied": 0.556,
+   "prob_est": 0.53,
+   "confidence_test": "fail: оценка ниже кэфа",
+   "coupon": false,
+   "result": "open",
+   "score": null,
+   "rule": "90 минут",
+   "halves": [
+    {
+     "half": 1,
+     "pick": "П Рединг",
+     "confidence": "средняя",
+     "odds": 2.25,
+     "odds_source": "Фонбет"
+    },
+    {
+     "half": 2,
+     "pick": "П Рединг",
+     "confidence": "средняя",
+     "odds": 2.1,
+     "odds_source": "Фонбет"
+    }
+   ]
+  },
+  {
+   "league": "Англия",
+   "match": "Стокпорт Каунти — Транмир Роверс",
+   "home": "Стокпорт Каунти",
+   "away": "Транмир Роверс",
+   "date": "2026-11-10",
+   "kickoff_msk": "22:00",
+   "pick": "Ф1 (−1.5)",
+   "odds": 1.9,
+   "odds_source": "Фонбет",
+   "source_url": "https://sport.vbr.ru/events/football/2026-11-10-stokport-kaunti-tranmir-rovers/",
+   "reason": "Стокпорт — крупный фаворит дома (П1 1.34–1.37), победа с разницей 2+ — 1.90 у Фонбета.",
+   "implied": 0.526,
+   "prob_est": 0.5,
+   "confidence_test": "fail: оценка ниже кэфа",
+   "coupon": false,
+   "result": "open",
+   "score": null,
+   "rule": "90 минут",
+   "halves": [
+    {
+     "half": 1,
+     "pick": "П Стокпорт Каунти",
+     "confidence": "средняя",
+     "odds": 1.7,
+     "odds_source": "Фонбет"
+    },
+    {
+     "half": 2,
+     "pick": "П Стокпорт Каунти",
+     "confidence": "средняя",
+     "odds": 1.6,
+     "odds_source": "Фонбет"
+    }
+   ]
+  },
+  {
+   "league": "ЛЧ (жен.)",
+   "match": "Интер (ж) — Манчестер Сити (ж)",
+   "home": "Интер (ж)",
+   "away": "Манчестер Сити (ж)",
+   "date": "2026-11-10",
+   "kickoff_msk": "23:00",
+   "pick": "Ф2 (−1.5)",
+   "odds": 1.9,
+   "odds_source": "Фонбет",
+   "source_url": "https://sport.vbr.ru/events/football/2026-11-10-inter-milan-z-mancester-siti-z/",
+   "reason": "Манчестер Сити — крупный фаворит в гостях (П2 1.30–1.36), победа с разницей 2+ — 1.90 (Фонбет). ТБ 2.5 — 1.45.",
+   "implied": 0.526,
+   "prob_est": 0.5,
+   "confidence_test": "fail: оценка ниже кэфа",
+   "coupon": false,
+   "result": "open",
+   "score": null,
+   "rule": "90 минут",
+   "halves": [
+    {
+     "half": 1,
+     "pick": "П Манчестер Сити (ж)",
+     "confidence": "средняя",
+     "odds": 1.68,
+     "odds_source": "Фонбет"
+    },
+    {
+     "half": 2,
+     "pick": "П Манчестер Сити (ж)",
+     "confidence": "средняя",
+     "odds": 1.57,
+     "odds_source": "Марафон"
+    }
+   ]
+  }
+ ],
+ "norway": [],
+ "khl_periods": [
+  {
+   "match": "Трактор — Шанхайские Драконы",
+   "kickoff_msk": "17:00",
+   "periods": [
+    {
+     "period": 1,
+     "pick": "ничья",
+     "confidence": "низкая",
+     "odds": 2.55,
+     "odds_source": "Фонбет"
+    },
+    {
+     "period": 2,
+     "pick": "П Трактор",
+     "confidence": "низкая",
+     "odds": 2.7,
+     "odds_source": "Фонбет"
+    },
+    {
+     "period": 3,
+     "pick": "П Трактор",
+     "confidence": "низкая",
+     "odds": 2.65,
+     "odds_source": "Фонбет"
+    }
+   ]
+  },
+  {
+   "match": "Динамо Минск — Авангард",
+   "kickoff_msk": "19:10",
+   "periods": [
+    {
+     "period": 1,
+     "pick": "ничья",
+     "confidence": "низкая",
+     "odds": 2.55,
+     "odds_source": "Фонбет"
+    },
+    {
+     "period": 2,
+     "pick": "П Авангард",
+     "confidence": "низкая",
+     "odds": 2.7,
+     "odds_source": "Фонбет"
+    },
+    {
+     "period": 3,
+     "pick": "П Авангард",
+     "confidence": "низкая",
+     "odds": 2.65,
+     "odds_source": "Фонбет"
+    }
+   ]
+  },
+  {
+   "match": "Нефтехимик — Салават Юлаев",
+   "kickoff_msk": "19:30",
+   "periods": [
+    {
+     "period": 1,
+     "pick": "ничья",
+     "confidence": "низкая",
+     "odds": null,
+     "odds_source": null
+    },
+    {
+     "period": 2,
+     "pick": "П Нефтехимик",
+     "confidence": "низкая",
+     "odds": null,
+     "odds_source": null
+    },
+    {
+     "period": 3,
+     "pick": "П Нефтехимик",
+     "confidence": "низкая",
+     "odds": null,
+     "odds_source": null
+    }
+   ]
+  }
+ ],
+ "nhl_periods": [
+  {
+   "match": "Колорадо @ Торонто",
+   "kickoff_msk": "03:00 11.11",
+   "periods": [
+    {
+     "period": 1,
+     "pick": "П Колорадо",
+     "confidence": "низкая",
+     "odds": 2.4,
+     "odds_source": "Фонбет"
+    },
+    {
+     "period": 2,
+     "pick": "П Колорадо",
+     "confidence": "средняя",
+     "odds": 2.3,
+     "odds_source": "Фонбет"
+    },
+    {
+     "period": 3,
+     "pick": "П Колорадо",
+     "confidence": "средняя",
+     "odds": 2.25,
+     "odds_source": "Фонбет"
+    }
+   ]
+  },
+  {
+   "match": "Миннесота @ Монреаль",
+   "kickoff_msk": "03:00 11.11",
+   "periods": [
+    {
+     "period": 1,
+     "pick": "П Миннесота",
+     "confidence": "низкая",
+     "odds": 2.65,
+     "odds_source": "Фонбет"
+    },
+    {
+     "period": 2,
+     "pick": "П Миннесота",
+     "confidence": "низкая",
+     "odds": 2.55,
+     "odds_source": "Фонбет"
+    },
+    {
+     "period": 3,
+     "pick": "П Миннесота",
+     "confidence": "низкая",
+     "odds": 2.45,
+     "odds_source": "Фонбет"
+    }
+   ]
+  },
+  {
+   "match": "Вашингтон @ Оттава",
+   "kickoff_msk": "03:00 11.11",
+   "periods": [
+    {
+     "period": 1,
+     "pick": "П Оттава",
+     "confidence": "низкая",
+     "odds": 2.6,
+     "odds_source": "Фонбет"
+    },
+    {
+     "period": 2,
+     "pick": "П Оттава",
+     "confidence": "низкая",
+     "odds": 2.5,
+     "odds_source": "Фонбет"
+    },
+    {
+     "period": 3,
+     "pick": "П Оттава",
+     "confidence": "низкая",
+     "odds": 2.4,
+     "odds_source": "Фонбет"
+    }
+   ]
+  },
+  {
+   "match": "Нью-Джерси @ Виннипег",
+   "kickoff_msk": "03:00 11.11",
+   "periods": [
+    {
+     "period": 1,
+     "pick": "П Нью-Джерси",
+     "confidence": "низкая",
+     "odds": 2.5,
+     "odds_source": "Фонбет"
+    },
+    {
+     "period": 2,
+     "pick": "П Нью-Джерси",
+     "confidence": "низкая",
+     "odds": 2.4,
+     "odds_source": "Фонбет"
+    },
+    {
+     "period": 3,
+     "pick": "П Нью-Джерси",
+     "confidence": "средняя",
+     "odds": 2.3,
+     "odds_source": "Фонбет"
+    }
+   ]
+  },
+  {
+   "match": "Флорида @ Коламбус",
+   "kickoff_msk": "03:30 11.11",
+   "periods": [
+    {
+     "period": 1,
+     "pick": "П Флорида",
+     "confidence": "низкая",
+     "odds": 2.75,
+     "odds_source": "Фонбет"
+    },
+    {
+     "period": 2,
+     "pick": "П Флорида",
+     "confidence": "низкая",
+     "odds": 2.6,
+     "odds_source": "Фонбет"
+    },
+    {
+     "period": 3,
+     "pick": "П Флорида",
+     "confidence": "низкая",
+     "odds": 2.55,
+     "odds_source": "Фонбет"
+    }
+   ]
+  },
+  {
+   "match": "Детройт @ Сент-Луис",
+   "kickoff_msk": "04:00 11.11",
+   "periods": [
+    {
+     "period": 1,
+     "pick": "П Сент-Луис",
+     "confidence": "низкая",
+     "odds": 2.55,
+     "odds_source": "Фонбет"
+    },
+    {
+     "period": 2,
+     "pick": "П Сент-Луис",
+     "confidence": "низкая",
+     "odds": 2.45,
+     "odds_source": "Фонбет"
+    },
+    {
+     "period": 3,
+     "pick": "П Сент-Луис",
+     "confidence": "низкая",
+     "odds": 2.35,
+     "odds_source": "Фонбет"
+    }
+   ]
+  },
+  {
+   "match": "Нэшвилл @ Лос-Анджелес",
+   "kickoff_msk": "06:00 11.11",
+   "periods": [
+    {
+     "period": 1,
+     "pick": "П Лос-Анджелес",
+     "confidence": "низкая",
+     "odds": 2.55,
+     "odds_source": "Фонбет"
+    },
+    {
+     "period": 2,
+     "pick": "П Лос-Анджелес",
+     "confidence": "низкая",
+     "odds": 2.45,
+     "odds_source": "Фонбет"
+    },
+    {
+     "period": 3,
+     "pick": "П Лос-Анджелес",
+     "confidence": "низкая",
+     "odds": 2.35,
+     "odds_source": "Фонбет"
+    }
+   ]
+  }
+ ],
+ "del_periods": [],
+ "khl_index": {
+  "source": "maxkhl.ru — живая страница 500; страниц матчей 10.11 в поисковом кэше нет — не используем",
+  "matches": [
+   {
+    "match": "Трактор — Шанхайские Драконы",
+    "home_win": null,
+    "away_win": null,
+    "draw60": null,
+    "reg_time": "н/д",
+    "xg": "н/д",
+    "reliability": null,
+    "favourite": null,
+    "favourite_won": null,
+    "score": null
+   },
+   {
+    "match": "Динамо Минск — Авангард",
+    "home_win": null,
+    "away_win": null,
+    "draw60": null,
+    "reg_time": "н/д",
+    "xg": "н/д",
+    "reliability": null,
+    "favourite": null,
+    "favourite_won": null,
+    "score": null
+   },
+   {
+    "match": "Нефтехимик — Салават Юлаев",
+    "home_win": null,
+    "away_win": null,
+    "draw60": null,
+    "reg_time": "н/д",
+    "xg": "н/д",
+    "reliability": null,
+    "favourite": null,
+    "favourite_won": null,
+    "score": null
+   }
+  ]
+ }
+}

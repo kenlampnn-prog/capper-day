@@ -558,7 +558,16 @@
   "Униан Лейрия": "logos/fb/uniao_leiria.png",
   "Лейрия": "logos/fb/uniao_leiria.png",
   "Алания": "logos/fb/alania.png",
-  "Машук-КМВ": "logos/fb/mashuk_kmv.png"
+  "Машук-КМВ": "logos/fb/mashuk_kmv.png",
+  "Бристоль Роверс": "logos/fb/bristol_rovers.png",
+  "Рединг": "logos/fb/reading.png",
+  "Стокпорт Каунти": "logos/fb/stockport.png",
+  "Транмир Роверс": "logos/fb/tranmere.png",
+  "Пари": "logos/fb/paris_fc.png",
+  "Пари (ж)": "logos/fb/paris_fc.png",
+  "Реал Мадрид (ж)": "logos/ucl/realmadrid.png",
+  "Интер (ж)": "logos/ucl/inter.png",
+  "Манчестер Сити (ж)": "logos/fb/man_city.png"
  },
  "files": {
   "logos/khl/lokomotiv.png": {
