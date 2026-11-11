@@ -567,7 +567,19 @@
   "Пари (ж)": "logos/fb/paris_fc.png",
   "Реал Мадрид (ж)": "logos/ucl/realmadrid.png",
   "Интер (ж)": "logos/ucl/inter.png",
-  "Манчестер Сити (ж)": "logos/fb/man_city.png"
+  "Манчестер Сити (ж)": "logos/fb/man_city.png",
+  "Барнсли": "logos/fb/barnsley.png",
+  "Олдэм Атлетик": "logos/fb/oldham.png",
+  "Ливерпуль (ж)": "logos/fb/liverpool_w.png",
+  "Астон Вилла (ж)": "logos/fb/astonvilla_w.png",
+  "Иокогама Ф. Маринос": "logos/fb/yokohama_fm.png",
+  "Касима Антлерс": "logos/fb/kashima.png",
+  "Шеффилд Уэнсдей": "logos/fb/sheffield_wed.png",
+  "Аккрингтон Стэнли": "logos/fb/accrington.png",
+  "Академия Михайлова": "logos/mhl/akademiya_mikhailova.png",
+  "Академия Михайлова Юниор": "logos/mhl/akademiya_mikhailova.png",
+  "Тоттенхэм (ж)": "logos/fb/tottenham.png",
+  "Кристал Пэлас (ж)": "logos/ucl/crystalpalace.png"
  },
  "files": {
   "logos/khl/lokomotiv.png": {
