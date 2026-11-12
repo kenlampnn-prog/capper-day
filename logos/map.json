@@ -579,7 +579,17 @@
   "Академия Михайлова": "logos/mhl/akademiya_mikhailova.png",
   "Академия Михайлова Юниор": "logos/mhl/akademiya_mikhailova.png",
   "Тоттенхэм (ж)": "logos/fb/tottenham.png",
-  "Кристал Пэлас (ж)": "logos/ucl/crystalpalace.png"
+  "Кристал Пэлас (ж)": "logos/ucl/crystalpalace.png",
+  "Англия": "logos/fb/england_nt.png",
+  "Хорватия": "logos/fb/croatia_nt.png",
+  "Черногория": "logos/fb/montenegro_nt.png",
+  "Латвия": "logos/fb/latvia_nt.png",
+  "Турция": "logos/fb/turkey_nt.png",
+  "Бельгия": "logos/fb/belgium_nt.png",
+  "Узбекистан": "logos/fb/uzbekistan_nt.png",
+  "Россия": "logos/fb/russia_nt.png",
+  "Барселона (ж)": "logos/fb/barcelona.png",
+  "Арсенал (ж)": "logos/fb/arsenal.png"
  },
  "files": {
   "logos/khl/lokomotiv.png": {
@@ -1689,6 +1699,46 @@
    "league": "fb",
    "name": "Машук-КМВ",
    "source": "Wikipedia (en) club crest, https://en.wikipedia.org/wiki/File:FC_Mashuk-KMV_Pyatigorsk_logo.png, resized 96×96"
+  },
+  "logos/fb/england_nt.png": {
+   "league": "fb",
+   "name": "Англия",
+   "source": "Wikipedia (en) federation crest, https://en.wikipedia.org/wiki/File:England_national_football_team_crest.svg, resized 96×96"
+  },
+  "logos/fb/croatia_nt.png": {
+   "league": "fb",
+   "name": "Хорватия",
+   "source": "Wikipedia (en) federation crest, https://en.wikipedia.org/wiki/File:Croatia_national_football_team_logo.svg, resized 96×96"
+  },
+  "logos/fb/montenegro_nt.png": {
+   "league": "fb",
+   "name": "Черногория",
+   "source": "Wikipedia (en) federation crest, https://en.wikipedia.org/wiki/File:Football_Association_of_Montenegro_logo.svg, resized 96×96"
+  },
+  "logos/fb/latvia_nt.png": {
+   "league": "fb",
+   "name": "Латвия",
+   "source": "Wikipedia (en) federation crest, https://en.wikipedia.org/wiki/File:Latvia_national_team_logo.png, resized 96×96"
+  },
+  "logos/fb/turkey_nt.png": {
+   "league": "fb",
+   "name": "Турция",
+   "source": "Wikipedia (en) federation crest, https://en.wikipedia.org/wiki/File:Turkish_Football_Federation_crest.svg, resized 96×96"
+  },
+  "logos/fb/belgium_nt.png": {
+   "league": "fb",
+   "name": "Бельгия",
+   "source": "Wikipedia (en) federation crest, https://en.wikipedia.org/wiki/File:Royal_Belgian_FA_logo_2019.svg, resized 96×96"
+  },
+  "logos/fb/uzbekistan_nt.png": {
+   "league": "fb",
+   "name": "Узбекистан",
+   "source": "Wikipedia (en) federation crest, https://en.wikipedia.org/wiki/File:Uzbekistan_Football_Association.svg, resized 96×96"
+  },
+  "logos/fb/russia_nt.png": {
+   "league": "fb",
+   "name": "Россия",
+   "source": "Wikipedia (en) federation crest, https://en.wikipedia.org/wiki/File:Russian_Football_Union_logo.svg, resized 96×96"
   }
  }
 }
