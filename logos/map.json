@@ -589,7 +589,18 @@
   "Узбекистан": "logos/fb/uzbekistan_nt.png",
   "Россия": "logos/fb/russia_nt.png",
   "Барселона (ж)": "logos/fb/barcelona.png",
-  "Арсенал (ж)": "logos/fb/arsenal.png"
+  "Арсенал (ж)": "logos/fb/arsenal.png",
+  "Австралия": "logos/fb/australia_nt.png",
+  "Болгария": "logos/fb/bulgaria_nt.png",
+  "Бохум": "logos/fb/bochum.png",
+  "Верль": "logos/fb/verl.png",
+  "Греция": "logos/fb/greece_nt.png",
+  "Исландия": "logos/fb/iceland_nt.png",
+  "Катар": "logos/fb/qatar_nt.png",
+  "Нидерланды": "logos/fb/netherlands_nt.png",
+  "МХК Динамо Москва": "logos/mhl/mhk_dinamo_m.png",
+  "Пингвинз Бремерхафен": "logos/del/bremerhaven.png",
+  "Швеннингер": "logos/del/schwenningen.png"
  },
  "files": {
   "logos/khl/lokomotiv.png": {
