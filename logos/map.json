@@ -600,7 +600,18 @@
   "Нидерланды": "logos/fb/netherlands_nt.png",
   "МХК Динамо Москва": "logos/mhl/mhk_dinamo_m.png",
   "Пингвинз Бремерхафен": "logos/del/bremerhaven.png",
-  "Швеннингер": "logos/del/schwenningen.png"
+  "Швеннингер": "logos/del/schwenningen.png",
+  "Австрия": "logos/fb/austria_nt.png",
+  "Босния и Герцеговина": "logos/fb/bosnia_nt.png",
+  "Израиль": "logos/fb/israel_nt.png",
+  "Косово": "logos/fb/kosovo_nt.png",
+  "Норвегия": "logos/fb/norway_nt.png",
+  "Польша": "logos/fb/poland_nt.png",
+  "Ирландия": "logos/fb/ireland_nt.png",
+  "Румыния": "logos/fb/romania_nt.png",
+  "Швеция": "logos/fb/sweden_nt.png",
+  "Уэльс": "logos/fb/wales_nt.png",
+  "Академия Михайлова-юниор": "logos/mhl/akademiya_mikhailova.png"
  },
  "files": {
   "logos/khl/lokomotiv.png": {
