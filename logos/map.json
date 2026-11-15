@@ -611,7 +611,13 @@
   "Румыния": "logos/fb/romania_nt.png",
   "Швеция": "logos/fb/sweden_nt.png",
   "Уэльс": "logos/fb/wales_nt.png",
-  "Академия Михайлова-юниор": "logos/mhl/akademiya_mikhailova.png"
+  "Академия Михайлова-юниор": "logos/mhl/akademiya_mikhailova.png",
+  "Испания": "logos/fb/spain_nt.png",
+  "Чехия": "logos/fb/czechia_nt.png",
+  "Беларусь": "logos/fb/belarus_nt.png",
+  "Албания": "logos/fb/albania_nt.png",
+  "Гранада": "logos/fb/granada.png",
+  "Лас-Пальмас": "logos/fb/las_palmas.png"
  },
  "files": {
   "logos/khl/lokomotiv.png": {

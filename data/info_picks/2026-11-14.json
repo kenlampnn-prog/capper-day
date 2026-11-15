@@ -18,8 +18,8 @@
    "prob_est": 0.536,
    "confidence_test": "fail: оценка ниже кэфа",
    "coupon": false,
-   "result": "open",
-   "score": null,
+   "result": "loss",
+   "score": "3:2 ОТ (1:1, 1:0, 0:1, ОТ 1:0) — в 60 минут 2:2",
    "rule": "основное время",
    "periods": [
     {
@@ -27,21 +27,27 @@
      "pick": "П СКА-1946",
      "confidence": "средняя",
      "odds": 2.2,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "score": "1:1",
+     "result": "loss"
     },
     {
      "period": 2,
      "pick": "П СКА-1946",
      "confidence": "средняя",
      "odds": 2.1,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "score": "1:0",
+     "result": "loss"
     },
     {
      "period": 3,
      "pick": "П СКА-1946",
      "confidence": "средняя",
      "odds": 2.1,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "score": "0:1",
+     "result": "win"
     }
    ]
   },
@@ -61,8 +67,8 @@
    "prob_est": 0.56,
    "confidence_test": "fail: оценка ниже кэфа",
    "coupon": false,
-   "result": "open",
-   "score": null,
+   "result": "loss",
+   "score": "4:3 (2:0, 1:0, 1:3)",
    "rule": "основное время",
    "periods": [
     {
@@ -70,21 +76,27 @@
      "pick": "П Авто",
      "confidence": "средняя",
      "odds": 1.8,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "score": "2:0",
+     "result": "win"
     },
     {
      "period": 2,
      "pick": "П Авто",
      "confidence": "средняя",
      "odds": 1.72,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "score": "1:0",
+     "result": "win"
     },
     {
      "period": 3,
      "pick": "П Авто",
      "confidence": "средняя",
      "odds": 1.7,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "score": "1:3",
+     "result": "loss"
     }
    ]
   }
@@ -107,8 +119,8 @@
    "prob_est": 0.478,
    "confidence_test": "fail: оценка ниже кэфа",
    "coupon": false,
-   "result": "open",
-   "score": null,
+   "result": "win",
+   "score": "4:1",
    "rule": "90 минут",
    "halves": [
     {
@@ -116,14 +128,18 @@
      "pick": "П ФК ЦСКА",
      "confidence": "средняя",
      "odds": 1.75,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "score": null,
+     "result": "н/д"
     },
     {
      "half": 2,
      "pick": "П ФК ЦСКА",
      "confidence": "средняя",
      "odds": 1.58,
-     "odds_source": "Марафон"
+     "odds_source": "Марафон",
+     "score": null,
+     "result": "н/д"
     }
    ]
   },
@@ -143,8 +159,8 @@
    "prob_est": 0.529,
    "confidence_test": "fail: оценка ниже кэфа",
    "coupon": false,
-   "result": "open",
-   "score": null,
+   "result": "loss",
+   "score": "0:0",
    "rule": "90 минут",
    "halves": [
     {
@@ -152,14 +168,18 @@
      "pick": "ничья",
      "confidence": "средняя",
      "odds": 2.25,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "score": null,
+     "result": "н/д"
     },
     {
      "half": 2,
      "pick": "П Косово",
      "confidence": "средняя",
      "odds": 2.2,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "score": null,
+     "result": "н/д"
     }
    ]
   },
@@ -179,8 +199,8 @@
    "prob_est": 0.526,
    "confidence_test": "fail: оценка ниже кэфа",
    "coupon": false,
-   "result": "open",
-   "score": null,
+   "result": "loss",
+   "score": "1:0",
    "rule": "90 минут",
    "halves": [
     {
@@ -188,14 +208,18 @@
      "pick": "П Австрия",
      "confidence": "средняя",
      "odds": 2.1,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "score": null,
+     "result": "н/д"
     },
     {
      "half": 2,
      "pick": "П Австрия",
      "confidence": "средняя",
      "odds": 1.9,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "score": null,
+     "result": "н/д"
     }
    ]
   },
@@ -215,8 +239,8 @@
    "prob_est": 0.515,
    "confidence_test": "fail: оценка ниже кэфа",
    "coupon": false,
-   "result": "open",
-   "score": null,
+   "result": "loss",
+   "score": "2:1",
    "rule": "90 минут",
    "halves": [
     {
@@ -224,14 +248,18 @@
      "pick": "П Польша",
      "confidence": "низкая",
      "odds": 2.35,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "score": null,
+     "result": "н/д"
     },
     {
      "half": 2,
      "pick": "П Польша",
      "confidence": "средняя",
      "odds": 2.17,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "score": null,
+     "result": "н/д"
     }
    ]
   },
@@ -251,8 +279,8 @@
    "prob_est": 0.424,
    "confidence_test": "fail: оценка ниже кэфа",
    "coupon": false,
-   "result": "open",
-   "score": null,
+   "result": "loss",
+   "score": "3:2",
    "rule": "90 минут",
    "halves": [
     {
@@ -260,14 +288,18 @@
      "pick": "П Швеция",
      "confidence": "средняя",
      "odds": 1.92,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "score": null,
+     "result": "н/д"
     },
     {
      "half": 2,
      "pick": "П Швеция",
      "confidence": "средняя",
      "odds": 1.75,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "score": null,
+     "result": "н/д"
     }
    ]
   }
@@ -289,8 +321,8 @@
    "prob_est": 0.5,
    "confidence_test": "инфо-блок",
    "coupon": false,
-   "result": "open",
-   "score": null,
+   "result": "push",
+   "score": "3:1",
    "rule": "90 минут",
    "halves": [
     {
@@ -298,14 +330,18 @@
      "pick": "П Норвегия",
      "confidence": "средняя",
      "odds": 1.55,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "score": null,
+     "result": "н/д"
     },
     {
      "half": 2,
      "pick": "П Норвегия",
      "confidence": "средняя",
      "odds": 1.45,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "score": null,
+     "result": "н/д"
     }
    ]
   }
@@ -320,21 +356,27 @@
      "pick": "ничья",
      "confidence": "низкая",
      "odds": null,
-     "odds_source": null
+     "odds_source": null,
+     "score": "1:0",
+     "result": "loss"
     },
     {
      "period": 2,
      "pick": "ничья",
      "confidence": "низкая",
      "odds": null,
-     "odds_source": null
+     "odds_source": null,
+     "score": "0:2",
+     "result": "loss"
     },
     {
      "period": 3,
      "pick": "ничья",
      "confidence": "низкая",
      "odds": null,
-     "odds_source": null
+     "odds_source": null,
+     "score": "0:3",
+     "result": "loss"
     }
    ]
   },
@@ -347,21 +389,27 @@
      "pick": "ничья",
      "confidence": "низкая",
      "odds": null,
-     "odds_source": null
+     "odds_source": null,
+     "score": "2:0",
+     "result": "loss"
     },
     {
      "period": 2,
      "pick": "ничья",
      "confidence": "низкая",
      "odds": null,
-     "odds_source": null
+     "odds_source": null,
+     "score": "2:1",
+     "result": "loss"
     },
     {
      "period": 3,
      "pick": "ничья",
      "confidence": "низкая",
      "odds": null,
-     "odds_source": null
+     "odds_source": null,
+     "score": "1:0",
+     "result": "loss"
     }
    ]
   },
@@ -374,21 +422,27 @@
      "pick": "П Спартак",
      "confidence": "средняя",
      "odds": 2.15,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "score": "2:1",
+     "result": "win"
     },
     {
      "period": 2,
      "pick": "П Спартак",
      "confidence": "средняя",
      "odds": 2.03,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "score": "2:1",
+     "result": "win"
     },
     {
      "period": 3,
      "pick": "П Спартак",
      "confidence": "средняя",
      "odds": 1.97,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "score": "2:1",
+     "result": "win"
     }
    ]
   },
@@ -401,21 +455,27 @@
      "pick": "ничья",
      "confidence": "низкая",
      "odds": 2.5,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "score": "0:0",
+     "result": "win"
     },
     {
      "period": 2,
      "pick": "П Амур",
      "confidence": "низкая",
      "odds": 2.55,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "score": "0:2",
+     "result": "win"
     },
     {
      "period": 3,
      "pick": "П Амур",
      "confidence": "низкая",
      "odds": 2.45,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "score": "0:0",
+     "result": "loss"
     }
    ]
   },
@@ -428,21 +488,27 @@
      "pick": "П Локомотив",
      "confidence": "средняя",
      "odds": 2.15,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "score": "3:0",
+     "result": "win"
     },
     {
      "period": 2,
      "pick": "П Локомотив",
      "confidence": "средняя",
      "odds": 2.03,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "score": "1:0",
+     "result": "win"
     },
     {
      "period": 3,
      "pick": "П Локомотив",
      "confidence": "средняя",
      "odds": 1.95,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "score": "1:0",
+     "result": "win"
     }
    ]
   }
@@ -457,21 +523,27 @@
      "pick": "П Каролина",
      "confidence": "средняя",
      "odds": 1.73,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "score": "0:2",
+     "result": "win"
     },
     {
      "period": 2,
      "pick": "П Каролина",
      "confidence": "средняя",
      "odds": 1.65,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "score": "1:2",
+     "result": "win"
     },
     {
      "period": 3,
      "pick": "П Каролина",
      "confidence": "средняя",
      "odds": 1.6,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "score": "0:1",
+     "result": "win"
     }
    ]
   },
@@ -484,21 +556,27 @@
      "pick": "П Виннипег",
      "confidence": "низкая",
      "odds": 2.45,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "score": "0:3",
+     "result": "loss"
     },
     {
      "period": 2,
      "pick": "П Виннипег",
      "confidence": "средняя",
      "odds": 2.3,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "score": "2:1",
+     "result": "win"
     },
     {
      "period": 3,
      "pick": "П Виннипег",
      "confidence": "средняя",
      "odds": 2.25,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "score": "2:0",
+     "result": "win"
     }
    ]
   },
@@ -511,21 +589,27 @@
      "pick": "П Миннесота",
      "confidence": "низкая",
      "odds": 2.7,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "score": "1:0",
+     "result": "win"
     },
     {
      "period": 2,
      "pick": "П Миннесота",
      "confidence": "низкая",
      "odds": 2.55,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "score": "3:1",
+     "result": "win"
     },
     {
      "period": 3,
      "pick": "П Миннесота",
      "confidence": "низкая",
      "odds": 2.5,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "score": "2:1",
+     "result": "win"
     }
    ]
   },
@@ -538,21 +622,27 @@
      "pick": "П Эдмонтон",
      "confidence": "низкая",
      "odds": 2.4,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "score": "0:0",
+     "result": "loss"
     },
     {
      "period": 2,
      "pick": "П Эдмонтон",
      "confidence": "средняя",
      "odds": 2.3,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "score": "1:0",
+     "result": "win"
     },
     {
      "period": 3,
      "pick": "П Эдмонтон",
      "confidence": "средняя",
      "odds": 2.25,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "score": "0:0",
+     "result": "loss"
     }
    ]
   },
@@ -565,21 +655,27 @@
      "pick": "П Монреаль",
      "confidence": "низкая",
      "odds": 2.65,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "score": "2:0",
+     "result": "loss"
     },
     {
      "period": 2,
      "pick": "П Монреаль",
      "confidence": "низкая",
      "odds": 2.55,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "score": "0:1",
+     "result": "win"
     },
     {
      "period": 3,
      "pick": "П Монреаль",
      "confidence": "низкая",
      "odds": 2.5,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "score": "2:0",
+     "result": "loss"
     }
    ]
   },
@@ -592,21 +688,27 @@
      "pick": "П Тампа",
      "confidence": "средняя",
      "odds": 2.18,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "score": "0:0",
+     "result": "loss"
     },
     {
      "period": 2,
      "pick": "П Тампа",
      "confidence": "средняя",
      "odds": 2.07,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "score": "1:0",
+     "result": "loss"
     },
     {
      "period": 3,
      "pick": "П Тампа",
      "confidence": "средняя",
      "odds": 2.0,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "score": "1:0",
+     "result": "loss"
     }
    ]
   },
@@ -619,21 +721,27 @@
      "pick": "П Нью-Джерси",
      "confidence": "низкая",
      "odds": 2.7,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "score": "2:3",
+     "result": "loss"
     },
     {
      "period": 2,
      "pick": "П Нью-Джерси",
      "confidence": "низкая",
      "odds": 2.6,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "score": "2:0",
+     "result": "win"
     },
     {
      "period": 3,
      "pick": "П Нью-Джерси",
      "confidence": "низкая",
      "odds": 2.5,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "score": "3:1",
+     "result": "win"
     }
    ]
   },
@@ -646,21 +754,27 @@
      "pick": "П Сент-Луис",
      "confidence": "низкая",
      "odds": 2.75,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "score": "2:0",
+     "result": "loss"
     },
     {
      "period": 2,
      "pick": "П Сент-Луис",
      "confidence": "низкая",
      "odds": 2.65,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "score": "1:0",
+     "result": "loss"
     },
     {
      "period": 3,
      "pick": "П Сент-Луис",
      "confidence": "низкая",
      "odds": 2.55,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "score": "1:1",
+     "result": "loss"
     }
    ]
   },
@@ -673,21 +787,27 @@
      "pick": "ничья",
      "confidence": "низкая",
      "odds": null,
-     "odds_source": null
+     "odds_source": null,
+     "score": "0:1",
+     "result": "loss"
     },
     {
      "period": 2,
      "pick": "ничья",
      "confidence": "низкая",
      "odds": null,
-     "odds_source": null
+     "odds_source": null,
+     "score": "2:0",
+     "result": "loss"
     },
     {
      "period": 3,
      "pick": "ничья",
      "confidence": "низкая",
      "odds": null,
-     "odds_source": null
+     "odds_source": null,
+     "score": "2:0",
+     "result": "loss"
     }
    ]
   },
@@ -700,21 +820,27 @@
      "pick": "ничья",
      "confidence": "низкая",
      "odds": null,
-     "odds_source": null
+     "odds_source": null,
+     "score": "1:2",
+     "result": "loss"
     },
     {
      "period": 2,
      "pick": "ничья",
      "confidence": "низкая",
      "odds": null,
-     "odds_source": null
+     "odds_source": null,
+     "score": "2:1",
+     "result": "loss"
     },
     {
      "period": 3,
      "pick": "ничья",
      "confidence": "низкая",
      "odds": null,
-     "odds_source": null
+     "odds_source": null,
+     "score": "1:0",
+     "result": "loss"
     }
    ]
   },
@@ -727,21 +853,27 @@
      "pick": "ничья",
      "confidence": "низкая",
      "odds": null,
-     "odds_source": null
+     "odds_source": null,
+     "score": "0:0",
+     "result": "win"
     },
     {
      "period": 2,
      "pick": "ничья",
      "confidence": "низкая",
      "odds": null,
-     "odds_source": null
+     "odds_source": null,
+     "score": "0:1",
+     "result": "loss"
     },
     {
      "period": 3,
      "pick": "ничья",
      "confidence": "низкая",
      "odds": null,
-     "odds_source": null
+     "odds_source": null,
+     "score": "0:1",
+     "result": "loss"
     }
    ]
   },
@@ -754,21 +886,27 @@
      "pick": "ничья",
      "confidence": "низкая",
      "odds": null,
-     "odds_source": null
+     "odds_source": null,
+     "score": null,
+     "result": "н/д"
     },
     {
      "period": 2,
      "pick": "ничья",
      "confidence": "низкая",
      "odds": null,
-     "odds_source": null
+     "odds_source": null,
+     "score": null,
+     "result": "н/д"
     },
     {
      "period": 3,
      "pick": "ничья",
      "confidence": "низкая",
      "odds": null,
-     "odds_source": null
+     "odds_source": null,
+     "score": null,
+     "result": "н/д"
     }
    ]
   },
@@ -781,21 +919,27 @@
      "pick": "ничья",
      "confidence": "низкая",
      "odds": null,
-     "odds_source": null
+     "odds_source": null,
+     "score": null,
+     "result": "н/д"
     },
     {
      "period": 2,
      "pick": "ничья",
      "confidence": "низкая",
      "odds": null,
-     "odds_source": null
+     "odds_source": null,
+     "score": null,
+     "result": "н/д"
     },
     {
      "period": 3,
      "pick": "ничья",
      "confidence": "низкая",
      "odds": null,
-     "odds_source": null
+     "odds_source": null,
+     "score": null,
+     "result": "н/д"
     }
    ]
   },
@@ -808,21 +952,27 @@
      "pick": "ничья",
      "confidence": "низкая",
      "odds": null,
-     "odds_source": null
+     "odds_source": null,
+     "score": null,
+     "result": "н/д"
     },
     {
      "period": 2,
      "pick": "ничья",
      "confidence": "низкая",
      "odds": null,
-     "odds_source": null
+     "odds_source": null,
+     "score": null,
+     "result": "н/д"
     },
     {
      "period": 3,
      "pick": "ничья",
      "confidence": "низкая",
      "odds": null,
-     "odds_source": null
+     "odds_source": null,
+     "score": null,
+     "result": "н/д"
     }
    ]
   }
@@ -841,7 +991,7 @@
     "reliability": null,
     "favourite": null,
     "favourite_won": null,
-    "score": null
+    "score": "1:5 (1:0, 0:2, 0:3)"
    },
    {
     "match": "Автомобилист — Ак Барс",
@@ -853,7 +1003,7 @@
     "reliability": null,
     "favourite": null,
     "favourite_won": null,
-    "score": null
+    "score": "5:1 (2:0, 2:1, 1:0)"
    },
    {
     "match": "Спартак — Адмирал",
@@ -865,7 +1015,7 @@
     "reliability": null,
     "favourite": null,
     "favourite_won": null,
-    "score": null
+    "score": "6:3 (2:1, 2:1, 2:1)"
    },
    {
     "match": "Сочи — Амур",
@@ -877,7 +1027,7 @@
     "reliability": null,
     "favourite": null,
     "favourite_won": null,
-    "score": null
+    "score": "0:2 (0:0, 0:2, 0:0)"
    },
    {
     "match": "Локомотив — Шанхайские Драконы",
@@ -889,8 +1039,19 @@
     "reliability": null,
     "favourite": null,
     "favourite_won": null,
-    "score": null
+    "score": "5:0 (3:0, 1:0, 1:0)"
    }
   ]
+ },
+ "graded": "2026-11-15",
+ "graded_summary": {
+  "info": "МХЛ 0/2, Самые проходимые 1/5, Норвегия — возврат (3:1 при Ф1 −2)",
+  "periods": {
+   "nhl": "13/33",
+   "khl": "8/15",
+   "mhl": "3/6",
+   "fb": "0/0"
+  },
+  "khl_index": "нет цифр — 0/0"
  }
 }
