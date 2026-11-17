@@ -617,7 +617,15 @@
   "Беларусь": "logos/fb/belarus_nt.png",
   "Албания": "logos/fb/albania_nt.png",
   "Гранада": "logos/fb/granada.png",
-  "Лас-Пальмас": "logos/fb/las_palmas.png"
+  "Лас-Пальмас": "logos/fb/las_palmas.png",
+  "Венгрия": "logos/fb/hungary_nt.png",
+  "Hungary": "logos/fb/hungary_nt.png",
+  "Северная Ирландия": "logos/fb/northern_ireland_nt.png",
+  "Northern Ireland": "logos/fb/northern_ireland_nt.png",
+  "Украина": "logos/fb/ukraine_nt.png",
+  "Ukraine": "logos/fb/ukraine_nt.png",
+  "Грузия": "logos/fb/georgia_nt.png",
+  "Georgia": "logos/fb/georgia_nt.png"
  },
  "files": {
   "logos/khl/lokomotiv.png": {
@@ -1767,6 +1775,26 @@
    "league": "fb",
    "name": "Россия",
    "source": "Wikipedia (en) federation crest, https://en.wikipedia.org/wiki/File:Russian_Football_Union_logo.svg, resized 96×96"
+  },
+  "logos/fb/hungary_nt.png": {
+   "league": "fb",
+   "name": "Венгрия",
+   "source": "Wikipedia (en) federation crest, File:Hungarian_Football_Federation_logo.svg, resized 96×96"
+  },
+  "logos/fb/northern_ireland_nt.png": {
+   "league": "fb",
+   "name": "Северная Ирландия",
+   "source": "Wikipedia (en) federation crest, File:Irish_Football_Association_logo.svg, resized 96×96"
+  },
+  "logos/fb/ukraine_nt.png": {
+   "league": "fb",
+   "name": "Украина",
+   "source": "Wikimedia Commons, File:Logo_Fédération_Ukraine_Football_2016.svg, resized 96×96"
+  },
+  "logos/fb/georgia_nt.png": {
+   "league": "fb",
+   "name": "Грузия",
+   "source": "Wikimedia Commons, File:Georgian_Football_Federation_logo.svg, resized 96×96"
   }
  }
 }
