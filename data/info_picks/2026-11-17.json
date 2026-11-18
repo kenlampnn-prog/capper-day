@@ -18,8 +18,8 @@
    "prob_est": 0.649,
    "confidence_test": "fail: оценка ниже кэфа",
    "coupon": false,
-   "result": "open",
-   "score": null,
+   "result": "win",
+   "score": "4:0 (0:0, 2:0, 2:0)",
    "rule": "основное время",
    "periods": [
     {
@@ -61,8 +61,8 @@
    "prob_est": 0.597,
    "confidence_test": "fail: оценка ниже кэфа",
    "coupon": false,
-   "result": "open",
-   "score": null,
+   "result": "loss",
+   "score": "2:1 ОТ/Б (0:0, 0:1, 1:0; в основное время 1:1)",
    "rule": "основное время",
    "periods": [
     {
@@ -107,8 +107,8 @@
    "prob_est": 0.481,
    "confidence_test": "fail: оценка ниже кэфа",
    "coupon": false,
-   "result": "open",
-   "score": null,
+   "result": "loss",
+   "score": "1:1",
    "rule": "90 минут",
    "halves": [
     {
@@ -143,8 +143,8 @@
    "prob_est": 0.509,
    "confidence_test": "fail: оценка ниже кэфа",
    "coupon": false,
-   "result": "open",
-   "score": null,
+   "result": "loss",
+   "score": "1:1",
    "rule": "90 минут",
    "halves": [
     {
@@ -179,8 +179,8 @@
    "prob_est": 0.438,
    "confidence_test": "fail: оценка ниже кэфа",
    "coupon": false,
-   "result": "open",
-   "score": null,
+   "result": "win",
+   "score": "1:0",
    "rule": "90 минут",
    "halves": [
     {
@@ -215,8 +215,8 @@
    "prob_est": 0.445,
    "confidence_test": "fail: оценка ниже кэфа",
    "coupon": false,
-   "result": "open",
-   "score": null,
+   "result": "win",
+   "score": "3:0",
    "rule": "90 минут",
    "halves": [
     {
@@ -687,7 +687,7 @@
     "reliability": null,
     "favourite": null,
     "favourite_won": null,
-    "score": null
+    "score": "4:1"
    },
    {
     "match": "Автомобилист — Спартак",
@@ -711,7 +711,7 @@
     "reliability": null,
     "favourite": null,
     "favourite_won": null,
-    "score": null
+    "score": "2:7"
    },
    {
     "match": "Нефтехимик — Динамо Минск",
@@ -735,8 +735,82 @@
     "reliability": null,
     "favourite": null,
     "favourite_won": null,
-    "score": null
+    "score": "2:4"
    }
+  ]
+ },
+ "graded": {
+  "nhl_periods": [
+   12,
+   27
+  ],
+  "khl_periods": [
+   3,
+   6
+  ],
+  "mhl_periods": [
+   3,
+   6
+  ],
+  "football_halves": "н/д — счёта по таймам в источнике нет",
+  "mhl": "1/2",
+  "football_best": "2/4",
+  "nhl_rows": [
+   [
+    "Лос-Анджелес @ Бостон",
+    "3:0",
+    0
+   ],
+   [
+    "Эдмонтон @ Флорида",
+    "5:2",
+    1
+   ],
+   [
+    "Оттава @ Виннипег",
+    "2:1",
+    1
+   ],
+   [
+    "Баффало @ Филадельфия",
+    "3:4",
+    1
+   ],
+   [
+    "Коламбус @ Айлендерс",
+    "1:5",
+    3
+   ],
+   [
+    "Вашингтон @ Тампа-Бэй",
+    "2:5",
+    2
+   ],
+   [
+    "Торонто @ Чикаго",
+    "3:6",
+    1
+   ],
+   [
+    "Нэшвилл @ Миннесота",
+    "3:7",
+    1
+   ],
+   [
+    "Анахайм @ Сент-Луис",
+    "6:8",
+    2
+   ],
+   [
+    "Даллас @ Вегас",
+    "не завершён",
+    null
+   ],
+   [
+    "Калгари @ Сан-Хосе",
+    "не завершён",
+    null
+   ]
   ]
  }
 }

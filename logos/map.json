@@ -625,7 +625,17 @@
   "Украина": "logos/fb/ukraine_nt.png",
   "Ukraine": "logos/fb/ukraine_nt.png",
   "Грузия": "logos/fb/georgia_nt.png",
-  "Georgia": "logos/fb/georgia_nt.png"
+  "Georgia": "logos/fb/georgia_nt.png",
+  "ПСЖ": "logos/fb/psg.png",
+  "Лёвен": "logos/fb/oh_leuven.png",
+  "Земун": "logos/fb/zemun.png",
+  "Раднички Крагуевац": "logos/fb/radnicki_kg.png",
+  "Коритиба": "logos/fb/coritiba.png",
+  "Сантос": "logos/fb/santos.png",
+  "ПСЖ (ж)": "logos/fb/psg.png",
+  "Лёвен (ж)": "logos/fb/oh_leuven.png",
+  "Челси (ж)": "logos/fb/chelsea.png",
+  "Ювентус (ж)": "logos/ucl/juventus.png"
  },
  "files": {
   "logos/khl/lokomotiv.png": {
@@ -1795,6 +1805,36 @@
    "league": "fb",
    "name": "Грузия",
    "source": "Wikimedia Commons, File:Georgian_Football_Federation_logo.svg, resized 96×96"
+  },
+  "logos/fb/psg.png": {
+   "league": "fb",
+   "name": "ПСЖ",
+   "source": "Wikipedia (en), File:Paris_Saint-Germain_F.C..svg, resized 96×96"
+  },
+  "logos/fb/oh_leuven.png": {
+   "league": "fb",
+   "name": "Лёвен",
+   "source": "Wikimedia Commons, File:OH_LEUVEN.png, resized 96×96"
+  },
+  "logos/fb/zemun.png": {
+   "league": "fb",
+   "name": "Земун",
+   "source": "Wikipedia (en), File:FK_Zemun.svg, resized 96×96"
+  },
+  "logos/fb/radnicki_kg.png": {
+   "league": "fb",
+   "name": "Раднички Крагуевац",
+   "source": "Wikipedia (en), File:FK_Radnicki_Kragujevac_logo.svg, resized 96×96"
+  },
+  "logos/fb/coritiba.png": {
+   "league": "fb",
+   "name": "Коритиба",
+   "source": "Wikimedia Commons, File:Coritiba_Foot_Ball_Club_logo.svg, resized 96×96"
+  },
+  "logos/fb/santos.png": {
+   "league": "fb",
+   "name": "Сантос",
+   "source": "Wikimedia Commons, File:Santos_Futebol_Clube_logo_(with_two_stars_and_a_golden_crown).svg, resized 96×96"
   }
  }
 }
