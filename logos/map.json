@@ -635,7 +635,15 @@
   "ПСЖ (ж)": "logos/fb/psg.png",
   "Лёвен (ж)": "logos/fb/oh_leuven.png",
   "Челси (ж)": "logos/fb/chelsea.png",
-  "Ювентус (ж)": "logos/ucl/juventus.png"
+  "Ювентус (ж)": "logos/ucl/juventus.png",
+  "Ростов": "logos/fb/rostov.png",
+  "ФК Ростов": "logos/fb/rostov.png",
+  "Дармштадт": "logos/fb/darmstadt.png",
+  "Дармштадт 98": "logos/fb/darmstadt.png",
+  "Серкль Брюгге": "logos/fb/cercle.png",
+  "Серкль": "logos/fb/cercle.png",
+  "Вестерло": "logos/fb/westerlo.png",
+  "Хайденхайм": "logos/fb/heidenheim.png"
  },
  "files": {
   "logos/khl/lokomotiv.png": {
