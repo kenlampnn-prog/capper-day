@@ -646,7 +646,13 @@
   "Хайденхайм": "logos/fb/heidenheim.png",
   "Астон Вилла": "logos/fb/astonvilla.png",
   "Сандерленд": "logos/fb/sunderland.png",
-  "Ньюкасл Юнайтед": "logos/fb/newcastle.png"
+  "Ньюкасл Юнайтед": "logos/fb/newcastle.png",
+  "Ливерпуль": "logos/fb/liverpool.png",
+  "Атлетико": "logos/fb/atletico.png",
+  "Атлетико Мадрид": "logos/fb/atletico.png",
+  "Хетафе": "logos/fb/getafe.png",
+  "ФК Спартак": "logos/fb/spartak_fc.png",
+  "Спартак МАХ": "logos/khl/spartak.png"
  },
  "files": {
   "logos/khl/lokomotiv.png": {
@@ -1846,6 +1852,26 @@
    "league": "fb",
    "name": "Сантос",
    "source": "Wikimedia Commons, File:Santos_Futebol_Clube_logo_(with_two_stars_and_a_golden_crown).svg, resized 96×96"
+  },
+  "logos/fb/liverpool.png": {
+   "league": "fb",
+   "name": "Ливерпуль",
+   "source": "ESPN a.espncdn.com/i/teamlogos/soccer/500/364.png, resized 96×96"
+  },
+  "logos/fb/atletico.png": {
+   "league": "fb",
+   "name": "Атлетико",
+   "source": "ESPN a.espncdn.com/i/teamlogos/soccer/500/1068.png, resized 96×96"
+  },
+  "logos/fb/getafe.png": {
+   "league": "fb",
+   "name": "Хетафе",
+   "source": "ESPN a.espncdn.com/i/teamlogos/soccer/500/2922.png, resized 96×96"
+  },
+  "logos/fb/spartak_fc.png": {
+   "league": "fb",
+   "name": "ФК Спартак",
+   "source": "ESPN a.espncdn.com/i/teamlogos/soccer/500/1941.png, resized 96×96"
   }
  }
 }
