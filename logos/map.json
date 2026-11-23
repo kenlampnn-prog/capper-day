@@ -652,7 +652,14 @@
   "Атлетико Мадрид": "logos/fb/atletico.png",
   "Хетафе": "logos/fb/getafe.png",
   "ФК Спартак": "logos/fb/spartak_fc.png",
-  "Спартак МАХ": "logos/khl/spartak.png"
+  "Спартак МАХ": "logos/khl/spartak.png",
+  "Брентфорд": "logos/fb/brentford.png",
+  "Леванте": "logos/fb/levante.png",
+  "Эльче": "logos/fb/elche.png",
+  "Альмерия": "logos/fb/almeria.png",
+  "Сеута": "logos/fb/ceuta.png",
+  "Арис": "logos/fb/aris.png",
+  "Астерас Триполис": "logos/fb/asteras.png"
  },
  "files": {
   "logos/khl/lokomotiv.png": {
@@ -1872,6 +1879,41 @@
    "league": "fb",
    "name": "ФК Спартак",
    "source": "ESPN a.espncdn.com/i/teamlogos/soccer/500/1941.png, resized 96×96"
+  },
+  "logos/fb/brentford.png": {
+   "league": "fb",
+   "name": "Брентфорд",
+   "source": "ESPN a.espncdn.com/i/teamlogos/soccer/500/337.png"
+  },
+  "logos/fb/levante.png": {
+   "league": "fb",
+   "name": "Леванте",
+   "source": "ESPN a.espncdn.com/i/teamlogos/soccer/500/1538.png"
+  },
+  "logos/fb/elche.png": {
+   "league": "fb",
+   "name": "Эльче",
+   "source": "ESPN a.espncdn.com/i/teamlogos/soccer/500/3751.png"
+  },
+  "logos/fb/almeria.png": {
+   "league": "fb",
+   "name": "Альмерия",
+   "source": "ESPN a.espncdn.com/i/teamlogos/soccer/500/6832.png"
+  },
+  "logos/fb/ceuta.png": {
+   "league": "fb",
+   "name": "Сеута",
+   "source": "ESPN a.espncdn.com/i/teamlogos/soccer/500/5404.png"
+  },
+  "logos/fb/aris.png": {
+   "league": "fb",
+   "name": "Арис",
+   "source": "ESPN a.espncdn.com/i/teamlogos/soccer/500/11553.png"
+  },
+  "logos/fb/asteras.png": {
+   "league": "fb",
+   "name": "Астерас Триполис",
+   "source": "ESPN a.espncdn.com/i/teamlogos/soccer/500/8354.png"
   }
  }
 }
