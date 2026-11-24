@@ -659,7 +659,12 @@
   "Альмерия": "logos/fb/almeria.png",
   "Сеута": "logos/fb/ceuta.png",
   "Арис": "logos/fb/aris.png",
-  "Астерас Триполис": "logos/fb/asteras.png"
+  "Астерас Триполис": "logos/fb/asteras.png",
+  "Портсмут": "logos/fb/portsmouth.png",
+  "Виртус Энтелла": "logos/fb/entella.png",
+  "Энтелла": "logos/fb/entella.png",
+  "Верона": "logos/fb/verona.png",
+  "Эллас Верона": "logos/fb/verona.png"
  },
  "files": {
   "logos/khl/lokomotiv.png": {
@@ -1914,6 +1919,21 @@
    "league": "fb",
    "name": "Астерас Триполис",
    "source": "ESPN a.espncdn.com/i/teamlogos/soccer/500/8354.png"
+  },
+  "logos/fb/portsmouth.png": {
+   "league": "fb",
+   "name": "Портсмут",
+   "source": "ESPN a.espncdn.com/i/teamlogos/soccer/500/385.png"
+  },
+  "logos/fb/entella.png": {
+   "league": "fb",
+   "name": "Виртус Энтелла",
+   "source": "ESPN a.espncdn.com/i/teamlogos/soccer/500/11137.png"
+  },
+  "logos/fb/verona.png": {
+   "league": "fb",
+   "name": "Верона",
+   "source": "ESPN a.espncdn.com/i/teamlogos/soccer/500/119.png"
   }
  }
 }
