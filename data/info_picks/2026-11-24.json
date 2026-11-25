@@ -18,8 +18,8 @@
    "prob_est": 0.462,
    "confidence_test": "fail: оценка ниже кэфа",
    "coupon": false,
-   "result": "open",
-   "score": null,
+   "result": "loss",
+   "score": "2:1 ОТ/Б",
    "rule": "основное время",
    "periods": [
     {
@@ -27,21 +27,24 @@
      "pick": "П Алмаз",
      "confidence": "низкая",
      "odds": 2.5,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "result": "loss"
     },
     {
      "period": 2,
      "pick": "П Алмаз",
      "confidence": "низкая",
      "odds": 2.4,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "result": "win"
     },
     {
      "period": 3,
      "pick": "П Алмаз",
      "confidence": "низкая",
      "odds": 2.4,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "result": "loss"
     }
    ]
   },
@@ -61,8 +64,8 @@
    "prob_est": 0.425,
    "confidence_test": "fail: оценка ниже кэфа",
    "coupon": false,
-   "result": "open",
-   "score": null,
+   "result": "loss",
+   "score": "3:1",
    "rule": "основное время",
    "periods": [
     {
@@ -70,21 +73,24 @@
      "pick": "П МХК Спартак",
      "confidence": "низкая",
      "odds": 2.65,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "result": "loss"
     },
     {
      "period": 2,
      "pick": "П МХК Спартак",
      "confidence": "низкая",
      "odds": 2.55,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "result": "loss"
     },
     {
      "period": 3,
      "pick": "П МХК Спартак",
      "confidence": "низкая",
      "odds": 2.55,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "result": "loss"
     }
    ]
   }
@@ -107,8 +113,8 @@
    "prob_est": 0.432,
    "confidence_test": "fail: оценка ниже кэфа",
    "coupon": false,
-   "result": "open",
-   "score": null,
+   "result": "loss",
+   "score": "1:0 (1-й тайм 0:0)",
    "rule": "исход матча (90 минут)",
    "halves": [
     {
@@ -116,14 +122,16 @@
      "pick": "ничья",
      "confidence": "низкая",
      "odds": 2.5,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "result": "win"
     },
     {
      "half": 2,
      "pick": "П Астон Вилла",
      "confidence": "низкая",
      "odds": 2.35,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "result": "loss"
     }
    ],
    "polymarket": {
@@ -152,8 +160,8 @@
    "prob_est": 0.426,
    "confidence_test": "fail: оценка ниже кэфа",
    "coupon": false,
-   "result": "open",
-   "score": null,
+   "result": "loss",
+   "score": "2:1 (1-й тайм 1:1)",
    "rule": "исход матча (90 минут)",
    "halves": [
     {
@@ -161,14 +169,16 @@
      "pick": "ничья",
      "confidence": "средняя",
      "odds": 2.05,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "result": "win"
     },
     {
      "half": 2,
      "pick": "ничья",
      "confidence": "низкая",
      "odds": 2.35,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "result": "loss"
     }
    ],
    "polymarket": {
@@ -197,8 +207,8 @@
    "prob_est": 0.521,
    "confidence_test": "fail: оценка ниже кэфа",
    "coupon": false,
-   "result": "open",
-   "score": null,
+   "result": "loss",
+   "score": "1:0 (1-й тайм 1:0)",
    "rule": "исход матча (90 минут)",
    "halves": [
     {
@@ -206,14 +216,16 @@
      "pick": "ничья",
      "confidence": "средняя",
      "odds": 2.3,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "result": "loss"
     },
     {
      "half": 2,
      "pick": "П Вест Хэм",
      "confidence": "средняя",
      "odds": 2.15,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "result": "loss"
     }
    ],
    "polymarket": {
@@ -242,8 +254,8 @@
    "prob_est": 0.433,
    "confidence_test": "fail: оценка ниже кэфа",
    "coupon": false,
-   "result": "open",
-   "score": null,
+   "result": "win",
+   "score": "0:1 (1-й тайм 0:1)",
    "rule": "исход матча (90 минут)",
    "halves": [
     {
@@ -251,14 +263,16 @@
      "pick": "ничья",
      "confidence": "низкая",
      "odds": 2.4,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "result": "loss"
     },
     {
      "half": 2,
      "pick": "П Порту",
      "confidence": "низкая",
      "odds": 2.35,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "result": "loss"
     }
    ],
    "polymarket": {
@@ -287,21 +301,23 @@
    "reason": "Норвежский клуб в ЛЧ, справочно; П1 1.48 ниже 1.80 — пика нет.",
    "coupon": false,
    "result": "пас",
-   "score": null,
+   "score": "1:0 (1-й тайм 0:0)",
    "halves": [
     {
      "half": 1,
      "pick": "П Будё-Глимт",
      "confidence": "средняя",
      "odds": 1.83,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "result": "loss"
     },
     {
      "half": 2,
      "pick": "П Будё-Глимт",
      "confidence": "средняя",
      "odds": 1.7,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "result": "win"
     }
    ],
    "polymarket": {
@@ -326,23 +342,27 @@
      "pick": "П Ак Барс",
      "confidence": "низкая",
      "odds": 2.35,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "result": "loss"
     },
     {
      "period": 2,
      "pick": "П Ак Барс",
      "confidence": "средняя",
      "odds": 2.25,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "result": "loss"
     },
     {
      "period": 3,
      "pick": "П Ак Барс",
      "confidence": "средняя",
      "odds": 2.17,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "result": "win"
     }
-   ]
+   ],
+   "score": "0:3"
   },
   {
    "match": "Трактор — Лада",
@@ -353,23 +373,27 @@
      "pick": "П Трактор",
      "confidence": "средняя",
      "odds": 2.07,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "result": "loss"
     },
     {
      "period": 2,
      "pick": "П Трактор",
      "confidence": "средняя",
      "odds": 1.95,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "result": "loss"
     },
     {
      "period": 3,
      "pick": "П Трактор",
      "confidence": "средняя",
      "odds": 1.9,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "result": "win"
     }
-   ]
+   ],
+   "score": "5:2"
   },
   {
    "match": "Салават Юлаев — Нефтехимик",
@@ -396,7 +420,8 @@
      "odds": null,
      "odds_source": null
     }
-   ]
+   ],
+   "score": "5:4"
   },
   {
    "match": "Металлург Мг — Динамо Минск",
@@ -407,23 +432,27 @@
      "pick": "П Металлург Мг",
      "confidence": "средняя",
      "odds": 2.2,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "result": "win"
     },
     {
      "period": 2,
      "pick": "П Металлург Мг",
      "confidence": "средняя",
      "odds": 2.08,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "result": "loss"
     },
     {
      "period": 3,
      "pick": "П Металлург Мг",
      "confidence": "средняя",
      "odds": 2.0,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "result": "loss"
     }
-   ]
+   ],
+   "score": "5:4"
   },
   {
    "match": "Динамо Москва — Автомобилист",
@@ -450,7 +479,8 @@
      "odds": null,
      "odds_source": null
     }
-   ]
+   ],
+   "score": "4:2"
   }
  ],
  "nhl_periods": [
@@ -464,23 +494,27 @@
      "pick": "П Вегас",
      "confidence": "низкая",
      "odds": 2.7,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "result": "win"
     },
     {
      "period": 2,
      "pick": "П Вегас",
      "confidence": "низкая",
      "odds": 2.6,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "result": "loss"
     },
     {
      "period": 3,
      "pick": "П Вегас",
      "confidence": "низкая",
      "odds": 2.5,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "result": "win"
     }
-   ]
+   ],
+   "score": "Эдмонтон 3:5 Вегас"
   }
  ],
  "del_periods": [
@@ -493,23 +527,27 @@
      "pick": "П Кёльн",
      "confidence": "средняя",
      "odds": 2.3,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "result": "loss"
     },
     {
      "period": 2,
      "pick": "П Кёльн",
      "confidence": "средняя",
      "odds": 2.18,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "result": "win"
     },
     {
      "period": 3,
      "pick": "П Кёльн",
      "confidence": "средняя",
      "odds": 2.1,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "result": "loss"
     }
-   ]
+   ],
+   "score": "4:3 ОТ"
   },
   {
    "match": "Ингольштадт — Пингвинз Бремерхафен",
@@ -520,23 +558,27 @@
      "pick": "П Ингольштадт",
      "confidence": "средняя",
      "odds": 2.3,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "result": "loss"
     },
     {
      "period": 2,
      "pick": "П Ингольштадт",
      "confidence": "средняя",
      "odds": 2.18,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "result": "win"
     },
     {
      "period": 3,
      "pick": "П Ингольштадт",
      "confidence": "средняя",
      "odds": 2.1,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "result": "loss"
     }
-   ]
+   ],
+   "score": "4:3 ОТ"
   },
   {
    "match": "Айсберен Берлин — Лёвен Франкфурт",
@@ -547,23 +589,27 @@
      "pick": "П Айсберен Берлин",
      "confidence": "средняя",
      "odds": 1.75,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "result": "win"
     },
     {
      "period": 2,
      "pick": "П Айсберен Берлин",
      "confidence": "средняя",
      "odds": 1.65,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "result": "win"
     },
     {
      "period": 3,
      "pick": "П Айсберен Берлин",
      "confidence": "средняя",
      "odds": 1.6,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "result": "win"
     }
-   ]
+   ],
+   "score": "7:1"
   },
   {
    "match": "Аугсбург — Крефельд",
@@ -574,23 +620,27 @@
      "pick": "П Аугсбург",
      "confidence": "низкая",
      "odds": 2.45,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "result": "loss"
     },
     {
      "period": 2,
      "pick": "П Аугсбург",
      "confidence": "средняя",
      "odds": 2.3,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "result": "win"
     },
     {
      "period": 3,
      "pick": "П Аугсбург",
      "confidence": "средняя",
      "odds": 2.25,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "result": "win"
     }
-   ]
+   ],
+   "score": "5:1"
   },
   {
    "match": "Штраубинг — Адлер Мангейм",
@@ -601,23 +651,27 @@
      "pick": "П Штраубинг",
      "confidence": "низкая",
      "odds": 2.65,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "result": "loss"
     },
     {
      "period": 2,
      "pick": "П Штраубинг",
      "confidence": "низкая",
      "odds": 2.55,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "result": "loss"
     },
     {
      "period": 3,
      "pick": "П Штраубинг",
      "confidence": "низкая",
      "odds": 2.45,
-     "odds_source": "Фонбет"
+     "odds_source": "Фонбет",
+     "result": "loss"
     }
-   ]
+   ],
+   "score": "2:1 Б"
   }
  ],
  "khl_index": {
@@ -633,7 +687,7 @@
     "reliability": null,
     "favourite": null,
     "favourite_won": null,
-    "score": null
+    "score": "0:3"
    },
    {
     "match": "Трактор — Лада",
@@ -645,7 +699,7 @@
     "reliability": null,
     "favourite": null,
     "favourite_won": null,
-    "score": null
+    "score": "5:2"
    },
    {
     "match": "Салават Юлаев — Нефтехимик",
@@ -657,7 +711,7 @@
     "reliability": null,
     "favourite": null,
     "favourite_won": null,
-    "score": null
+    "score": "5:4"
    },
    {
     "match": "Металлург Мг — Динамо Минск",
@@ -669,7 +723,7 @@
     "reliability": null,
     "favourite": null,
     "favourite_won": null,
-    "score": null
+    "score": "5:4"
    },
    {
     "match": "Динамо Москва — Автомобилист",
@@ -681,7 +735,7 @@
     "reliability": null,
     "favourite": null,
     "favourite_won": null,
-    "score": null
+    "score": "4:2"
    }
   ]
  },
@@ -697,5 +751,130 @@
    "agree": null,
    "note": "объём 0 — не используем"
   }
+ },
+ "graded": {
+  "khl_periods": [
+   3,
+   9
+  ],
+  "nhl_periods": [
+   2,
+   3
+  ],
+  "mhl_periods": [
+   1,
+   6
+  ],
+  "del_periods": [
+   7,
+   15
+  ],
+  "football_halves": [
+   3,
+   10
+  ],
+  "mhl": "0/2",
+  "football_best": "1/4",
+  "khl_rows": [
+   [
+    "Адмирал — Ак Барс",
+    "0:0, 0:0, 0:3",
+    1
+   ],
+   [
+    "Трактор — Лада",
+    "1:1, 1:1, 3:0",
+    1
+   ],
+   [
+    "Салават Юлаев — Нефтехимик",
+    null,
+    null
+   ],
+   [
+    "Металлург Мг — Динамо Минск",
+    "3:2, 1:1, 1:1",
+    1
+   ],
+   [
+    "Динамо Москва — Автомобилист",
+    null,
+    null
+   ]
+  ],
+  "nhl_rows": [
+   [
+    "Вегас @ Эдмонтон",
+    "0:2, 2:0, 1:3",
+    2
+   ]
+  ],
+  "del_rows": [
+   [
+    "Кёльн — Нюрнберг",
+    "1:1, 2:0, 0:2",
+    1
+   ],
+   [
+    "Ингольштадт — Пингвинз Бремерхафен",
+    "0:1, 2:1, 1:1",
+    1
+   ],
+   [
+    "Айсберен Берлин — Лёвен Франкфурт",
+    "4:1, 1:0, 2:0",
+    3
+   ],
+   [
+    "Аугсбург — Крефельд",
+    "1:1, 2:0, 2:0",
+    2
+   ],
+   [
+    "Штраубинг — Адлер Мангейм",
+    "0:0, 1:1, 0:0",
+    0
+   ]
+  ],
+  "mhl_rows": [
+   [
+    "Амурские Тигры — Алмаз",
+    "0:0, 0:1, 1:0",
+    1
+   ],
+   [
+    "Омские Ястребы — МХК Спартак",
+    "0:0, 2:0, 1:1",
+    0
+   ]
+  ],
+  "half_rows": [
+   [
+    "Галатасарай — Астон Вилла",
+    "0:0, 1:0",
+    1
+   ],
+   [
+    "Виртус Энтелла — Верона",
+    "1:1, 1:0",
+    1
+   ],
+   [
+    "Портсмут — Вест Хэм",
+    "1:0, 0:0",
+    0
+   ],
+   [
+    "Фейеноорд — Порту",
+    "0:1, 0:0",
+    0
+   ],
+   [
+    "Будё-Глимт — ЛАСК",
+    "0:0, 1:0",
+    1
+   ]
+  ],
+  "khl_index": "н/д — сайт недоступен"
  }
 }

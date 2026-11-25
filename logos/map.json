@@ -664,7 +664,16 @@
   "Виртус Энтелла": "logos/fb/entella.png",
   "Энтелла": "logos/fb/entella.png",
   "Верона": "logos/fb/verona.png",
-  "Эллас Верона": "logos/fb/verona.png"
+  "Эллас Верона": "logos/fb/verona.png",
+  "Сток Сити": "logos/fb/stoke.png",
+  "Вест Бромвич": "logos/fb/wba.png",
+  "Болтон": "logos/fb/bolton.png",
+  "Бернли": "logos/fb/burnley.png",
+  "Славия Прага": "logos/ucl/slavia.png",
+  "СКА-Академия": "logos/mhl/akska.png",
+  "Вест Бромвич Альбион": "logos/fb/wba.png",
+  "Болтон Уондерерс": "logos/fb/bolton.png",
+  "Славия": "logos/ucl/slavia.png"
  },
  "files": {
   "logos/khl/lokomotiv.png": {
@@ -1934,6 +1943,26 @@
    "league": "fb",
    "name": "Верона",
    "source": "ESPN a.espncdn.com/i/teamlogos/soccer/500/119.png"
+  },
+  "logos/fb/stoke.png": {
+   "league": "fb",
+   "name": "Сток Сити"
+  },
+  "logos/fb/wba.png": {
+   "league": "fb",
+   "name": "Вест Бромвич"
+  },
+  "logos/fb/bolton.png": {
+   "league": "fb",
+   "name": "Болтон"
+  },
+  "logos/fb/burnley.png": {
+   "league": "fb",
+   "name": "Бернли"
+  },
+  "logos/ucl/slavia.png": {
+   "league": "ucl",
+   "name": "Славия Прага"
   }
  }
 }
