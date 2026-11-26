@@ -673,7 +673,15 @@
   "СКА-Академия": "logos/mhl/akska.png",
   "Вест Бромвич Альбион": "logos/fb/wba.png",
   "Болтон Уондерерс": "logos/fb/bolton.png",
-  "Славия": "logos/ucl/slavia.png"
+  "Славия": "logos/ucl/slavia.png",
+  "Борнмут": "logos/fb/bournemouth.png",
+  "АЗ Алкмаар": "logos/fb/az.png",
+  "Спарта Прага": "logos/fb/spartapraha.png",
+  "Лугано": "logos/fb/lugano.png",
+  "Твенте": "logos/fb/twente.png",
+  "Яблонец": "logos/fb/jablonec.png",
+  "АГФ Орхус": "logos/fb/agf.png",
+  "АГФ": "logos/fb/agf.png"
  },
  "files": {
   "logos/khl/lokomotiv.png": {
@@ -1963,6 +1971,34 @@
   "logos/ucl/slavia.png": {
    "league": "ucl",
    "name": "Славия Прага"
+  },
+  "logos/fb/bournemouth.png": {
+   "league": "fb",
+   "name": "Борнмут"
+  },
+  "logos/fb/az.png": {
+   "league": "fb",
+   "name": "АЗ Алкмаар"
+  },
+  "logos/fb/spartapraha.png": {
+   "league": "fb",
+   "name": "Спарта Прага"
+  },
+  "logos/fb/lugano.png": {
+   "league": "fb",
+   "name": "Лугано"
+  },
+  "logos/fb/twente.png": {
+   "league": "fb",
+   "name": "Твенте"
+  },
+  "logos/fb/jablonec.png": {
+   "league": "fb",
+   "name": "Яблонец"
+  },
+  "logos/fb/agf.png": {
+   "league": "fb",
+   "name": "АГФ Орхус"
   }
  }
 }
