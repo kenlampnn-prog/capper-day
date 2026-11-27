@@ -681,7 +681,11 @@
   "Твенте": "logos/fb/twente.png",
   "Яблонец": "logos/fb/jablonec.png",
   "АГФ Орхус": "logos/fb/agf.png",
-  "АГФ": "logos/fb/agf.png"
+  "АГФ": "logos/fb/agf.png",
+  "Мидлсбро": "logos/fb/middlesbrough.png",
+  "Саутгемптон": "logos/fb/southampton.png",
+  "Расинг Сантандер": "logos/fb/racingsantander.png",
+  "Касымпаша": "logos/fb/kasimpasa.png"
  },
  "files": {
   "logos/khl/lokomotiv.png": {
@@ -1999,6 +2003,22 @@
   "logos/fb/agf.png": {
    "league": "fb",
    "name": "АГФ Орхус"
+  },
+  "logos/fb/middlesbrough.png": {
+   "league": "fb",
+   "name": "Мидлсбро"
+  },
+  "logos/fb/southampton.png": {
+   "league": "fb",
+   "name": "Саутгемптон"
+  },
+  "logos/fb/racingsantander.png": {
+   "league": "fb",
+   "name": "Расинг Сантандер"
+  },
+  "logos/fb/kasimpasa.png": {
+   "league": "fb",
+   "name": "Касымпаша"
   }
  }
 }
