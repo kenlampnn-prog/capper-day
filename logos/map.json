@@ -685,7 +685,14 @@
   "Мидлсбро": "logos/fb/middlesbrough.png",
   "Саутгемптон": "logos/fb/southampton.png",
   "Расинг Сантандер": "logos/fb/racingsantander.png",
-  "Касымпаша": "logos/fb/kasimpasa.png"
+  "Касымпаша": "logos/fb/kasimpasa.png",
+  "Лацио": "logos/fb/lazio.png",
+  "Ипсвич": "logos/fb/ipswich.png",
+  "Ипсвич Таун": "logos/fb/ipswich.png",
+  "Ле-Ман": "logos/fb/lemans.png",
+  "Ле Ман": "logos/fb/lemans.png",
+  "Элверсберг": "logos/fb/elversberg.png",
+  "Эльферсберг": "logos/fb/elversberg.png"
  },
  "files": {
   "logos/khl/lokomotiv.png": {
@@ -2019,6 +2026,22 @@
   "logos/fb/kasimpasa.png": {
    "league": "fb",
    "name": "Касымпаша"
+  },
+  "logos/fb/lazio.png": {
+   "league": "fb",
+   "name": "Лацио"
+  },
+  "logos/fb/ipswich.png": {
+   "league": "fb",
+   "name": "Ипсвич"
+  },
+  "logos/fb/lemans.png": {
+   "league": "fb",
+   "name": "Ле-Ман"
+  },
+  "logos/fb/elversberg.png": {
+   "league": "fb",
+   "name": "Элверсберг"
   }
  }
 }
